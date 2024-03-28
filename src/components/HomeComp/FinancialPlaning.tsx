@@ -1,24 +1,26 @@
 function FinancialPlaning() {
   return (
-    <section className="bg-gradient-to-b from-gray-200 to-transparent  pt-20">
-      <div className="flex items-center justify-between 2xl:px-28 px-20">
-        <div className="2xl:max-w-[654px] max-w-[400px] font-syne capitalize">
-          <p className="text-orangePrimary font-semibold ">
-            Committed to clients, focused on results.
-          </p>
-          <h4 className=" font-bold font-syne">
-            The right partner for Data Management and Investor relations.
-          </h4>
+    <>
+      <section className="bg-gradient-to-b from-gray-200 to-transparent pt-14">
+        <div className="flex items-center justify-between   ">
+          <div className="2xl:max-w-[654px] max-w-[400px] font-syne ">
+            <p className="text-orangePrimary font-medium text-[12px]">
+              Committed to clients, focused on results.
+            </p>
+            <h4 className=" font-bold font-syne leading-9 capitalize">
+              The right partner for Data Management and Investor relations.
+            </h4>
+          </div>
+          <img src="/images/experience.png" alt="expereince"  className="h-[120px] w-[210px]"/>
         </div>
-        <img src="/images/experience.png" alt="expereince" />
-      </div>
-      <div className="bg-bluePrimary flex items-center justify-center gap-10 2xl:gap-20 text-white mx-4 mt-20 2xl:mx-10 px-20 2xl:px-24 2xl:py-20 py-10">
-        <div className="2xl:w-[821px] w-[700px]">
-          <div className="border-b border-b-white pb-8">
-            <h6 className="font-syne text-[32.9px] font-bold ">
+      </section>
+      <section className="bg-bluePrimary flex items-center justify-between text-white mx-7 px-24 mt-14 2xl:mx-10 2xl:py-20 py-10">
+        <div className="2xl:w-[821px] w-[48%]">
+          <div className="border-b border-b-grayPrimary pb-8">
+            <h6 className="font-syne 2xl:text-[32.9px] text-2xl font-bold ">
               Financial Planning
             </h6>
-            <p className="2xl:text-[22px] text-lg font-sora 2xl:leading-[40.7px] leading-[30.7px]">
+            <p className="2xl:text-[22px] text-sm font-normal mt-5 font-sora 2xl:leading-[40.7px] leading-[30.7px]">
               Financial planning is the process of taking a comprehensive look
               at your financial situation and building a specific financial plan
               to reach your goals. As a result, financial planning often delves
@@ -27,9 +29,13 @@ function FinancialPlaning() {
             </p>
           </div>
           <div className="flex pt-8 2xl:gap-8 gap-3 items-start">
-            <img src="/icons/arrow-right.svg" alt="arrow-right" />
+            <img
+              src="/icons/arrow-right.svg"
+              alt="arrow-right"
+              className="2xl:w-[93px] w-[70px] mt-[-10px]"
+            />
             <div className="flex flex-col gap-8 items-start">
-              <h6 className="font-syne text-2xl font-bold ">
+              <h6 className="font-syne text-lg font-bold ">
                 Model Portfolio Returns
               </h6>
               <p className="2xl:leading-[33px] leading-[24px]">
@@ -46,24 +52,24 @@ function FinancialPlaning() {
           </div>
         </div>
 
-        <div className="relative flex items-center">
+        <div className="relative flex items-center w-[47%]">
           <img
             src="/images/financial-planning.png"
             alt="planning"
-            className="2xl:w-[709px] w-[600px] 2xl:h-[468px] h-[350px]"
+            className="2xl:w-[709px] w-full 2xl:h-[468px] h-[320px] object-cover object-center"
           />
-          <div className="absolute w-[275px] bg-white left-10 flex flex-col items-center rounded-lg py-8 px-4">
-            <div className="border-orangePrimary border rounded-full w-20 h-20 flex justify-center items-center">
-              <p className="font-syne text-[22px] font-bold text-black">23%</p>
+          <div className="absolute w-[200px] bg-white left-10 flex flex-col items-center rounded-lg py-8 px-4">
+            <div className="border-orangePrimary border-[0.8px] rounded-full w-14 h-14 flex justify-center items-center">
+              <p className="font-syne text-sm font-bold text-black">23%</p>
             </div>
-            <p className="font-sora text-[16px] text-grayPrimary2 text-center mt-8">
+            <p className="font-sora text-grayPrimary2 text-center mt-3">
               Maximum drawdown is a measure of downside risk over a given time
               period; it is the maximum loss.
             </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
 

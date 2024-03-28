@@ -1,8 +1,8 @@
 function WhoWeAre() {
   return (
-    <section className="px-20 2xl:px-24 py-20 bg-white flex items-center gap-24 ">
-      <div className="w-[50%] font-syne">
-        <p className="text-orangePrimary font-semibold ">
+    <section className="py-10 bg-white flex items-center justify-between ">
+      <div className="w-[55%] font-syne">
+        <p className="text-orangePrimary text-[12px] font-medium ">
           About Pac Registrars
         </p>
         <h4 className=" font-bold font-syne capitalize">Who We Are!</h4>
@@ -25,8 +25,17 @@ function WhoWeAre() {
           identified sectors.
         </p>
       </div>
-      <div className="w-[40%] h-[400px]">
-        <img src="/images/whoweare.png" alt="" className="w-full h-[400px]" />
+      <div className="w-[40%] relative">
+        <img
+          src="/images/whoweare.png"
+          alt=""
+          className="w-full h-[350px] object-cover"
+        />
+        <img
+          src="/icons/arrow-down-large.svg"
+          alt=""
+          className="absolute right-[-25px] bottom-[-25px] w-44"
+        />
       </div>
     </section>
   );

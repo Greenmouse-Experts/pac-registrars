@@ -6,7 +6,7 @@ interface ButtonProps {
 
 function Button({ children }: ButtonProps) {
   return (
-    <button className="bg-bluePrimary text-white py-3 px-6 w-fit">{children}</button>
+    <button className="bg-bluePrimary text-white 2xl:py-3 2xl:px-6 py-[5px] px-4 w-fit text-sm">{children}</button>
   );
 }
 

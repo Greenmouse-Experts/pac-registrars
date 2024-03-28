@@ -1,11 +1,12 @@
-import AboutTop from "../../components/AboutComp/AboutTop";
+
 import WhoWeAre from "../../components/AboutComp/WhoWeAre";
 import Values from "../../components/AboutComp/Values";
+import Banner from "../../components/Banner";
 
 function About() {
   return (
     <>
-      <AboutTop />
+      <Banner page="About Us" link="/" />
       <WhoWeAre />
       <Values />
     </>

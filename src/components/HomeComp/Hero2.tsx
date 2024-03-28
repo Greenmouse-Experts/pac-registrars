@@ -1,18 +1,18 @@
 function Hero2() {
   return (
-    <section className=" 2xl:px-28 px-20 bg-white text-black  py-20">
-      <div className="flex 2xl:gap-20 gap-20 items-center">
-        <div className="2xl:max-w-[654px] max-w-[800px] font-syne">
-          <p className="text-orangePrimary font-semibold ">
+    <section className="  bg-white text-black py-16">
+      <div className="flex 2xl:gap-20 justify-between items-start">
+        <div className="2xl:max-w-[654px] font-syne">
+          <p className="text-orangePrimary font-normal ">
             Putting the right solutions and methods in place.
           </p>
-          <h4 className=" font-bold font-syne capitalize">
+          <h4 className=" font-bold font-syne capitalize leading-9">
             A global consulting firm experienced in identifying, assessing, and
             solving all business challenges!
           </h4>
         </div>
-        <div>
-          <p className="font-sora 2xl:leading-[40px]  leading-[30px] 2xl:text-[22px] text-[18px]">
+        <div className="max-w-[60%]">
+          <p className="font-sora 2xl:leading-[40px]  leading-[30px] 2xl:text-[22px] text-[14px]">
             PAC Registrars Limited, formerly known as Spring Registrars Limited
             is registered with the Securities & Exchange Commission (SEC) as a
             Capital Market Operator to provide Share Registration Services. It
@@ -26,7 +26,7 @@ function Hero2() {
         </div>
       </div>
       <div className="pt-20 flex justify-between">
-        <div className="2xl:max-w-[303px] max-w-[240px] ">
+        <div className="2xl:max-w-[303px] max-w-[200px] ">
           <div>
             <div className="flex items-center">
               <p className="2xl:text-[45px] text-[30px] font-montserrat font-semibold">
@@ -44,7 +44,7 @@ function Hero2() {
           </p>
         </div>
         <div className="w-[1px] bg-grayPrimary" />
-        <div className="2xl:max-w-[303px] max-w-[240px] ">
+        <div className="2xl:max-w-[303px] max-w-[200px] ">
           <div>
             <div className="flex items-center">
               <p className="2xl:text-[45px] text-[30px] font-montserrat font-semibold">
@@ -62,7 +62,7 @@ function Hero2() {
           </p>
         </div>
         <div className="w-[1px] bg-grayPrimary" />
-        <div className="2xl:max-w-[303px] max-w-[240px] ">
+        <div className="2xl:max-w-[303px] max-w-[200px] ">
           <div>
             <div className="flex items-center">
               <p className="2xl:text-[45px] text-[30px] font-montserrat font-semibold">
@@ -80,7 +80,7 @@ function Hero2() {
           </p>
         </div>
         <div className="w-[1px] bg-grayPrimary" />
-        <div className="2xl:max-w-[303px] max-w-[240px] ">
+        <div className="2xl:max-w-[303px] max-w-[200px] ">
           <div>
             <div className="flex items-center">
               <p className="2xl:text-[45px] text-[30px] font-montserrat font-semibold">

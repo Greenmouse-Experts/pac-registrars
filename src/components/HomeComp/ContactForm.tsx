@@ -2,12 +2,12 @@ import Button from "../Button";
 
 function ContactForm() {
   return (
-    <div className="bg-white px-8 py-20 w-[50%]">
-      <form className="flex flex-col gap-10">
-        <h5 className="font-montserrat text-[28px] font-semibold ">
+    <div className="bg-white px-8 2xl:py-20 py-10 w-[57%]  ml-3 shadow-md">
+      <form className="flex flex-col 2xl:gap-10 gap-5">
+        <h5 className="font-montserrat text-[22px] font-semibold  ">
           Contact Us
         </h5>
-        <p className="leading-7 font-montserrat ">
+        <p className="leading-5 font-medium font-montserrat text-black">
           Complete control over products allows us to ensure our customers
           receive the best quality prices and service. We take great pride in
           everything that we do in our factory.
@@ -16,25 +16,25 @@ function ContactForm() {
           <input
             type="text"
             placeholder="Name"
-            className="bg-[#F4F4F4] h-[69px] pl-5 w-[373px]"
+            className="bg-[#F4F4F4] 2xl:h-[69px] h-[50px] pl-5 w-[373px]"
           />
           <input
             type="text"
             placeholder="Email"
-            className="bg-[#F4F4F4] w-[373px] h-[69px] pl-5"
+            className="bg-[#F4F4F4] w-[373px] 2xl:h-[69px] h-[50px] pl-5"
           />
         </div>
         <div className=" ">
           <input
             type="tel"
             placeholder="Phone"
-            className="bg-[#F4F4F4] h-[69px] pl-5 w-full"
+            className="bg-[#F4F4F4] 2xl:h-[69px] h-[50px] pl-5 w-full"
           />
         </div>
         <div className=" ">
           <textarea
             placeholder="Additional details"
-            className="bg-[#F4F4F4] h-[144px] pl-5 w-full pt-4"
+            className="bg-[#F4F4F4] h-[120px] pl-5 w-full pt-4"
           />
         </div>
         <Button>Submit Form</Button>

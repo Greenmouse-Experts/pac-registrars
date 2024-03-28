@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --blue-primary:'#202A44';
+  --blue-primary: "#202A44";
 }
 * {
   padding: 0;
@@ -30,6 +30,7 @@ footer {
 a {
   color: inherit;
   text-decoration: none;
+  font-size: 16px;
 }
 
 ul {
@@ -43,14 +44,19 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "Syne", sans-serif;
   overflow-wrap: break-word;
   hyphens: auto;
 }
-h4{
+h4 {
   font-size: 45px;
 }
-p,input,textarea {
+p,
+input,
+textarea {
+  font-family: "Sora", sans-serif;
   font-size: 18px;
+  line-height: 24px;
 }
 input,
 button,
@@ -67,19 +73,96 @@ select:focus {
   outline-offset: -1px;
 }
 
+section {
+  padding-left: 128px;
+  padding-right: 128px;
+}
 
-.aboutTop{
-  background-image: linear-gradient(to right bottom, #000000AB, #000000AB), url(../public/images/accordion-about.png);
-  height: 500px;
+.aboutTop {
+  background-image: linear-gradient(to right bottom, #000000ab, #000000ab),
+    url(../images/accordion-about.png);
+  background-position: center;
+  height: 300px;
 }
 
 @media screen and (max-width: 1536px) {
-  p, input, textarea {
-    font-size: 14px;
+  p,
+  input,
+  textarea {
+    font-size: 12px;
+    line-height: 22.5px;
   }
-  h4{
+  a {
+    font-size: 12px;
+  }
+  footer a {
+    font-size: 10px;
+  }
+  h4 {
     font-size: 30px;
   }
+
+  section {
+    padding-left: 128px;
+    padding-right: 128px;
+  }
 }
+
+
+.css-coaelp-MuiPaper-root-MuiAccordion-root:first-of-type {
+border-radius: 20px;
+}
+.css-coaelp-MuiPaper-root-MuiAccordion-root{
+  background-color: transparent !important;
+}
+.css-1g2s7ly-MuiPaper-root-MuiAccordion-root{
+  background-color: transparent !important;
+}
+.css-1g2s7ly-MuiPaper-root-MuiAccordion-root{
+  box-shadow: none;
+}
+.css-1g2s7ly-MuiPaper-root-MuiAccordion-root::before{
+display: none;
+}
+
+
+
+.hero-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1; /* Ensure content is above the image */
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: right;
+  transition: background-image 0.5s ease;
+}
+
+.slide-1 .hero-image {
+  background-image: url('/images/hero-1.png');
+}
+
+.slide-2 .hero-image {
+  background-image: url('/images/hero-2.png');
+}
+
+.slide-3 .hero-image {
+  background-image: url('/images/hero-3.png');
+}
+
+.slide-4 .hero-image {
+  background-image: url('/images/hero-4.png');
+}
+
 
 

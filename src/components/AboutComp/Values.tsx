@@ -1,7 +1,7 @@
 function Values() {
   return (
     <>
-      <section className="px-20 2xl:px-24 py-16 bg-bluePrimary mb-20">
+      <section className="   py-16 bg-bluePrimary mb-20">
         <div className="">
           <p className="text-orangePrimary font-semibold ">
             Our Company Ethos and Values
@@ -29,7 +29,7 @@ function Values() {
           </div>
         </div>
       </section>
-      <section className="px-20 2xl:px-24 py-16 bg-[#F9F9F9] mb-20">
+      <section className="   py-16 bg-[#F9F9F9] mb-20">
         <div className="">
           <p className="text-orangePrimary font-semibold ">
             Our Company Ethos and Values

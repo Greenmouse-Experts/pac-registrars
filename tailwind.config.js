@@ -13,6 +13,7 @@ export default {
       backgroundImage: {
         heroImg: "url('/images/hero-1.png')",
         aboutImg: "url('/images/accordion-about.png')",
+        footerImg: "url('/images/footer-bg.png')",
       },
 
       fontFamily: {
