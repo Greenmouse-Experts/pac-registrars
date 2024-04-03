@@ -2,23 +2,23 @@ import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="bg-footerImg bg-center bg-no-repeat bg-cover pt-[100px] px-[80px]  pb-2 ">
-      <div className="flex gap-20">
-        <div className="2xl:w-[570px]  w-[400px] flex flex-col gap-10">
-          <p className="text-[16px] font-normal text-white">
+    <footer className="bg-footerImg bg-center bg-no-repeat bg-cover pt-[100px]  pb-2 ">
+      <div className="flex gap-20 md:flex-row flex-col items-center justify-center">
+        <div className="2xl:w-[500px]  md:w-[400px] w-full flex flex-col gap-10">
+          <p className="font-medium 2xl:text-[16px] text-[12px] text-white">
             Subscribe to our Newsletter
           </p>
-          <div className="relative flex items-center 2xl:w-[500px] w-[350px] ">
+          <div className="relative flex items-center 2xl:w-[450px] sm:w-[350px] w-full ">
             <input
               type="text"
               placeholder="Your email"
-              className="2xl:h-[82px] h-[55px] w-full rounded-[62px] bg-white p-2 pl-8"
+              className="2xl:h-[70px] h-[55px] w-full rounded-[62px] bg-white p-2 pl-8"
             />
-            <button className="absolute right-1 bg-[#F57C00] 2xl:w-[159px] w-[120px] 2xl:h-[72px] h-[48px] rounded-[43px] text-white">
+            <button className="absolute right-1 bg-[#F57C00] 2xl:w-[150px] w-[120px] 2xl:h-[62px] h-[48px] rounded-[43px] text-white">
               submit
             </button>
           </div>
-          <p className="text-white text-[12px] leading-[42.3px]">
+          <p className="text-white 2xl:text-[16px] text-[12px] leading-[42.3px]">
             PAC Registrars, a subsidiary of PanAfrican Capital Holdings Limited
             was established in 2006 as Spring Registrars Limited.{" "}
           </p>
@@ -26,7 +26,7 @@ function Footer() {
         <div className="flex flex-wrap 2xl:gap-20 gap-14">
           <div>
             <p className="font-medium 2xl:text-[16px] text-[12px] text-white">Company</p>
-            <ul className="flex flex-col 2xl:gap-8 gap-4 mt-14">
+            <ul className="flex flex-col 2xl:gap-6 gap-4 mt-14">
               <li className="text-[10px] text-grayPrimary font-medium">
                 <NavLink to="/">Home</NavLink>
               </li>
@@ -46,7 +46,7 @@ function Footer() {
           </div>
           <div>
             <p className="font-medium 2xl:text-[16px] text-[12px] text-white">Useful Links</p>
-            <ul className="flex flex-col 2xl:gap-8 gap-4 mt-14">
+            <ul className="flex flex-col 2xl:gap-6 gap-4 mt-14">
               <li className="text-[12px] text-grayPrimary font-medium">
                 <NavLink to="/">Downloads</NavLink>
               </li>
@@ -66,7 +66,7 @@ function Footer() {
           </div>
           <div>
             <p className="font-medium 2xl:text-[16px] text-[12px] text-white">Social</p>
-            <ul className="flex flex-col 2xl:gap-8 gap-4 mt-14">
+            <ul className="flex flex-col 2xl:gap-6 gap-4 mt-14">
               <li className="text-[12px] text-grayPrimary font-medium">
                 <NavLink to="/">Facebook</NavLink>
               </li>
@@ -86,7 +86,7 @@ function Footer() {
           </div>
           <div>
             <p className="font-medium 2xl:text-[16px] text-[12px] text-white">Contact Us</p>
-            <ul className="flex flex-col 2xl:gap-8 gap-4 mt-14">
+            <ul className="flex flex-col 2xl:gap-6 gap-4 mt-14">
               <li className="text-[12px] text-grayPrimary font-medium">
                 <NavLink to="/">122, Bode Thomas St, Surulere, Lagos.</NavLink>
               </li>

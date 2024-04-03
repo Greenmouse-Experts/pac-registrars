@@ -7,6 +7,7 @@ import Leadership from "./pages/Leadership";
 import Management from "./pages/Management";
 import Client from "./pages/Client";
 import Faqs from "./pages/Faqs";
+import Contact from "./pages/Contact";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/faqs",
         element: <Faqs />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },

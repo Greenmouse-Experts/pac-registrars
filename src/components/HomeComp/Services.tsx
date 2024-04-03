@@ -3,17 +3,17 @@ import { NavLink } from "react-router-dom";
 function Services() {
   return (
     <section className=" bg-white text-black  pb-10 pt-16">
-      <div className="flex items-center justify-between">
-        <div className=" w-[33%] font-syne">
+      <div className="flex md:flex-row md:gap-0 gap-5 flex-col items-center justify-between">
+        <div className=" md:w-[33%] w-full font-syne">
           <p className="text-orangePrimary font-semibold ">
             Get to know our services and expertise
           </p>
-          <h4 className="font-bold font-syne capitalize leading-9">
+          <h4 className="font-bold font-syne capitalize">
             The best solution for future business!
           </h4>
         </div>
-        <div className=" w-[54%]">
-          <p className="font-sora 2xl:leading-[40px] font-medium leading-7 text-[14px]">
+        <div className=" md:w-[54%] w-full">
+          <p className="font-sora font-medium leading-7 2xl:text-[18px] 2xl:leading-[35px] text-[14px]">
             To help our clients go from dreaming to doing, we have our core
             beliefs that are central to their investing success. We’re here to
             help with any questions you have on your path to find financial
@@ -28,10 +28,10 @@ function Services() {
       </div>
 
       {/* services cards */}
-      <div className="mt-16 flex gap-5 ">
+      <div className="mt-16 md:flex md:flex-row flex-col gap-5 ">
         <div className="max-w-[400px] shadow-md px-10 py-10">
-          <img src="/icons/file.svg" alt="file" />
-          <h5 className="2xl:text-2xl text-[16px] font-semibold font-syne mt-10">
+          <img src="/icons/file.svg" alt="file" className="2xl:w-[60px]" />
+          <h5 className="2xl:text-[20px] text-[16px] font-semibold font-syne mt-10">
             Register Maintenance and Data Management
           </h5>
           <p className="font-sora text-grayPrimary2 mt-8">
@@ -44,8 +44,8 @@ function Services() {
           </button>
         </div>
         <div className="max-w-[400px] shadow-md px-10 py-10">
-          <img src="/icons/court.svg" alt="file" />
-          <h5 className="2xl:text-2xl text-[16px] font-semibold font-syne mt-10">
+          <img src="/icons/court.svg" alt="file" className="2xl:w-[60px] w-[70px]" />
+          <h5 className="2xl:text-[20px] text-[16px] font-semibold font-syne mt-10">
             Corporate and Private Probate Services
           </h5>
           <p className="font-sora text-grayPrimary2 mt-8">
@@ -58,8 +58,8 @@ function Services() {
           </button>
         </div>
         <div className="max-w-[400px] shadow-md px-10 py-10">
-          <img src="/icons/bank.svg" alt="file" />
-          <h5 className="2xl:text-2xl text-[16px] font-semibold font-syne mt-10">
+          <img src="/icons/bank.svg" alt="file" className="2xl:w-[60px] w-[70px]" />
+          <h5 className="2xl:text-[20px] text-[16px] font-semibold font-syne mt-10">
             Corporate / Government Bond Issues
           </h5>
           <p className="font-sora text-grayPrimary2 mt-8">
@@ -72,8 +72,8 @@ function Services() {
           </button>
         </div>
         <div className="max-w-[400px] shadow-md px-10 py-10">
-          <img src="/icons/folder.svg" alt="file" />
-          <h5 className="2xl:text-2xl text-[16px] font-semibold font-syne mt-10">
+          <img src="/icons/folder.svg" alt="file" className="2xl:w-[60px] w-[70px]" />
+          <h5 className="2xl:text-[20px] text-[16px] font-semibold font-syne mt-10">
             Registrar to Offer Services
           </h5>
           <p className="font-sora text-grayPrimary2 mt-8">

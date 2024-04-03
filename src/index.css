@@ -49,13 +49,14 @@ h6 {
   hyphens: auto;
 }
 h4 {
-  font-size: 45px;
+  font-size: 40px;
+  line-break: 45px;
 }
 p,
 input,
 textarea {
   font-family: "Sora", sans-serif;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 24px;
 }
 input,
@@ -73,7 +74,7 @@ select:focus {
   outline-offset: -1px;
 }
 
-section {
+section,footer {
   padding-left: 128px;
   padding-right: 128px;
 }
@@ -82,7 +83,19 @@ section {
   background-image: linear-gradient(to right bottom, #000000ab, #000000ab),
     url(../images/accordion-about.png);
   background-position: center;
-  height: 300px;
+  height: 400px;
+}
+
+
+
+@media screen and (min-width: 1536px) {
+  section, footer {
+    padding-left: 135px;
+    padding-right: 135px;
+  }
+  footer a {
+    font-size: 13px;
+  }
 }
 
 @media screen and (max-width: 1536px) {
@@ -102,30 +115,50 @@ section {
     font-size: 30px;
   }
 
-  section {
+  section, footer {
     padding-left: 128px;
     padding-right: 128px;
+  }
+  .aboutTop {
+    height: 300px;
   }
 }
 
 
+@media screen and (min-width: 768px) {
+  .unset {
+    position: unset;
+  }
+}
+@media screen and (max-width: 768px) {
+  header a, a:hover {
+    display: block;
+    padding: 8px;
+    font-size: 15px;
+  }
+
+  section,footer {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+}
+
 .css-coaelp-MuiPaper-root-MuiAccordion-root:first-of-type {
-border-radius: 20px;
+  border-radius: 20px;
 }
-.css-coaelp-MuiPaper-root-MuiAccordion-root{
+.css-coaelp-MuiPaper-root-MuiAccordion-root {
   background-color: transparent !important;
 }
-.css-1g2s7ly-MuiPaper-root-MuiAccordion-root{
+.css-1g2s7ly-MuiPaper-root-MuiAccordion-root {
   background-color: transparent !important;
 }
-.css-1g2s7ly-MuiPaper-root-MuiAccordion-root{
+.css-1g2s7ly-MuiPaper-root-MuiAccordion-root {
   box-shadow: none;
 }
-.css-1g2s7ly-MuiPaper-root-MuiAccordion-root::before{
-display: none;
+.css-1g2s7ly-MuiPaper-root-MuiAccordion-root::before {
+  display: none;
 }
-
-
 
 .hero-container {
   position: relative;
@@ -149,20 +182,17 @@ display: none;
 }
 
 .slide-1 .hero-image {
-  background-image: url('/images/hero-1.png');
+  background-image: url("/images/hero-1.png");
 }
 
 .slide-2 .hero-image {
-  background-image: url('/images/hero-2.png');
+  background-image: url("/images/hero-2.png");
 }
 
 .slide-3 .hero-image {
-  background-image: url('/images/hero-3.png');
+  background-image: url("/images/hero-3.png");
 }
 
 .slide-4 .hero-image {
-  background-image: url('/images/hero-4.png');
+  background-image: url("/images/hero-4.png");
 }
-
-
-

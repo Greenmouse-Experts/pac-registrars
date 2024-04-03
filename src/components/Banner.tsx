@@ -21,13 +21,7 @@ function Banner({ page, link }: BannerProps) {
           {">"}&nbsp;<span className="font-syne text-[14px]"> {page} </span>
         </p>
       </div>
-      <div className="border border-white rounded-full p-5 absolute  right-20 bottom-8">
-        <img
-          src="/icons/arrow-right.svg"
-          alt="arrow"
-          className="w-[70px] h-[70px]"
-        />
-      </div>
+      
     </section>
   );
 }

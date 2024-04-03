@@ -5,7 +5,7 @@ function Hero() {
   const [currentSlide, setCurrentSlide] = useState(1);
   const slideLength = 4; // Total number of slides
   const transitionTime = 3000; // Transition time in milliseconds
-  let slideInterval:number;
+  let slideInterval: number;
 
   useEffect(() => {
     // Auto change slide at intervals
@@ -26,24 +26,24 @@ function Hero() {
     );
   };
 
-  const backgroundImageUrl = `url(/images/hero-${currentSlide}.png)`
+  const backgroundImageUrl = `url(/images/hero-${currentSlide}.png)`;
 
   return (
     <section
-    style={{backgroundImage: backgroundImageUrl}}
-      className={`transition-opacity duration-500 bg-center bg-cover h-screen 2xl:py-32 py-20 pt-24 text-white relative`}
+      style={{ backgroundImage: backgroundImageUrl }}
+      className={`transition-opacity duration-500 bg-center bg-cover h-[60%] 2xl:py-32 py-20 pt-24 text-white relative`}
     >
-      <div className="max-w-[500px]">
-        <p className="2xl:text-lg font-semibold text-white font-syne">
+      <div className="2xl:max-w-[46%] md:max-w-[60%] w-full ">
+        <p className="2xl:text-[17px] 2xl:font-[400] font-semibold text-white font-syne">
           Take control of your financial future and start growing your wealth
         </p>
-        <h4 className="2xl:text-[70px] text-[45px] font-bold font-montserrat 2xl:leading-[88.2px] leading-[60px] capitalize text-white mt-0 2xl:mt-0">
+        <h4 className="2xl:text-[55px] text-[45px] font-bold font-montserrat 2xl:leading-[70.2px] leading-[60px] capitalize text-white mt-0 2xl:mt-0">
           Grow your wealth with our leading edge solutions!
         </h4>
       </div>
 
-      <div className="2xl:mt-20 mt-16 max-w-[400px]">
-        <p className="font-syne text-[16px] leader-7 tracking-wider">
+      <div className="2xl:mt-20 mt-16 md:max-w-[38%] w-full">
+        <p className="font-syne 2xl:text-[22px] text-[16px] leader-7 tracking-wider">
           Grow Your Wealth
         </p>
 
@@ -53,17 +53,27 @@ function Hero() {
         </div>
 
         <div className="mt-8 flex items-start justify-between">
-          <p className="font-sora 2xl:text-[22px] text-[14px] font-[300] max-w-[300px]">
+          <p className="font-sora 2xl:text-[18px] text-[14px] font-[300] 2xl:leading-[30px]  leading-[45px] max-w-[80%]">
             We help our clients achieve their goals by providing expert
             consulting services
           </p>
           <div className="gap-4 flex items-center">
-            <FaArrowLeft size={14} color="white" className="cursor-pointer" onClick={handlePrevSlide} />
-            <FaArrowRight size={14} color="white" className="cursor-pointer" onClick={handleNextSlide} />
+            <FaArrowLeft
+              size={14}
+              color="white"
+              className="cursor-pointer"
+              onClick={handlePrevSlide}
+            />
+            <FaArrowRight
+              size={14}
+              color="white"
+              className="cursor-pointer"
+              onClick={handleNextSlide}
+            />
           </div>
         </div>
       </div>
-      <div className="border border-white rounded-full p-5 absolute right-24 bottom-24">
+      <div className="border border-white rounded-full p-5 absolute md:right-24 md:bottom-24 right-5 bottom-6 hover:translate-y-[-5px] transition-all">
         <img
           src="/icons/arrow-right.svg"
           alt="arrow"

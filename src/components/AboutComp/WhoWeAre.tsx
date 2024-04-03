@@ -2,7 +2,7 @@ function WhoWeAre() {
   return (
     <section className="py-10 bg-white flex items-center justify-between ">
       <div className="w-[55%] font-syne">
-        <p className="text-orangePrimary text-[12px] font-medium ">
+        <p className="text-orangePrimary font-medium ">
           About Pac Registrars
         </p>
         <h4 className=" font-bold font-syne capitalize">Who We Are!</h4>

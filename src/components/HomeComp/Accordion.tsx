@@ -4,22 +4,23 @@ import { GoDash } from "react-icons/go";
 interface AccodionProps {
   title: string;
   answer: string;
+  open: boolean;
 }
 
-const Accordion = ({ title, answer }: AccodionProps) => {
-  const [accordionOpen, setAccordionOpen] = useState(false);
+const Accordion = ({ title, answer, open }: AccodionProps) => {
+  const [accordionOpen, setAccordionOpen] = useState(open);
 
   return (
     <>
       <div
-        className={`py-4 px-5 rounded-lg ${
+        className={`py-4 px-5 2xl:py-5 rounded-lg ${
           accordionOpen ? "bg-bluePrimary text-white mb-5" : "bg-white mb-5"
         }`}
         onClick={() => setAccordionOpen(!accordionOpen)}
       >
         <button className="flex justify-between w-full items-center">
           <span
-            className={`font-sora text-[12px] font-normal ${
+            className={`font-sora 2xl:text-[16px] 2xl:font-[400] text-[12px] font-normal  ${
               accordionOpen ? "white" : "black"
             }`}
           >
@@ -41,7 +42,7 @@ const Accordion = ({ title, answer }: AccodionProps) => {
             accordionOpen ? "mb-6" : ""
           }`}
         >
-          {answer}
+         <p className="leading-[30px]"> {answer}</p>
         </div>
       </div>
     </>
