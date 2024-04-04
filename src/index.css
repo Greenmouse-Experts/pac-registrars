@@ -187,18 +187,18 @@ h4{
   transition: background-image 0.5s ease;
 }
 
-.slide-1 .hero-image {
+.hero-1 {
   background-image: url("/images/hero-1.png");
 }
 
-.slide-2 .hero-image {
+ .hero-2 {
   background-image: url("/images/hero-2.png");
 }
 
-.slide-3 .hero-image {
+.hero-3 {
   background-image: url("/images/hero-3.png");
 }
 
-.slide-4 .hero-image {
+ .hero-4 {
   background-image: url("/images/hero-4.png");
 }

@@ -31,7 +31,7 @@ function Hero() {
   return (
     <section
       style={{ backgroundImage: backgroundImageUrl }}
-      className={`transition-opacity duration-500 bg-center bg-cover md:h-[60%] h-[400px] 2xl:py-32 md:py-20 md:pt-24 pt-10 text-white relative`}
+      className={`hero-${currentSlide} transition-opacity duration-500 bg-center bg-cover md:h-[60%] h-[400px] 2xl:py-32 md:py-20 md:pt-24 pt-10 text-white relative`}
     >
       <div className="2xl:max-w-[46%] md:max-w-[60%] w-full ">
         <p className="2xl:text-[17px] 2xl:font-[400] font-semibold text-white font-syne">
