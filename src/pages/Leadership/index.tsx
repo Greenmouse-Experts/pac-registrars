@@ -5,7 +5,7 @@ function Leadership() {
     <>
       <Banner page="Leadership" link="/" />
       <section className="bg-white py-16">
-        <div className="flex gap-6 justify-start flex-wrap">
+        <div className="flex md:gap-6 gap-14 md:justify-start justify-center flex-wrap">
           <div className="relative shadow-lg flex justify-center">
             <img
               src="/images/leader-1.png"
@@ -40,7 +40,7 @@ function Leadership() {
             </div>
           </div>
         </div>
-        <div className="flex gap-6 justify-start flex-wrap mt-10">
+        <div className="flex md:gap-6 gap-14 md:justify-start justify-center flex-wrap mt-10">
           <div className="relative shadow-lg flex justify-center">
             <img
               src="/images/leader-4.png"

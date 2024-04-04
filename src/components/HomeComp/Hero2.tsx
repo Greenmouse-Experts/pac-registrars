@@ -28,7 +28,7 @@ function Hero2() {
       <div className="pt-20 flex md:flex-row flex-col md:justify-between justify-center items-center md:gap-0 gap-5">
         <div className="2xl:max-w-[303px] md:max-w-[200px] w-[80%] ">
           <div>
-            <div className="flex items-center">
+            <div className="flex items-center justify-center">
               <p className="2xl:text-[45px] text-[30px] font-montserrat font-semibold">
                 6,154
               </p>{" "}
@@ -46,7 +46,7 @@ function Hero2() {
         <div className="w-[1px] bg-grayPrimary md:block hidden" />
         <div className="2xl:max-w-[303px] md:max-w-[200px] w-[80%] ">
           <div>
-            <div className="flex items-center">
+            <div className="flex items-center justify-center">
               <p className="2xl:text-[45px] text-[30px] font-montserrat font-semibold">
                 0,512
               </p>{" "}
@@ -64,7 +64,7 @@ function Hero2() {
         <div className="w-[1px] bg-grayPrimary md:block hidden" />
         <div className="2xl:max-w-[303px] md:max-w-[200px] w-[80%] ">
           <div>
-            <div className="flex items-center">
+            <div className="flex items-center justify-center">
               <p className="2xl:text-[45px] text-[30px] font-montserrat font-semibold">
                 1,784
               </p>{" "}
@@ -82,7 +82,7 @@ function Hero2() {
         <div className="w-[1px] bg-grayPrimary md:block hidden" />
         <div className="2xl:max-w-[303px] md:max-w-[200px] w-[80%] ">
           <div>
-            <div className="flex items-center">
+            <div className="flex items-center justify-center">
               <p className="2xl:text-[45px] text-[30px] font-montserrat font-semibold">
                 0,17
               </p>{" "}

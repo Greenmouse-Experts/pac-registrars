@@ -2,8 +2,8 @@ import Button from "../Button";
 
 function ContactForm() {
   return (
-    <div className="flex justify-center 2xl:w-[90%] mx-auto ">
-      <div className="bg-[url('/images/contact-bg.png')] bg-cover bg-center w-[50%] py-16 px-16 text-white">
+    <div className="flex md:flex-row flex-col justify-center 2xl:w-[90%]  mx-auto ">
+      <div className="bg-[url('/images/contact-bg.png')] bg-cover bg-center md:w-[50%] w-full py-16 md:px-16 px-5 text-white">
         <h4 className="text-white font-montserrat font-semibold">
           Reach Out to Us
         </h4>
@@ -35,7 +35,7 @@ function ContactForm() {
         </div>
       </div>
 
-      <form className="flex w-[50%] bg-white flex-col 2xl:gap-8 gap-5 py-16 px-16">
+      <form className="flex md:w-[50%] w-full bg-white flex-col 2xl:gap-8 gap-5 py-16 md:px-16 px-5">
         <div className="font-monstrat flex flex-col gap-2 ">
           <label className="text-lg font-montserrat font-semibold">
             Full Name
@@ -75,7 +75,7 @@ function ContactForm() {
             className="bg-[#F4F4F4] h-[200px] pl-5 w-full pt-4"
           />
         </div>
-        <Button type="fit">Submit Form</Button>
+        <Button type="fit" color='orange'>Submit Form</Button>
       </form>
     </div>
   );

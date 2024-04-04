@@ -4,7 +4,7 @@ function Management() {
   return (
     <>
       <Banner page="Management" link="/" />
-      <section className="flex justify-between py-14 items-center bg-[#F9F9F9]">
+      <section className="flex md:flex-row flex-col justify-between md:gap-0 gap-10 py-14 items-center bg-[#F9F9F9]">
         <div className="relative shadow-lg flex justify-center ">
           <img
             src="/images/leader-5.png"
@@ -16,7 +16,7 @@ function Management() {
             <p className="font-normal">Managing Director/CEO</p>
           </div>
         </div>
-        <div className="w-[63%]">
+        <div className="md:w-[63%] w-full">
           <h6 className="text-lg font-semibold ">Ifeanyi John</h6>
           <p className="">Managing Director/CEO</p>
           <p className="text-grayPrimary2 mt-3">
@@ -40,8 +40,8 @@ function Management() {
           </p>
         </div>
       </section>
-      <section className="flex justify-between py-14 items-center bg-white">
-        <div className="w-[60%]">
+      <section className="flex md:flex-row flex-col-reverse justify-between md:gap-0 gap-10 py-14 items-center bg-white">
+        <div className="md:w-[60%] w-full">
           <h6 className="text-lg font-semibold ">Dennis Ogbu</h6>
           <p className="">Head, Business Development</p>
           <p className="text-grayPrimary2 mt-3">
@@ -77,7 +77,7 @@ function Management() {
         </div>
       </section>
 
-      <section className="flex justify-between py-14 items-center bg-[#F9F9F9]">
+      <section className="flex md:flex-row flex-col justify-between md:gap-0 gap-10 py-14 items-center bg-[#F9F9F9]">
         <div className="relative shadow-lg flex justify-center ">
           <img
             src="/images/leader-7.png"
@@ -89,7 +89,7 @@ function Management() {
             <p className="font-normal">System Administrator</p>
           </div>
         </div>
-        <div className="w-[63%]">
+        <div className="md:w-[63%] w-full">
           <h6 className="text-lg font-semibold ">Amadi Clifford</h6>
           <p className="">System Administrator</p>
           <p className="text-grayPrimary2 mt-3">
@@ -120,8 +120,8 @@ function Management() {
           </p>
         </div>
       </section>
-      <section className="flex justify-between py-14 items-center bg-white">
-        <div className="w-[60%]">
+      <section className="flex md:flex-row flex-col-reverse justify-between md:gap-0 gap-10 py-14 items-center bg-white">
+        <div className="md:w-[60%] w-full">
           <h6 className="text-lg font-semibold ">Aderonke Omotade</h6>
           <p className="">Head, Operations & Compliance</p>
           <p className="text-grayPrimary2 mt-3">
@@ -158,7 +158,7 @@ function Management() {
           </div>
         </div>
       </section>
-      <section className="flex justify-between py-14 items-center bg-[#F9F9F9]">
+      <section className="flex md:flex-row flex-col justify-between md:gap-0 gap-10 py-14 items-center bg-[#F9F9F9]">
         <div className="relative shadow-lg flex justify-center ">
           <img
             src="/images/leader-9.png"
@@ -172,7 +172,7 @@ function Management() {
             </p>
           </div>
         </div>
-        <div className="w-[63%]">
+        <div className="md:w-[63%] w-full">
           <h6 className="text-lg font-semibold ">Moses Ojo</h6>
           <p className="">Chief Economist/Head, Investment Research</p>
           <p className="text-grayPrimary2 mt-3">

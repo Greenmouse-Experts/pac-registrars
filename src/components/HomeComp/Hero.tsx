@@ -31,13 +31,13 @@ function Hero() {
   return (
     <section
       style={{ backgroundImage: backgroundImageUrl }}
-      className={`transition-opacity duration-500 bg-center bg-cover h-[60%] 2xl:py-32 py-20 pt-24 text-white relative`}
+      className={`transition-opacity duration-500 bg-center bg-cover md:h-[60%] h-[400px] 2xl:py-32 md:py-20 md:pt-24 pt-10 text-white relative`}
     >
       <div className="2xl:max-w-[46%] md:max-w-[60%] w-full ">
         <p className="2xl:text-[17px] 2xl:font-[400] font-semibold text-white font-syne">
           Take control of your financial future and start growing your wealth
         </p>
-        <h4 className="2xl:text-[55px] text-[45px] font-bold font-montserrat 2xl:leading-[70.2px] leading-[60px] capitalize text-white mt-0 2xl:mt-0">
+        <h4 className="2xl:text-[55px] md:text-[45px] text-[30px]  font-bold font-montserrat 2xl:leading-[70.2px] md:leading-[60px] leading-[40px] capitalize text-white mt-0 2xl:mt-0 ">
           Grow your wealth with our leading edge solutions!
         </h4>
       </div>
@@ -73,11 +73,11 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div className="border border-white rounded-full p-5 absolute md:right-24 md:bottom-24 right-5 bottom-6 hover:translate-y-[-5px] transition-all">
+      <div className="border border-white rounded-full p-5 absolute md:right-24 md:bottom-24 right-5 bottom-6 hover:translate-y-[-5px] transition-all md:block hidden">
         <img
           src="/icons/arrow-right.svg"
           alt="arrow"
-          className="w-[70px] h-[70px]"
+          className="md:w-[70px] md:h-[70px]  w-[30px] h-[30px]"
         />
       </div>
     </section>

@@ -2,13 +2,14 @@ import { ReactNode } from "react";
 
 interface ButtonProps {
   children: ReactNode;
+  color?: string;
   type:string
   onMouseEnter?:()=> void;
 }
 
-function Button({ children ,type, onMouseEnter}: ButtonProps) {
+function Button({ children ,type, color, onMouseEnter}: ButtonProps) {
   return (
-    <button onMouseEnter={() => onMouseEnter?.()} className={`bg-bluePrimary flex items-center gap-1 text-white 2xl:py-3 2xl:px-6 py-[5px] whitespace-nowrap px-4 text-sm ${type === 'fit' ? 'w-fit' :''}`}>{children}</button>
+    <button onMouseEnter={() => onMouseEnter?.()} className={`${color === 'orange' ? 'bg-orangePrimary ml-auto' : 'bg-bluePrimary'} flex gap-1 items-center text-white 2xl:py-3 2xl:px-6 py-[5px] whitespace-nowrap px-4 text-sm ${type === 'fit' ? 'w-fit' :''}`}>{children}</button>
   );
 }
 

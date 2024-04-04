@@ -10,7 +10,7 @@ function Client() {
           <h4 className=" font-bold font-syne capitalize">
             Our Robust Clientbase
           </h4>
-          <div className="grid grid-cols-4 gap-4 w-full my-10">
+          <div className="grid md:grid-cols-4 grid-col-1 gap-4 w-full my-10">
             <div className="bg-white px-10 h-[117px] flex items-center justify-center rounded-xl ">
               <img src="/images/client-1.svg" alt="" className="max-h-16" />
             </div>
