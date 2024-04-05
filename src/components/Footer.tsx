@@ -31,7 +31,7 @@ function Footer() {
                 <NavLink to="/">Home</NavLink>
               </li>
               <li className="text-[12px] text-grayPrimary font-medium">
-                <NavLink to="/">About Us</NavLink>
+                <NavLink to="/about">About Us</NavLink>
               </li>
               <li className="text-[12px] text-grayPrimary font-medium">
                 <NavLink to="/">Services</NavLink>
@@ -40,7 +40,7 @@ function Footer() {
                 <NavLink to="/">Gallary</NavLink>
               </li>
               <li className="text-[12px] text-grayPrimary font-medium">
-                <NavLink to="/">FAQs</NavLink>
+                <NavLink to="/faqs">FAQs</NavLink>
               </li>
             </ul>
           </div>

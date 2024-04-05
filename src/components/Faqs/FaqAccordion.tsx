@@ -3,7 +3,7 @@ import { FaPlus } from "react-icons/fa";
 
 interface AccodionProps {
   title: string;
-  answer: string;
+  answer: string | JSX.Element;
   open: boolean;
 }
 

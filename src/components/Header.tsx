@@ -207,7 +207,7 @@ function Header() {
             </NavLink>
           </span>
           <Button type="">
-            SELF SERVICE <IoMdArrowDropdown />
+            SELF SERVICE
           </Button>
         </div>
       </div>

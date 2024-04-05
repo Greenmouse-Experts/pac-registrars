@@ -76,6 +76,7 @@ function Services() {
           <h5 className="2xl:text-[20px] text-[16px] font-semibold font-syne mt-10">
             Registrar to Offer Services
           </h5>
+          <p className="opacity-0">none</p>
           <p className="font-sora text-grayPrimary2 mt-8">
             Our core beliefs drive our commitment to helping our clients achieve
             investing success. Our dedicated team is here to guide you every
@@ -92,7 +93,7 @@ function Services() {
           We focus on helping clients shape the future of their business, and
           execute strategies on the changing face of the customer.{" "}
           <span className="underline text-black">
-            <NavLink to="/">Contact Us!</NavLink>
+            <NavLink to="/contact">Contact Us!</NavLink>
           </span>
         </p>
       </div>
