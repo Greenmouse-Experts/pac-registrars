@@ -1,5 +1,13 @@
 import { useState, useEffect } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+// import hero1 from "../assets/hero-1.png";
+// import hero2 from "../assets/hero-2.png";
+// import hero3 from "../assets/hero-3.png";
+// import hero4 from "../assets/hero-4.png";
+// const hero1 = "https://asqyfzgqnbxthtasplew.supabase.co/storage/v1/object/public/cabin-images/hero-1.png"
+// const hero2 = "https://asqyfzgqnbxthtasplew.supabase.co/storage/v1/object/public/cabin-images/hero-2.png"
+// const hero3 = "https://asqyfzgqnbxthtasplew.supabase.co/storage/v1/object/public/cabin-images/hero-3.png"
+// const hero4 = "https://asqyfzgqnbxthtasplew.supabase.co/storage/v1/object/public/cabin-images/hero-4.png"
 
 function Hero() {
   const [currentSlide, setCurrentSlide] = useState(1);
@@ -26,11 +34,10 @@ function Hero() {
     );
   };
 
-  const backgroundImageUrl = `url(/images/hero-${currentSlide}.png)`;
+  //const backgroundImageUrl = `url(/images/hero-${currentSlide}.png)`;
 
   return (
     <section
-      style={{ backgroundImage: backgroundImageUrl }}
       className={`hero-${currentSlide} transition-opacity duration-500 bg-center bg-cover md:h-[60%] h-[400px] 2xl:py-32 md:py-20 md:pt-24 pt-10 text-white relative`}
     >
       <div className="2xl:max-w-[46%] md:max-w-[60%] w-full ">

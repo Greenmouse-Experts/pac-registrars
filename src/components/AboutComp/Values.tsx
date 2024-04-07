@@ -10,7 +10,7 @@ function Values() {
             Our Core Values
           </h4>
         </div>
-        <div className="flex gap-10 mt-10">
+        <div className="flex md:flex-row flex-col gap-10 mt-10">
           <div className="bg-white py-8 px-10">
             <h4 className="text-[25px] font-syne font-semibold">Our Mission</h4>
             <p className="text-[#606060] 2xl:mt-5 mt-3 2xl:leading-[33px] leading-[25px] font-sora ">
@@ -40,8 +40,8 @@ function Values() {
         </div>
 
         <div className="mt-8">
-          <div className="flex gap-8">
-            <div className=" bg-white shadow-sm w-[505px] h-[356px] p-8 flex flex-col gap-6">
+          <div className="flex md:flex-row flex-col gap-8">
+            <div className=" bg-white shadow-sm md:w-[505px] w-full h-[356px] p-8 flex flex-col gap-6">
               <img src="/icons/file.svg" alt="" className="h-[69px] w-[69px]" />
               <h6 className="font-syne font-semibold text-2xl">Service</h6>
               <p className="text-grayPrimary2 leading-[33.3px]">
@@ -50,7 +50,7 @@ function Values() {
                 on trust and mutual success.
               </p>
             </div>
-            <div className=" bg-white shadow-sm w-[505px] h-[356px] p-8 flex flex-col gap-6">
+            <div className=" bg-white shadow-sm md:w-[505px] w-full h-[356px] p-8 flex flex-col gap-6">
               <img src="/icons/file.svg" alt="" className="h-[69px] w-[69px]" />
               <h6 className="font-syne font-semibold text-2xl">
                 Professionalism
@@ -61,7 +61,7 @@ function Values() {
                 reliability with clients and stakeholders.
               </p>
             </div>
-            <div className=" bg-white shadow-sm w-[505px] h-[356px] p-8 flex flex-col gap-6">
+            <div className=" bg-white shadow-sm md:w-[505px] w-full h-[356px] p-8 flex flex-col gap-6">
               <img src="/icons/file.svg" alt="" className="h-[69px] w-[69px]" />
               <h6 className="font-syne font-semibold text-2xl">Integrity</h6>
               <p className="text-grayPrimary2 leading-[33.3px]">
@@ -71,8 +71,8 @@ function Values() {
               </p>
             </div>
           </div>
-          <div className="flex gap-8 mt-8">
-            <div className=" bg-white shadow-sm w-[505px] h-[356px] p-8 flex flex-col gap-6">
+          <div className="flex md:flex-row flex-col gap-8 mt-8">
+            <div className=" bg-white shadow-sm md:w-[505px] w-full h-[356px] p-8 flex flex-col gap-6">
               <img src="/icons/file.svg" alt="" className="h-[69px] w-[69px]" />
               <h6 className="font-syne font-semibold text-2xl">Respect</h6>
               <p className="text-grayPrimary2 leading-[33.3px]">
@@ -81,7 +81,7 @@ function Values() {
                 environment of mutual respect
               </p>
             </div>
-            <div className=" bg-white shadow-sm w-[505px] h-[356px] p-8 flex flex-col gap-6">
+            <div className=" bg-white shadow-sm md:w-[505px] w-full h-[356px] p-8 flex flex-col gap-6">
               <img src="/icons/file.svg" alt="" className="h-[69px] w-[69px]" />
               <h6 className="font-syne font-semibold text-2xl">Innovation</h6>
               <p className="text-grayPrimary2 leading-[33.3px]">
@@ -90,7 +90,7 @@ function Values() {
                 innovation, we stay at the forefront of industry trends
               </p>
             </div>
-            <div className=" bg-white shadow-sm w-[505px] h-[356px] p-8 flex flex-col gap-6">
+            <div className=" bg-white shadow-sm md:w-[505px] w-full h-[356px] p-8 flex flex-col gap-6">
               <img src="/icons/file.svg" alt="" className="h-[69px] w-[69px]" />
               <h6 className="font-syne font-semibold text-2xl">Team Spirit</h6>
               <p className="text-grayPrimary2 leading-[33.3px]">

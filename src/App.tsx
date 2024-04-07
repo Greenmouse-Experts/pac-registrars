@@ -8,6 +8,7 @@ import Management from "./pages/Management";
 import Client from "./pages/Client";
 import Faqs from "./pages/Faqs";
 import Contact from "./pages/Contact";
+import Media from "./pages/Media";
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/media",
+        element: <Media />,
       },
     ],
   },

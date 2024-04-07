@@ -29,60 +29,74 @@ function Services() {
 
       {/* services cards */}
       <div className="mt-16 md:flex md:flex-row flex-col gap-5 ">
-        <div className="max-w-[400px] shadow-md px-10 py-10">
+        <div className="md:max-w-[400px] w-full md:h-[540px] shadow-md px-10 py-10 flex flex-col items-start">
           <img src="/icons/file.svg" alt="file" className="2xl:w-[60px]" />
           <h5 className="2xl:text-[20px] text-[16px] font-semibold font-syne mt-10">
             Register Maintenance and Data Management
           </h5>
-          <p className="font-sora text-grayPrimary2 mt-8">
+
+          <p className="font-sora text-grayPrimary2 mt-10">
             By meticulously managing registers and maintaining accurate data
             records, organizations can streamline operations, enhance
             decision-making processes, and ensure regulatory compliance.
           </p>
-          <button className="text-orangePrimary font-sora text-[12px] mt-10">
+          <button className="text-orangePrimary font-sora text-[12px] mt-auto">
             Read more
           </button>
         </div>
-        <div className="max-w-[400px] shadow-md px-10 py-10">
-          <img src="/icons/court.svg" alt="file" className="2xl:w-[60px] w-[70px]" />
+        <div className="md:max-w-[400px] w-full md:h-[540px] shadow-md px-10 py-10 flex flex-col items-start">
+          <img
+            src="/icons/court.svg"
+            alt="file"
+            className="2xl:w-[60px] w-[70px]"
+          />
           <h5 className="2xl:text-[20px] text-[16px] font-semibold font-syne mt-10">
             Corporate and Private Probate Services
           </h5>
-          <p className="font-sora text-grayPrimary2 mt-8">
+          <p className="opacity-0">none</p>
+          <p className="font-sora text-grayPrimary2 mt-10">
             Our dedicated team specializes in probate administration, estate
             planning, and asset distribution, ensuring a smooth and efficient
             process tailored to your specific needs.
           </p>
-          <button className="text-orangePrimary font-sora text-[12px] mt-10">
+          <button className="text-orangePrimary font-sora text-[12px] mt-auto">
             Read more
           </button>
         </div>
-        <div className="max-w-[400px] shadow-md px-10 py-10">
-          <img src="/icons/bank.svg" alt="file" className="2xl:w-[60px] w-[70px]" />
+        <div className="md:max-w-[400px] w-full md:h-[540px] shadow-md px-10 py-10 flex flex-col items-start">
+          <img
+            src="/icons/bank.svg"
+            alt="file"
+            className="2xl:w-[60px] w-[70px]"
+          />
           <h5 className="2xl:text-[20px] text-[16px] font-semibold font-syne mt-10">
             Corporate / Government Bond Issues
           </h5>
-          <p className="font-sora text-grayPrimary2 mt-8">
+          <p className="font-sora text-grayPrimary2 mt-10">
             With a deep understanding of market dynamics and regulatory
             requirements, we ensure seamless and successful bond offerings that
             meet our clients' financing needs.
           </p>
-          <button className="text-orangePrimary font-sora text-[12px] mt-10">
+          <button className="text-orangePrimary font-sora text-[12px] mt-auto">
             Read more
           </button>
         </div>
-        <div className="max-w-[400px] shadow-md px-10 py-10">
-          <img src="/icons/folder.svg" alt="file" className="2xl:w-[60px] w-[70px]" />
+        <div className="md:max-w-[400px] w-full md:h-[540px] shadow-md px-10 py-10 flex flex-col items-start">
+          <img
+            src="/icons/folder.svg"
+            alt="file"
+            className="2xl:w-[60px] w-[70px]"
+          />
           <h5 className="2xl:text-[20px] text-[16px] font-semibold font-syne mt-10">
             Registrar to Offer Services
           </h5>
           <p className="opacity-0">none</p>
-          <p className="font-sora text-grayPrimary2 mt-8">
+          <p className="font-sora text-grayPrimary2 mt-10">
             Our core beliefs drive our commitment to helping our clients achieve
             investing success. Our dedicated team is here to guide you every
             step of the way on your journey towards financial security.
           </p>
-          <button className="text-orangePrimary font-sora text-[12px] mt-10">
+          <button className="text-orangePrimary font-sora text-[12px] mt-auto">
             Read more
           </button>
         </div>

@@ -1,7 +1,7 @@
 function WhoWeAre() {
   return (
-    <section className="py-10 bg-white flex items-center justify-between ">
-      <div className="w-[55%] font-syne">
+    <section className="py-10 bg-white flex md:flex-row flex-col items-center justify-between ">
+      <div className="md:w-[55%] w-full font-syne">
         <p className="text-orangePrimary font-medium ">
           About Pac Registrars
         </p>
@@ -25,7 +25,7 @@ function WhoWeAre() {
           identified sectors.
         </p>
       </div>
-      <div className="w-[40%] relative">
+      <div className="md:w-[40%] w-full relative">
         <img
           src="/images/whoweare.png"
           alt=""

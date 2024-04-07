@@ -3,6 +3,7 @@ import Button from "./Button";
 import { useState } from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
 
+
 function Header() {
   const [open, setOpen] = useState(false);
   const [open1, setOpen1] = useState(false);
@@ -11,12 +12,12 @@ function Header() {
   const [menu, setMenu] = useState(false);
 
   return (
-    <header className="bg-white 2xl:h-[112px] flex items-center justify-between md:px-20 px-5 2xl:px-24 py-2 relative ">
+    <header className="bg-white 2xl:h-[112px] flex items-center justify-between md:px-10 px-5 2xl:px-14 py-2 relative ">
       <NavLink to="/">
         <img
-          src="/logo.svg"
+          src="/logo.jpg"
           alt="logo"
-          className="md:w-[300px] w-[100px] object-contain"
+          className="md:w-[300px] w-[200px] h-[50px] md:mb-1"
         />
       </NavLink>
 
@@ -26,7 +27,7 @@ function Header() {
         } left-0 unset transition-all`}
       >
         <nav className="w-full">
-          <ul className="md:flex md:flex-row flex-col 2xl:gap-[59px] items-center  gap-[25px]">
+          <ul className="md:flex md:flex-row flex-col 2xl:gap-[30px] items-center  gap-[20px]">
             <li className="">
               <NavLink
                 className="hover:bg-bluePrimary hover:text-white w-full md:hover:bg-white md:hover:text-bluePrimary transition-all"
@@ -37,7 +38,7 @@ function Header() {
             </li>
             <li className="relative" onMouseLeave={() => setOpen(false)}>
               <p
-                className="2xl:text-[15px] md:text-[12px] font-normal mt-1 ml-1 md:ml-0 cursor-pointer flex items-center"
+                className="2xl:text-[17px] md:text-[13px] font-normal mt-1 ml-1 md:ml-0 cursor-pointer flex items-center text-nowrap"
                 onMouseEnter={() => setOpen(true)}
               >
                 About Us <IoMdArrowDropdown />
@@ -78,17 +79,11 @@ function Header() {
                 <NavLink
                   className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
                   onClick={() => setOpen((prev) => !prev)}
-                  to="/clients"
+                  to="/"
                 >
                   Careers
                 </NavLink>
-                <NavLink
-                  className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
-                  onClick={() => setOpen((prev) => !prev)}
-                  to="/clients"
-                >
-                  Gallery
-                </NavLink>
+               
                 <NavLink
                   className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
                   onClick={() => setOpen((prev) => !prev)}
@@ -98,9 +93,37 @@ function Header() {
                 </NavLink>
               </span>
             </li>
+            <li className="relative" onMouseLeave={() => setOpen2(false)}>
+              <p
+                className="2xl:text-[17px] md:text-[13px] font-normal mt-1 ml-1 md:ml-0 cursor-pointer flex items-center"
+                onMouseEnter={() => setOpen2(true)}
+              >
+                Product <IoMdArrowDropdown />
+              </p>
+              <span
+                className={`border border-white py-1 absolute w-[200px] left-[-5px] flex flex-col justify-center items-center divide-y-[1px] divide-slate-500 bottom-[-10] z-50 bg-gray-100 ${
+                  open2 ? "block" : "hidden"
+                }`}
+              >
+                <NavLink
+                  className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
+                  onClick={() => setOpen2((prev) => !prev)}
+                  to="/"
+                >
+                  Digital Update Form
+                </NavLink>
+                <NavLink
+                  className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
+                  onClick={() => setOpen2((prev) => !prev)}
+                  to="/"
+                >
+                  Annual Report
+                </NavLink>
+              </span>
+            </li>
             <li className="relative" onMouseLeave={() => setOpen1(false)}>
               <p
-                className="2xl:text-[15px] md:text-[12px] font-normal mt-1 ml-1 md:ml-0 cursor-pointer flex items-center"
+                className="2xl:text-[17px] md:text-[13px] font-normal mt-1 ml-1 md:ml-0 cursor-pointer flex items-center"
                 onMouseEnter={() => setOpen1(true)}
               >
                 Services <IoMdArrowDropdown />
@@ -133,41 +156,30 @@ function Header() {
                 </NavLink>
               </span>
             </li>
-            <li className="relative" onMouseLeave={() => setOpen2(false)}>
-              <p
-                className="2xl:text-[15px] md:text-[12px] font-normal mt-1 ml-1 md:ml-0 cursor-pointer flex items-center"
-                onMouseEnter={() => setOpen2(true)}
-              >
-                Download <IoMdArrowDropdown />
-              </p>
-              <span
-                className={`border border-white py-1 absolute w-[200px] left-[-5px] flex flex-col justify-center items-center divide-y-[1px] divide-slate-500 bottom-[-10] z-50 bg-gray-100 ${
-                  open2 ? "block" : "hidden"
-                }`}
-              >
-                <NavLink
-                  className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
-                  onClick={() => setOpen2((prev) => !prev)}
-                  to="/"
-                >
-                  Digital Update Form
-                </NavLink>
-                <NavLink
-                  className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
-                  onClick={() => setOpen2((prev) => !prev)}
-                  to="/"
-                >
-                  Annual Report
-                </NavLink>
-              </span>
-            </li>
+           
 
             <li>
               <NavLink
                 className="hover:bg-bluePrimary hover:text-white w-full md:hover:bg-white md:hover:text-bluePrimary transition-all"
+                to="/"
+              >
+               Resource
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className="hover:bg-bluePrimary hover:text-white w-full md:hover:bg-white md:hover:text-bluePrimary transition-all"
+                to="/media"
+              >
+                Media
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className="hover:bg-bluePrimary hover:text-white w-full md:hover:bg-white md:hover:text-bluePrimary transition-all text-nowrap"
                 to="/contact"
               >
-                Contact
+                Contact Us
               </NavLink>
             </li>
           </ul>
