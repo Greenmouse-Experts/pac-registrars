@@ -7,7 +7,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 function Header() {
   const [open, setOpen] = useState(false);
   const [open1, setOpen1] = useState(false);
-  const [open2, setOpen2] = useState(false);
+  //const [open2, setOpen2] = useState(false);
   const [open3, setOpen3] = useState(false);
   const [menu, setMenu] = useState(false);
 
@@ -79,7 +79,7 @@ function Header() {
                 <NavLink
                   className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
                   onClick={() => setOpen((prev) => !prev)}
-                  to="/"
+                  to="/careers"
                 >
                   Careers
                 </NavLink>
@@ -93,33 +93,13 @@ function Header() {
                 </NavLink>
               </span>
             </li>
-            <li className="relative" onMouseLeave={() => setOpen2(false)}>
-              <p
-                className="2xl:text-[17px] md:text-[13px] font-normal mt-1 ml-1 md:ml-0 cursor-pointer flex items-center"
-                onMouseEnter={() => setOpen2(true)}
+            <li className="">
+              <NavLink
+                className="hover:bg-bluePrimary hover:text-white w-full md:hover:bg-white md:hover:text-bluePrimary transition-all"
+                to="/products"
               >
-                Product <IoMdArrowDropdown />
-              </p>
-              <span
-                className={`border border-white py-1 absolute w-[200px] left-[-5px] flex flex-col justify-center items-center divide-y-[1px] divide-slate-500 bottom-[-10] z-50 bg-gray-100 ${
-                  open2 ? "block" : "hidden"
-                }`}
-              >
-                <NavLink
-                  className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
-                  onClick={() => setOpen2((prev) => !prev)}
-                  to="/"
-                >
-                  Digital Update Form
-                </NavLink>
-                <NavLink
-                  className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
-                  onClick={() => setOpen2((prev) => !prev)}
-                  to="/"
-                >
-                  Annual Report
-                </NavLink>
-              </span>
+                Products
+              </NavLink>
             </li>
             <li className="relative" onMouseLeave={() => setOpen1(false)}>
               <p
@@ -136,21 +116,21 @@ function Header() {
                 <NavLink
                   className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
                   onClick={() => setOpen1((prev) => !prev)}
-                  to="/"
+                  to="/data-register-maintenance"
                 >
                   Data Register Mainteinance
                 </NavLink>
                 <NavLink
                   className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
                   onClick={() => setOpen1((prev) => !prev)}
-                  to="/"
+                  to="/products"
                 >
                   Products
                 </NavLink>
                 <NavLink
                   className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
                   onClick={() => setOpen1((prev) => !prev)}
-                  to="/"
+                  to="/probate-services"
                 >
                   Probate Services
                 </NavLink>

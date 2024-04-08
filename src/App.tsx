@@ -9,6 +9,10 @@ import Client from "./pages/Client";
 import Faqs from "./pages/Faqs";
 import Contact from "./pages/Contact";
 import Media from "./pages/Media";
+import Careers from "./pages/Careers";
+import DataRegisterMaintenence from "./pages/DataRegisterMaintenence";
+import Products from "./pages/Products";
+import ProbateServices from "./pages/ProbateServices";
 
 const router = createBrowserRouter([
   {
@@ -45,6 +49,22 @@ const router = createBrowserRouter([
       {
         path: "/media",
         element: <Media />,
+      },
+      {
+        path: "/careers",
+        element: <Careers />,
+      },
+      {
+        path: "/data-register-maintenance",
+        element: <DataRegisterMaintenence />,
+      },
+      {
+        path: "/products",
+        element: <Products />,
+      },
+      {
+        path: "/probate-services",
+        element: <ProbateServices />,
       },
     ],
   },
