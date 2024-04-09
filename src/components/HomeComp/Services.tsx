@@ -40,9 +40,9 @@ function Services() {
             records, organizations can streamline operations, enhance
             decision-making processes, and ensure regulatory compliance.
           </p>
-          <button className="text-orangePrimary font-sora text-[12px] mt-auto">
+          <NavLink to="/about" className="text-orangePrimary font-sora text-[12px] mt-auto">
             Read more
-          </button>
+          </NavLink>
         </div>
         <div className="md:max-w-[400px] w-full md:h-[540px] shadow-md px-10 py-10 flex flex-col items-start">
           <img
@@ -59,9 +59,9 @@ function Services() {
             planning, and asset distribution, ensuring a smooth and efficient
             process tailored to your specific needs.
           </p>
-          <button className="text-orangePrimary font-sora text-[12px] mt-auto">
+          <NavLink to="/about" className="text-orangePrimary font-sora text-[12px] mt-auto">
             Read more
-          </button>
+          </NavLink>
         </div>
         <div className="md:max-w-[400px] w-full md:h-[540px] shadow-md px-10 py-10 flex flex-col items-start">
           <img
@@ -77,9 +77,9 @@ function Services() {
             requirements, we ensure seamless and successful bond offerings that
             meet our clients' financing needs.
           </p>
-          <button className="text-orangePrimary font-sora text-[12px] mt-auto">
+          <NavLink to="/about" className="text-orangePrimary font-sora text-[12px] mt-auto">
             Read more
-          </button>
+          </NavLink>
         </div>
         <div className="md:max-w-[400px] w-full md:h-[540px] shadow-md px-10 py-10 flex flex-col items-start">
           <img
@@ -96,9 +96,9 @@ function Services() {
             investing success. Our dedicated team is here to guide you every
             step of the way on your journey towards financial security.
           </p>
-          <button className="text-orangePrimary font-sora text-[12px] mt-auto">
+          <NavLink to="/about" className="text-orangePrimary font-sora text-[12px] mt-auto">
             Read more
-          </button>
+          </NavLink>
         </div>
       </div>
 

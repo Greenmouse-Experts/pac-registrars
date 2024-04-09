@@ -95,7 +95,7 @@ section,footer {
     padding-right: 135px;
   }
   footer a {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
@@ -103,14 +103,14 @@ section,footer {
   p,
   input,
   textarea {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 22.5px;
   }
   a {
     font-size: 14px;
   }
   footer a {
-    font-size: 10px;
+    font-size: 14px;
   }
   h4 {
     font-size: 30px;
@@ -151,21 +151,7 @@ h4{
 }
   }
 
-.css-coaelp-MuiPaper-root-MuiAccordion-root:first-of-type {
-  border-radius: 20px;
-}
-.css-coaelp-MuiPaper-root-MuiAccordion-root {
-  background-color: transparent !important;
-}
-.css-1g2s7ly-MuiPaper-root-MuiAccordion-root {
-  background-color: transparent !important;
-}
-.css-1g2s7ly-MuiPaper-root-MuiAccordion-root {
-  box-shadow: none;
-}
-.css-1g2s7ly-MuiPaper-root-MuiAccordion-root::before {
-  display: none;
-}
+
 
 .hero-container {
   position: relative;

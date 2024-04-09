@@ -21,16 +21,16 @@ function Clients() {
         breakpoint: 1024,
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           infinite: true,
-          dots: true,
+          dots: false,
         },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           initialSlide: 2,
         },
       },
@@ -38,28 +38,31 @@ function Clients() {
         breakpoint: 480,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
         },
       },
     ],
   };
   return (
-    <section className="border-t border-grayPrimary  bg-white text-black  pb-10 pt-16">
-      <div className="flex justify-between mb-10">
-        <h4 className="font-syne font-bold">Our Clients & Partners</h4>
-        <div className="flex gap-5 justify-end h-min">
+    <section className="border-t border-grayPrimary  bg-white text-black pb-10 pt-16 ">
+      <div className="flex justify-between items-center mb-10">
+        <h4 className="font-syne font-bold w-[40%] ">Our Clients & Partners</h4>
+        <div className="flex gap-5 items-center justify-end">
           <button
             style={{
               cursor: "pointer",
               display: "flex",
               alignItems: "center",
               fontWeight: 500,
-              fontSize:14
+              fontSize: 14,
             }}
             color="#2d3253"
             onClick={sliderRef?.slickPrev}
           >
-            <FiArrowLeft />
+            <span>
+              {" "}
+              <FiArrowLeft />
+            </span>
             &nbsp; Prev
           </button>
 
@@ -69,13 +72,15 @@ function Clients() {
               display: "flex",
               alignItems: "center",
               fontWeight: 500,
-              fontSize:14
+              fontSize: 14,
             }}
             color="#2d3253"
             onClick={sliderRef?.slickNext}
           >
             Next &nbsp;
-            <FiArrowRight />
+            <span>
+              <FiArrowRight />
+            </span>
           </button>
         </div>
       </div>

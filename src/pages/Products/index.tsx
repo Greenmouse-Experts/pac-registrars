@@ -17,9 +17,9 @@ function Products() {
           <div className="flex md:flex-row flex-col md:items-start items-center justify-between">
             <div className="md:w-[40%] w-full relative">
               <img
-                src="/images/whoweare.png"
+                src="/images/product-1.jpg"
                 alt=""
-                className="w-full h-[200px] object-cover"
+                className="w-full h-[200px] object-cover object-center"
               />
             </div>
             <div className="md:w-[55%] w-full font-syne">
@@ -92,9 +92,9 @@ function Products() {
           <div className="flex md:flex-row flex-col md:items-start items-center justify-between">
             <div className="md:w-[40%] w-full relative">
               <img
-                src="/images/whoweare.png"
+                src="/images/product-2.jpg"
                 alt=""
-                className="w-full h-[200px] object-cover"
+                className="w-full h-[200px] object-cover object-center"
               />
             </div>
             <div className="md:w-[55%] w-full font-syne">

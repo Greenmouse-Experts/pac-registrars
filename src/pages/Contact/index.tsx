@@ -6,7 +6,7 @@ function Contact() {
   return (
 <>
 <Banner page="Contact Us" link=""/>
-<section className="py-32 bg-[#F9F9F9]  flex">
+<section className="py-32 md:px-10  sm:px-5 bg-[#F9F9F9]  flex">
 <ContactForm/>
 </section>
 </>

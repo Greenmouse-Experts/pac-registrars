@@ -1,5 +1,4 @@
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
-import { BsArrowRightCircleFill } from "react-icons/bs";
 import { FaUsers } from "react-icons/fa";
 import { RiRefund2Line } from "react-icons/ri";
 import { TbWorld } from "react-icons/tb";
@@ -38,7 +37,6 @@ function Hero2() {
             <h5 className="capitalize font-bold 2xl:text-2xl md:text-lg ml-4 mr-2 text-bluePrimary">
               projects and strategies
             </h5>
-            <BsArrowRightCircleFill size={30} color="#202A44" />
           </div>
         </div>
         <div className="w-[1px] bg-grayPrimary md:block hidden" />
@@ -48,7 +46,6 @@ function Hero2() {
             <h5 className="capitalize font-bold 2xl:text-2xl md:text-lg ml-4 mr-2 text-bluePrimary">
               Financial Experts
             </h5>
-            <BsArrowRightCircleFill size={30} color="#202A44" />
           </div>
         </div>
         <div className="w-[1px] bg-grayPrimary md:block hidden" />
@@ -58,7 +55,6 @@ function Hero2() {
             <h5 className="capitalize font-bold 2xl:text-2xl md:text-lg ml-4 mr-2 text-bluePrimary">
               happy clients
             </h5>
-            <BsArrowRightCircleFill size={30} color="#202A44" />
           </div>
         </div>
         <div className="w-[1px] bg-grayPrimary md:block hidden" />
@@ -68,7 +64,6 @@ function Hero2() {
             <h5 className="capitalize font-bold 2xl:text-2xl md:text-lg ml-4 mr-2 text-bluePrimary">
               wealth management
             </h5>
-            <BsArrowRightCircleFill size={30} color="#202A44" />
           </div>
         </div>
       </div>

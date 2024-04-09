@@ -1,4 +1,3 @@
-import Button from "../Button";
 
 function ContactForm() {
   return (
@@ -75,7 +74,7 @@ function ContactForm() {
             className="bg-[#F4F4F4] h-[200px] pl-5 w-full pt-4"
           />
         </div>
-        <Button type="fit" color='orange'>Submit Form</Button>
+        < button className="w-fit bg-orangePrimary  flex gap-1 items-center 2xl:py-3 2xl:px-6 py-[5px] whitespace-nowrap px-4 text-sm text-white ml-auto ">Submit Form</ button>
       </form>
     </div>
   );

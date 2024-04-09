@@ -3,7 +3,6 @@ import Button from "./Button";
 import { useState } from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
 
-
 function Header() {
   const [open, setOpen] = useState(false);
   const [open1, setOpen1] = useState(false);
@@ -13,7 +12,8 @@ function Header() {
 
   return (
     <header className="bg-white 2xl:h-[112px] flex items-center justify-between md:px-10 px-5 2xl:px-14 py-2 relative ">
-      <NavLink to="/">
+      <NavLink 
+        onClick={() => setMenu((open) => !open)} to="/">
         <img
           src="/logo.jpg"
           alt="logo"
@@ -38,7 +38,7 @@ function Header() {
             </li>
             <li className="relative" onMouseLeave={() => setOpen(false)}>
               <p
-                className="2xl:text-[17px] md:text-[13px] font-normal mt-1 ml-1 md:ml-0 cursor-pointer flex items-center text-nowrap"
+                className="2xl:text-[17px] md:text-[13px] text-[14px] font-normal mt-1 ml-2 md:ml-0 cursor-pointer flex items-center text-nowrap"
                 onMouseEnter={() => setOpen(true)}
               >
                 About Us <IoMdArrowDropdown />
@@ -50,43 +50,61 @@ function Header() {
               >
                 <NavLink
                   className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
-                  onClick={() => setOpen((prev) => !prev)}
+                  onClick={() => {
+                    setOpen((prev) => !prev);
+                    setMenu((open) => !open);
+                  }}
                   to="/about"
                 >
                   Overview
                 </NavLink>
                 <NavLink
                   className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
-                  onClick={() => setOpen((prev) => !prev)}
+                  onClick={() => {
+                    setOpen((prev) => !prev);
+                    setMenu((open) => !open);
+                  }}
                   to="/leadership"
                 >
                   Board Of Directors
                 </NavLink>
                 <NavLink
                   className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
-                  onClick={() => setOpen((prev) => !prev)}
+                  onClick={() => {
+                    setOpen((prev) => !prev);
+                    setMenu((open) => !open);
+                  }}
                   to="/management"
                 >
                   Management Team
                 </NavLink>
                 <NavLink
                   className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
-                  onClick={() => setOpen((prev) => !prev)}
+                  onClick={() => {
+                    setOpen((prev) => !prev);
+                    setMenu((open) => !open);
+                  }}
                   to="/clients"
                 >
                   clients
                 </NavLink>
                 <NavLink
                   className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
-                  onClick={() => setOpen((prev) => !prev)}
+                  onClick={() => {
+                    setOpen((prev) => !prev);
+                    setMenu((open) => !open);
+                  }}
                   to="/careers"
                 >
                   Careers
                 </NavLink>
-               
+
                 <NavLink
                   className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
-                  onClick={() => setOpen((prev) => !prev)}
+                  onClick={() => {
+                    setOpen((prev) => !prev);
+                    setMenu((open) => !open);
+                  }}
                   to="/faqs"
                 >
                   FAQs
@@ -103,7 +121,7 @@ function Header() {
             </li>
             <li className="relative" onMouseLeave={() => setOpen1(false)}>
               <p
-                className="2xl:text-[17px] md:text-[13px] font-normal mt-1 ml-1 md:ml-0 cursor-pointer flex items-center"
+                className="2xl:text-[17px] md:text-[13px] text-[14px] font-normal mt-1 ml-2 md:ml-0 cursor-pointer flex items-center"
                 onMouseEnter={() => setOpen1(true)}
               >
                 Services <IoMdArrowDropdown />
@@ -115,47 +133,58 @@ function Header() {
               >
                 <NavLink
                   className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
-                  onClick={() => setOpen1((prev) => !prev)}
+                  onClick={() => {
+                    setOpen1((prev) => !prev);
+                    setMenu((open) => !open);
+                  }}
                   to="/data-register-maintenance"
                 >
                   Data Register Mainteinance
                 </NavLink>
                 <NavLink
                   className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
-                  onClick={() => setOpen1((prev) => !prev)}
+                  onClick={() => {
+                    setOpen1((prev) => !prev);
+                    setMenu((open) => !open);
+                  }}
                   to="/products"
                 >
                   Products
                 </NavLink>
                 <NavLink
                   className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
-                  onClick={() => setOpen1((prev) => !prev)}
+                  onClick={() => {
+                    setOpen1((prev) => !prev);
+                    setMenu((open) => !open);
+                  }}
                   to="/probate-services"
                 >
                   Probate Services
                 </NavLink>
               </span>
             </li>
-           
 
             <li>
               <NavLink
                 className="hover:bg-bluePrimary hover:text-white w-full md:hover:bg-white md:hover:text-bluePrimary transition-all"
                 to="/"
+                onClick={() => setMenu((open) => !open)}
               >
-               Resource
+                Resource
               </NavLink>
             </li>
             <li>
               <NavLink
                 className="hover:bg-bluePrimary hover:text-white w-full md:hover:bg-white md:hover:text-bluePrimary transition-all"
                 to="/media"
+                onClick={() => setMenu((open) => !open)}
               >
                 Media
               </NavLink>
             </li>
             <li>
               <NavLink
+                onClick={() => setMenu((open) => !open)}
                 className="hover:bg-bluePrimary hover:text-white w-full md:hover:bg-white md:hover:text-bluePrimary transition-all text-nowrap"
                 to="/contact"
               >
@@ -178,29 +207,36 @@ function Header() {
           >
             <NavLink
               className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
-              onClick={() => setOpen3((prev) => !prev)}
+              onClick={() => {
+                setOpen3((prev) => !prev);
+                setMenu((open) => !open);
+              }}
               to="/"
             >
               Share Holder
             </NavLink>
             <NavLink
               className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
-              onClick={() => setOpen3((prev) => !prev)}
+              onClick={() => {
+                setOpen3((prev) => !prev);
+                setMenu((open) => !open);
+              }}
               to="/"
             >
               Brokers
             </NavLink>
             <NavLink
               className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
-              onClick={() => setOpen3((prev) => !prev)}
+              onClick={() => {
+                setOpen3((prev) => !prev);
+                setMenu((open) => !open);
+              }}
               to="/"
             >
               Client
             </NavLink>
           </span>
-          <Button type="">
-            SELF SERVICE
-          </Button>
+          <Button type="">SELF SERVICE</Button>
         </div>
       </div>
       <div
