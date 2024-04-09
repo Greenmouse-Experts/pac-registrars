@@ -12,8 +12,7 @@ function Header() {
 
   return (
     <header className="bg-white 2xl:h-[112px] flex items-center justify-between md:px-10 px-5 2xl:px-14 py-2 relative ">
-      <NavLink 
-        onClick={() => setMenu((open) => !open)} to="/">
+      <NavLink onClick={() => setMenu(false)} to="/">
         <img
           src="/logo.jpg"
           alt="logo"
@@ -30,6 +29,7 @@ function Header() {
           <ul className="md:flex md:flex-row flex-col 2xl:gap-[30px] items-center  gap-[20px]">
             <li className="">
               <NavLink
+              onClick={()=> setMenu(false)}
                 className="hover:bg-bluePrimary hover:text-white w-full md:hover:bg-white md:hover:text-bluePrimary transition-all"
                 to=""
               >
@@ -38,7 +38,7 @@ function Header() {
             </li>
             <li className="relative" onMouseLeave={() => setOpen(false)}>
               <p
-                className="2xl:text-[17px] md:text-[13px] text-[14px] font-normal mt-1 ml-2 md:ml-0 cursor-pointer flex items-center text-nowrap"
+                className="2xl:text-[17px] md:text-[13px] text-[14px] font-normal py-2 ml-2 md:ml-0 cursor-pointer flex items-center text-nowrap"
                 onMouseEnter={() => setOpen(true)}
               >
                 About Us <IoMdArrowDropdown />
@@ -52,7 +52,7 @@ function Header() {
                   className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
                   onClick={() => {
                     setOpen((prev) => !prev);
-                    setMenu((open) => !open);
+                    setMenu(false);
                   }}
                   to="/about"
                 >
@@ -62,7 +62,7 @@ function Header() {
                   className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
                   onClick={() => {
                     setOpen((prev) => !prev);
-                    setMenu((open) => !open);
+                    setMenu(false);
                   }}
                   to="/leadership"
                 >
@@ -72,7 +72,7 @@ function Header() {
                   className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
                   onClick={() => {
                     setOpen((prev) => !prev);
-                    setMenu((open) => !open);
+                    setMenu(false);
                   }}
                   to="/management"
                 >
@@ -82,7 +82,7 @@ function Header() {
                   className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
                   onClick={() => {
                     setOpen((prev) => !prev);
-                    setMenu((open) => !open);
+                    setMenu(false);
                   }}
                   to="/clients"
                 >
@@ -92,7 +92,7 @@ function Header() {
                   className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
                   onClick={() => {
                     setOpen((prev) => !prev);
-                    setMenu((open) => !open);
+                    setMenu(false);
                   }}
                   to="/careers"
                 >
@@ -103,7 +103,7 @@ function Header() {
                   className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
                   onClick={() => {
                     setOpen((prev) => !prev);
-                    setMenu((open) => !open);
+                    setMenu(false);
                   }}
                   to="/faqs"
                 >
@@ -115,13 +115,14 @@ function Header() {
               <NavLink
                 className="hover:bg-bluePrimary hover:text-white w-full md:hover:bg-white md:hover:text-bluePrimary transition-all"
                 to="/products"
+                onClick={() => setMenu(false)}
               >
                 Products
               </NavLink>
             </li>
             <li className="relative" onMouseLeave={() => setOpen1(false)}>
               <p
-                className="2xl:text-[17px] md:text-[13px] text-[14px] font-normal mt-1 ml-2 md:ml-0 cursor-pointer flex items-center"
+                className="2xl:text-[17px] md:text-[13px] text-[14px] font-normal py-2 ml-2 md:ml-0 cursor-pointer flex items-center"
                 onMouseEnter={() => setOpen1(true)}
               >
                 Services <IoMdArrowDropdown />
@@ -135,7 +136,7 @@ function Header() {
                   className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
                   onClick={() => {
                     setOpen1((prev) => !prev);
-                    setMenu((open) => !open);
+                    setMenu(false);
                   }}
                   to="/data-register-maintenance"
                 >
@@ -145,7 +146,7 @@ function Header() {
                   className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
                   onClick={() => {
                     setOpen1((prev) => !prev);
-                    setMenu((open) => !open);
+                    setMenu(false);
                   }}
                   to="/products"
                 >
@@ -155,7 +156,7 @@ function Header() {
                   className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
                   onClick={() => {
                     setOpen1((prev) => !prev);
-                    setMenu((open) => !open);
+                    setMenu(false);
                   }}
                   to="/probate-services"
                 >
@@ -168,7 +169,7 @@ function Header() {
               <NavLink
                 className="hover:bg-bluePrimary hover:text-white w-full md:hover:bg-white md:hover:text-bluePrimary transition-all"
                 to="/"
-                onClick={() => setMenu((open) => !open)}
+                onClick={() => setMenu(false)}
               >
                 Resource
               </NavLink>
@@ -177,14 +178,14 @@ function Header() {
               <NavLink
                 className="hover:bg-bluePrimary hover:text-white w-full md:hover:bg-white md:hover:text-bluePrimary transition-all"
                 to="/media"
-                onClick={() => setMenu((open) => !open)}
+                onClick={() => setMenu(false)}
               >
                 Media
               </NavLink>
             </li>
             <li>
               <NavLink
-                onClick={() => setMenu((open) => !open)}
+                onClick={() => setMenu(false)}
                 className="hover:bg-bluePrimary hover:text-white w-full md:hover:bg-white md:hover:text-bluePrimary transition-all text-nowrap"
                 to="/contact"
               >
@@ -209,7 +210,7 @@ function Header() {
               className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
               onClick={() => {
                 setOpen3((prev) => !prev);
-                setMenu((open) => !open);
+                setMenu(false);
               }}
               to="/"
             >
@@ -219,7 +220,7 @@ function Header() {
               className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
               onClick={() => {
                 setOpen3((prev) => !prev);
-                setMenu((open) => !open);
+                setMenu(false);
               }}
               to="/"
             >
@@ -229,7 +230,7 @@ function Header() {
               className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
               onClick={() => {
                 setOpen3((prev) => !prev);
-                setMenu((open) => !open);
+                setMenu(false);
               }}
               to="/"
             >

@@ -18,7 +18,7 @@ function FinancialPlaning() {
           />
         </div>
       </section>
-      <section className="bg-bluePrimary flex md:flex-row flex-col items-center justify-between text-white mx-7 md:px-24 px-5 mt-14 2xl:mx-10 2xl:py-20 py-10">
+      <section className="bg-bluePrimary flex md:flex-row flex-col items-center justify-between text-white mx-0 md:px-24 px-5 mt-14 2xl:mx-10 2xl:py-20 py-10">
         <div className="2xl:w-[48%] md:w-[40%] w-full">
           <div className="border-b border-b-grayPrimary pb-8">
             <h6 className="font-syne 2xl:text-[32px] text-2xl font-bold ">
