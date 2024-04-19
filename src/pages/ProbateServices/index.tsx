@@ -1,9 +1,11 @@
 import Banner from "../../components/Banner";
-import Button from "../../components/Button";
 import { RiArrowRightDoubleFill } from "react-icons/ri";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import List from "../../components/List";
+import ProbateModal from "../../components/modals/ProbateModal";
+import { useState } from "react";
 
 function ProbateServices() {
   const settings = {
@@ -15,6 +17,12 @@ function ProbateServices() {
     arrows: true,
     autoplay: true, // Enable autoplay
     autoplaySpeed: 2000,
+  };
+
+  const [open, setOpen] = useState(false);
+
+  const handleClose = () => {
+    setOpen(false);
   };
 
   return (
@@ -33,13 +41,39 @@ function ProbateServices() {
             PROBATE SERVICES
           </h4>
           <p className="text-[#606060] 2xl:mt-5 mt-3 2xl:leading-[33px] leading-[25px] font-sora mb-10">
-            PAC Registrars Probate Services enable you to actualize the wishes
-            of your deceased loved ones and their families by ensuring a
-            seamless transfer of assets ranging from monies in bank, pension
-            funds with the Pension Administrators, company shares and
-            properties.
+            PAC Registrars and Investor Services Probate Services helps take
+            away the burden being faced by the beneficiaries of a deceased
+            person. We are passionate about what we do which is why at the heart
+            of our business is to make bereaved families happy again. Our
+            offering is end-to-end and covers but not limited to the following
           </p>
-          <Button type="">Reach Us</Button>
+          <List
+            items={[
+              "Procuring Grant of Probate/ Letters of Administration",
+              "Death certificate processing",
+              "Endorsement of Bank Certificate",
+              "Amendments of Letters of Administration",
+              "Obtaining certificate of additional assets",
+              "Effects new mandate of the administrators",
+              "Confirmation of Grant of Probate and Letters of Administration",
+              "Will Filing and confirmation",
+              "Receiving",
+              "Annuity",
+              "Gathering of Assets etc.",
+            ]}
+          />
+          <p className="text-[#606060] 2xl:mt-5 mt-3 2xl:leading-[33px] leading-[25px] font-sora mb-10">
+            Do you need to process a Letters of Administration or Grant of
+            Probate,{" "}
+            <span
+              className=" text-orangePrimary cursor-pointer"
+              onClick={() => setOpen((open) => !open)}
+            >
+              click here
+            </span>{" "}
+            and fill the attached form. Our staff will contact you and provide
+            the needed information to you.
+          </p>
         </div>
       </section>
 
@@ -206,7 +240,7 @@ function ProbateServices() {
             </li>
           </div>
           <div className="md:w-[48%] w-full relative">
-          <Slider {...settings}>
+            <Slider {...settings}>
               <div className="w-full flex justify-center items-center">
                 <img
                   src="/images/probate-1.jpg"
@@ -304,6 +338,7 @@ function ProbateServices() {
           </div>
         </div>
       </section>
+      <ProbateModal open={open} handleClose={handleClose} />
     </>
   );
 }

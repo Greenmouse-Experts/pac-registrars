@@ -44,7 +44,7 @@ function Header() {
                 About Us <IoMdArrowDropdown />
               </p>
               <span
-                className={`border border-white py-1 absolute w-[200px] left-[-5px] flex flex-col justify-center items-center divide-y-[1px] divide-slate-500 bottom-[-10] z-50 bg-gray-100 ${
+                className={`border border-white py-1 absolute w-[200px] left-[-5px] flex flex-col justify-center items-center divide-y-[1px] divide-slate-500 top-[30px] z-50 bg-gray-100 ${
                   open ? "block" : "hidden"
                 }`}
               >
@@ -128,7 +128,7 @@ function Header() {
                 Services <IoMdArrowDropdown />
               </p>
               <span
-                className={`border border-white py-1 absolute w-[200px] left-[-5px] flex flex-col justify-center items-center divide-y-[1px] divide-slate-500 bottom-[-10] z-50 bg-gray-100 ${
+                className={`border border-white py-1 absolute w-[200px] left-[-5px] flex flex-col justify-center items-center divide-y-[1px] divide-slate-500 top-[30px] z-50 bg-gray-100 ${
                   open1 ? "block" : "hidden"
                 }`}
               >
@@ -202,7 +202,7 @@ function Header() {
             PORTAL LOGIN <IoMdArrowDropdown />
           </Button>
           <span
-            className={`border border-white py-1 absolute w-[200px] top-10 left-[-5px] flex flex-col justify-center items-center divide-y-[1px] divide-slate-500 bottom-[-10] z-50 bg-gray-100 ${
+            className={`border border-white py-1 absolute w-[200px] top-10 left-[-5px] flex flex-col justify-center items-center divide-y-[1px] divide-slate-500 top-[30px] z-50 bg-gray-100 ${
               open3 ? "block" : "hidden"
             }`}
           >

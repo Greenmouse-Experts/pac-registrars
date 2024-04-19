@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 function Footer() {
   return (
     <footer className="bg-footerImg bg-center bg-no-repeat bg-cover pt-[100px]  pb-2 ">
-      <div className="flex gap-20 md:flex-row flex-col items-center justify-center">
+      <div className="flex gap-20 md:flex-row flex-col items-start justify-center">
         <div className="2xl:w-[500px]  md:w-[400px] w-full flex flex-col gap-10">
           <p className="font-medium 2xl:text-[16px] text-[14px] text-white">
             Subscribe to our Newsletter

@@ -6,7 +6,7 @@ interface BannerProps {
   link: string;
 }
 
-function Banner({ page, link }: BannerProps) {
+function Banner({ page }: BannerProps) {
   return (
     <section className="aboutTop bg-cover bg-center flex justify-center items-start flex-col relative">
       <h4 className="2xl:text-[70px] text-[45px] font-bold font-montserrat 2xl:leading-[88.2px] leading-[70px] capitalize text-white mt-5 2xl:mt-0">
@@ -14,7 +14,7 @@ function Banner({ page, link }: BannerProps) {
       </h4>
       <div>
         <p className="text-white font-syne">
-          <NavLink className="font-syne" to={link}>
+          <NavLink className="font-syne" to="/">
             Home
           </NavLink>
           &nbsp;
