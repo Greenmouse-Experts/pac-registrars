@@ -6,7 +6,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 function Header() {
   const [open, setOpen] = useState(false);
   const [open1, setOpen1] = useState(false);
-  //const [open2, setOpen2] = useState(false);
+  const [open2, setOpen2] = useState(false);
   const [open3, setOpen3] = useState(false);
   const [menu, setMenu] = useState(false);
 
@@ -56,7 +56,7 @@ function Header() {
                   }}
                   to="/about"
                 >
-                  Overview
+                  About Us
                 </NavLink>
                 <NavLink
                   className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
@@ -155,25 +155,28 @@ function Header() {
                 </NavLink>
               </span>
             </li>
-
-            <li>
-              <NavLink
-                className="hover:bg-bluePrimary hover:text-white w-full md:hover:bg-white md:hover:text-bluePrimary transition-all"
-                to="/"
-                onClick={() => setMenu(false)}
+            <li className="relative" onMouseLeave={() => setOpen2(false)}>
+              <p
+                className="2xl:text-[17px] md:text-[13px] text-[14px] font-normal py-2 ml-2 md:ml-0 cursor-pointer flex items-center"
+                onMouseEnter={() => setOpen2(true)}
               >
-                Resources
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                className="hover:bg-bluePrimary hover:text-white w-full md:hover:bg-white md:hover:text-bluePrimary transition-all"
+                Resources <IoMdArrowDropdown />
+              </p>
+              <span
+                className={`border border-white py-1 absolute w-[200px] left-[-5px] flex flex-col justify-center items-center divide-y-[1px] divide-slate-500 top-[30px] z-50 bg-gray-100 ${
+                  open2 ? "block" : "hidden"
+                }`}
+              >
+                <NavLink
+                className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
                 to="/media"
                 onClick={() => setMenu(false)}
               >
                 Media
               </NavLink>
+              </span>
             </li>
+           
             <li>
               <NavLink
                 onClick={() => setMenu(false)}

@@ -8,7 +8,7 @@ function Products() {
 
       <section className="py-10 bg-[#f4f4f4] flex items-center justify-between ">
         <div className="font-syne w-full">
-          <p className="text-orangePrimary text-[12px] font-medium ">
+          <p className="text-orangePrimary font-medium ">
             Products
           </p>
           <h4 className=" font-bold font-syne capitalize mb-10">
@@ -83,7 +83,7 @@ function Products() {
       </section>
       <section className="py-10 bg-[#f4f4f4] flex items-center justify-between ">
         <div className="font-syne w-full">
-          <p className="text-orangePrimary text-[12px] font-medium ">
+          <p className="text-orangePrimary  font-medium ">
             Products
           </p>
           <h4 className=" font-bold font-syne capitalize mb-10">

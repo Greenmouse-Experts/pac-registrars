@@ -4,7 +4,7 @@ function Management() {
   return (
     <>
       <Banner page="Management" link="/" />
-      <section className="flex md:flex-row flex-col justify-between md:gap-0 gap-10 py-14 items-center bg-[#F9F9F9]">
+      <section className="flex md:flex-row flex-col justify-between md:gap-0 gap-10 md:py-32 py-10 items-center bg-[#F9F9F9]">
         <div className="relative shadow-lg flex justify-center ">
           <img
             src="/images/leader-5.png"

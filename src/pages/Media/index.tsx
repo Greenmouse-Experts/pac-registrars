@@ -4,7 +4,7 @@ function Media() {
   return (
     <>
       <Banner page="Media" link="" />
-      <section className="py-10 bg-[#f4f4f4] flex items-center justify-between ">
+      <section className=" md:py-32 py-10 bg-[#f4f4f4] flex items-center justify-between ">
         <div className="font-syne w-full">
           <h4 className=" font-bold font-syne capitalize">View Our Gallery</h4>
           <div className="grid md:grid-cols-4 grid-col-1 gap-4 w-full my-10">

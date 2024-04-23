@@ -20,7 +20,7 @@ const Accordion = ({ title, answer, open }: AccodionProps) => {
       >
         <button className="flex justify-between w-full items-center">
           <span
-            className={`font-sora 2xl:text-[18px] 2xl:font-[400] text-[14px] font-normal  ${
+            className={`font-sora 2xl:text-lg 2xl:font-[400] text-[14px] font-normal  ${
               accordionOpen ? "white" : "black"
             }`}
           >
@@ -31,7 +31,7 @@ const Accordion = ({ title, answer, open }: AccodionProps) => {
         </button>
       </div>
       <div
-        className={`grid overflow-hidden transition-all duration-300 ease-in-out text-slate-600 text-sm ${
+        className={`grid overflow-hidden transition-all duration-300 ease-in-out text-slate-600  ${
           accordionOpen
             ? "grid-rows-[1fr] opacity-100"
             : "grid-rows-[0fr] opacity-0"

@@ -4,9 +4,9 @@ function Client() {
   return (
     <>
       <Banner page="Clients" link="" />
-      <section className="py-10 bg-[#f4f4f4] flex items-center justify-between ">
+      <section className="md:py-32 py-10 bg-[#f4f4f4] flex items-center justify-between ">
         <div className="font-syne w-full">
-          <p className="text-orangePrimary text-[12px] font-medium ">Clients</p>
+          <p className="text-orangePrimary font-medium ">Clients</p>
           <h4 className=" font-bold font-syne capitalize">
             Our Robust Clientbase
           </h4>

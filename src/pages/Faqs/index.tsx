@@ -6,7 +6,7 @@ function Faqs() {
   return (
     <>
       <Banner page="FAQs" link="" />
-      <section className="my-20">
+      <section className="md:py-32 py-10">
         <FaqAccordion
           open={true}
           title="How can I find out how many shares I hold?"

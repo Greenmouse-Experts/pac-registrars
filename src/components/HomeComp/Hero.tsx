@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 // import hero1 from "../assets/hero-1.png";
 // import hero2 from "../assets/hero-2.png";
 // import hero3 from "../assets/hero-3.png";
@@ -17,6 +18,7 @@ function Hero() {
 
   useEffect(() => {
     // Auto change slide at intervals
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     slideInterval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide % slideLength) + 1);
     }, transitionTime);
@@ -38,18 +40,18 @@ function Hero() {
 
   return (
     <section
-      className={`hero-${currentSlide} transition-opacity duration-500 bg-center bg-cover md:h-[60%] h-[400px] 2xl:py-32 md:py-20 md:pt-24 pt-10 text-white relative`}
+      className={`hero-${currentSlide} transition-opacity duration-500 bg-center bg-cover md:h-[60%] h-[500px] 2xl:py-32 md:py-20 md:pt-24 pt-10 text-white relative`}
     >
       <div className="2xl:max-w-[46%] md:max-w-[60%] w-full ">
         <p className="2xl:text-[17px] 2xl:font-[400] font-semibold text-white font-syne">
           Take control of your financial future and start growing your wealth
         </p>
-        <h4 className="2xl:text-[55px] md:text-[45px] text-[30px]  font-bold font-montserrat 2xl:leading-[70.2px] md:leading-[60px] leading-[40px] capitalize text-white mt-0 2xl:mt-0 ">
+        <h4 className="2xl:text-[55px] md:text-[45px] text-[30px]  font-bold font-montserrat 2xl:leading-[70.2px] md:leading-[60px] leading-[40px] capitalize text-white mt-5 sm:mt-0 ">
           Grow your wealth with our leading edge solutions!
         </h4>
       </div>
 
-      <div className="2xl:mt-20 mt-16 md:max-w-[38%] w-full">
+      <div className="2xl:mt-20 sm:mt-16 mt-5 md:max-w-[38%] w-full">
         <p className="font-syne 2xl:text-[22px] text-[16px] leader-7 tracking-wider">
           Grow Your Wealth
         </p>
@@ -60,7 +62,7 @@ function Hero() {
         </div>
 
         <div className="mt-8 flex items-start justify-between">
-          <p className="font-sora 2xl:text-[18px] text-[14px] font-[300] 2xl:leading-[30px]  leading-[45px] max-w-[80%]">
+          <p className="font-sora 2xl:text-[18px] text-[14px] font-[300] 2xl:leading-[30px]  leading-7 max-w-[80%]">
             We help our clients achieve their goals by providing expert
             consulting services
           </p>
@@ -81,11 +83,13 @@ function Hero() {
         </div>
       </div>
       <div className="border border-white rounded-full p-5 absolute md:right-24 md:bottom-24 right-5 bottom-6 hover:translate-y-[-5px] transition-all md:block hidden">
-        <img
-          src="/icons/arrow-right.svg"
-          alt="arrow"
-          className="md:w-[70px] md:h-[70px]  w-[30px] h-[30px]"
-        />
+        <NavLink to="/about">
+          <img
+            src="/icons/arrow-right.svg"
+            alt="arrow"
+            className="md:w-[70px] md:h-[70px]  w-[30px] h-[30px]"
+          />
+        </NavLink>
       </div>
     </section>
   );

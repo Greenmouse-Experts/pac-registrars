@@ -8,7 +8,7 @@ interface BannerProps {
 
 function Banner({ page }: BannerProps) {
   return (
-    <section className="aboutTop bg-cover bg-center flex justify-center items-start flex-col relative">
+    <section className="aboutTop  bg-cover bg-center flex justify-center items-start flex-col relative">
       <h4 className="2xl:text-6xl text-3xl font-bold font-montserrat 2xl:leading-[88.2px] leading-[70px] capitalize text-white mt-5 2xl:mt-0">
         {page}
       </h4>

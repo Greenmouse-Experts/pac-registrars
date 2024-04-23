@@ -1,23 +1,24 @@
 import Banner from "../../components/Banner";
 import { RiArrowRightDoubleFill } from "react-icons/ri";
-import Slider from "react-slick";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import List from "../../components/List";
 import ProbateModal from "../../components/modals/ProbateModal";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function ProbateServices() {
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    autoplay: true, // Enable autoplay
-    autoplaySpeed: 2000,
-  };
+  // const settings = {
+  //   dots: false,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   arrows: true,
+  //   autoplay: true, // Enable autoplay
+  //   autoplaySpeed: 2000,
+  // };
 
   const [open, setOpen] = useState(false);
 
@@ -28,7 +29,7 @@ function ProbateServices() {
   return (
     <>
       <Banner page="Probate Services" link="" />
-      <section className="py-10 bg-white flex md:flex-row flex-col items-center justify-between">
+      <section className="md:pt-32 md:pb-20 py-12 bg-white flex md:flex-row flex-col items-center justify-between">
         <div className="md:w-[48%] w-full relative">
           <img
             src="/images/probate-service.jpg"
@@ -40,7 +41,7 @@ function ProbateServices() {
           <h4 className=" font-bold font-syne capitalize text-bluePrimary">
             PROBATE SERVICES
           </h4>
-          <p className="text-[#606060] 2xl:mt-5 mt-3 2xl:leading-[33px] leading-[25px] font-sora mb-10">
+          <p className=" 2xl:mt-5 mt-3 2xl:leading-[33px] leading-[25px] font-sora mb-10">
             PAC Registrars and Investor Services Probate Services helps take
             away the burden being faced by the beneficiaries of a deceased
             person. We are passionate about what we do which is why at the heart
@@ -62,7 +63,7 @@ function ProbateServices() {
               "Gathering of Assets etc.",
             ]}
           />
-          <p className="text-[#606060] 2xl:mt-5 mt-3 2xl:leading-[33px] leading-[25px] font-sora mb-10">
+          <p className=" 2xl:mt-5 mt-3 2xl:leading-[33px] leading-[25px] font-sora mb-10">
             Do you need to process a Letters of Administration or Grant of
             Probate,{" "}
             <span
@@ -77,7 +78,7 @@ function ProbateServices() {
         </div>
       </section>
 
-      <section className="my-10 py-10  bg-bluePrimary text-white">
+      <section className="md:my-20 my-10  py-10  bg-bluePrimary text-white">
         <div className="flex md:flex-row flex-col items-center justify-between">
           <div className="md:w-[48%] w-full font-syne">
             <h4 className=" font-bold font-syne text-start capitalize">
@@ -127,22 +128,13 @@ function ProbateServices() {
             </ul>
           </div>
           <div className="md:w-[48%] w-full relative">
-            <Slider {...settings}>
-              <div className="w-full flex justify-center items-center">
-                <img
-                  src="/images/probate-1.jpg"
-                  alt=""
-                  className=" h-[400px] w-full object-cover object-center"
-                />
-              </div>
-              <div className=" w-full flex justify-center items-center">
-                <img
-                  src="/images/probate-2.jpg"
-                  alt=""
-                  className=" h-[400px] w-full object-cover object-center"
-                />
-              </div>
-            </Slider>
+            <div className="w-full flex justify-center items-center">
+              <img
+                src="/images/probate-1.jpg"
+                alt=""
+                className=" md:h-full h-[400px] w-full object-cover object-center"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -150,9 +142,9 @@ function ProbateServices() {
         <div className="flex md:flex-row flex-col items-center justify-between">
           <div className="md:w-[48%] w-full relative">
             <img
-              src="/images/probate-2.jpg"
+              src="/images/value.jpg"
               alt=""
-              className="w-full h-[400px] object-cover"
+              className="w-full h-[400px] object-cover object-center"
             />
           </div>
           <div className="md:w-[48%] w-full font-syne">
@@ -226,7 +218,7 @@ function ProbateServices() {
         </div>
       </section>
 
-      <section className="my-10 py-10  bg-bluePrimary text-white">
+      <section className="md:my-20 my-10 py-10  bg-bluePrimary text-white">
         <div className="flex md:flex-row flex-col items-center justify-between">
           <div className="md:w-[48%] w-full font-syne">
             <h4 className=" font-bold font-syne text-start capitalize">
@@ -240,27 +232,18 @@ function ProbateServices() {
             </li>
           </div>
           <div className="md:w-[48%] w-full relative">
-            <Slider {...settings}>
-              <div className="w-full flex justify-center items-center">
-                <img
-                  src="/images/probate-1.jpg"
-                  alt=""
-                  className=" h-[400px] w-full object-cover object-center"
-                />
-              </div>
-              <div className=" w-full flex justify-center items-center">
-                <img
-                  src="/images/probate-2.jpg"
-                  alt=""
-                  className=" h-[400px] w-full object-cover object-center"
-                />
-              </div>
-            </Slider>
+            <div className=" w-full flex justify-center items-center">
+              <img
+                src="/images/relief.jpg"
+                alt=""
+                className=" h-[400px] w-full object-cover object-center"
+              />
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="my-10 md:mx-10 mx-0 py-10  bg">
+      <section className="mt-10 mb-20 md:mx-10 mx-0 py-10  bg">
         <div className="flex md:flex-row flex-col items-center justify-between">
           <div className="md:w-[48%] w-full relative">
             <img
@@ -330,9 +313,18 @@ function ProbateServices() {
                 </span>{" "}
                 Probate planning, Consultation and Advisory
               </li>
-              <li className="flex items-start gap-1 text-lg">
-                For further enquiries on this service, kindly send us a mail
-                info@pacregistrars.com or call 09086790272.
+              <li className="text-lg">
+                For further enquiries on this service, kindly send us a mail &nbsp;
+                 <span className=" text-orangePrimary">
+                  <NavLink to="mailto:info@pacregistrars.com">
+                     info@pacregistrars.com
+                  </NavLink>
+                </span>
+                &nbsp; or call &nbsp;
+                <span className=" text-orangePrimary">
+                
+                  <NavLink to="tel:+2349086790272">+2349086790272</NavLink>
+                </span>
               </li>
             </ul>
           </div>

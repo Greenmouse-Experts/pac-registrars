@@ -5,9 +5,9 @@ function Careers() {
     <>
       <Banner page="Careers" link="" />
 
-      <section className="py-10 bg-[#f4f4f4] flex items-center justify-between ">
+      <section className="md:py-28 py-10 bg-[#f4f4f4] flex items-center justify-between ">
         <div className="font-syne w-full">
-          <p className="text-orangePrimary text-[12px] font-medium ">Careers</p>
+          <p className="text-orangePrimary  font-medium ">Careers</p>
           <h4 className=" font-bold font-syne capitalize">Our Careers</h4>
           <div className="flex md:flex-row flex-col items-center justify-between">
             <div className="md:w-[40%] w-full relative">
@@ -33,7 +33,7 @@ function Careers() {
           </div>
         </div>
       </section>
-      <section className="my-10 md:mx-10 mx-0 py-10 bg-bluePrimary text-white">
+      <section className="my-10 md:mx-10 mx-0 md:py-32 py-10 bg-bluePrimary text-white">
       <h4 className=" font-bold font-syne capitalize">Our Hiring Process</h4>
       <div className="h-[5px] bg-white my-5 w-full"/>
           <div className="flex md:flex-row flex-col md:items-start items-center justify-between">

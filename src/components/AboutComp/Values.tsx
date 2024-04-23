@@ -1,7 +1,7 @@
 function Values() {
   return (
     <>
-      <section className=" py-16 bg-bluePrimary 2xl:mb-0 mb-20">
+      <section className=" md:py-32 py-10 bg-bluePrimary 2xl:mb-0 mb-20">
         <div className="">
           <p className="text-orangePrimary font-semibold ">
             Our Company Ethos and Values
@@ -29,7 +29,7 @@ function Values() {
           </div>
         </div>
       </section>
-      <section className="   py-16 bg-[#F9F9F9] mb-20">
+      <section className="  md:py-32 py-10 bg-[#F9F9F9] mb-20">
         <div className="">
           <p className="text-orangePrimary 2xl:font-normal font-semibold ">
             Our Company Ethos and Values
@@ -44,7 +44,7 @@ function Values() {
             <div className=" bg-white shadow-sm md:w-[505px] w-full h-[356px] p-8 flex flex-col gap-6">
               <img src="/icons/file.svg" alt="" className="h-[69px] w-[69px]" />
               <h6 className="font-syne font-semibold text-2xl">Service</h6>
-              <p className="text-grayPrimary2 leading-[33.3px]">
+              <p className="text-grayPrimary2 md:leading-[33.3px] leading-7">
                 We prioritize exceptional client experiences, delivering
                 tailored solutions, and fostering long-term relationships built
                 on trust and mutual success.
@@ -55,7 +55,7 @@ function Values() {
               <h6 className="font-syne font-semibold text-2xl">
                 Professionalism
               </h6>
-              <p className="text-grayPrimary2 leading-[33.3px]">
+              <p className="text-grayPrimary2 md:leading-[33.3px] leading-7">
                 Delivering top-notch services, upholding confidentiality, and
                 adhering to professional standards we foster trust and
                 reliability with clients and stakeholders.
@@ -64,7 +64,7 @@ function Values() {
             <div className=" bg-white shadow-sm md:w-[505px] w-full h-[356px] p-8 flex flex-col gap-6">
               <img src="/icons/file.svg" alt="" className="h-[69px] w-[69px]" />
               <h6 className="font-syne font-semibold text-2xl">Integrity</h6>
-              <p className="text-grayPrimary2 leading-[33.3px]">
+              <p className="text-grayPrimary2 md:leading-[33.3px] leading-7">
                 Representing honesty, transparency, and ethical behavior in all
                 dealings. We build credibility and long-term success by
                 maintaining standards and ethical conduct.
@@ -75,7 +75,7 @@ function Values() {
             <div className=" bg-white shadow-sm md:w-[505px] w-full h-[356px] p-8 flex flex-col gap-6">
               <img src="/icons/file.svg" alt="" className="h-[69px] w-[69px]" />
               <h6 className="font-syne font-semibold text-2xl">Respect</h6>
-              <p className="text-grayPrimary2 leading-[33.3px]">
+              <p className="text-grayPrimary2 md:leading-[33.3px] leading-7">
                 We are committed to treating clients, colleagues, and partners
                 with dignity, fairness, and understanding by fostering an
                 environment of mutual respect
@@ -84,7 +84,7 @@ function Values() {
             <div className=" bg-white shadow-sm md:w-[505px] w-full h-[356px] p-8 flex flex-col gap-6">
               <img src="/icons/file.svg" alt="" className="h-[69px] w-[69px]" />
               <h6 className="font-syne font-semibold text-2xl">Innovation</h6>
-              <p className="text-grayPrimary2 leading-[33.3px]">
+              <p className="text-grayPrimary2 md:leading-[33.3px] leading-7">
                 We prioritize creativity, forward-thinking, and continuous
                 improvement in all aspects of our services. By embracing
                 innovation, we stay at the forefront of industry trends
@@ -93,7 +93,7 @@ function Values() {
             <div className=" bg-white shadow-sm md:w-[505px] w-full h-[356px] p-8 flex flex-col gap-6">
               <img src="/icons/file.svg" alt="" className="h-[69px] w-[69px]" />
               <h6 className="font-syne font-semibold text-2xl">Team Spirit</h6>
-              <p className="text-grayPrimary2 leading-[33.3px]">
+              <p className="text-grayPrimary2 md:leading-[33.3px] leading-7">
                 By fostering a culture of Team Spirit, we empower our team to
                 thrive in a collaborative environment, productive, and success
                 for our clients and our organization.

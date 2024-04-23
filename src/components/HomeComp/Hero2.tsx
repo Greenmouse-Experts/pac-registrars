@@ -31,7 +31,7 @@ function Hero2() {
         </div>
       </div>
       <div className="pt-20 flex md:flex-row flex-col md:justify-between justify-center items-center md:gap-4 gap-5">
-        <div className="px-5 py-10 rounded-md bg-white shadow-md md:w-[25%] w-[90%]  ">
+        <div className="px-5 h-32 flex justify-center items-center rounded-md bg-white shadow-md md:w-[25%] w-[90%]  ">
           <div className="flex items-center justify-center">
             <AiOutlineFundProjectionScreen size={60} />
             <h5 className="capitalize font-bold 2xl:text-2xl md:text-lg ml-4 mr-2 text-bluePrimary">
@@ -40,7 +40,7 @@ function Hero2() {
           </div>
         </div>
         <div className="w-[1px] bg-grayPrimary md:block hidden" />
-        <div className="px-5 py-10 rounded-md bg-white shadow-md md:w-[25%] w-[90%]  ">
+        <div className="px-5 h-32 flex justify-center items-center rounded-md bg-white shadow-md md:w-[25%] w-[90%]  ">
           <div className="flex items-center justify-center">
             <RiRefund2Line size={50} />
             <h5 className="capitalize font-bold 2xl:text-2xl md:text-lg ml-4 mr-2 text-bluePrimary">
@@ -49,7 +49,7 @@ function Hero2() {
           </div>
         </div>
         <div className="w-[1px] bg-grayPrimary md:block hidden" />
-        <div className="px-5 py-10 rounded-md bg-white shadow-md md:w-[25%] w-[90%]  ">
+        <div className="px-5 h-32 flex justify-center items-center rounded-md bg-white shadow-md md:w-[25%] w-[90%]  ">
           <div className="flex items-center justify-center">
             <FaUsers size={50} />
             <h5 className="capitalize font-bold 2xl:text-2xl md:text-lg ml-4 mr-2 text-bluePrimary">
@@ -58,7 +58,7 @@ function Hero2() {
           </div>
         </div>
         <div className="w-[1px] bg-grayPrimary md:block hidden" />
-        <div className="px-5 py-10 rounded-md bg-white shadow-md md:w-[25%] w-[90%]  ">
+        <div className="px-5 h-32 flex justify-center items-center rounded-md bg-white shadow-md md:w-[25%] w-[90%]  ">
           <div className="flex items-center justify-center">
             <TbWorld size={50} />
             <h5 className="capitalize font-bold 2xl:text-2xl md:text-lg ml-4 mr-2 text-bluePrimary">

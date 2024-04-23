@@ -4,7 +4,7 @@ function Leadership() {
   return (
     <>
       <Banner page="Leadership" link="/" />
-      <section className="bg-white py-16">
+      <section className="bg-white md:py-32 py-10 ">
         <div className="flex md:gap-6 gap-14 md:justify-start justify-center flex-wrap">
           <div className="relative shadow-lg flex justify-center">
             <img

@@ -24,7 +24,7 @@ function FinancialPlaning() {
             <h6 className="font-syne 2xl:text-[32px] text-2xl font-bold ">
               Financial Planning
             </h6>
-            <p className="2xl:text-[18px] text-sm font-normal mt-5 font-sora 2xl:leading-[30px] 2xl:font-[300]">
+            <p className="2xl:text-[18px] text-sm font-normal mt-5 font-sora 2xl:leading-[30px] leading-6 2xl:font-[300]">
               Financial planning is the process of taking a comprehensive look
               at your financial situation and building a specific financial plan
               to reach your goals. As a result, financial planning often delves
