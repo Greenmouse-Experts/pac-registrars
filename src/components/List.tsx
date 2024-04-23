@@ -1,13 +1,16 @@
 
 import { BsDot } from "react-icons/bs";
 
+interface ListItemProps {
+    item: string
+}
 interface ListProps {
     items: string[]
 }
 
-function ListItem({item}) {
+function ListItem({item}:ListItemProps) {
   return (
-    <li className="flex items-start gap-1">
+    <li className="flex items-start gap-1 text-xl ">
       <span>
         <BsDot color="black" size={30} />
       </span>
@@ -18,7 +21,7 @@ function ListItem({item}) {
 
 function List({items}:ListProps) {
   return (
-    <ul className="flex flex-col">
+    <ul className="flex flex-col gap-2">
     {items.map((item, index) => (
       <ListItem key={index} item={item}/>
     ))}

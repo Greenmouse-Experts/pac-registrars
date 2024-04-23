@@ -66,7 +66,7 @@ function Header() {
                   }}
                   to="/leadership"
                 >
-                  Board Of Directors
+                  Board of Directors
                 </NavLink>
                 <NavLink
                   className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
@@ -86,7 +86,7 @@ function Header() {
                   }}
                   to="/clients"
                 >
-                  clients
+                  Clients
                 </NavLink>
                 <NavLink
                   className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
@@ -142,16 +142,7 @@ function Header() {
                 >
                   Data Register Mainteinance
                 </NavLink>
-                <NavLink
-                  className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
-                  onClick={() => {
-                    setOpen1((prev) => !prev);
-                    setMenu(false);
-                  }}
-                  to="/products"
-                >
-                  Products
-                </NavLink>
+              
                 <NavLink
                   className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
                   onClick={() => {
@@ -171,7 +162,7 @@ function Header() {
                 to="/"
                 onClick={() => setMenu(false)}
               >
-                Resource
+                Resources
               </NavLink>
             </li>
             <li>

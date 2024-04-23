@@ -20,7 +20,7 @@ const Accordion = ({ title, answer, open }: AccodionProps) => {
       >
         <button className="flex justify-between w-full items-center">
           <span
-            className={`font-sora 2xl:text-[16px] 2xl:font-[400] text-[12px] font-normal  ${
+            className={`font-sora 2xl:text-[18px] 2xl:font-[400] text-[14px] font-normal  ${
               accordionOpen ? "white" : "black"
             }`}
           >

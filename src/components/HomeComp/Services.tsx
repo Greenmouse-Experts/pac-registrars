@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 function Services() {
   return (
-    <section className=" bg-white text-black  pb-10 pt-16">
+    <section className=" bg-white text-black  my-24">
       <div className="flex md:flex-row md:gap-0 gap-5 flex-col items-center justify-between">
         <div className=" md:w-[33%] w-full font-syne">
           <p className="text-orangePrimary font-semibold ">
@@ -40,7 +40,7 @@ function Services() {
             records, organizations can streamline operations, enhance
             decision-making processes, and ensure regulatory compliance.
           </p>
-          <NavLink to="/about" className="text-orangePrimary font-sora text-[12px] mt-auto">
+          <NavLink to="/about" className="text-orangePrimary font-sora  mt-auto">
             Read more
           </NavLink>
         </div>
@@ -59,7 +59,7 @@ function Services() {
             planning, and asset distribution, ensuring a smooth and efficient
             process tailored to your specific needs.
           </p>
-          <NavLink to="/about" className="text-orangePrimary font-sora text-[12px] mt-auto">
+          <NavLink to="/about" className="text-orangePrimary font-sora  mt-auto">
             Read more
           </NavLink>
         </div>
@@ -77,7 +77,7 @@ function Services() {
             requirements, we ensure seamless and successful bond offerings that
             meet our clients' financing needs.
           </p>
-          <NavLink to="/about" className="text-orangePrimary font-sora text-[12px] mt-auto">
+          <NavLink to="/about" className="text-orangePrimary font-sora  mt-auto">
             Read more
           </NavLink>
         </div>
@@ -96,7 +96,7 @@ function Services() {
             investing success. Our dedicated team is here to guide you every
             step of the way on your journey towards financial security.
           </p>
-          <NavLink to="/about" className="text-orangePrimary font-sora text-[12px] mt-auto">
+          <NavLink to="/about" className="text-orangePrimary font-sora  mt-auto">
             Read more
           </NavLink>
         </div>

@@ -31,7 +31,7 @@ function ProbateServices() {
       <section className="py-10 bg-white flex md:flex-row flex-col items-center justify-between">
         <div className="md:w-[48%] w-full relative">
           <img
-            src="/images/probate-1.jpg"
+            src="/images/probate-service.jpg"
             alt=""
             className="w-full h-[400px] object-cover"
           />
@@ -85,7 +85,7 @@ function ProbateServices() {
             </h4>
             <div className="h-[3px] bg-white my-5 w-[40%]" />
             <ul className="flex flex-col gap-2">
-              <li className="flex items-start gap-1">
+              <li className="flex items-start gap-1 text-lg">
                 <span>
                   <RiArrowRightDoubleFill color="white" size={20} />
                 </span>
@@ -93,31 +93,31 @@ function ProbateServices() {
                 providing you a hassle-free process in taking possession of
                 deceased’s assets.
               </li>
-              <li className="flex items-start gap-1">
+              <li className="flex items-start gap-1 text-lg">
                 <span>
                   <RiArrowRightDoubleFill color="white" size={20} />
                 </span>{" "}
                 Competitive and flexible payment plans.
               </li>
-              <li className="flex items-start gap-1">
+              <li className="flex items-start gap-1 text-lg">
                 <span>
                   <RiArrowRightDoubleFill color="white" size={20} />
                 </span>{" "}
                 Timely delivery.
               </li>
-              <li className="flex items-start gap-1">
+              <li className="flex items-start gap-1 text-lg">
                 <span>
                   <RiArrowRightDoubleFill color="white" size={20} />
                 </span>
                 Excellent client relationship management.
               </li>
-              <li className="flex items-start gap-1">
+              <li className="flex items-start gap-1 text-lg">
                 <span>
                   <RiArrowRightDoubleFill color="white" size={20} />
                 </span>{" "}
                 Vast and well-grounded industry knowledge.
               </li>
-              <li className="flex items-start gap-1">
+              <li className="flex items-start gap-1 text-lg">
                 <span>
                   <RiArrowRightDoubleFill color="white" size={20} />
                 </span>{" "}
@@ -160,62 +160,62 @@ function ProbateServices() {
               OUR VALUE <br /> PROPOSITIONS
             </h4>
             <ul className="flex flex-col gap-2">
-              <li className="flex items-start gap-1">
+              <li className="flex items-start gap-1 text-lg">
                 <span>
                   <RiArrowRightDoubleFill color="black" size={20} />
                 </span>
                 Asset Gathering.
               </li>
-              <li className="flex items-start gap-1">
+              <li className="flex items-start gap-1 text-lg">
                 <span>
                   <RiArrowRightDoubleFill color="black" size={20} />
                 </span>{" "}
                 Obtaining Certificate of Additional Asset.
               </li>
-              <li className="flex items-start gap-1">
+              <li className="flex items-start gap-1 text-lg">
                 <span>
                   <RiArrowRightDoubleFill color="black" size={20} />
                 </span>{" "}
                 Effect new Mandate of the Administrators.
               </li>
-              <li className="flex items-start gap-1">
+              <li className="flex items-start gap-1 text-lg">
                 <span>
                   <RiArrowRightDoubleFill color="black" size={20} />
                 </span>
                 Amendment of Letters of Administration.
               </li>
-              <li className="flex items-start gap-1">
+              <li className="flex items-start gap-1 text-lg">
                 <span>
                   <RiArrowRightDoubleFill color="black" size={20} />
                 </span>{" "}
                 Preparation of Power of Attorney Processing of Letters of
                 Administration/Grants of Probate.
               </li>
-              <li className="flex items-start gap-1">
+              <li className="flex items-start gap-1 text-lg">
                 <span>
                   <RiArrowRightDoubleFill color="black" size={20} />
                 </span>{" "}
                 Marshalling of Assets
               </li>
-              <li className="flex items-start gap-1">
+              <li className="flex items-start gap-1 text-lg">
                 <span>
                   <RiArrowRightDoubleFill color="black" size={20} />
                 </span>{" "}
                 Resealing of Grants of Probate.
               </li>
-              <li className="flex items-start gap-1">
+              <li className="flex items-start gap-1 text-lg">
                 <span>
                   <RiArrowRightDoubleFill color="black" size={20} />
                 </span>{" "}
                 Amendment of Letters of Administration.
               </li>
-              <li className="flex items-start gap-1">
+              <li className="flex items-start gap-1 text-lg">
                 <span>
                   <RiArrowRightDoubleFill color="black" size={20} />
                 </span>{" "}
                 Amendment of Letters of Administration.
               </li>
-              <li className="flex items-start gap-1">
+              <li className="flex items-start gap-1 text-lg">
                 <span>
                   <RiArrowRightDoubleFill color="black" size={20} />
                 </span>{" "}
@@ -274,63 +274,63 @@ function ProbateServices() {
               WILL SERVICES
             </h4>
             <ul className="flex flex-col gap-2">
-              <li className="flex items-start gap-1">
+              <li className="flex items-start gap-1 text-lg">
                 <span>
                   <RiArrowRightDoubleFill color="black" size={20} />
                 </span>
                 Preparation of Wills
               </li>
-              <li className="flex items-start gap-1">
+              <li className="flex items-start gap-1 text-lg">
                 <span>
                   <RiArrowRightDoubleFill color="black" size={20} />
                 </span>{" "}
                 Lodgment of Wills
               </li>
-              <li className="flex items-start gap-1">
+              <li className="flex items-start gap-1 text-lg">
                 <span>
                   <RiArrowRightDoubleFill color="black" size={20} />
                 </span>{" "}
                 Withdrawal of Wills
               </li>
-              <li className="flex items-start gap-1">
+              <li className="flex items-start gap-1 text-lg">
                 <span>
                   <RiArrowRightDoubleFill color="black" size={20} />
                 </span>
                 Ancillary Probate Services
               </li>
-              <li className="flex items-start gap-1">
+              <li className="flex items-start gap-1 text-lg">
                 <span>
                   <RiArrowRightDoubleFill color="black" size={20} />
                 </span>{" "}
                 Dematerialization of share certificates into Central Securities
                 Clearing System Plc (CSCS).
               </li>
-              <li className="flex items-start gap-1">
+              <li className="flex items-start gap-1 text-lg">
                 <span>
                   <RiArrowRightDoubleFill color="black" size={20} />
                 </span>{" "}
                 Direct crediting of all outstanding shares into CSCS.
               </li>
-              <li className="flex items-start gap-1">
+              <li className="flex items-start gap-1 text-lg">
                 <span>
                   <RiArrowRightDoubleFill color="black" size={20} />
                 </span>{" "}
                 Direct payment of outstanding dividends into the Estate’s bank
                 account
               </li>
-              <li className="flex items-start gap-1">
+              <li className="flex items-start gap-1 text-lg">
                 <span>
                   <RiArrowRightDoubleFill color="black" size={20} />
                 </span>{" "}
                 Total reconciliation of account
               </li>
-              <li className="flex items-start gap-1">
+              <li className="flex items-start gap-1 text-lg">
                 <span>
                   <RiArrowRightDoubleFill color="black" size={20} />
                 </span>{" "}
                 Probate planning, Consultation and Advisory
               </li>
-              <li className="flex items-start gap-1">
+              <li className="flex items-start gap-1 text-lg">
                 For further enquiries on this service, kindly send us a mail
                 info@pacregistrars.com or call 09086790272.
               </li>

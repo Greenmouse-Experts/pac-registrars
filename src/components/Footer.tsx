@@ -117,7 +117,7 @@ function Footer() {
         </div>
       </div>
       <div className="text-grayPrimary flex justify-center items-center mx-10 py-10 border-t-[0.7px] border-grayPrimary mt-16">
-        <p className="text-[12px]">Copyright © 2024 . PAC Registrars | All Rights Reserved</p>
+        <p className="text-base">Copyright © 2024 . PAC Registrars | All Rights Reserved</p>
       </div>
     </footer>
   );

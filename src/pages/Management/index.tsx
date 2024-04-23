@@ -167,7 +167,7 @@ function Management() {
           />
           <div className="bg-bluePrimary absolute bottom-3 py-3 text-white rounded-lg flex flex-col items-center justify-center w-[340px]">
             <h6 className="text-lg font-semibold ">Moses Ojo</h6>
-            <p className="font-normal">
+            <p className="font-normal text-center">
               Chief Economist/Head, Investment Research
             </p>
           </div>

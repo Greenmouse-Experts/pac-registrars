@@ -7,7 +7,7 @@ function Faqs() {
       <div className="md:w-[45%] w-full sm:px-0 px-5">
         <h4 className="font-syne font-bold">FAQs</h4>
         <div className="md:max-w-[80%] max-w-full mt-3">
-          <p className="text-black font-montserrat font-medium mb-5 leading-5 ">
+          <p className="text-black font-montserrat font-medium mb-5  ">
             Get answers to all your question from our FAQs, feel free to contact
             us if you don’t find the answer you are looking for.
           </p>

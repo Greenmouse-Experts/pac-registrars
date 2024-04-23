@@ -44,7 +44,7 @@ function Products() {
             </div>
             <div className="md:w-[40%] w-full">
               <img
-                src="/images/product-1.jpg"
+                src="/images/register-services.jpg"
                 alt=""
                 className="w-full h-[200px] object-cover object-center"
               />
@@ -55,34 +55,34 @@ function Products() {
 
       <section className="py-10 bg-[#f4f4f4] flex items-center justify-between ">
         <div className="font-syne w-full">
-          <div className="flex md:flex-row flex-col items-center justify-between">
+          <div className="flex md:flex-row flex-col items-start justify-between">
             <div className="md:w-[40%] w-full">
               <img
-                src="/images/product-1.jpg"
+                src="/images/real-estate-solution.jpg"
                 alt=""
-                className="w-full h-[200px] object-cover object-center"
+                className="w-full md:h-[300px] h-[200px] object-cover object-center"
               />
             </div>
             <div className="md:w-[55%] w-full font-syne">
               <h4 className=" font-bold font-syne capitalize">
                 Real Estate Solution (ProptyPlus)
               </h4>
-              <p className="text-[#606060] 2xl:mt-5 2xl:leading-[33px] leading-[25px] font-sora">
+              <p className=" 2xl:mt-5 2xl:leading-[33px] leading-[25px] text-xl font-sora">
                 ProptyPlus Real Estate solution is a platform that consist of 2
                 distinct modules, B2C and B2B Module.
               </p>
-              <p className="text-[#606060] mt-1 2xl:mt-5 2xl:leading-[33px] leading-[25px] font-sora">
+              <p className=" mt-1 2xl:mt-5 2xl:leading-[33px] leading-[25px] text-xl font-sora">
                 The B2C module provides property hunters with the ultimate
                 search experience, connecting them with rental/estate agents or
                 house owners.
               </p>
-              <p className="text-[#606060] mt-1 2xl:mt-5 2xl:leading-[33px] leading-[25px] font-sora">
+              <p className=" mt-1 2xl:mt-5 2xl:leading-[33px] leading-[25px] text-xl font-sora">
                 The B2C module provides property hunters with the ultimate
                 search experience, connecting them with rental/estate agents or
                 house owners.
               </p>
               <div className="mt-5">
-                <h6 className="text-lg font-semibold ">
+                <h6 className="text-2xl mb-2 font-semibold ">
                   Service Offerings (B2C):
                 </h6>
                 <List
@@ -96,7 +96,7 @@ function Products() {
                     "Rental loan financing",
                   ]}
                 />
-                <p className="text-[#606060] mt-1 2xl:mt-5 2xl:leading-[33px] leading-[25px] font-sora">
+                <p className=" mt-1 2xl:mt-5 2xl:leading-[33px] leading-[25px] text-xl font-sora">
                   To sign up and start enjoying the offers, go to{" "}
                   <span className=" text-orangePrimary">
                     <NavLink to="https://proptyplus.com/registration">
@@ -106,7 +106,7 @@ function Products() {
                 </p>
               </div>
               <div className="mt-5">
-                <h6 className="text-lg font-semibold ">
+                <h6 className="text-2xl mb-2 font-semibold ">
                   Service Offerings (B2B):
                 </h6>
                 <List
@@ -125,7 +125,7 @@ function Products() {
                     "Real time notification to parties involved   ",
                   ]}
                 />
-                <p className="text-[#606060] mt-1 2xl:mt-5 2xl:leading-[33px] leading-[25px] font-sora">
+                <p className=" mt-1 2xl:mt-5 2xl:leading-[33px] leading-[25px] text-xl font-sora">
                   Do you want your properties and agents to be onboarded on the
                   B2B platform, send an email to{" "}
                   <span className=" text-orangePrimary">
@@ -148,17 +148,17 @@ function Products() {
       </section>
       <section className="py-10 bg-[#f4f4f4] flex items-center justify-between ">
         <div className="font-syne w-full">
-          <div className="flex md:flex-row flex-col items-center justify-between">
+          <div className="flex md:flex-row flex-col items-start justify-between">
             <div className="md:w-[55%] w-full font-syne">
               <h4 className=" font-bold font-syne capitalize">
                 Document Management System (DMS)
               </h4>
-              <p className="text-[#606060] 2xl:mt-5 2xl:leading-[33px] leading-[25px] font-sora">
+              <p className=" 2xl:mt-5 2xl:leading-[33px] leading-[25px] text-xl  font-sora">
                 Our Document Management System (DMS) specializes in providing
                 cost effective, secure and user-friendly solutions for
                 simplifying the document needs of our clients.
               </p>
-              <p className="text-[#606060] mt-1 2xl:mt-5 2xl:leading-[33px] leading-[25px] font-sora">
+              <p className=" mt-1 2xl:mt-5 2xl:leading-[33px] leading-[25px] text-xl  font-sora">
                 PAC Registrars & Investor Services Document Management System
                 helps to store and organize digital documents in a secure and
                 easily accessible way. With our DMS, we help you take away the
@@ -168,7 +168,7 @@ function Products() {
               </p>
 
               <div className="mt-5">
-                <h6 className="text-lg font-semibold ">
+                <h6 className="text-2xl mb-2 font-semibold ">
                   Service Offerings (B2C):
                 </h6>
                 <List
@@ -182,7 +182,7 @@ function Products() {
                   ]}
                 />
 
-                <p className="text-[#606060] 2xl:mt-5 mt-3 2xl:leading-[33px] leading-[25px] font-sora mb-10">
+                <p className=" 2xl:mt-5 mt-3 2xl:leading-[33px] leading-[25px] text-xl font-sora mb-10">
                   Are you in need of our Document Management System or you are
                   considering referring us to a client, please{" "}
                   <span
@@ -198,7 +198,7 @@ function Products() {
             </div>
             <div className="md:w-[40%] w-full">
               <img
-                src="/images/product-1.jpg"
+                src="/images/dms.jpg"
                 alt=""
                 className="w-full h-[200px] object-cover object-center"
               />
@@ -208,10 +208,10 @@ function Products() {
       </section>
       <section className="py-10 bg-[#f4f4f4] flex items-center justify-between ">
         <div className="font-syne w-full">
-          <div className="flex md:flex-row flex-col items-center justify-between">
+          <div className="flex md:flex-row flex-col items-start justify-between">
             <div className="md:w-[40%] w-full">
               <img
-                src="/images/product-1.jpg"
+                src="/images/css.png"
                 alt=""
                 className="w-full h-[200px] object-cover object-center"
               />
@@ -220,7 +220,7 @@ function Products() {
               <h4 className=" font-bold font-syne capitalize">
                 Company Secretarial Service
               </h4>
-              <p className="text-[#606060] 2xl:mt-5 2xl:leading-[33px] leading-[25px] font-sora">
+              <p className=" 2xl:mt-5 2xl:leading-[33px] leading-[25px] text-xl font-sora">
                 We offer company secretarial services within the various sectors
                 of the Nigerian economy whether you are a start-up or an
                 established corporate entity. Our services cover the financial
@@ -239,7 +239,7 @@ function Products() {
                   Service Offerings
                 </h4>
                 <div className="mt-2">
-                  <h6 className="text-lg font-semibold ">Board Support</h6>
+                  <h6 className="text-2xl mb-2 font-semibold ">Board Support</h6>
                   <List
                     items={[
                       "Organizing and facilitating board and committee meetings, preparing agendas and minutes, and ensuring compliance with statutory requirements for meetings.",
@@ -247,7 +247,7 @@ function Products() {
                   />
                 </div>
                 <div className="mt-2">
-                  <h6 className="text-lg font-semibold ">
+                  <h6 className="text-2xl mb-2 font-semibold ">
                     Corporate Governance
                   </h6>
                   <List
@@ -257,7 +257,7 @@ function Products() {
                   />
                 </div>
                 <div className="mt-2">
-                  <h6 className="text-lg font-semibold ">
+                  <h6 className="text-2xl mb-2 font-semibold ">
                     Statutory Compliance
                   </h6>
                   <List
@@ -267,7 +267,7 @@ function Products() {
                   />
                 </div>
                 <div className="mt-2">
-                  <h6 className="text-lg font-semibold ">
+                  <h6 className="text-2xl mb-2 font-semibold ">
                     Regulatory Compliance
                   </h6>
                   <List
@@ -277,7 +277,7 @@ function Products() {
                   />
                 </div>
                 <div className="mt-2">
-                  <h6 className="text-lg font-semibold ">
+                  <h6 className="text-2xl mb-2 font-semibold ">
                     Document Management
                   </h6>
                   <List
@@ -287,7 +287,7 @@ function Products() {
                   />
                 </div>
                 <div className="mt-2">
-                  <h6 className="text-lg font-semibold ">
+                  <h6 className="text-2xl mb-2 font-semibold ">
                     Corporate Secretariat Software Solutions
                   </h6>
                   <List
@@ -297,7 +297,7 @@ function Products() {
                   />
                 </div>
                 <div className="mt-2">
-                  <h6 className="text-lg font-semibold ">Advisory Services</h6>
+                  <h6 className="text-2xl mb-2 font-semibold ">Advisory Services</h6>
                   <List
                     items={[
                       "Providing advice and guidance to the board and senior management on corporate governance best practices, regulatory changes, and compliance issues.",
@@ -305,7 +305,7 @@ function Products() {
                   />
                 </div>
                 <div className="mt-2">
-                  <h6 className="text-lg font-semibold ">
+                  <h6 className="text-2xl mb-2 font-semibold ">
                     Incorporation Services
                   </h6>
                   <List
@@ -315,7 +315,7 @@ function Products() {
                   />
                 </div>
                 <div className="mt-2">
-                  <h6 className="text-lg font-semibold ">
+                  <h6 className="text-2xl mb-2 font-semibold ">
                     Shareholder Services
                   </h6>
                   <List
@@ -325,7 +325,7 @@ function Products() {
                   />
                 </div>
                 <div className="mt-2">
-                  <h6 className="text-lg font-semibold ">
+                  <h6 className="text-2xl mb-2 font-semibold ">
                     Corporate Restructuring
                   </h6>
                   <List
@@ -335,7 +335,7 @@ function Products() {
                   />
                 </div>
 
-                <p className="text-[#606060] 2xl:mt-5 mt-3 2xl:leading-[33px] leading-[25px] font-sora mb-10">
+                <p className=" 2xl:mt-5 mt-3 2xl:leading-[33px] leading-[25px] text-xl font-sora mb-10">
                   Are you in need of our expertise in the company secretarial
                   service or do you have a firm you want to refer to us? Please
                   drop your details by{" "}

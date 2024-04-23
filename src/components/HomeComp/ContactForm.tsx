@@ -34,7 +34,7 @@ function ContactForm() {
         <div className=" ">
           <textarea
             placeholder="Additional details"
-            className="bg-[#F4F4F4] h-[120px] pl-5 w-full pt-4"
+            className="bg-[#F4F4F4] text-black h-[120px] pl-5 w-full pt-4"
           />
         </div>
         <Button type="fit">Submit Form</Button>
