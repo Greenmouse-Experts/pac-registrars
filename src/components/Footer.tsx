@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 function Footer() {
   return (
     <footer className="bg-footerImg bg-center bg-no-repeat bg-cover pt-[100px]  pb-2 ">
-      <div className="flex gap-20 md:flex-row flex-col items-start justify-center">
-        <div className="2xl:w-[500px]  md:w-[400px] w-full flex flex-col gap-10">
+      <div className="flex gap-20 md:flex-row flex-col items-start md:justify-between justify-center">
+        <div className="  md:w-[400px] w-full flex flex-col gap-10">
           <p className="font-medium 2xl:text-[16px] text-[14px] text-white">
             Subscribe to our Newsletter
           </p>
@@ -23,7 +23,7 @@ function Footer() {
             was established in 2006 as Spring Registrars Limited.{" "}
           </p>
         </div>
-        <div className="flex flex-wrap 2xl:gap-20 gap-14">
+        <div className="flex flex-wrap  gap-14">
           <div>
             <p className="font-medium 2xl:text-[16px] text-[12px] text-white">Company</p>
             <ul className="flex flex-col 2xl:gap-6 gap-4 md:mt-14 mt-5">
@@ -37,7 +37,7 @@ function Footer() {
                 <NavLink to="/">Services</NavLink>
               </li>
               <li className="text-[12px] text-grayPrimary font-medium">
-                <NavLink to="/">Gallary</NavLink>
+                <NavLink to="/media">Gallery</NavLink>
               </li>
               <li className="text-[12px] text-grayPrimary font-medium">
                 <NavLink to="/faqs">FAQs</NavLink>
@@ -51,7 +51,7 @@ function Footer() {
                 <NavLink to="/">Downloads</NavLink>
               </li>
               <li className="text-[12px] text-grayPrimary font-medium">
-                <NavLink to="/">self Service</NavLink>
+                <NavLink to="/">Self Service</NavLink>
               </li>
               <li className="text-[12px] text-grayPrimary font-medium">
                 <NavLink to="/">Services</NavLink>

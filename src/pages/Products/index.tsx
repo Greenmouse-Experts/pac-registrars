@@ -19,7 +19,7 @@ function Products() {
   return (
     <>
       <Banner page="Products" link="" />
-      <section className="md:py-32 pt-10 pb-0 bg-[#f4f4f4] flex items-center justify-between ">
+      <section className="md:pb-10 pt-20 pb-0 bg-[#f4f4f4] flex items-center justify-between ">
         <div className="font-syne w-full">
           <p className="text-orangePrimary font-medium">
             Products
@@ -53,7 +53,7 @@ function Products() {
         </div>
       </section>
 
-      <section className="md:py-10 pt-10 pb-0 bg-[#f4f4f4] flex items-center justify-between ">
+      <section className="md:pb-10 pt-20 pb-0 bg-white flex items-center justify-between ">
         <div className="font-syne w-full">
           <div className="flex md:flex-row flex-col items-start justify-between">
             <div className="md:w-[40%] w-full">
@@ -146,7 +146,7 @@ function Products() {
           </div>
         </div>
       </section>
-      <section className="md:py-10 pt-10 pb-0 bg-[#f4f4f4] flex items-center justify-between ">
+      <section className="md:pb-10 pt-20 pb-0 bg-[#f4f4f4] flex items-center justify-between ">
         <div className="font-syne w-full">
           <div className="flex md:flex-row flex-col-reverse items-start justify-between">
             <div className="md:w-[55%] w-full font-syne md:mt-0 mt-5 ">
@@ -206,7 +206,7 @@ function Products() {
           </div>
         </div>
       </section>
-      <section className="md:py-10 pt-10 pb-0 bg-[#f4f4f4] flex items-center justify-between ">
+      <section className="md:pb-10 pt-20 pb-0 bg-white flex items-center justify-between ">
         <div className="font-syne w-full">
           <div className="flex md:flex-row flex-col items-start justify-between">
             <div className="md:w-[40%] w-full">

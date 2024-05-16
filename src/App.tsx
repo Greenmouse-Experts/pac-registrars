@@ -13,6 +13,7 @@ import Careers from "./pages/Careers";
 import DataRegisterMaintenence from "./pages/DataRegisterMaintenence";
 import Products from "./pages/Products";
 import ProbateServices from "./pages/ProbateServices";
+import Kyc from "./pages/Kyc";
 
 const router = createBrowserRouter([
   {
@@ -66,6 +67,10 @@ const router = createBrowserRouter([
         path: "/probate-services",
         element: <ProbateServices />,
       },
+      {
+        path: "/kyc",
+        element: <Kyc />,
+      }
     ],
   },
 ]);

@@ -10,7 +10,7 @@ interface ListProps {
 
 function ListItem({item}:ListItemProps) {
   return (
-    <li className="flex items-start gap-1 md:text-xl text-base ">
+    <li className="flex items-start gap-1 md:text-lg text-base font-normal ">
       <span>
         <BsDot color="black" size={30} />
       </span>

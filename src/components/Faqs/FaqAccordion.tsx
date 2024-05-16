@@ -38,7 +38,7 @@ const FaqAccordion = ({ title, answer,open }: AccodionProps) => {
         }`}
       >
         <div
-          className={`overflow-hidden text-grayPrimary2 ${
+          className={`overflow-hidden text-black ${
             accordionOpen ? "mb-6" : ""
           }`}
         >

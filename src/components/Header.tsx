@@ -140,7 +140,7 @@ function Header() {
                   }}
                   to="/data-register-maintenance"
                 >
-                  Data Register Mainteinance
+                  Data Register Maintenance
                 </NavLink>
               
                 <NavLink
@@ -152,6 +152,16 @@ function Header() {
                   to="/probate-services"
                 >
                   Probate Services
+                </NavLink>
+                <NavLink
+                  className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
+                  onClick={() => {
+                    setOpen1((prev) => !prev);
+                    setMenu(false);
+                  }}
+                  to="/kyc"
+                >
+                  KYC
                 </NavLink>
               </span>
             </li>
