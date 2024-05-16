@@ -20,7 +20,7 @@ function ContactForm() {
           />
           <input
             type="text"
-            placeholder="Email"
+            placeholder="Email" 
             className="bg-[#F4F4F4] md:w-[373px] w-full 2xl:h-[60px] placeholder:text-[text-grayPrimary2] h-[50px] pl-5"
           />
         </div>
