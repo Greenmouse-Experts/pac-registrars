@@ -4,14 +4,16 @@ import Hero2 from "../../components/HomeComp/Hero2";
 import Services from "../../components/HomeComp/Services";
 import Clients from "../../components/HomeComp/Clients";
 import Faqs from "../../components/HomeComp/Faqs";
+import WebRegistry from "../../components/HomeComp/WebRegistry";
 
 function Home() {
   return (
     <>
       <Hero />
       <Hero2 />
-      <FinancialPlaning />
       <Services />
+      <WebRegistry/>
+      <FinancialPlaning />
       <Clients />
       <Faqs />
     </>

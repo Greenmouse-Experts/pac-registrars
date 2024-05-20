@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 function Footer() {
   return (
     <footer className="bg-footerImg bg-center bg-no-repeat bg-cover pt-[100px]  pb-2 ">
-      <div className="flex gap-20 md:flex-row flex-col items-start md:justify-between justify-center">
-        <div className="  md:w-[400px] w-full flex flex-col gap-10">
+      <div className="flex gap-20 lg:flex-row flex-col items-start lg:justify-between justify-center">
+        <div className="  lg:w-[400px] w-full flex flex-col gap-10">
           <p className="font-medium 2xl:text-[16px] text-[14px] text-white">
             Subscribe to our Newsletter
           </p>
@@ -26,7 +26,7 @@ function Footer() {
         <div className="flex flex-wrap  gap-14">
           <div>
             <p className="font-medium 2xl:text-[16px] text-[12px] text-white">Company</p>
-            <ul className="flex flex-col 2xl:gap-6 gap-4 md:mt-14 mt-5">
+            <ul className="flex flex-col 2xl:gap-6 gap-4 lg:mt-14 mt-5">
               <li className="text-[10px] text-grayPrimary font-medium">
                 <NavLink to="/">Home</NavLink>
               </li>
@@ -46,7 +46,7 @@ function Footer() {
           </div>
           <div>
             <p className="font-medium 2xl:text-[16px] text-[12px] text-white">Useful Links</p>
-            <ul className="flex flex-col 2xl:gap-6 gap-4 md:mt-14 mt-5">
+            <ul className="flex flex-col 2xl:gap-6 gap-4 lg:mt-14 mt-5">
               <li className="text-[12px] text-grayPrimary font-medium">
                 <NavLink to="/">Downloads</NavLink>
               </li>
@@ -66,7 +66,7 @@ function Footer() {
           </div>
           <div>
             <p className="font-medium 2xl:text-[16px] text-[12px] text-white">Social</p>
-            <ul className="flex flex-col 2xl:gap-6 gap-4 md:mt-14 mt-5">
+            <ul className="flex flex-col 2xl:gap-6 gap-4 lg:mt-14 mt-5">
               <li className="text-[12px] text-grayPrimary font-medium">
                 <NavLink to="/">Facebook</NavLink>
               </li>
@@ -86,7 +86,7 @@ function Footer() {
           </div>
           <div>
             <p className="font-medium 2xl:text-[16px] text-[12px] text-white">Contact Us</p>
-            <ul className="flex flex-col 2xl:gap-6 gap-4 md:mt-14 mt-5">
+            <ul className="flex flex-col 2xl:gap-6 gap-4 lg:mt-14 mt-5">
               <li className="text-[12px] text-grayPrimary font-medium">
                 <NavLink to="/">122, Bode Thomas St, Surulere, Lagos.</NavLink>
               </li>
@@ -116,7 +116,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="text-grayPrimary flex justify-center items-center md:mx-10 mx-0 py-10 border-t-[0.7px] border-grayPrimary mt-16">
+      <div className="text-grayPrimary flex justify-center items-center lg:mx-10 mx-0 py-10 border-t-[0.7px] border-grayPrimary mt-16">
         <p className="text-base">Copyright © 2024 . PAC Registrars | All Rights Reserved</p>
       </div>
     </footer>
