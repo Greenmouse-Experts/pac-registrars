@@ -241,7 +241,7 @@ function Header() {
               Client
             </NavLink>
           </span>
-          <Button type="">SELF SERVICE</Button>
+         
         </div>
       </div>
       <div

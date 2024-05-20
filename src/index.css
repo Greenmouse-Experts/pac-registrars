@@ -153,8 +153,9 @@ h4{
 }
 
 p{
-  font-size: 1rem;
+  font-size: .8rem;
 }
+
 section,footer {
   padding-left: 20px;
   padding-right: 20px;
@@ -201,4 +202,40 @@ section,footer {
 }
  .hero-5 {
   background-image: url("/images/hero-5.png");
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 75%;
+  }
+
+  .h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+ 
 }
