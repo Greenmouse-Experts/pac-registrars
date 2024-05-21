@@ -1,19 +1,17 @@
 function Values() {
   return (
     <>
-      <section className=" md:py-32 py-10 bg-bluePrimary 2xl:mb-0 mb-20">
+      <section className=" md:py-28 py-10 bg-bluePrimary 2xl:mb-0 mb-20">
         <div className="">
-          <p className="text-orangePrimary font-semibold ">
-            Our Company Ethos and Values
-          </p>
+         
           <h4 className=" font-bold font-syne capitalize text-white ">
             Our Core Values
           </h4>
         </div>
-        <div className="flex md:flex-row flex-col gap-10 mt-10">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 mt-10">
           <div className="bg-white py-8 px-10">
             <h4 className="text-[25px] font-syne font-semibold">Our Mission</h4>
-            <p className="text-[#606060] 2xl:mt-5 mt-3 2xl:leading-[33px] leading-[25px] font-sora ">
+            <p className="text-[#606060] 2xl:mt-5 mt-3 2xl:leading-[33px] font-sora ">
               Our mission is to excel as a Data Management and Advisory Services
               Firm, delivering unparalleled expertise and innovative solutions
               to our clients.
@@ -21,7 +19,7 @@ function Values() {
           </div>
           <div className="bg-white py-8 px-10">
             <h4 className="text-[25px] font-syne font-semibold">Our Vision</h4>
-            <p className="text-[#606060] 2xl:mt-5 mt-3 2xl:leading-[33px] leading-[25px] font-sora ">
+            <p className="text-[#606060] 2xl:mt-5 mt-3 2xl:leading-[33px] font-sora ">
               Empowering clients through quality services, innovating to add
               enduring value, continuously exceeding expectations, fostering
               trust through excellence, driving success, together.
@@ -31,7 +29,7 @@ function Values() {
       </section>
       <section className="  md:py-32 py-10 bg-[#F9F9F9] mb-20">
         <div className="">
-          <p className="text-orangePrimary 2xl:font-normal font-semibold ">
+          <p className="text-bluePrimary font-semibold ">
             Our Company Ethos and Values
           </p>
           <h4 className=" font-bold font-syne capitalize text-black ">

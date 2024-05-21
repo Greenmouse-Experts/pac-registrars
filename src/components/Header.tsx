@@ -1,17 +1,21 @@
 import { NavLink } from "react-router-dom";
 import Button from "./Button";
 import { useState } from "react";
-import { IoMdArrowDropdown } from "react-icons/io";
+import { MdKeyboardArrowDown } from "react-icons/md";
+import { MdManageSearch } from "react-icons/md";
+import { FaUsersGear } from "react-icons/fa6";
+import { RiUserSettingsFill, RiUserStarFill } from "react-icons/ri";
 
 function Header() {
   const [open, setOpen] = useState(false);
   const [open1, setOpen1] = useState(false);
   const [open2, setOpen2] = useState(false);
   const [open3, setOpen3] = useState(false);
+  const [open4, setOpen4] = useState(false);
   const [menu, setMenu] = useState(false);
 
   return (
-    <header className="bg-white 2xl:h-[112px] flex items-center justify-between md:px-10 px-5 2xl:px-14 py-2 relative ">
+    <header className="bg-white 2xl:h-[112px] flex items-center justify-between md:px-10 px-5 2xl:px-32 py-2 relative ">
       <NavLink onClick={() => setMenu(false)} to="/">
         <img
           src="/logo.jpg"
@@ -30,7 +34,7 @@ function Header() {
             <li className="">
               <NavLink
               onClick={()=> setMenu(false)}
-                className="hover:bg-bluePrimary hover:text-white w-full md:hover:bg-white md:hover:text-bluePrimary transition-all"
+                className="lg:text-[1.05rem] text-base  w-full md:hover:bg-white md:hover:text-bluePrimary transition-all"
                 to=""
               >
                 Home
@@ -38,58 +42,62 @@ function Header() {
             </li>
             <li className="relative" onMouseLeave={() => setOpen(false)}>
               <p
-                className="2xl:text-[17px] md:text-[13px] text-[14px] font-normal py-2 ml-2 md:ml-0 cursor-pointer flex items-center text-nowrap"
+                className="2xl:text-[1.05rem] text-base font-normal py-2 ml-2 md:ml-0 cursor-pointer flex items-center gap-1 text-nowrap"
                 onMouseEnter={() => setOpen(true)}
               >
-                About Us <IoMdArrowDropdown />
+                About Us <span><MdKeyboardArrowDown /></span>
               </p>
-              <span
-                className={`border border-white py-1 absolute w-[200px] left-[-5px] flex flex-col justify-center items-center divide-y-[1px] divide-slate-500 top-[30px] z-50 bg-gray-100 ${
-                  open ? "block" : "hidden"
+              <div
+                className={` py-1 absolute w-[15rem] -left-14 flex flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all  pr-10 ${
+                  open ? "top-10" : "-top-60"
                 }`}
               >
                 <NavLink
-                  className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
+                  className=" py-3 px-1 w-full flex items-center gap-4 text-center text-[#111111] text-lg text-nowrap "
                   onClick={() => {
                     setOpen((prev) => !prev);
                     setMenu(false);
                   }}
                   to="/about"
                 >
-                  About Us
+                  <span><MdManageSearch color="#202A44" size={30} /></span>
+                 Overview
                 </NavLink>
                 <NavLink
-                  className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
+                  className=" py-3 px-1 w-full flex items-center gap-4 text-center text-[#111111] text-lg text-nowrap"
                   onClick={() => {
                     setOpen((prev) => !prev);
                     setMenu(false);
                   }}
                   to="/leadership"
                 >
-                  Board of Directors
+                  <span><FaUsersGear color="#202A44" size={25}/></span>
+                  Leadership
                 </NavLink>
                 <NavLink
-                  className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
+                  className=" py-3 px-1 w-full flex items-center gap-4 text-center text-[#111111] text-lg text-nowrap"
                   onClick={() => {
                     setOpen((prev) => !prev);
                     setMenu(false);
                   }}
                   to="/management"
                 >
-                  Management Team
+                  <span><RiUserSettingsFill color="#202A44" size={25} /></span>
+                  Management
                 </NavLink>
                 <NavLink
-                  className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
+                  className=" py-3 px-1 w-full flex items-center gap-4 text-center text-[#111111] text-lg text-nowrap"
                   onClick={() => {
                     setOpen((prev) => !prev);
                     setMenu(false);
                   }}
                   to="/clients"
                 >
+                   <span><RiUserStarFill color="#202A44" size={25} /></span>
                   Clients
                 </NavLink>
-                <NavLink
-                  className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
+                {/* <NavLink
+                  className=" py-3 px-1 w-full text-center "
                   onClick={() => {
                     setOpen((prev) => !prev);
                     setMenu(false);
@@ -100,7 +108,7 @@ function Header() {
                 </NavLink>
 
                 <NavLink
-                  className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
+                  className=" py-3 px-1 w-full text-center "
                   onClick={() => {
                     setOpen((prev) => !prev);
                     setMenu(false);
@@ -108,89 +116,198 @@ function Header() {
                   to="/faqs"
                 >
                   FAQs
-                </NavLink>
-              </span>
+                </NavLink> */}
+              </div>
             </li>
-            <li className="">
+            {/* <li className="">
               <NavLink
-                className="hover:bg-bluePrimary hover:text-white w-full md:hover:bg-white md:hover:text-bluePrimary transition-all"
+                className="  w-full md:hover:bg-white md:hover:text-bluePrimary transition-all"
                 to="/products"
                 onClick={() => setMenu(false)}
               >
                 Products
               </NavLink>
-            </li>
+            </li> */}
             <li className="relative" onMouseLeave={() => setOpen1(false)}>
               <p
-                className="2xl:text-[17px] md:text-[13px] text-[14px] font-normal py-2 ml-2 md:ml-0 cursor-pointer flex items-center"
+                className="lg:text-[1.05rem] text-base font-normal py-2 ml-2 md:ml-0 cursor-pointer flex items-center"
                 onMouseEnter={() => setOpen1(true)}
               >
-                Services <IoMdArrowDropdown />
+                Services <span><MdKeyboardArrowDown /></span>
               </p>
-              <span
-                className={`border border-white py-1 absolute w-[200px] left-[-5px] flex flex-col justify-center items-center divide-y-[1px] divide-slate-500 top-[30px] z-50 bg-gray-100 ${
-                  open1 ? "block" : "hidden"
+              <div
+                className={` py-1 absolute w-[21rem] -left-14 flex flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all  pr-10 ${
+                  open1 ? "top-10" : "-top-[30rem]"
                 }`}
               >
                 <NavLink
-                  className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
+                  className=" py-3 px-1 w-full flex items-center gap-4 text-center text-[#111111] text-lg text-nowrap"
                   onClick={() => {
                     setOpen1((prev) => !prev);
                     setMenu(false);
                   }}
                   to="/data-register-maintenance"
                 >
-                  Data Register Maintenance
+                  <img src="/icons/si-1.svg" alt="" />
+                  Register Maintenance
                 </NavLink>
               
                 <NavLink
-                  className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
+                  className=" py-3 px-1 w-full flex items-center gap-4 text-center text-[#111111] text-lg text-nowrap"
                   onClick={() => {
                     setOpen1((prev) => !prev);
                     setMenu(false);
                   }}
-                  to="/probate-services"
+                  to="/"
                 >
-                  Probate Services
+                   <img src="/icons/si-2.svg" alt="" />
+                  Document Management
                 </NavLink>
                 <NavLink
-                  className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
+                  className=" py-3 px-1 w-full flex items-center gap-4 text-center text-[#111111] text-lg text-nowrap"
+                  onClick={() => {
+                    setOpen1((prev) => !prev);
+                    setMenu(false);
+                  }}
+                  to="/"
+                >
+                    <img src="/icons/si-3.svg" alt="" />
+                  Company Secretarial
+                </NavLink>
+                <NavLink
+                  className=" py-3 px-1 w-full flex items-center gap-4 text-center text-[#111111] text-lg text-nowrap"
+                  onClick={() => {
+                    setOpen1((prev) => !prev);
+                    setMenu(false);
+                  }}
+                  to="/"
+                >
+                    <img src="/icons/si-4.svg" alt="" />
+                    Probate/ Transmission
+                </NavLink>
+                <NavLink
+                  className=" py-3 px-1 w-full flex items-center gap-4 text-center text-[#111111] text-lg text-nowrap"
                   onClick={() => {
                     setOpen1((prev) => !prev);
                     setMenu(false);
                   }}
                   to="/kyc"
                 >
-                  KYC
+                    <img src="/icons/si-5.svg" alt="" />
+                    KYC Services
                 </NavLink>
-              </span>
+                <NavLink
+                  className=" py-3 px-1 w-full flex items-center gap-4 text-center text-[#111111] text-lg text-nowrap"
+                  onClick={() => {
+                    setOpen1((prev) => !prev);
+                    setMenu(false);
+                  }}
+                  to="/"
+                >
+                    <img src="/icons/si-6.svg" alt="" />
+                    Web Registry
+                </NavLink>
+                <NavLink
+                  className=" py-3 px-1 w-full flex items-center gap-4 text-center text-[#111111] text-lg text-nowrap"
+                  onClick={() => {
+                    setOpen1((prev) => !prev);
+                    setMenu(false);
+                  }}
+                  to="/"
+                >
+                    <img src="/icons/si-7.svg" alt="" />
+                    e-Notification 
+                </NavLink>
+              </div>
             </li>
             <li className="relative" onMouseLeave={() => setOpen2(false)}>
               <p
-                className="2xl:text-[17px] md:text-[13px] text-[14px] font-normal py-2 ml-2 md:ml-0 cursor-pointer flex items-center"
+                className="lg:text-[1.05rem] text-base font-normal py-2 ml-2 md:ml-0 cursor-pointer flex items-center"
                 onMouseEnter={() => setOpen2(true)}
               >
-                Resources <IoMdArrowDropdown />
+                Product <span><MdKeyboardArrowDown /></span>
               </p>
-              <span
-                className={`border border-white py-1 absolute w-[200px] left-[-5px] flex flex-col justify-center items-center divide-y-[1px] divide-slate-500 top-[30px] z-50 bg-gray-100 ${
-                  open2 ? "block" : "hidden"
+              <div
+                className={` py-1 absolute w-[16rem] -left-14 flex flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all  pr-10 ${
+                  open2 ? "top-10" : "-top-[14rem]"
                 }`}
               >
                 <NavLink
-                className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
-                to="/media"
+                className=" py-3 px-1 w-full flex items-center gap-4 text-center text-[#111111] text-lg text-nowrap"
+                to="/"
                 onClick={() => setMenu(false)}
               >
-                Media
+                  <img src="/icons/pi-1.svg" alt="" />
+                Proptyplus
               </NavLink>
-              </span>
+              </div>
             </li>
+            <li className="relative" onMouseLeave={() => setOpen3(false)}>
+              <p
+                className="lg:text-[1.05rem] text-base font-normal py-2 ml-2 md:ml-0 cursor-pointer flex items-center"
+                onMouseEnter={() => setOpen3(true)}
+              >
+                Resources <span><MdKeyboardArrowDown /></span>
+              </p>
+              <div
+                className={` py-1 absolute w-[21rem] -left-14 flex flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all  pr-10 ${
+                  open3 ? "top-10" : "-top-[30rem]"
+                }`}
+              >
+                <NavLink
+                  className=" py-3 px-1 w-full flex items-center gap-4 text-center text-[#111111] text-lg text-nowrap"
+                  onClick={() => {
+                    setOpen3((prev) => !prev);
+                    setMenu(false);
+                  }}
+                  to="/"
+                >
+                  <img src="/icons/ri-1.svg" alt="" />
+                  Company's Annual Report
+                </NavLink>
+              
+                <NavLink
+                  className=" py-3 px-1 w-full flex items-center gap-4 text-center text-[#111111] text-lg text-nowrap"
+                  onClick={() => {
+                    setOpen3((prev) => !prev);
+                    setMenu(false);
+                  }}
+                  to="/"
+                >
+                   <img src="/icons/ri-2.svg" alt="" />
+                   Forms
+                </NavLink>
+                <NavLink
+                  className=" py-3 px-1 w-full flex items-center gap-4 text-center text-[#111111] text-lg text-nowrap"
+                  onClick={() => {
+                    setOpen3((prev) => !prev);
+                    setMenu(false);
+                  }}
+                  to="/"
+                >
+                    <img src="/icons/ri-3.svg" alt="" />
+                    FAQs
+                </NavLink>
+                <NavLink
+                  className=" py-3 px-1 w-full flex items-center gap-4 text-center text-[#111111] text-lg text-nowrap"
+                  onClick={() => {
+                    setOpen3((prev) => !prev);
+                    setMenu(false);
+                  }}
+                  to="/media"
+                >
+                    <img src="/icons/ri-4.svg" alt="" />
+                    Media
+                </NavLink>
+             
+              </div>
+            </li>
+            
            
             <li>
               <NavLink
                 onClick={() => setMenu(false)}
-                className="hover:bg-bluePrimary hover:text-white w-full md:hover:bg-white md:hover:text-bluePrimary transition-all text-nowrap"
+                className="lg:text-[1.05rem] text-base  w-full md:hover:bg-white md:hover:text-bluePrimary transition-all text-nowrap"
                 to="/contact"
               >
                 Contact Us
@@ -200,47 +317,51 @@ function Header() {
         </nav>
         <div
           className="flex md:flex-row sm:flex-col gap-3 relative "
-          onMouseLeave={() => setOpen3(false)}
+          onMouseLeave={() => setOpen4(false)}
         >
-          <Button onMouseEnter={() => setOpen3(true)} type="">
-            PORTAL LOGIN <IoMdArrowDropdown />
+          <Button onMouseEnter={() => setOpen4(true)} type="">
+            PORTAL LOGIN <span><MdKeyboardArrowDown /></span>
           </Button>
-          <span
-            className={`border border-white py-1 absolute w-[200px] top-10 left-[-5px] flex flex-col justify-center items-center divide-y-[1px] divide-slate-500 top-[30px] z-50 bg-gray-100 ${
-              open3 ? "block" : "hidden"
-            }`}
-          >
-            <NavLink
-              className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
-              onClick={() => {
-                setOpen3((prev) => !prev);
-                setMenu(false);
-              }}
-              to="/"
-            >
-              Share Holder
-            </NavLink>
-            <NavLink
-              className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
-              onClick={() => {
-                setOpen3((prev) => !prev);
-                setMenu(false);
-              }}
-              to="/"
-            >
-              Brokers
-            </NavLink>
-            <NavLink
-              className="hover:bg-bluePrimary py-3 px-1 w-full text-center hover:text-white"
-              onClick={() => {
-                setOpen3((prev) => !prev);
-                setMenu(false);
-              }}
-              to="/"
-            >
-              Client
-            </NavLink>
-          </span>
+          <div
+                className={` py-1 absolute w-[15rem] -left-14 flex flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all  pr-10 ${
+                  open4 ? "top-10" : "-top-[30rem]"
+                }`}
+              >
+                <NavLink
+                  className=" py-3 px-1 w-full flex items-center gap-4 text-center text-[#111111] text-lg text-nowrap"
+                  onClick={() => {
+                    setOpen4((prev) => !prev);
+                    setMenu(false);
+                  }}
+                  to="/"
+                >
+                  <img src="/icons/li-1.svg" alt="" />
+                  Shareholders
+                </NavLink>
+              
+                <NavLink
+                  className=" py-3 px-1 w-full flex items-center gap-4 text-center text-[#111111] text-lg text-nowrap"
+                  onClick={() => {
+                    setOpen4((prev) => !prev);
+                    setMenu(false);
+                  }}
+                  to="/"
+                >
+                   <img src="/icons/li-2.svg" alt="" />
+                   Brokers
+                </NavLink>
+                <NavLink
+                  className=" py-3 px-1 w-full flex items-center gap-4 text-center text-[#111111] text-lg text-nowrap"
+                  onClick={() => {
+                    setOpen4((prev) => !prev);
+                    setMenu(false);
+                  }}
+                  to="/clients"
+                >
+                    <img src="/icons/li-3.svg" alt="" />
+                    Clients
+                </NavLink>
+              </div>
          
         </div>
       </div>
