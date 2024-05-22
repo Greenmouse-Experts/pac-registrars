@@ -21,7 +21,7 @@ function Hero2() {
             A global consulting firm experienced in identifying, assessing, and
             solving all business challenges!
           </h4>
-          <p className="text-xl leading-10 mt-5">
+          <p className="lg:text-xl lg:leading-10 mt-5">
             PAC Registrars Limited, formerly known as Spring Registrars Limited
             is registered with the Securities & Exchange Commission (SEC) as a
             Capital Market Operator to provide Share Registration Services. It

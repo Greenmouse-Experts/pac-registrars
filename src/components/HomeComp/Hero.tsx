@@ -41,7 +41,7 @@ function Hero() {
   return (
  <>
    {currentSlide === 1 && <section
-      className={`hero-1 transition-opacity duration-500 bg-center bg-cover lg:h-[70%] sm:h-[350px] h-[400px] 2xl:py-32 lg:py-20 lg:pt-24 sm:pt-16 pt-10 text-white relative`}
+      className={`hero-1 transition-opacity duration-500 bg-center bg-cover lg:h-[70%] sm:h-[350px] h-[400px] 2xl:py-32 lg:py-20 lg:pt-24 sm:pt-16 pt-10 text-white relative `}
     >
       <div className="2xl:max-w-[46%] lg:max-w-[60%] w-full animate__animated  animate__fadeIn animate__delay-3">
         {/* <p className="2xl:text-[17px] 2xl:font-[400] font-semibold text-white font-syne">
@@ -59,7 +59,7 @@ function Hero() {
      
     </section>}
     {currentSlide === 2 && <section
-      className={`hero-2 transition-opacity duration-500 bg-center bg-cover lg:h-[70%] sm:h-[350px] h-[400px] 2xl:py-32 lg:py-20 lg:pt-24 sm:pt-16 pt-10 text-white relative`}
+      className={`hero-2 transition-opacity duration-500 bg-center bg-cover lg:h-[70%] sm:h-[350px] h-[400px] 2xl:py-32 lg:py-20 lg:pt-24 sm:pt-16 pt-10 text-white relative `}
     >
       <div className="2xl:max-w-[46%] lg:max-w-[60%] w-full animate__animated  animate__fadeIn animate__delay-3">
         {/* <p className="2xl:text-[17px] 2xl:font-[400] font-semibold text-white font-syne">
@@ -77,7 +77,7 @@ function Hero() {
      
     </section>}
     {currentSlide === 3 && <section
-      className={`hero-3 transition-opacity duration-500 bg-center bg-cover lg:h-[70%] sm:h-[350px] h-[400px] 2xl:py-32 lg:py-20 lg:pt-24 sm:pt-16 pt-10 text-white relative`}
+      className={`hero-3 transition-opacity duration-500 bg-center bg-cover lg:h-[70%] sm:h-[350px] h-[400px] 2xl:py-32 lg:py-20 lg:pt-24 sm:pt-16 pt-10 text-white relative `}
     >
       <div className="2xl:max-w-[46%] lg:max-w-[60%] w-full animate__animated  animate__fadeIn animate__delay-3">
         {/* <p className="2xl:text-[17px] 2xl:font-[400] font-semibold text-white font-syne">
@@ -96,7 +96,7 @@ function Hero() {
     </section>}
 
     {currentSlide === 4 && <section
-      className={`hero-4 transition-opacity duration-500 bg-center bg-cover lg:h-[70%] sm:h-[350px] h-[400px] 2xl:py-32 lg:py-20 lg:pt-24 sm:pt-16 pt-10 text-white relative`}
+      className={`hero-4 transition-opacity duration-500 bg-center bg-cover lg:h-[70%] sm:h-[350px] h-[400px] 2xl:py-32 lg:py-20 lg:pt-24 sm:pt-16 pt-10 text-white relative `}
     >
       <div className="2xl:max-w-[55%] lg:max-w-[60%] w-full animate__animated  animate__fadeIn animate__delay-3">
         {/* <p className="2xl:text-[17px] 2xl:font-[400] font-semibold text-white font-syne">
@@ -114,7 +114,7 @@ function Hero() {
      
     </section>}
     {currentSlide === 5 && <section
-      className={`hero-5 transition-opacity duration-500 bg-center bg-cover lg:h-[70%] sm:h-[350px] h-[400px] 2xl:py-32 lg:py-20 lg:pt-24 sm:pt-16 pt-10 text-white relative`}
+      className={`hero-5 transition-opacity duration-500 bg-center bg-cover lg:h-[70%] sm:h-[350px] h-[400px] 2xl:py-32 lg:py-20 lg:pt-24 sm:pt-16 pt-10 text-white relative `}
     >
       <div className="2xl:max-w-[46%] lg:max-w-[60%] w-full animate__animated  animate__fadeIn animate__delay-3">
         {/* <p className="2xl:text-[17px] 2xl:font-[400] font-semibold text-white font-syne">

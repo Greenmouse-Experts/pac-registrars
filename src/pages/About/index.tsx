@@ -6,7 +6,7 @@ import Banner from "../../components/Banner";
 function About() {
   return (
     <>
-      <Banner page="About Us" link="/" />
+      <Banner page="About Us" link="/"  img="/images/about-banner.png"/>
       <WhoWeAre />
       <Values />
     </>

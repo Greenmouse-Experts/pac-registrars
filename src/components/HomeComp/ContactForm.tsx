@@ -2,12 +2,12 @@ import Button from "../Button";
 
 function ContactForm() {
   return (
-    <div className="bg-bluePrimary text-white px-8 2xl:py-[70px] py-10 lg:w-[55%] w-full   lg:ml-3 ml-0 shadow-md">
-      <form className="flex flex-col 2xl:gap-8 gap-5 ">
-        <h5 className="font-montserrat text-[22px] font-semibold  ">
+    <div className=" text-[#1E1E1E] px-8 2xl:py-[70px] py-10 lg:w-[55%] w-full   lg:ml-3 ml-0 shadow-md">
+      <form className="flex flex-col 2xl:gap-8 gap-5" >
+        <h5 className="font-montserrat text-[1.4rem] font-semibold  ">
           Contact Us
         </h5>
-        <p className="leading-5 font-medium font-montserrat text-white 2xl:leading-6">
+        <p className=" font-medium font-montserrat  ">
           Complete control over products allows us to ensure our customers
           receive the best quality prices and service. We take great pride in
           everything that we do in our factory.
@@ -34,10 +34,10 @@ function ContactForm() {
         <div className=" ">
           <textarea
             placeholder="Additional details"
-            className="bg-[#F4F4F4] text-black h-[120px] pl-5 w-full pt-4"
+            className="bg-[#F4F4F4] text-black h-[7.5rem] pl-5 w-full pt-4"
           />
         </div>
-        <Button type="fit">Submit Form</Button>
+        <Button type="">Submit Form</Button>
       </form>
     </div>
   );

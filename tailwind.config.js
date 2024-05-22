@@ -17,7 +17,7 @@ export default {
       },
 
       fontFamily: {
-        syne: ["Syne", " sans-serif"],
+        syne: ["Montserrat", " sans-serif"],
         montserrat: ["Montserrat", " sans-serif"],
         sora: ["Sora"," sans-serif"]
       },

@@ -5,7 +5,7 @@ import ContactForm from "../../components/ContactComp/ContactForm"
 function Contact() {
   return (
 <>
-<Banner page="Contact Us" link=""/>
+<Banner page="Contact Us" link="" img="/images/contact-banner.png"/>
 <section className="py-32 md:px-10  px-0 bg-[#F9F9F9]  flex">
 <ContactForm/>
 </section>

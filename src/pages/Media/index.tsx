@@ -3,7 +3,7 @@ import Banner from "../../components/Banner";
 function Media() {
   return (
     <>
-      <Banner page="Media" link="" />
+      <Banner page="Media" link="" img="/images/media-banner.png"/>
       <section className=" md:py-32 py-10 bg-[#f4f4f4] flex items-center justify-between ">
         <div className="font-syne w-full">
           <h4 className=" font-bold font-syne capitalize">View Our Gallery</h4>

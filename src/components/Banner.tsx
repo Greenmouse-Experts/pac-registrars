@@ -5,23 +5,28 @@ import { NavLink } from "react-router-dom";
 interface BannerProps {
   page: string;
   link: string;
+  img?: string;
 }
 
-function Banner({ page }: BannerProps) {
+function Banner({ page, img }: BannerProps) {
   return (
-    <section className="bg-[url('/images/about-banner.png')] h-[22rem]  bg-cover bg-center flex justify-center items-start flex-col relative">
-      <h4 className="2xl:text-6xl text-3xl font-bold font-montserrat 2xl:leading-[88.2px] leading-[70px] capitalize text-white mt-5 2xl:mt-0">
+    <section className={` lg:h-[22rem] h-[14rem]  bg-cover bg-center flex justify-center items-start flex-col relative px-0`}>
+      <img src={img ? img : "/images/about-banner.png"} alt="" className="w-full h-full" />
+
+     <div className="absolute px-[7%]">
+     <h4 className="lg:text-6xl font-bold font-montserrat text-4xl capitalize text-white mt-5 2xl:mt-0">
         {page}
       </h4>
-      <div>
-        <p className="text-white font-syne flex items-center">
+      <div className="mt-4 flex items-center">
+        <span className="text-white font-syne ">
           <NavLink className="font-syne" to="/">
             Home
           </NavLink>
-         <span>
-          <MdOutlineKeyboardArrowRight color="white" /></span><span className="font-syne text-[14px]"> {page} </span>
-        </p>
+        </span>
+        <span>
+          <MdOutlineKeyboardArrowRight color="white" /></span><span className="font-syne sm:text-lg text-white"> {page} </span>
       </div>
+     </div>
       
     </section>
   );

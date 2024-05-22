@@ -14,7 +14,7 @@ function Footer() {
               placeholder="Your email"
               className="2xl:h-[70px] h-[55px] w-full rounded-[62px] bg-white p-2 pl-8"
             />
-            <button className="absolute right-1 bg-[#F57C00] 2xl:w-[150px] w-[120px] 2xl:h-[62px] h-[48px] rounded-[43px] text-white">
+            <button className="absolute right-1 bg-bluePrimary 2xl:w-[150px] w-[120px] 2xl:h-[62px] h-[48px] rounded-[43px] text-white">
               submit
             </button>
           </div>

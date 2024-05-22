@@ -1,5 +1,6 @@
 
-import { BsDot } from "react-icons/bs";
+
+import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 
 interface ListItemProps {
     item: string
@@ -10,9 +11,9 @@ interface ListProps {
 
 function ListItem({item}:ListItemProps) {
   return (
-    <li className="flex items-start gap-1 md:text-lg text-base font-normal ">
+    <li className="flex items-center gap-4 md:text-lg text-base font-normal ">
       <span>
-        <BsDot color="black" size={30} />
+        <IoMdCheckmarkCircleOutline color="black" size={24} />
       </span>
       {item}
     </li>

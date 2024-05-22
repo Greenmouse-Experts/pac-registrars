@@ -5,7 +5,7 @@ import FaqAccordion from "../../components/Faqs/FaqAccordion";
 function Faqs() {
   return (
     <>
-      <Banner page="FAQs" link="" />
+      <Banner page="FAQs" link=""  img="/images/faq-banner.png"/>
       <section className="md:py-32 py-10">
         <FaqAccordion
           open={true}

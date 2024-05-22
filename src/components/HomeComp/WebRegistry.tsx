@@ -3,7 +3,7 @@
 function WebRegistry() {
   return (
     <section className="py-24 text-[#111111] lg:px-20">
-      <div className="flex md:flex-row md:gap-0 gap-5 flex-col items-center justify-between px-10">
+      <div className="flex md:flex-row md:gap-0 gap-5 flex-col items-center justify-between lg:px-10">
         <div className=" lg:w-[33%] w-full font-syne">
           <h4 className="font-bold font-syne capitalize">
             Over view of <br /> Web Registry
@@ -14,13 +14,13 @@ function WebRegistry() {
           </p>
         </div>
         <div className=" md:w-[54%] w-full">
-          <p className="font-sora text-[1.3rem] leading-10 font-[300]">
+          <p className="font-sora lg:text-xl lg:leading-10">
             To help our clients go from dreaming to doing, we have our core
             beliefs that are central to their investing success. We’re here to
             help with any questions you have on your path to find financial
             security.
           </p>
-          <p className=" mt-5 2xl:leading-[33px] leading-6">
+          <p className=" mt-5 2xl:leading-[33px] lg:leading-6">
             Our core beliefs serve as the cornerstone of their investing
             success, guiding them along their journey towards financial
             security.
