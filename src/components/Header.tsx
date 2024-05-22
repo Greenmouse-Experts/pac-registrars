@@ -15,7 +15,9 @@ function Header() {
   const [menu, setMenu] = useState(false);
 
   return (
-    <header className="bg-white h-[6rem] flex items-center justify-between md:px-10 px-5 2xl:px-[7%] py-2 xl:relative z-50 w-full fixed">
+  <header className="bg-bluePrimary pt-3">
+      <div className="bg-white h-[6rem] flex items-center justify-between md:px-10 px-5 2xl:px-[7%] py-2 xl:relative z-50 w-full fixed">
+      
       <NavLink onClick={() => setMenu(false)} to="/">
         <img
           src="/logo.jpg"
@@ -52,7 +54,7 @@ function Header() {
               </p>
               <div
                 className={` py-3 absolute w-[18rem] -left-14 xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all font-normal  ${
-                  open ? "top-10" : "-top-60"
+                  open ? "top-10" : "-top-72"
                 }`}
               >
                 <NavLink
@@ -548,7 +550,8 @@ function Header() {
       >
         <img src="/icons/hamburger.svg" alt="" />
       </div>
-    </header>
+    </div>
+  </header>
   );
 }
 
