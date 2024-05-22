@@ -55,13 +55,13 @@ function Services() {
           </h4>
         </div>
         <div className=" lg:w-[54%] w-full">
-          <p className="font-sora text-[1.3rem] leading-10 font-[300]">
+          <p className="font-sora lg:text-xl lg:leading-10 font-[300]">
             To help our clients go from dreaming to doing, we have our core
             beliefs that are central to their investing success. We’re here to
             help with any questions you have on your path to find financial
             security.
           </p>
-          <p className=" mt-5 2xl:leading-[33px] leading-6">
+          <p className=" mt-5">
             Our core beliefs serve as the cornerstone of their investing
             success, guiding them along their journey towards financial
             security.
@@ -108,7 +108,7 @@ function Services() {
 
         <Slider ref={setSliderRef} {...settings}>
           <div className="lg:max-w-[400px] w-full lg:h-[540px] shadow-md px-10 py-10 flex flex-col items-start bg-white text-black">
-            <img src="/icons/file.svg" alt="file" className="2xl:w-[60px]" />
+            <img src="/icons/register.gif" alt="file"   className="2xl:w-[60px] w-[70px]" />
             <h5 className="2xl:text-[20px] text-[16px] font-semibold font-syne mt-10">
               Register Maintenance Service
             </h5>
@@ -129,7 +129,7 @@ function Services() {
           </div>
           <div className="lg:max-w-[400px] w-full lg:h-[540px] shadow-md px-10 py-10 flex flex-col items-start bg-white text-black">
             <img
-              src="/icons/court.svg"
+              src="/icons/probate.gif"
               alt="file"
               className="2xl:w-[60px] w-[70px]"
             />
@@ -150,7 +150,7 @@ function Services() {
           </div>
           <div className="lg:max-w-[400px] w-full lg:h-[540px] shadow-md px-10 py-10 flex flex-col items-start bg-white text-black">
             <img
-              src="/icons/bank.svg"
+              src="/icons/bank.gif"
               alt="file"
               className="2xl:w-[60px] w-[70px]"
             />
@@ -171,7 +171,7 @@ function Services() {
           </div>
           <div className="lg:max-w-[400px] w-full lg:h-[540px] shadow-md px-10 py-10 flex flex-col items-start bg-white text-black">
             <img
-              src="/icons/folder.svg"
+              src="/icons/message.gif"
               alt="file"
               className="2xl:w-[60px] w-[70px]"
             />

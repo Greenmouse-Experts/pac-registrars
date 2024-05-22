@@ -3,7 +3,7 @@ import Banner from "../../components/Banner";
 function Client() {
   return (
     <>
-      <Banner page="Clients" link="" />
+      <Banner page="Clients" link="" img="/images/client-banner.png" />
       <section className="md:py-32 py-10 bg-[#f4f4f4] flex items-center justify-between ">
         <div className="font-syne w-full">
           <p className="text-orangePrimary font-medium ">Clients</p>

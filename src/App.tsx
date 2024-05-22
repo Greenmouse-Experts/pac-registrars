@@ -14,6 +14,8 @@ import DataRegisterMaintenence from "./pages/DataRegisterMaintenence";
 import Products from "./pages/Products";
 import ProbateServices from "./pages/ProbateServices";
 import Kyc from "./pages/Kyc";
+import WebRegistry from "./pages/WebRegistry";
+import DocumentManagement from "./pages/DocumentManagement";
 
 const router = createBrowserRouter([
   {
@@ -68,8 +70,16 @@ const router = createBrowserRouter([
         element: <ProbateServices />,
       },
       {
+        path: "/document-management",
+        element: <DocumentManagement />,
+      },
+      {
         path: "/kyc",
         element: <Kyc />,
+      },
+      {
+        path: "/web-registry",
+        element: <WebRegistry/>,
       }
     ],
   },

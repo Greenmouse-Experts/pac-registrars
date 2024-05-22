@@ -40,7 +40,7 @@ function Values() {
         <div className="mt-8">
           <div className="flex md:flex-row flex-col gap-8">
             <div className=" bg-white shadow-sm md:w-[505px] w-full h-[356px] p-8 flex flex-col gap-6">
-              <img src="/icons/file.svg" alt="" className="h-[69px] w-[69px]" />
+              <img src="/icons/about-1.svg" alt="" className="h-[69px] w-[69px]" />
               <h6 className="font-syne font-semibold text-2xl">Service</h6>
               <p className="text-grayPrimary2 md:leading-[33.3px] leading-7">
                 We prioritize exceptional client experiences, delivering
@@ -49,7 +49,7 @@ function Values() {
               </p>
             </div>
             <div className=" bg-white shadow-sm md:w-[505px] w-full h-[356px] p-8 flex flex-col gap-6">
-              <img src="/icons/file.svg" alt="" className="h-[69px] w-[69px]" />
+              <img src="/icons/about-2.svg" alt="" className="h-[69px] w-[69px]" />
               <h6 className="font-syne font-semibold text-2xl">
                 Professionalism
               </h6>
@@ -60,7 +60,7 @@ function Values() {
               </p>
             </div>
             <div className=" bg-white shadow-sm md:w-[505px] w-full h-[356px] p-8 flex flex-col gap-6">
-              <img src="/icons/file.svg" alt="" className="h-[69px] w-[69px]" />
+              <img src="/icons/about-3.svg" alt="" className="h-[69px] w-[69px]" />
               <h6 className="font-syne font-semibold text-2xl">Integrity</h6>
               <p className="text-grayPrimary2 md:leading-[33.3px] leading-7">
                 Representing honesty, transparency, and ethical behavior in all
@@ -71,7 +71,7 @@ function Values() {
           </div>
           <div className="flex md:flex-row flex-col gap-8 mt-8">
             <div className=" bg-white shadow-sm md:w-[505px] w-full h-[356px] p-8 flex flex-col gap-6">
-              <img src="/icons/file.svg" alt="" className="h-[69px] w-[69px]" />
+              <img src="/icons/about-4.svg" alt="" className="h-[69px] w-[69px]" />
               <h6 className="font-syne font-semibold text-2xl">Respect</h6>
               <p className="text-grayPrimary2 md:leading-[33.3px] leading-7">
                 We are committed to treating clients, colleagues, and partners
@@ -80,7 +80,7 @@ function Values() {
               </p>
             </div>
             <div className=" bg-white shadow-sm md:w-[505px] w-full h-[356px] p-8 flex flex-col gap-6">
-              <img src="/icons/file.svg" alt="" className="h-[69px] w-[69px]" />
+              <img src="/icons/about-5.svg" alt="" className="h-[69px] w-[69px]" />
               <h6 className="font-syne font-semibold text-2xl">Innovation</h6>
               <p className="text-grayPrimary2 md:leading-[33.3px] leading-7">
                 We prioritize creativity, forward-thinking, and continuous
@@ -89,7 +89,7 @@ function Values() {
               </p>
             </div>
             <div className=" bg-white shadow-sm md:w-[505px] w-full h-[356px] p-8 flex flex-col gap-6">
-              <img src="/icons/file.svg" alt="" className="h-[69px] w-[69px]" />
+              <img src="/icons/about-6.svg" alt="" className="h-[69px] w-[69px]" />
               <h6 className="font-syne font-semibold text-2xl">Team Spirit</h6>
               <p className="text-grayPrimary2 md:leading-[33.3px] leading-7">
                 By fostering a culture of Team Spirit, we empower our team to
