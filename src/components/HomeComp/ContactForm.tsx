@@ -2,7 +2,7 @@ import Button from "../Button";
 
 function ContactForm() {
   return (
-    <div className=" text-[#1E1E1E] px-8 2xl:py-[70px] py-10 lg:w-[55%] w-full   lg:ml-3 ml-0 shadow-md">
+    <div className=" text-[#1E1E1E] px-8 2xl:py-[70px] py-10 lg:w-[55%] w-full   lg:ml-3 ml-0 form-shadow">
       <form className="flex flex-col 2xl:gap-8 gap-5" >
         <h5 className="font-montserrat text-[1.4rem] font-semibold  ">
           Contact Us

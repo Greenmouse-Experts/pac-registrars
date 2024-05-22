@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 // import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 // import { NavLink } from "react-router-dom";
 // import hero1 from "../assets/hero-1.png";
@@ -39,100 +40,105 @@ function Hero() {
   //const backgroundImageUrl = `url(/images/hero-${currentSlide}.png)`;
 
   return (
- <>
-   {currentSlide === 1 && <section
-      className={`hero-1 transition-opacity duration-500 bg-center bg-cover lg:h-[70%] sm:h-[350px] h-[400px] 2xl:py-32 lg:py-20 lg:pt-24 sm:pt-16 pt-10 text-white relative `}
-    >
-      <div className="2xl:max-w-[46%] lg:max-w-[60%] w-full animate__animated  animate__fadeIn animate__delay-3">
-        {/* <p className="2xl:text-[17px] 2xl:font-[400] font-semibold text-white font-syne">
+    <div className="relative">
+      {currentSlide === 1 && (
+        <section
+          className={`hero-1 transition-opacity duration-500 bg-center bg-cover lg:h-full sm:h-[350px] h-[400px] 2xl:py-32 lg:py-20 lg:pt-24 sm:pt-16 pt-10 text-white relative `}
+        >
+          <div className="2xl:max-w-[46%] lg:max-w-[60%] w-full animate__animated  animate__fadeIn animate__delay-3">
+            {/* <p className="2xl:text-[17px] 2xl:font-[400] font-semibold text-white font-syne">
           Take control of your financial future and start growing your wealth
         </p> */}
-        <h4 className="2xl:text-[55px] lg:text-[45px] text-[30px]  font-bold font-montserrat 2xl:leading-[70.2px] lg:leading-[60px] leading-[40px] capitalize text-white mt-5 sm:mt-0 ">
-        Streamline Operations with Our Company Secretarial Services
-        </h4>
-        <button className="bg-white text-bluePrimary mt-10 px-10 py-3 font-semibold">
-        Get started
-      </button>
-      </div>
-
-      
-     
-    </section>}
-    {currentSlide === 2 && <section
-      className={`hero-2 transition-opacity duration-500 bg-center bg-cover lg:h-[70%] sm:h-[350px] h-[400px] 2xl:py-32 lg:py-20 lg:pt-24 sm:pt-16 pt-10 text-white relative `}
-    >
-      <div className="2xl:max-w-[46%] lg:max-w-[60%] w-full animate__animated  animate__fadeIn animate__delay-3">
-        {/* <p className="2xl:text-[17px] 2xl:font-[400] font-semibold text-white font-syne">
+            <h4 className="2xl:text-[55px] lg:text-[45px] text-[30px]  font-bold font-montserrat 2xl:leading-[70.2px] lg:leading-[60px] leading-[40px] capitalize text-white mt-5 sm:mt-0 ">
+              Streamline Operations with Our Company Secretarial Services
+            </h4>
+            <button className="bg-white text-bluePrimary mt-10 px-10 py-3 font-semibold">
+              Get started
+            </button>
+          </div>
+        </section>
+      )}
+      {currentSlide === 2 && (
+        <section
+          className={`hero-2 transition-opacity duration-500 bg-center bg-cover lg:h-full sm:h-[350px] h-[400px] 2xl:py-32 lg:py-20 lg:pt-24 sm:pt-16 pt-10 text-white relative `}
+        >
+          <div className="2xl:max-w-[46%] lg:max-w-[60%] w-full animate__animated  animate__fadeIn animate__delay-3">
+            {/* <p className="2xl:text-[17px] 2xl:font-[400] font-semibold text-white font-syne">
           Take control of your financial future and start growing your wealth
         </p> */}
-        <h4 className="2xl:text-[55px] lg:text-[45px] text-[30px]  font-bold font-montserrat 2xl:leading-[70.2px] lg:leading-[60px] leading-[40px] capitalize text-white mt-5 sm:mt-0 ">
-        Enhance Your Business with Our Registrar Services
-        </h4>
-        <button className="bg-white text-bluePrimary mt-10 px-10 py-3 font-semibold">
-        Get started
-      </button>
-      </div>
-
-      
-     
-    </section>}
-    {currentSlide === 3 && <section
-      className={`hero-3 transition-opacity duration-500 bg-center bg-cover lg:h-[70%] sm:h-[350px] h-[400px] 2xl:py-32 lg:py-20 lg:pt-24 sm:pt-16 pt-10 text-white relative `}
-    >
-      <div className="2xl:max-w-[46%] lg:max-w-[60%] w-full animate__animated  animate__fadeIn animate__delay-3">
-        {/* <p className="2xl:text-[17px] 2xl:font-[400] font-semibold text-white font-syne">
+            <h4 className="2xl:text-[55px] lg:text-[45px] text-[30px]  font-bold font-montserrat 2xl:leading-[70.2px] lg:leading-[60px] leading-[40px] capitalize text-white mt-5 sm:mt-0 ">
+              Enhance Your Business with Our Registrar Services
+            </h4>
+            <button className="bg-white text-bluePrimary mt-10 px-10 py-3 font-semibold">
+              Get started
+            </button>
+          </div>
+        </section>
+      )}
+      {currentSlide === 3 && (
+        <section
+          className={`hero-3 transition-opacity duration-500 bg-center bg-cover lg:h-full sm:h-[350px] h-[400px] 2xl:py-32 lg:py-20 lg:pt-24 sm:pt-16 pt-10 text-white relative `}
+        >
+          <div className="2xl:max-w-[46%] lg:max-w-[60%] w-full animate__animated  animate__fadeIn animate__delay-3">
+            {/* <p className="2xl:text-[17px] 2xl:font-[400] font-semibold text-white font-syne">
           Take control of your financial future and start growing your wealth
         </p> */}
-        <h4 className="2xl:text-[55px] lg:text-[45px] text-[30px]  font-bold font-montserrat 2xl:leading-[70.2px] lg:leading-[60px] leading-[40px] capitalize text-white mt-5 sm:mt-0 ">
-        Navigate Probate with Our Expert Guidance
-        </h4>
-        <button className="bg-white text-bluePrimary mt-10 px-10 py-3 font-semibold">
-        Get started
-      </button>
-      </div>
+            <h4 className="2xl:text-[55px] lg:text-[45px] text-[30px]  font-bold font-montserrat 2xl:leading-[70.2px] lg:leading-[60px] leading-[40px] capitalize text-white mt-5 sm:mt-0 ">
+              Navigate Probate with Our Expert Guidance
+            </h4>
+            <button className="bg-white text-bluePrimary mt-10 px-10 py-3 font-semibold">
+              Get started
+            </button>
+          </div>
+        </section>
+      )}
 
-      
-     
-    </section>}
-
-    {currentSlide === 4 && <section
-      className={`hero-4 transition-opacity duration-500 bg-center bg-cover lg:h-[70%] sm:h-[350px] h-[400px] 2xl:py-32 lg:py-20 lg:pt-24 sm:pt-16 pt-10 text-white relative `}
-    >
-      <div className="2xl:max-w-[55%] lg:max-w-[60%] w-full animate__animated  animate__fadeIn animate__delay-3">
-        {/* <p className="2xl:text-[17px] 2xl:font-[400] font-semibold text-white font-syne">
+      {currentSlide === 4 && (
+        <section
+          className={`hero-4 transition-opacity duration-500 bg-center bg-cover lg:h-full sm:h-[350px] h-[400px] 2xl:py-32 lg:py-20 lg:pt-24 sm:pt-16 pt-10 text-white relative `}
+        >
+          <div className="2xl:max-w-[55%] lg:max-w-[60%] w-full animate__animated  animate__fadeIn animate__delay-3">
+            {/* <p className="2xl:text-[17px] 2xl:font-[400] font-semibold text-white font-syne">
           Take control of your financial future and start growing your wealth
         </p> */}
-        <h4 className="2xl:text-[55px] lg:text-[45px] text-[30px]  font-bold font-montserrat 2xl:leading-[70.2px] lg:leading-[60px] leading-[40px] capitalize text-white mt-5 sm:mt-0 ">
-        Optimize Efficiency with Our Document Management Solutions
-        </h4>
-        <button className="bg-white text-bluePrimary mt-10 px-10 py-3 font-semibold">
-        Get started
-      </button>
-      </div>
-
-      
-     
-    </section>}
-    {currentSlide === 5 && <section
-      className={`hero-5 transition-opacity duration-500 bg-center bg-cover lg:h-[70%] sm:h-[350px] h-[400px] 2xl:py-32 lg:py-20 lg:pt-24 sm:pt-16 pt-10 text-white relative `}
-    >
-      <div className="2xl:max-w-[46%] lg:max-w-[60%] w-full animate__animated  animate__fadeIn animate__delay-3">
-        {/* <p className="2xl:text-[17px] 2xl:font-[400] font-semibold text-white font-syne">
+            <h4 className="2xl:text-[55px] lg:text-[45px] text-[30px]  font-bold font-montserrat 2xl:leading-[70.2px] lg:leading-[60px] leading-[40px] capitalize text-white mt-5 sm:mt-0 ">
+              Optimize Efficiency with Our Document Management Solutions
+            </h4>
+            <button className="bg-white text-bluePrimary mt-10 px-10 py-3 font-semibold">
+              Get started
+            </button>
+          </div>
+        </section>
+      )}
+      {currentSlide === 5 && (
+        <section
+          className={`hero-5 transition-opacity duration-500 bg-center bg-cover lg:h-full sm:h-[350px] h-[400px] 2xl:py-32 lg:py-20 lg:pt-24 sm:pt-16 pt-10 text-white relative `}
+        >
+          <div className="2xl:max-w-[46%] lg:max-w-[60%] w-full animate__animated  animate__fadeIn animate__delay-3">
+            {/* <p className="2xl:text-[17px] 2xl:font-[400] font-semibold text-white font-syne">
           Take control of your financial future and start growing your wealth
         </p> */}
-        <h4 className="2xl:text-[55px] lg:text-[45px] text-[30px]  font-bold font-montserrat 2xl:leading-[70.2px] lg:leading-[60px] leading-[40px] capitalize text-white mt-5 sm:mt-0 ">
-        Achieve Financial Growth with Our Innovative Solutions
-        </h4>
-        <button className="bg-white text-bluePrimary mt-10 px-10 py-3 font-semibold">
-        Get started
-      </button>
+            <h4 className="2xl:text-[55px] lg:text-[45px] text-[30px]  font-bold font-montserrat 2xl:leading-[70.2px] lg:leading-[60px] leading-[40px] capitalize text-white mt-5 sm:mt-0 ">
+              Achieve Financial Growth with Our Innovative Solutions
+            </h4>
+            <button className="bg-white text-bluePrimary mt-10 px-10 py-3 font-semibold">
+              Get started
+            </button>
+          </div>
+        </section>
+      )}
+      <div className="absolute font-montserrat flex flex-col right-0 divide-y-2 divide-grayPrimary top-[40%] text-center z-50 bg-white font-semibold">
+        <NavLink to="/" className="lg:text-base px-8 py-2">
+          Self Care
+        </NavLink>
+        <NavLink to="/" className="lg:text-base px-8 py-2">
+          Forms
+        </NavLink>
+        <NavLink to="/" className="lg:text-base px-8 py-2">
+          FAQs
+        </NavLink>
       </div>
-
-      
-     
-    </section>}
-
- </>
+    </div>
   );
 }
 

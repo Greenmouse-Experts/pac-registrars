@@ -57,7 +57,7 @@ function ProbateServices() {
       </section>
 
       <section className="lg:py-24 py-16 sm:px-[7%] px-0 bg-[#F9F9F9] mt-32 mb-20 sm:mx-10 flex justify-center items-center">
-      <form className="flex flex-col 2xl:gap-8 gap-5 lg:w-[53rem] w-full bg-white p-10" >
+      <form className="flex flex-col 2xl:gap-8 gap-5 lg:w-[45rem] w-full bg-white p-10 form-shadow" >
         <h5 className="font-montserrat text-[1.4rem] font-semibold  ">
           Contact Us
         </h5>
@@ -116,7 +116,7 @@ function ProbateServices() {
             className="bg-[#F4F4F4] 2xl:h-[60px] placeholder:text-[text-grayPrimary2] h-[50px] pl-5 w-full"
           />
         </div>
-        <Button type="">Submit</Button>
+        <Button type="">Submit Form</Button>
       </form>
       </section>
 

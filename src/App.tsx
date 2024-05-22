@@ -16,6 +16,7 @@ import ProbateServices from "./pages/ProbateServices";
 import Kyc from "./pages/Kyc";
 import WebRegistry from "./pages/WebRegistry";
 import DocumentManagement from "./pages/DocumentManagement";
+import CompanySecretarial from "./pages/CompanySecretarial";
 
 const router = createBrowserRouter([
   {
@@ -72,6 +73,10 @@ const router = createBrowserRouter([
       {
         path: "/document-management",
         element: <DocumentManagement />,
+      },
+      {
+        path: "/company-secretarial",
+        element: <CompanySecretarial />,
       },
       {
         path: "/kyc",

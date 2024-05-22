@@ -15,7 +15,7 @@ function Header() {
   const [menu, setMenu] = useState(false);
 
   return (
-    <header className="bg-white h-[7rem] flex items-center justify-between md:px-10 px-5 2xl:px-[7%] py-2 xl:relative z-50 w-full fixed">
+    <header className="bg-white h-[6rem] flex items-center justify-between md:px-10 px-5 2xl:px-[7%] py-2 xl:relative z-50 w-full fixed">
       <NavLink onClick={() => setMenu(false)} to="/">
         <img
           src="/logo.jpg"
@@ -26,7 +26,7 @@ function Header() {
 
       <div
         className={`flex md:flex xl:flex-row md:px-0 md:py-0 flex-col  2xl:gap-[53px]  fixed ml-auto z-40 w-[22rem] h-screen  xl:w-fit xl:h-auto md:items-center py-5 bg-white gap-[25px] px-5 ${
-          menu ? "left-0 top-[7rem]" : "left-[-1000px] top-[6rem]"
+          menu ? "left-0 top-[6rem]" : "left-[-1000px] top-[6rem]"
         } left-0 unset transition-all`}
       >
         <nav className="w-full scroll">
@@ -51,7 +51,7 @@ function Header() {
                 </span>
               </p>
               <div
-                className={` py-1 absolute w-[15rem] -left-14 xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all   pr-10 ${
+                className={` py-1 absolute w-[15rem] -left-14 xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all font-normal  pr-10 ${
                   open ? "top-10" : "-top-60"
                 }`}
               >
@@ -164,7 +164,7 @@ function Header() {
                 </span>
               </p>
               <div
-                className={` py-1 absolute w-[21rem] -left-14 xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all  pr-10 ${
+                className={` py-1 absolute w-[21rem] -left-14 xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all font-normal  pr-10 ${
                   open1 ? "top-10" : "-top-[30rem]"
                 }`}
               >
@@ -197,7 +197,7 @@ function Header() {
                     setOpen1((prev) => !prev);
                     setMenu(false);
                   }}
-                  to="/"
+                  to="/company-secretarial"
                 >
                   <img src="/icons/si-3.svg" alt="" />
                   Company Secretarial
@@ -279,7 +279,7 @@ function Header() {
                     setOpen1((prev) => !prev);
                     setMenu(false);
                   }}
-                  to="/"
+                  to="/company-secretarial"
                 >
                  
                   Company Secretarial
@@ -341,7 +341,7 @@ function Header() {
                 </span>
               </p>
               <div
-                className={` py-1 absolute w-[16rem] -left-14 xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all  pr-10 ${
+                className={` py-1 absolute w-[16rem] -left-14 xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 font-normal transition-all  pr-10 ${
                   open2 ? "top-10" : "-top-[14rem]"
                 }`}
               >
@@ -378,7 +378,7 @@ function Header() {
                 </span>
               </p>
               <div
-                className={` py-1 absolute w-[21rem] -left-14 xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all  pr-10 ${
+                className={` py-1 absolute w-[21rem] -left-14 xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all font-normal  pr-10 ${
                   open3 ? "top-10" : "-top-[30rem]"
                 }`}
               >
@@ -495,13 +495,13 @@ function Header() {
           onMouseLeave={() => setOpen4(false)}
         >
           <Button onMouseEnter={() => setOpen4(true)} type="">
-            PORTAL LOGIN{" "}
+            Portal Login{" "}
             <span>
               <MdKeyboardArrowDown />
             </span>
           </Button>
           <div
-            className={` py-1 absolute w-[15rem] -left-14 xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all  pr-10 ${
+            className={` py-1 absolute w-[15rem] -left-14 xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all font-normal  pr-10 ${
               open4 ? "top-10" : "-top-[30rem]"
             }`}
           >
