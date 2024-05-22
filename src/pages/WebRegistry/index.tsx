@@ -5,7 +5,7 @@ import SmallCard from "../../components/SmallCard";
 function WebRegistry() {
   return (
     <>
-      <Banner page="Web Registry" link="" />
+      <Banner page="Web Registry" link="" img="/images/web-banner.png" />
       <section className="lg:pt-24 pt-16 bg-white flex lg:flex-row flex-col items-center lg:gap-20 gap-10 ">
         <div className="lg:w-[44%] w-full">
           <img
