@@ -30,7 +30,7 @@ function WebRegistry() {
 
       {/* services cards */}
       <div className="mt-16 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-12 ">
-        <div className="md:max-w-[400px] w-full h-[23rem] shadow-md flex flex-col items-start bg-white text-black rounded-lg overflow-hidden">
+        <div className="md:max-w-[400px] w-full lg:h-[23rem] shadow-md flex flex-col items-start bg-white text-black rounded-lg overflow-hidden">
           <img src="/images/web-1.png" alt="registry" className="w-full" />
 
           <p className="font-sora text-lg font-semibold text-center mt-10 lg:px-4 px-2  text-balance truncate w-full ">
@@ -43,7 +43,7 @@ function WebRegistry() {
             <div className="h-[1px] bg-bluePrimary w-[90%]" />
           </div>
         </div>
-        <div className="md:max-w-[400px] w-full h-[23rem] shadow-md flex flex-col items-start bg-white text-black rounded-lg overflow-hidden">
+        <div className="md:max-w-[400px] w-full lg:h-[23rem] shadow-md flex flex-col items-start bg-white text-black rounded-lg overflow-hidden">
           <img src="/images/web-2.png" alt="registry" className="w-full" />
 
           <p className="font-sora text-lg font-semibold text-center mt-10 lg:px-4 px-2  text-balance truncate w-full ">
@@ -56,7 +56,7 @@ function WebRegistry() {
             <div className="h-[1px] bg-bluePrimary w-[90%]" />
           </div>
         </div>
-        <div className="md:max-w-[400px] w-full h-[23rem] shadow-md flex flex-col items-start bg-white text-black rounded-lg overflow-hidden">
+        <div className="md:max-w-[400px] w-full lg:h-[23rem] shadow-md flex flex-col items-start bg-white text-black rounded-lg overflow-hidden">
           <img src="/images/web-3.png" alt="registry" className="w-full" />
 
           <p className="font-sora text-lg font-semibold text-center mt-10 lg:px-4 px-2  text-balance truncate w-full ">
@@ -68,7 +68,7 @@ function WebRegistry() {
             <div className="h-[1px] bg-bluePrimary w-[90%]" />
           </div>
         </div>
-        <div className="md:max-w-[400px] w-full h-[23rem] shadow-md flex flex-col items-start bg-white text-black rounded-lg overflow-hidden">
+        <div className="md:max-w-[400px] w-full lg:h-[23rem] shadow-md flex flex-col items-start bg-white text-black rounded-lg overflow-hidden">
           <img src="/images/web-4.png" alt="registry" className="w-full" />
 
           <p className="font-sora text-lg font-semibold text-center mt-10 lg:px-4 px-2  text-balance truncate w-full ">

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { GoDash } from "react-icons/go";
+import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 
 interface AccodionProps {
   title: string;
@@ -26,8 +26,8 @@ const Accordion = ({ title, answer, open }: AccodionProps) => {
           >
             {title}
           </span>
-          {/* {accordionOpen ? <span>-</span> : <span>+</span>} */}
-          <GoDash size={10} color={accordionOpen ? "white" : "black"} />
+          {accordionOpen ? <span><IoMdArrowDropup /></span> : <span><IoMdArrowDropdown /></span>}
+         
         </button>
       </div>
       <div
