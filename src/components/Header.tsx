@@ -42,7 +42,7 @@ function Header() {
             </li>
             <li className="relative flex flex-col justify-center items-start" onMouseLeave={() => setOpen(false)}>
               <p
-                className="2xl:text-[1.05rem] text-base font-normal py-2 ml-2 md:ml-0 cursor-pointer flex items-center gap-1 text-nowrap"
+                className="2xl:text-[1.05rem] text-base font-normal py-2 ml-2 md:ml-0 cursor-pointer flex items-center gap-2 text-nowrap"
                 onMouseEnter={() => setOpen(true)}
               >
                 About Us{" "}
@@ -51,12 +51,12 @@ function Header() {
                 </span>
               </p>
               <div
-                className={` py-1 absolute w-[15rem] -left-14 xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all font-normal  pr-10 ${
+                className={` py-3 absolute w-[18rem] -left-14 xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all font-normal  ${
                   open ? "top-10" : "-top-60"
                 }`}
               >
                 <NavLink
-                  className=" py-3 px-1 w-full flex items-center gap-4 text-center text-[#111111] text-lg text-nowrap "
+                  className=" py-3 px-2 w-full flex items-center gap-4 text-center text-[#111111] text-lg text-nowrap hover:bg-bluePrimary hover:text-white hover:scale-[.98] transition-all duration-300 "
                   onClick={() => {
                     setOpen((prev) => !prev);
                     setMenu(false);
@@ -64,12 +64,12 @@ function Header() {
                   to="/about"
                 >
                   <span>
-                    <MdManageSearch color="#202A44" size={30} />
+                    <MdManageSearch  size={30} />
                   </span>
                   Overview
                 </NavLink>
                 <NavLink
-                  className=" py-3 px-1 w-full flex items-center gap-4 text-center text-[#111111] text-lg text-nowrap"
+                  className=" py-3 px-2 w-full flex items-center gap-4 text-center text-[#111111] text-lg text-nowrap hover:bg-bluePrimary hover:text-white hover:scale-[.98] transition-all duration-300"
                   onClick={() => {
                     setOpen((prev) => !prev);
                     setMenu(false);
@@ -77,12 +77,12 @@ function Header() {
                   to="/leadership"
                 >
                   <span>
-                    <FaUsersGear color="#202A44" size={25} />
+                    <FaUsersGear  size={25} />
                   </span>
                   Leadership
                 </NavLink>
                 <NavLink
-                  className=" py-3 px-1 w-full flex items-center gap-4 text-center text-[#111111] text-lg text-nowrap"
+                  className=" py-3 px-2 w-full flex items-center gap-4 text-center text-[#111111] text-lg text-nowrap hover:bg-bluePrimary hover:text-white hover:scale-[.98] transition-all duration-300"
                   onClick={() => {
                     setOpen((prev) => !prev);
                     setMenu(false);
@@ -90,12 +90,12 @@ function Header() {
                   to="/management"
                 >
                   <span>
-                    <RiUserSettingsFill color="#202A44" size={25} />
+                    <RiUserSettingsFill  size={25} />
                   </span>
                   Management
                 </NavLink>
                 <NavLink
-                  className=" py-3 px-1 w-full flex items-center gap-4 text-center text-[#111111] text-lg text-nowrap"
+                  className=" py-3 px-2 w-full flex items-center gap-4 text-center text-[#111111] text-lg text-nowrap hover:bg-bluePrimary hover:text-white hover:scale-[.98] transition-all duration-300"
                   onClick={() => {
                     setOpen((prev) => !prev);
                     setMenu(false);
@@ -103,7 +103,7 @@ function Header() {
                   to="/clients"
                 >
                   <span>
-                    <RiUserStarFill color="#202A44" size={25} />
+                    <RiUserStarFill  size={25} />
                   </span>
                   Clients
                 </NavLink>
@@ -155,7 +155,7 @@ function Header() {
 
             <li className="relative" onMouseLeave={() => setOpen1(false)}>
               <p
-                className="lg:text-[1.05rem] text-base font-normal py-2 ml-2 md:ml-0 cursor-pointer flex items-center"
+                className="lg:text-[1.05rem] text-base font-normal py-2 ml-2 md:ml-0 cursor-pointer flex items-center gap-2"
                 onMouseEnter={() => setOpen1(true)}
               >
                 Services{" "}
@@ -332,7 +332,7 @@ function Header() {
             </li>
             <li className="relative" onMouseLeave={() => setOpen2(false)}>
               <p
-                className="lg:text-[1.05rem] text-base font-normal py-2 ml-2 md:ml-0 cursor-pointer flex items-center"
+                className="lg:text-[1.05rem] text-base font-normal py-2 ml-2 md:ml-0 cursor-pointer flex items-center gap-2"
                 onMouseEnter={() => setOpen2(true)}
               >
                 Product{" "}
@@ -369,7 +369,7 @@ function Header() {
             </li>
             <li className="relative" onMouseLeave={() => setOpen3(false)}>
               <p
-                className="lg:text-[1.05rem] text-base font-normal py-2 ml-2 md:ml-0 cursor-pointer flex items-center"
+                className="lg:text-[1.05rem] text-base font-normal py-2 ml-2 md:ml-0 cursor-pointer flex items-center gap-2"
                 onMouseEnter={() => setOpen3(true)}
               >
                 Resources{" "}

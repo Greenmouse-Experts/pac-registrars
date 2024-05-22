@@ -3,7 +3,7 @@ import ContactForm from "./ContactForm";
 
 function Faqs() {
   return (
-    <section className="flex lg:flex-row flex-col justify-between bg-[#f9f9f9] gap-10 mx-0 mt-20 2xl:mx-10 2xl:px-[7%] lg:px-24 sm:px-[20px] px-0 2xl:py-20  py-10 my-10 ">
+    <section className="flex lg:flex-row flex-col justify-between bg-[#f9f9f9] gap-10 mx-0 lg:mt-20 2xl:mx-10 2xl:px-[7%] lg:px-24 sm:px-[20px] px-0 2xl:py-20  sm:py-10 sm:my-10 ">
       <div className="lg:w-[45%] w-full sm:px-0 px-5">
         <h4 className="font-syne font-bold">FAQs</h4>
         <div className="lg:max-w-[80%] max-w-full mt-3">

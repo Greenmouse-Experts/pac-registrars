@@ -127,14 +127,14 @@ function Hero() {
           </div>
         </section>
       )}
-      <div className="absolute font-montserrat flex flex-col right-0 divide-y-2 divide-grayPrimary top-[40%] text-center z-50 bg-white font-semibold">
-        <NavLink to="/" className="lg:text-base px-8 py-2">
+      <div className="absolute font-montserrat sm:flex hidden flex-col right-0 divide-y-2 divide-grayPrimary top-[40%] text-center z-50 bg-white font-semibold">
+        <NavLink to="/" className="lg:text-base px-8 py-2 hover:bg-bluePrimary hover:text-white transition-all">
           Self Care
         </NavLink>
-        <NavLink to="/" className="lg:text-base px-8 py-2">
+        <NavLink to="/" className="lg:text-base px-8 py-2 hover:bg-bluePrimary hover:text-white transition-all">
           Forms
         </NavLink>
-        <NavLink to="/" className="lg:text-base px-8 py-2">
+        <NavLink to="/" className="lg:text-base px-8 py-2 hover:bg-bluePrimary hover:text-white transition-all">
           FAQs
         </NavLink>
       </div>

@@ -4,8 +4,8 @@ function Footer() {
   return (
     <footer className="bg-footerImg bg-center bg-no-repeat bg-cover pt-[100px]  pb-2 ">
       <div className="flex gap-20 lg:flex-row flex-col items-start lg:justify-between justify-center">
-        <div className="  lg:w-[400px] w-full flex flex-col gap-10">
-          <p className="font-medium 2xl:text-[16px] text-[14px] text-white">
+        <div className="  lg:w-[35%] w-full flex flex-col gap-10">
+          <p className="font-medium lg:text-base text-sm text-white">
             Subscribe to our Newsletter
           </p>
           <div className="relative flex items-center 2xl:w-[450px] sm:w-[350px] w-full ">
@@ -18,14 +18,14 @@ function Footer() {
               submit
             </button>
           </div>
-          <p className="text-white 2xl:text-[16px] text-[14px] leading-[42.3px]">
+          <p className="text-white lg:text-base text-sm !leading-8 ">
             PAC Registrars, a subsidiary of PanAfrican Capital Holdings Limited
             was established in 2006 as Spring Registrars Limited.{" "}
           </p>
         </div>
         <div className="flex flex-wrap  gap-14">
           <div>
-            <p className="font-medium 2xl:text-[16px] text-[12px] text-white">Company</p>
+            <p className="font-medium 2xl:text-base text-[12px] text-white">Company</p>
             <ul className="flex flex-col 2xl:gap-6 gap-4 lg:mt-14 mt-5">
               <li className="text-[10px] text-grayPrimary font-medium">
                 <NavLink to="/">Home</NavLink>
@@ -45,7 +45,7 @@ function Footer() {
             </ul>
           </div>
           <div>
-            <p className="font-medium 2xl:text-[16px] text-[12px] text-white">Useful Links</p>
+            <p className="font-medium 2xl:text-base text-[12px] text-white">Useful Links</p>
             <ul className="flex flex-col 2xl:gap-6 gap-4 lg:mt-14 mt-5">
               <li className="text-[12px] text-grayPrimary font-medium">
                 <NavLink to="/">Downloads</NavLink>
@@ -65,7 +65,7 @@ function Footer() {
             </ul>
           </div>
           <div>
-            <p className="font-medium 2xl:text-[16px] text-[12px] text-white">Social</p>
+            <p className="font-medium 2xl:text-base text-[12px] text-white">Social</p>
             <ul className="flex flex-col 2xl:gap-6 gap-4 lg:mt-14 mt-5">
               <li className="text-[12px] text-grayPrimary font-medium">
                 <NavLink to="/">Facebook</NavLink>
@@ -85,7 +85,7 @@ function Footer() {
             </ul>
           </div>
           <div>
-            <p className="font-medium 2xl:text-[16px] text-[12px] text-white">Contact Us</p>
+            <p className="font-medium 2xl:text-base text-[12px] text-white">Contact Us</p>
             <ul className="flex flex-col 2xl:gap-6 gap-4 lg:mt-14 mt-5">
               <li className="text-[12px] text-grayPrimary font-medium">
                 <NavLink to="/">122, Bode Thomas St, Surulere, Lagos.</NavLink>
