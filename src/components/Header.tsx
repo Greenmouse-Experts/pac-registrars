@@ -368,7 +368,7 @@ function Header() {
                 >
                   <NavLink
                     className=" py-3 px-2 w-full flex items-center gap-4 text-center text-bluePrimary text-lg text-nowrap hover:bg-bluePrimary hover:text-white hover:scale-[.98] transition-all duration-300"
-                    to="/"
+                    to="/proptyplus"
                     onClick={() => setMenu(false)}
                   >
                     <PiHandshake size={25} />
@@ -382,7 +382,7 @@ function Header() {
                 >
                   <NavLink
                     className=" py-3 px-1 w-full flex items-center gap-4 text-center text-bluePrimary text-lg font-medium text-nowrap"
-                    to="/"
+                    to="/proptyplus"
                     onClick={() => setMenu(false)}
                   >
                     Proptyplus
@@ -521,7 +521,7 @@ function Header() {
             </Button>
             <div
               className={` py-3 absolute w-[15rem] -left-14 xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all   ${
-                open4 ? "top-8" : "-top-[30rem]"
+                open4 ? "top-12" : "-top-[30rem]"
               }`}
             >
               <NavLink

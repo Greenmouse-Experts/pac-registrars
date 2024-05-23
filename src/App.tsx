@@ -17,6 +17,7 @@ import Kyc from "./pages/Kyc";
 import WebRegistry from "./pages/WebRegistry";
 import DocumentManagement from "./pages/DocumentManagement";
 import CompanySecretarial from "./pages/CompanySecretarial";
+import ProptyPlus from "./pages/ProptyPlus";
 
 const router = createBrowserRouter([
   {
@@ -85,6 +86,10 @@ const router = createBrowserRouter([
       {
         path: "/web-registry",
         element: <WebRegistry/>,
+      },
+      {
+        path: "/proptyplus",
+        element: <ProptyPlus/>,
       }
     ],
   },

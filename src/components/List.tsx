@@ -11,7 +11,7 @@ interface ListProps {
 
 function ListItem({item}:ListItemProps) {
   return (
-    <li className="flex items-center gap-4 md:text-lg text-base font-normal ">
+    <li className="flex items-center gap-4 md:text-lg text-base font-normal font-sora ">
       <span>
         <IoMdCheckmarkCircleOutline color="black" size={24} />
       </span>
