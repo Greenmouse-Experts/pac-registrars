@@ -4,7 +4,7 @@ function Management() {
   return (
     <>
       <Banner page="Management" link="/" img="/images/management-banner.png" />
-      <section className="flex md:flex-row flex-col justify-between md:gap-0 gap-10 md:py-32 py-10 items-center bg-[#F9F9F9]">
+      <section className="flex lg:flex-row flex-col justify-between md:gap-0 gap-10 md:py-32 py-10 items-center bg-[#F9F9F9]">
         <div className="relative shadow-lg flex justify-center ">
           <img
             src="/images/leader-5.png"
@@ -40,7 +40,7 @@ function Management() {
           </p>
         </div>
       </section>
-      <section className="flex md:flex-row flex-col-reverse justify-between md:gap-0 gap-10 py-14 items-center bg-white">
+      <section className="flex lg:flex-row flex-col-reverse justify-between md:gap-0 gap-10 py-14 items-center bg-white">
         <div className="md:w-[60%] w-full">
           <h6 className="text-lg font-semibold  ">Dennis Ogbu</h6>
           <p className="">Head, Business Development</p>
@@ -77,7 +77,7 @@ function Management() {
         </div>
       </section>
 
-      <section className="flex md:flex-row flex-col justify-between md:gap-0 gap-10 py-14 items-center bg-[#F9F9F9]">
+      <section className="flex lg:flex-row flex-col justify-between md:gap-0 gap-10 py-14 items-center bg-[#F9F9F9]">
         <div className="relative shadow-lg flex justify-center ">
           <img
             src="/images/leader-7.png"
@@ -120,7 +120,7 @@ function Management() {
           </p>
         </div>
       </section>
-      <section className="flex md:flex-row flex-col-reverse justify-between md:gap-0 gap-10 py-14 items-center bg-white">
+      <section className="flex lg:flex-row flex-col-reverse justify-between md:gap-0 gap-10 py-14 items-center bg-white">
         <div className="md:w-[60%] w-full">
           <h6 className="text-lg font-semibold  ">Aderonke Omotade</h6>
           <p className="">Head, Operations & Compliance</p>
@@ -158,7 +158,7 @@ function Management() {
           </div>
         </div>
       </section>
-      <section className="flex md:flex-row flex-col justify-between md:gap-0 gap-10 py-14 items-center bg-[#F9F9F9]">
+      <section className="flex lg:flex-row flex-col justify-between md:gap-0 gap-10 py-14 items-center bg-[#F9F9F9]">
         <div className="relative shadow-lg flex justify-center ">
           <img
             src="/images/leader-9.png"

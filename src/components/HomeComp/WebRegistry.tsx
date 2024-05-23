@@ -20,7 +20,7 @@ function WebRegistry() {
             help with any questions you have on your path to find financial
             security.
           </p>
-          <p className=" mt-5 2xl:leading-[33px] lg:leading-6">
+          <p className=" mt-5">
             Our core beliefs serve as the cornerstone of their investing
             success, guiding them along their journey towards financial
             security.
