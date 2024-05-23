@@ -6,7 +6,7 @@ function Client() {
       <Banner page="Clients" link="" img="/images/client-banner.png" />
       <section className="md:py-32 py-10 bg-[#f4f4f4] flex items-center justify-between ">
         <div className="font-syne w-full">
-          <p className="text-orangePrimary font-medium ">Clients</p>
+          <p className="text-bluePrimary font-medium ">Clients</p>
           <h4 className=" font-bold font-syne capitalize">
             Our Robust Clientbase
           </h4>
@@ -59,7 +59,56 @@ function Client() {
             <div className="bg-white px-10 h-[117px] flex items-center justify-center rounded-xl ">
               <img src="/images/client-13.svg" alt="" className="max-h-16" />
             </div>
+
+
+            <div className="bg-white px-10 h-[117px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-29.svg" alt="" className="max-h-16" />
+            </div>
+            <div className="bg-white px-10 h-[117px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-30.svg" alt="" className="max-h-16" />
+            </div>
+            <div className="bg-white px-10 h-[117px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-31.svg" alt="" className="max-h-16" />
+            </div>
+            <div className="bg-white px-10 h-[117px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-17.svg" alt="" className="max-h-16" />
+            </div>
+            <div className="bg-white px-10 h-[117px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-18.svg" alt="" className="max-h-16" />
+            </div>
+            <div className="bg-white px-10 h-[117px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-19.svg" alt="" className="max-h-16" />
+            </div>
+            <div className="bg-white px-10 h-[117px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-20.svg" alt="" className="max-h-16" />
+            </div>
+            <div className="bg-white px-10 h-[117px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-21.svg" alt="" className="max-h-16" />
+            </div>
+            <div className="bg-white px-10 h-[117px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-22.svg" alt="" className="max-h-16" />
+            </div>
+            <div className="bg-white px-10 h-[117px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-23.svg" alt="" className="max-h-16" />
+            </div>
+            <div className="bg-white px-10 h-[117px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-24.svg" alt="" className="max-h-16" />
+            </div>
+            <div className="bg-white px-10 h-[117px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-25.svg" alt="" className="max-h-16" />
+            </div>
+            <div className="bg-white px-10 h-[117px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-26.svg" alt="" className="max-h-16" />
+            </div>
+            <div className="bg-white px-10 h-[117px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-27.svg" alt="" className="max-h-16" />
+            </div>
+            <div className="bg-white px-10 h-[117px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-28.svg" alt="" className="max-h-16" />
+            </div>
+           
           </div>
+
         </div>
       </section>
     </>
