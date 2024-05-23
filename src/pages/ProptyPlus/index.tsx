@@ -41,7 +41,7 @@ function ProptyPlus() {
         </div>
 
         <div className="flex lg:flex-row flex-col-reverse items-center lg:gap-20 gap-10">
-          <div className="lg:w-[70%] w-full">
+          <div className="lg:w-[65%] w-full">
             <List
               items={[
                 "Ultimate search experience",
@@ -51,7 +51,6 @@ function ProptyPlus() {
                 "Agent profiling",
                 "Safe and secure",
                 "Rental loan financing",
-                "Monitory the entire shares to prevent forceful takeover of the company from the floor of the Nigeria Stock Exchange",
               ]}
             />
             <div className="mt-3">
@@ -60,30 +59,41 @@ function ProptyPlus() {
             </div>
           </div>
           <img
-            src="/images/registry-2.png"
+            src="/images/proptoplus-2.png"
             alt=""
-            className="lg:w-[30%] w-full"
+            className="lg:w-[35%] w-full"
           />
         </div>
       </section>
 
       <section className="lg:pt-24 pt-16">
-        <div className="flex lg:flex-row flex-col-reverse items-center lg:gap-20 gap-10">
+        <div className="flex lg:flex-row flex-col-reverse items-center lg:gap-20 gap-10 justify-between">
           <img
-            src="/images/registry-3.png"
+            src="/images/proptoplus-3.png"
             alt=""
-            className="lg:w-[30%] w-full"
+            className="lg:w-[35%] w-full"
           />
-          <div className="lg:w-[70%] w-full">
+          <div className="lg:w-[65%] w-full flex justify-end flex-col">
             <h4 className=" font-bold font-syne capitalize text-black mb-5">
-              Web Registry Advantage to a Client
+            Service Offerings (B2B):
             </h4>
             <List
               items={[
-                "Ability to monitor own shares online",
-                "Ability to monitor stockbroker’s activities",
-                "Ability to print out own share reports/statement",
-                "Ability to know actual trade mandate price online",
+                "Combines customer contact with the required forms needed",
+                "Management of clients & contacts in real time",
+                "Effective payment system management",
+                "Scheduling and tracking of payments and rental due",
+                
+                "Transparency and accountability (service charge)",
+                "It saves time and money",
+                "Two way communication between tenants and facility manager",
+                "Schedule maintenance and reminder for various equipment",
+
+                "Report generation",
+                "Unlimited onboarding of properties",
+                "Unlimited onboarding of tenants",
+                "Real time notification to parties involved",
+
               ]}
             />
           </div>

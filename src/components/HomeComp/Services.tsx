@@ -107,8 +107,12 @@ function Services() {
         </div>
 
         <Slider ref={setSliderRef} {...settings}>
-          <div className="lg:max-w-[400px] w-full lg:h-[540px] shadow-md px-10 py-10 flex flex-col items-start bg-white text-black">
-            <img src="/icons/register.gif" alt="file"   className="2xl:w-[60px] w-[70px]" />
+          <div className="lg:max-w-[400px] w-full 2xl:h-[36rem] lg:h-[30em] h-[37rem] shadow-md px-10 py-10 !flex flex-col items-start bg-white text-black">
+            <img
+              src="/icons/register.gif"
+              alt="file"
+              className="2xl:w-[60px] w-[70px] mx-auto"
+            />
             <h5 className="2xl:text-[20px] text-[16px] font-semibold font-syne mt-10">
               Register Maintenance Service
             </h5>
@@ -118,20 +122,16 @@ function Services() {
               records, organizations can streamline operations, enhance
               decision-making processes, and ensure regulatory compliance.
             </p>
-         <div className="mt-auto ">
-         <NavLink
-              to="/about"
-              className="text-bluePrimary font-sora"
-            >
+
+            <NavLink to="/about" className="text-bluePrimary font-sora mt-auto">
               Read more
             </NavLink>
-         </div>
           </div>
-          <div className="lg:max-w-[400px] w-full lg:h-[540px] shadow-md px-10 py-10 flex flex-col items-start bg-white text-black">
+          <div className="lg:max-w-[400px] w-full 2xl:h-[36rem] lg:h-[30em] h-[37rem] shadow-md px-10 py-10 !flex flex-col items-start bg-white text-black">
             <img
               src="/icons/probate.gif"
               alt="file"
-              className="2xl:w-[60px] w-[70px]"
+              className="2xl:w-[60px] w-[70px] mx-auto"
             />
             <h5 className="2xl:text-[20px] text-[16px] font-semibold font-syne mt-10">
               Probate/ Transmission Service
@@ -141,18 +141,20 @@ function Services() {
               planning, and asset distribution, ensuring a smooth and efficient
               process tailored to your specific needs.
             </p>
-            <NavLink
-              to="/about"
-              className="text-bluePrimary font-sora  mt-auto"
-            >
-              Read more
-            </NavLink>
+            <div className="mt-auto">
+              <NavLink
+                to="/about"
+                className="text-bluePrimary font-sora  mt-auto"
+              >
+                Read more
+              </NavLink>
+            </div>
           </div>
-          <div className="lg:max-w-[400px] w-full lg:h-[540px] shadow-md px-10 py-10 flex flex-col items-start bg-white text-black">
+          <div className="lg:max-w-[400px] w-full 2xl:h-[36rem] lg:h-[30em] h-[37rem] shadow-md px-10 py-10 !flex flex-col items-start bg-white text-black">
             <img
               src="/icons/bank.gif"
               alt="file"
-              className="2xl:w-[60px] w-[70px]"
+              className="2xl:w-[60px] w-[70px] mx-auto"
             />
             <h5 className="2xl:text-[20px] text-[16px] font-semibold font-syne mt-10">
               Company Secretarial Service
@@ -169,11 +171,11 @@ function Services() {
               Read more
             </NavLink>
           </div>
-          <div className="lg:max-w-[400px] w-full lg:h-[540px] shadow-md px-10 py-10 flex flex-col items-start bg-white text-black">
+          <div className="lg:max-w-[400px] w-full 2xl:h-[36rem] lg:h-[30em] h-[37rem] shadow-md px-10 py-10 !flex flex-col items-start bg-white text-black">
             <img
               src="/icons/message.gif"
               alt="file"
-              className="2xl:w-[60px] w-[70px]"
+              className="2xl:w-[60px] w-[70px] mx-auto"
             />
             <h5 className="2xl:text-[20px] text-[16px] font-semibold font-syne mt-10">
               e- Notification Service

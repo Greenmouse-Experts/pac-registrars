@@ -15,6 +15,7 @@
 }
 
 body {
+  overflow-x: hidden;
 }
 
 header {
@@ -52,7 +53,7 @@ h6 {
 }
 h4 {
   font-size: 2.5rem;
-  line-break: 45px;
+line-height: 3rem;
 }
 p,
 input,
@@ -61,7 +62,7 @@ button {
   font-family: "Sora", sans-serif;
   font-size: 1.06rem;
   line-height: 2rem;
-  hyphens: none;
+  hyphens: none !important;
 }
 input,
 button,
@@ -79,8 +80,8 @@ select:focus {
 }
 
 section,footer {
-  padding-left: 7%;
-  padding-right: 7%;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 .aboutTop {
@@ -145,6 +146,7 @@ section,footer {
 @media screen and (max-width: 500px) {
 h4{
   font-size: 1.8rem;
+  line-height: 2rem;
 }
 
 a{
@@ -206,6 +208,11 @@ a{
 .form-shadow{
   box-shadow: 0px 4px 72.6px 0px #00000014;
 
+}
+@media screen and (max-width: 1600px) {
+  html {
+    font-size: 90%;
+  }
 }
 @media screen and (max-width: 1024px) {
   html {
