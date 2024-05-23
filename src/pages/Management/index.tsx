@@ -16,7 +16,7 @@ function Management() {
             <p className="font-normal">Managing Director/CEO</p>
           </div>
         </div>
-        <div className="md:w-[63%] w-full">
+        <div className="lg:w-[63%] w-full">
           <h6 className="text-lg font-semibold  ">Ifeanyi John</h6>
           <p className="">Managing Director/CEO</p>
           <p className="text-grayPrimary2 mt-5">
@@ -41,7 +41,7 @@ function Management() {
         </div>
       </section>
       <section className="flex lg:flex-row flex-col-reverse justify-between md:gap-0 gap-10 py-14 items-center bg-white">
-        <div className="md:w-[60%] w-full">
+        <div className="lg:w-[60%] w-full">
           <h6 className="text-lg font-semibold  ">Dennis Ogbu</h6>
           <p className="">Head, Business Development</p>
           <p className="text-grayPrimary2 mt-5">
@@ -89,7 +89,7 @@ function Management() {
             <p className="font-normal">System Administrator</p>
           </div>
         </div>
-        <div className="md:w-[63%] w-full">
+        <div className="lg:w-[63%] w-full">
           <h6 className="text-lg font-semibold  ">Amadi Clifford</h6>
           <p className="">System Administrator</p>
           <p className="text-grayPrimary2 mt-5">
@@ -121,7 +121,7 @@ function Management() {
         </div>
       </section>
       <section className="flex lg:flex-row flex-col-reverse justify-between md:gap-0 gap-10 py-14 items-center bg-white">
-        <div className="md:w-[60%] w-full">
+        <div className="lg:w-[60%] w-full">
           <h6 className="text-lg font-semibold  ">Aderonke Omotade</h6>
           <p className="">Head, Operations & Compliance</p>
           <p className="text-grayPrimary2 mt-5">
@@ -161,9 +161,9 @@ function Management() {
       <section className="flex lg:flex-row flex-col justify-between md:gap-0 gap-10 py-14 items-center bg-[#F9F9F9]">
         <div className="relative shadow-lg flex justify-center ">
           <img
-            src="/images/leader-9.png"
+            src="/images/leader-9.png "
             alt=""
-            className="h-[350px] w-[280px] mix-blend-luminosity "
+            className="h-[350px] w-[280px] mix-blend-hard-light "
           />
           <div className="bg-bluePrimary absolute bottom-3 py-3 text-white rounded-lg flex flex-col items-center justify-center w-[340px]">
             <h6 className="text-lg font-semibold  ">Moses Ojo</h6>
@@ -172,7 +172,7 @@ function Management() {
             </p>
           </div>
         </div>
-        <div className="md:w-[63%] w-full">
+        <div className="lg:w-[63%] w-full">
           <h6 className="text-lg font-semibold  ">Moses Ojo</h6>
           <p className="">Chief Economist/Head, Investment Research</p>
           <p className="text-grayPrimary2 mt-5">

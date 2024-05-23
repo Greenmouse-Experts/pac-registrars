@@ -22,6 +22,7 @@ function Footer() {
             PAC Registrars, a subsidiary of PanAfrican Capital Holdings Limited
             was established in 2006 as Spring Registrars Limited.{" "}
           </p>
+          <img src="/images/footer-logo.png" alt="" className="w-[7rem] -mt-3" />
         </div>
         <div className="flex flex-wrap  gap-14">
           <div>
