@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 function Footer() {
   return (
     <footer className="bg-footerImg bg-center bg-no-repeat bg-cover pt-[100px]  pb-2 ">
-      <div className="flex gap-20 lg:flex-row flex-col items-start lg:justify-between justify-center">
+      <div className="flex gap-20 lg:flex-row flex-col items-start lg:gap-32 lg:justify-start justify-center">
         <div className="  lg:w-[35%] w-full flex flex-col gap-10">
           <p className="font-medium lg:text-base text-sm text-white">
             Subscribe to our Newsletter
@@ -24,7 +24,7 @@ function Footer() {
           </p>
           <img src="/images/footer-logo.png" alt="" className="w-[7rem] -mt-3" />
         </div>
-        <div className="flex flex-wrap  gap-14">
+        <div className="flex flex-wrap  gap-20">
           <div>
             <p className="font-medium 2xl:text-base text-[12px] text-white">Company</p>
             <ul className="flex flex-col 2xl:gap-6 gap-4 lg:mt-14 mt-5">
@@ -65,7 +65,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div>
+          {/* <div>
             <p className="font-medium 2xl:text-base text-[12px] text-white">Social</p>
             <ul className="flex flex-col 2xl:gap-6 gap-4 lg:mt-14 mt-5">
               <li className="text-[12px] text-grayPrimary font-medium">
@@ -84,7 +84,7 @@ function Footer() {
                 <NavLink to="/">Youtube</NavLink>
               </li>
             </ul>
-          </div>
+          </div> */}
           <div>
             <p className="font-medium 2xl:text-base text-[12px] text-white">Contact Us</p>
             <ul className="flex flex-col 2xl:gap-6 gap-4 lg:mt-14 mt-5">
