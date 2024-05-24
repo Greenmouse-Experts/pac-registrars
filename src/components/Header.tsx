@@ -421,7 +421,7 @@ function Header() {
                       setOpen3((prev) => !prev);
                       setMenu(false);
                     }}
-                    to="/"
+                    to="/forms"
                   >
                     <GiNotebook size={25} />
                     Forms
@@ -471,7 +471,7 @@ function Header() {
                       setOpen3((prev) => !prev);
                       setMenu(false);
                     }}
-                    to="/"
+                    to="/forms"
                   >
                     Forms
                   </NavLink>

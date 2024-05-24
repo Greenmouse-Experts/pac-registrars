@@ -131,10 +131,10 @@ function Hero() {
         <NavLink to="/" className="lg:text-base px-8 py-2 hover:bg-bluePrimary hover:text-white transition-all font-semibold">
           Self Care
         </NavLink>
-        <NavLink to="/" className="lg:text-base px-8 py-2 hover:bg-bluePrimary hover:text-white transition-all font-semibold">
+        <NavLink to="/forms" className="lg:text-base px-8 py-2 hover:bg-bluePrimary hover:text-white transition-all font-semibold">
           Forms
         </NavLink>
-        <NavLink to="/" className="lg:text-base px-8 py-2 hover:bg-bluePrimary hover:text-white transition-all font-semibold">
+        <NavLink to="/faqs" className="lg:text-base px-8 py-2 hover:bg-bluePrimary hover:text-white transition-all font-semibold">
           FAQs
         </NavLink>
       </div>

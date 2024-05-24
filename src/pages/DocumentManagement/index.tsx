@@ -1,6 +1,7 @@
 import Banner from "../../components/Banner";
-import Button from "../../components/Button";
+
 import SmallCard from "../../components/SmallCard";
+import ManagementForm from "../../components/forms/ManagementForm";
 
 function DocumentManagement() {
   return (
@@ -55,56 +56,10 @@ function DocumentManagement() {
       </section>
 
       <section className="lg:py-24 py-16 sm:px-[7%] px-0 bg-[#F9F9F9] mt-32 mb-20 sm:mx-10 flex justify-center items-center form-shadow">
-        <form className="flex flex-col 2xl:gap-8 gap-5 lg:w-[45rem] w-full bg-white p-10">
-          <h5 className="font-montserrat text-[1.4rem] font-semibold  ">
-            Contact Us
-          </h5>
-          <p className=" font-medium font-montserrat  ">
-          Are you in need of our Document Management System or you are considering referring us to a client, please click here to provide your details. Be sure that our staff will reach out to you.
-          </p>
-          <div className=" flex lg:flex-row flex-col justify-between gap-8 ">
-            <input
-              type="text"
-              placeholder="Name"
-              className="bg-[#F4F4F4] 2xl:h-[60px]  h-[50px] pl-5 lg:w-[373px] w-full"
-            />
-            <input
-              type="text"
-              placeholder="Email"
-              className="bg-[#F4F4F4] lg:w-[373px] w-full 2xl:h-[60px]  h-[50px] pl-5"
-            />
-          </div>
-          <div className=" justify-between gap-8 w-full ">
-            <input
-              type="tel"
-              placeholder="Phone Number"
-              className="bg-[#F4F4F4] 2xl:h-[60px]  h-[50px] pl-5 w-full"
-            />
-          
-          </div>
-          <div className=" ">
-          <input
-              type="tel"
-              placeholder="WhatsApp Number"
-              className="bg-[#F4F4F4]  w-full 2xl:h-[60px]  h-[50px] pl-5"
-            />
-          </div>
-          <div className=" ">
-            <input
-              type="text"
-              placeholder="Name of Organization"
-              className="bg-[#F4F4F4] 2xl:h-[60px] placeholder:text-[text-grayPrimary2] h-[50px] pl-5 w-full"
-            />
-          </div>
-          <div className=" ">
-            <textarea
-              placeholder="Brief details of the service you want from us"
-              className="bg-[#F4F4F4] placeholder:text-[text-grayPrimary2] h-[7.5rem] pl-5 pt-4 w-full"
-            />
-          </div>
-          
-          <Button type="">Submit Form</Button>
-        </form>
+      <div className="lg:w-[45rem] w-full">
+<ManagementForm/>
+      </div>
+       
       </section>
     </>
   );

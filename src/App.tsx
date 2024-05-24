@@ -18,6 +18,7 @@ import WebRegistry from "./pages/WebRegistry";
 import DocumentManagement from "./pages/DocumentManagement";
 import CompanySecretarial from "./pages/CompanySecretarial";
 import ProptyPlus from "./pages/ProptyPlus";
+import Forms from "./pages/Form";
 
 const router = createBrowserRouter([
   {
@@ -90,6 +91,9 @@ const router = createBrowserRouter([
       {
         path: "/proptyplus",
         element: <ProptyPlus/>,
+      },{
+        path: "/forms",
+        element: <Forms/>,
       }
     ],
   },
