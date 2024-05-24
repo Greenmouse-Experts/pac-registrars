@@ -4,7 +4,7 @@ import SmallCard from "../../components/SmallCard";
 function Kyc() {
   return (
     <>
-      <Banner page="Document Management" link="" img="/images/kyc-banner.png" />
+      <Banner page="KYC Service" link="" img="/images/kyc-banner.png" />
       <section className="lg:pt-24 pt-16 bg-white flex lg:flex-row flex-col items-center lg:gap-20 gap-10 ">
         <div className="lg:w-[44%] w-full">
           <img

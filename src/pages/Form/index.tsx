@@ -10,7 +10,7 @@ function Forms() {
 
   return (
     <>
-      <Banner page="Forms" link="" img="/images/maintenance-banner.png" />
+      <Banner page="Forms" link="" img="/images/form-banner.png" />
 
       <section className="lg:py-24 pt-16 bg-white flex lg:flex-row flex-col items-center lg:gap-20 gap-10 ">
         <div>
