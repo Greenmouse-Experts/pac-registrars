@@ -6,8 +6,8 @@ function Leadership() {
   return (
     <>
       <Banner page="Leadership" link="/" img="/images/leader-banner.png" />
-      <section className="bg-white grid grid-cols-[repeat(auto-fill,_minmax(20rem,_1fr))] gap-11  md:py-32 py-10 ">
-      <div className="relative shadow-lg flex justify-center">
+      <section className="bg-white grid grid-cols-[repeat(auto-fill,_minmax(25rem,_1fr))] gap-11  md:py-32 py-10 ">
+      <div className="relative about-shadow flex justify-center">
           <img
             src="/images/leader-2.png"
             alt=""
@@ -29,7 +29,7 @@ function Leadership() {
             </NavLink>
           </div>
         </div>
-        <div className="relative shadow-lg flex justify-center">
+        <div className="relative about-shadow flex justify-center">
           <img
             src="/images/leader-1.png"
             alt=""
@@ -52,7 +52,7 @@ function Leadership() {
           </div>
         </div>
        
-        <div className="relative shadow-lg flex justify-center">
+        <div className="relative about-shadow flex justify-center">
           <img
             src="/images/leader-3.png"
             alt=""
@@ -75,7 +75,7 @@ function Leadership() {
           </div>
         </div>
 
-        <div className="relative shadow-lg flex justify-center">
+        <div className="relative about-shadow flex justify-center">
           <img
             src="/images/leader-4.png"
             alt=""
@@ -97,7 +97,7 @@ function Leadership() {
             </NavLink>
           </div>
         </div>
-        <div className="relative shadow-lg flex justify-center">
+        <div className="relative about-shadow flex justify-center">
           <img
             src="/images/leader-5.png"
             alt=""

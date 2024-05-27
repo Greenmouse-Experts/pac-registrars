@@ -11,7 +11,7 @@ interface BannerProps {
 function Banner({ page, img }: BannerProps) {
   return (
     <section className={` lg:h-[22rem] h-[14rem]  bg-cover bg-center flex justify-center items-start flex-col relative px-0`}>
-      <img src={img ? img : "/images/about-banner.png"} alt="" className="w-full h-full" />
+      <img src={img ? img : "/images/about-banner.png"} alt="" className="w-full h-full object-cover object-center" />
 
      <div className="absolute px-[7%]">
      <h4 className="lg:text-6xl font-bold font-montserrat text-4xl capitalize text-white mt-5 2xl:mt-0">

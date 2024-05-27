@@ -11,7 +11,7 @@ function DataRegisterMaintenence() {
       <section className="lg:pt-24 lg:pb-32 py-16">
         <div>
           <p className="text-bluePrimary font-medium ">
-          Some of our services inclueds:
+          Some of our services includes:
           </p>
         </div>
         <div className="grid grid-cols-[repeat(auto-fill,_minmax(18rem,_1fr))] gap-8 mt-14">
