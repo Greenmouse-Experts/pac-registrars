@@ -1,17 +1,46 @@
 import { FaArrowCircleRight } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 
 function Hero2() {
   return (
-    <section className="  bg-white text-black py-16">
+    <section className="  bg-white text-black py-24 lg:pb-32">
       <div className="flex lg:flex-row flex-col md:gap-20 gap-5 justify-between items-start">
         <div className="lg:max-w-[45%] w-full relative">
           <img src="/images/global-img.png" alt="" className="w-full" />
-          <img
-            src="/images/global-inside.svg"
-            alt=""
-            className="absolute lg:-right-20 right-5 -bottom-20 lg:scale-90 md:scale-75 scale-50 "
-          />
+          <div className="absolute lg:-right-20 right-5 -bottom-20 font-sora bg-bluePrimary rounded-lg text-white px-6 py-8 xl:scale-100 lg:scale-75 scale-50">
+            <div>
+              <h6 className=" text-2xl font-bold pb-2 text-center">Our Services</h6>
+              <div className="bg-white h-1 w-full rounded-lg"></div>
+            </div>
+
+            <div className=" flex flex-col gap-4 mt-5">
+              <NavLink to="/probate-services" className="flex items-center gap-4 md:text-lg text-base font-normal font-sora ">
+                <span>
+                  <IoMdCheckmarkCircleOutline size={24} />
+                </span>
+                Probate
+              </NavLink>
+              <NavLink to="/data-register-maintenance" className="flex items-center gap-4 md:text-lg text-base font-normal font-sora ">
+                <span>
+                  <IoMdCheckmarkCircleOutline size={24} />
+                </span>
+                Register Business
+              </NavLink>
+              <NavLink to="/company-secretarial" className="flex items-center gap-4 md:text-lg text-base font-normal font-sora ">
+                <span>
+                  <IoMdCheckmarkCircleOutline size={24} />
+                </span>
+                Company Secretarial
+              </NavLink>
+              <NavLink to="/document-management" className="flex items-center gap-4 md:text-lg text-base font-normal font-sora ">
+                <span>
+                  <IoMdCheckmarkCircleOutline size={24} />
+                </span>
+                Document Management
+              </NavLink>
+            </div>
+          </div>
         </div>
         <div className="lg:max-w-[45%] w-full font-syne">
           <p className="text-bluePrimary text-lg font-semibold ">
