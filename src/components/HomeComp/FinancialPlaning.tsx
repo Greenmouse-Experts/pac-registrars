@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 
 
 function FinancialPlaning() {
@@ -13,7 +14,7 @@ function FinancialPlaning() {
           </h4>
         </div>
           <div className="mt-8">
-            <button  className={` flex gap-1 items-center 2xl:py-3 2xl:px-10 py-[5px] whitespace-nowrap hover:-translate-y-1 hover:shadow-md transition-all font-semibold px-4 text-base 'w-fit bg-white text-bluePrimary`}>Download Form</button>
+            <NavLink to="/forms" className={` flex gap-1 items-center 2xl:py-3 2xl:px-10 py-[5px] whitespace-nowrap hover:-translate-y-1 hover:shadow-md transition-all font-semibold px-4 text-base 'w-fit bg-white text-bluePrimary`}>View Forms</NavLink>
           </div>
       </section>
     </>

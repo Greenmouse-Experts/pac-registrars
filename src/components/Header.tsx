@@ -187,7 +187,7 @@ function Header() {
                       setOpen1((prev) => !prev);
                       setMenu(false);
                     }}
-                    to="/data-register-maintenance"
+                    to="/register-maintenance"
                   >
                     <span>
                       <PiClipboardText size={25} />
@@ -265,7 +265,7 @@ function Header() {
                       setOpen1((prev) => !prev);
                       setMenu(false);
                     }}
-                    to="/"
+                    to="/e-notification"
                   >
                     <span>
                       <IoIosNotifications size={25} />
@@ -284,7 +284,7 @@ function Header() {
                       setOpen1((prev) => !prev);
                       setMenu(false);
                     }}
-                    to="/data-register-maintenance"
+                    to="/register-maintenance"
                   >
                     Register Maintenance
                   </NavLink>
@@ -345,7 +345,7 @@ function Header() {
                       setOpen1((prev) => !prev);
                       setMenu(false);
                     }}
-                    to="/"
+                    to="/e-notification"
                   >
                     e-Notification
                   </NavLink>
@@ -410,7 +410,7 @@ function Header() {
                       setOpen3((prev) => !prev);
                       setMenu(false);
                     }}
-                    to="/"
+                    to="/annual-report"
                   >
                     <HiDocumentChartBar size={25} />
                     Company's Annual Report
@@ -460,7 +460,7 @@ function Header() {
                       setOpen3((prev) => !prev);
                       setMenu(false);
                     }}
-                    to="/"
+                    to="/annual-report"
                   >
                     Company's Annual Report
                   </NavLink>

@@ -5,7 +5,7 @@ import List from "../../components/List";
 function ProptyPlus() {
   return (
     <>
-      <Banner page="Proptyplus" link="" img="/images/web-banner.png" />
+      <Banner page="Proptyplus" link="" img="/images/prop-banner.png" />
       <section className="lg:pt-24 pt-16 bg-white flex lg:flex-row flex-col items-center lg:gap-20 gap-10 ">
         <div className="lg:w-[44%] w-full">
           <img

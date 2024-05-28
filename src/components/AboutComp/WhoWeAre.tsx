@@ -1,6 +1,6 @@
 function WhoWeAre() {
   return (
-    <section className="md:py-32 py-10 bg-white flex md:flex-row flex-col items-center justify-between ">
+    <section className="md:py-24 py-10 bg-white flex md:flex-row flex-col items-center justify-between ">
       <div className="md:w-[55%] w-full font-syne">
         <p className="text-bluePrimary font-medium ">
           About Pac Registrars
@@ -29,7 +29,7 @@ function WhoWeAre() {
         <img
           src="/images/whoweare.png"
           alt=""
-          className="w-full h-[350px] object-cover"
+          className="w-full h-[350px] object-cover rounded-lg"
         />
         <img
           src="/icons/arrow-down-large.svg"

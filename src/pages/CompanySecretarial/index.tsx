@@ -1,5 +1,6 @@
 import Banner from "../../components/Banner";
-import SmallCard2 from "../../components/SmallCard2";
+import SmallCardWithIcon2 from "../../components/cards/SmallCardWithIcon2";
+
 import SecretarialForm from "../../components/forms/SecretarialForm";
 
 function CompanySecretarial() {
@@ -47,46 +48,46 @@ function CompanySecretarial() {
           </p>
         </div>
         <div className="grid grid-cols-[repeat(auto-fill,_minmax(18rem,_1fr))] gap-8 mt-14">
-          <SmallCard2>
+          <SmallCardWithIcon2 img="/icons/comp1.svg">
             <p className="font-semibold mb-3">Board Support</p>
             <p>
               Organizing and facilitating board and committee meetings,
               preparing agendas and minutes, and ensuring compliance with
               statutory requirements for meetings.
             </p>
-          </SmallCard2>
-          <SmallCard2>
+          </SmallCardWithIcon2>
+          <SmallCardWithIcon2 img="/icons/comp2.svg">
             <p className="font-semibold mb-3">Corporate Governance</p>
             <p>
               Advising on and ensuring compliance with corporate governance
               principles, including board structure, director responsibilities,
               and shareholder rights.
             </p>
-          </SmallCard2>
-          <SmallCard2>
+          </SmallCardWithIcon2>
+          <SmallCardWithIcon2 img="/icons/comp3.svg">
             <p className="font-semibold mb-3">Statutory Compliance</p>
             <p>
               Ensuring compliance with relevant company laws and regulations,
               such as filing annual returns, maintaining statutory registers,
               and updating company records.
             </p>
-          </SmallCard2>
-          <SmallCard2>
+          </SmallCardWithIcon2>
+          <SmallCardWithIcon2 img="/icons/comp4.svg">
             <p className="font-semibold mb-3">Regulatory Compliance</p>
             <p>
               Monitoring changes in legislation and regulations affecting the
               company and ensuring timely compliance with new requirements.
             </p>
-          </SmallCard2>
-          <SmallCard2>
+          </SmallCardWithIcon2>
+          <SmallCardWithIcon2 img="/icons/comp5.svg">
             <p className="font-semibold mb-3">Document Management</p>
             <p>
               Maintaining corporate records, including minutes, resolutions, and
               legal documents, and ensuring they are stored securely and
               accessible when needed.
             </p>
-          </SmallCard2>
-          <SmallCard2>
+          </SmallCardWithIcon2>
+          <SmallCardWithIcon2 img="/icons/comp6.svg">
             <p className="font-semibold mb-3 text-center">
               Corporate Secretariat Software Solutions
             </p>
@@ -95,41 +96,41 @@ function CompanySecretarial() {
               company secretarial tasks, such as managing corporate records and
               compliance calendars.
             </p>
-          </SmallCard2>
-          <SmallCard2>
+          </SmallCardWithIcon2>
+          <SmallCardWithIcon2 img="/icons/comp7.svg">
             <p className="font-semibold mb-3">Advisory Services</p>
             <p>
               Providing advice and guidance to the board and senior management
               on corporate governance best practices, regulatory changes, and
               compliance issues.
             </p>
-          </SmallCard2>
-          <SmallCard2>
+          </SmallCardWithIcon2>
+          <SmallCardWithIcon2 img="/icons/comp8.svg">
             <p className="font-semibold mb-3">Shareholder Services</p>
             <p>
               Managing communication with shareholders, organizing shareholder
-              meetings, and handling share transactions such as transfers and
+              meetings, and handling share transactions such as transfers <br/> and
               issuances.
             </p>
-          </SmallCard2>
+          </SmallCardWithIcon2>
 
-          <SmallCard2>
+          <SmallCardWithIcon2 img="/icons/comp9.svg">
             <p className="font-semibold mb-3">Incorporation Services</p>
             <p>
               Assisting with the formation of a new company, including drafting
               the necessary documents, filing incorporation papers with the
-              relevant authorities, and obtaining necessary licenses and
+              relevant authorities, and obtaining necessary licenses <br/> and
               permits.
             </p>
-          </SmallCard2>
-          <SmallCard2>
+          </SmallCardWithIcon2>
+          <SmallCardWithIcon2 img="/icons/comp10.svg">
             <p className="font-semibold mb-3">Corporate Restructuring</p>
             <p className="hyphens-none">
               Assisting with corporate transactions such as mergers,
               acquisitions, and reorganizations, including drafting
               documentation and ensuring regulatory compliance.
             </p>
-          </SmallCard2>
+          </SmallCardWithIcon2>
         </div>
       </section>
 

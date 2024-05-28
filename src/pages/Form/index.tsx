@@ -57,7 +57,7 @@ function Forms() {
                 <div className="absolute bottom-0 bg-bluePrimary h-1 w-full" />
               </div>
 
-              <NavLink to="faqs" className="bg-bluePrimary text-white w-fit py-3 px-5">
+              <NavLink to="/faqs" className="bg-bluePrimary text-white w-fit py-3 px-5">
 Click to view FAQs
               </NavLink>
             </div>

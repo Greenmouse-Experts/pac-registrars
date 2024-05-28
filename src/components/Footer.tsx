@@ -22,11 +22,17 @@ function Footer() {
             PAC Registrars, a subsidiary of PanAfrican Capital Holdings Limited
             was established in 2006 as Spring Registrars Limited.{" "}
           </p>
-          <img src="/images/footer-logo.png" alt="" className="w-[7rem] -mt-3" />
+          <img
+            src="/images/footer-logo.png"
+            alt=""
+            className="w-[7rem] -mt-3"
+          />
         </div>
         <div className="flex flex-wrap  gap-20">
           <div>
-            <p className="font-medium 2xl:text-base text-[12px] text-white">Company</p>
+            <p className="font-medium 2xl:text-base text-[12px] text-white">
+              Company
+            </p>
             <ul className="flex flex-col 2xl:gap-6 gap-4 lg:mt-14 mt-5">
               <li className="text-[10px] text-grayPrimary font-medium">
                 <NavLink to="/">Home</NavLink>
@@ -35,10 +41,13 @@ function Footer() {
                 <NavLink to="/about">About Us</NavLink>
               </li>
               <li className="text-[12px] text-grayPrimary font-medium">
-                <NavLink to="/">Services</NavLink>
+                <NavLink to="/">Product</NavLink>
               </li>
               <li className="text-[12px] text-grayPrimary font-medium">
-                <NavLink to="/media">Gallery</NavLink>
+                <NavLink to="/media">Media</NavLink>
+              </li>
+              <li className="text-[12px] text-grayPrimary font-medium">
+                <NavLink to="/media">Contact Us</NavLink>
               </li>
               <li className="text-[12px] text-grayPrimary font-medium">
                 <NavLink to="/faqs">FAQs</NavLink>
@@ -46,22 +55,32 @@ function Footer() {
             </ul>
           </div>
           <div>
-            <p className="font-medium 2xl:text-base text-[12px] text-white">Useful Links</p>
+            <p className="font-medium 2xl:text-base text-[12px] text-white">
+              Services
+            </p>
             <ul className="flex flex-col 2xl:gap-6 gap-4 lg:mt-14 mt-5">
               <li className="text-[12px] text-grayPrimary font-medium">
-                <NavLink to="/">Downloads</NavLink>
+                <NavLink to="/register-maintenance">
+                  Register Maintenance
+                </NavLink>
               </li>
               <li className="text-[12px] text-grayPrimary font-medium">
-                <NavLink to="/">Self Service</NavLink>
+                <NavLink to="/document-management">Document Management</NavLink>
               </li>
               <li className="text-[12px] text-grayPrimary font-medium">
-                <NavLink to="/">Services</NavLink>
+                <NavLink to="/company-secretarial">Company Secretarial</NavLink>
               </li>
               <li className="text-[12px] text-grayPrimary font-medium">
-                <NavLink to="/">Terms & Conditions</NavLink>
+                <NavLink to="/probate-services">Probate/ Transmission</NavLink>
               </li>
               <li className="text-[12px] text-grayPrimary font-medium">
-                <NavLink to="/">Privacy</NavLink>
+                <NavLink to="/document-management">KYC Services</NavLink>
+              </li>
+              <li className="text-[12px] text-grayPrimary font-medium">
+                <NavLink to="/company-secretarial">Web Registry</NavLink>
+              </li>
+              <li className="text-[12px] text-grayPrimary font-medium">
+                <NavLink to="/e-notification">e-Notification</NavLink>
               </li>
             </ul>
           </div>
@@ -86,7 +105,9 @@ function Footer() {
             </ul>
           </div> */}
           <div>
-            <p className="font-medium 2xl:text-base text-[12px] text-white">Contact Us</p>
+            <p className="font-medium 2xl:text-base text-[12px] text-white">
+              Contact Us
+            </p>
             <ul className="flex flex-col 2xl:gap-6 gap-4 lg:mt-14 mt-5">
               <li className="text-[12px] text-grayPrimary font-medium">
                 <NavLink to="/">122, Bode Thomas St, Surulere, Lagos.</NavLink>
@@ -118,7 +139,9 @@ function Footer() {
         </div>
       </div>
       <div className="text-grayPrimary flex justify-center items-center lg:mx-10 mx-0 py-10 border-t-[0.7px] border-grayPrimary mt-16">
-        <p className="text-base">Copyright © 2024 . PAC Registrars | All Rights Reserved</p>
+        <p className="text-base">
+          Copyright © 2024 . PAC Registrars | All Rights Reserved
+        </p>
       </div>
     </footer>
   );

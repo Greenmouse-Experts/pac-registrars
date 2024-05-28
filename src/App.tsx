@@ -19,6 +19,8 @@ import DocumentManagement from "./pages/DocumentManagement";
 import CompanySecretarial from "./pages/CompanySecretarial";
 import ProptyPlus from "./pages/ProptyPlus";
 import Forms from "./pages/Form";
+import ENotification from "./pages/ENotification";
+import AnnualReport from "./pages/AnnualReport";
 
 const router = createBrowserRouter([
   {
@@ -61,7 +63,7 @@ const router = createBrowserRouter([
         element: <Careers />,
       },
       {
-        path: "/data-register-maintenance",
+        path: "/register-maintenance",
         element: <DataRegisterMaintenence />,
       },
       {
@@ -86,14 +88,23 @@ const router = createBrowserRouter([
       },
       {
         path: "/web-registry",
-        element: <WebRegistry/>,
+        element: <WebRegistry />,
       },
       {
         path: "/proptyplus",
-        element: <ProptyPlus/>,
-      },{
+        element: <ProptyPlus />,
+      },
+      {
         path: "/forms",
-        element: <Forms/>,
+        element: <Forms />,
+      },
+      {
+        path: "/e-notification",
+        element: <ENotification />,
+      },
+      {
+        path: "/annual-report",
+        element: <AnnualReport />,
       }
     ],
   },

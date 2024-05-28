@@ -1,5 +1,5 @@
 import Banner from "../../components/Banner";
-import SmallCard from "../../components/SmallCard";
+import SmallCardWithIcon from "../../components/cards/SmallCardWithIcon";
 
 function Kyc() {
   return (
@@ -30,15 +30,15 @@ function Kyc() {
       </section>
       <section className="lg:pt-24 pt-16">
         <div>
-          <p className="text-bluePrimary font-medium ">
+          <p className="text-bluePrimary font-semibold text-lg ">
             Our service is open to businesses such as :
           </p>
         </div>
         <div className="grid grid-cols-[repeat(auto-fill,_minmax(18rem,_1fr))] gap-8 mt-14">
-          <SmallCard text="Banks" />
-          <SmallCard text="Micro-finance Bank" />
-          <SmallCard text="Non-financial service" />
-          <SmallCard text="E-commerce" />
+          <SmallCardWithIcon img="/icons/kyc1.svg" text="Banks" />
+          <SmallCardWithIcon img="/icons/kyc2.svg" text="Micro-finance Bank" />
+          <SmallCardWithIcon img="/icons/kyc3.svg" text="Non-financial service" />
+          <SmallCardWithIcon img="/icons/kyc4.svg" text="E-commerce" />
         </div>
       </section>
       <section className="lg:py-16 lg:my-20 py-10 my-14 bg-[#F9F9F9]">

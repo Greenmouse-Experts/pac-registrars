@@ -8,22 +8,29 @@ function Values() {
             Our Core Values
           </h4>
         </div>
-        <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 mt-10">
-          <div className="bg-white py-8 px-10">
-            <h4 className="text-[25px] font-syne font-semibold">Our Mission</h4>
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-12 mt-10">
+          <div className="bg-white py-8 px-20 relative">
+            <h4 className="text-2xl font-syne font-semibold">Our Mission</h4>
             <p className="text-[#606060] 2xl:mt-5 mt-3 2xl:leading-[33px] font-sora ">
               Our mission is to excel as a Data Management and Advisory Services
               Firm, delivering unparalleled expertise and innovative solutions
               to our clients.
             </p>
+            <div className="bg-bluePrimary w-fit rounded-full p-5  absolute -top-10 -left-10">
+              <img src="/icons/mission.svg" alt="mission" className=" w-20 h-20"/>
+            </div>
           </div>
-          <div className="bg-white py-8 px-10">
-            <h4 className="text-[25px] font-syne font-semibold">Our Vision</h4>
+          <div className="bg-white py-8 px-20 relative">
+            <h4 className="text-2xl font-syne font-semibold">Our Vision</h4>
             <p className="text-[#606060] 2xl:mt-5 mt-3 2xl:leading-[33px] font-sora ">
               Empowering clients through quality services, innovating to add
               enduring value, continuously exceeding expectations, fostering
               trust through excellence, driving success, together.
             </p>
+
+            <div className="bg-bluePrimary w-fit rounded-full p-5  absolute -top-10 -left-10">
+              <img src="/icons/vision.svg" alt="mission" className=" w-20 h-20"/>
+            </div>
           </div>
         </div>
       </section>
