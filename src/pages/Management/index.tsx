@@ -5,19 +5,19 @@ function Management() {
     <>
       <Banner page="Management" link="/" img="/images/management-banner.png" />
       <section className="flex lg:flex-row flex-col justify-between md:gap-0 gap-10 md:py-32 py-10 items-center bg-[#F9F9F9]">
-        <div className="relative shadow-lg flex justify-center ">
+        <div className="relative shadow-lg flex justify-center bg-white p-10 lg:w-[30%] w-full scale-90">
           <img
             src="/images/leader-5.png"
             alt=""
-            className="h-[350px] w-[280px] mix-blend-luminosity "
+            className=" mix-blend-luminosity "
           />
-          <div className="bg-bluePrimary absolute bottom-3 py-3 text-white rounded-lg flex flex-col items-center justify-center w-[340px]">
-            <h6 className="text-lg font-semibold  ">Ifeanyi John</h6>
+          <div className="bg-bluePrimary absolute bottom-0 py-5 text-white rounded-lg flex flex-col items-center justify-center w-full">
+            <h6 className="text-2xl font-semibold  ">Ifeanyi John</h6>
             <p className="font-normal">Managing Director/CEO</p>
           </div>
         </div>
         <div className="lg:w-[63%] lg:mt-0 mt-5 w-full">
-          <h6 className="text-lg font-semibold  ">Ifeanyi John</h6>
+          <h6 className="text-2xl font-semibold  ">Ifeanyi John</h6>
           <p className="">Managing Director/CEO</p>
           <p className="text-grayPrimary2 mt-5">
             Ifeanyi is an astute share registration professional with over 13
@@ -42,7 +42,7 @@ function Management() {
       </section>
       <section className="flex lg:flex-row flex-col-reverse justify-between md:gap-0 gap-10 py-14 items-center bg-white">
         <div className="lg:w-[60%] lg:mt-0 mt-5 w-full">
-          <h6 className="text-lg font-semibold  ">Dennis Ogbu</h6>
+          <h6 className="text-2xl font-semibold  ">Dennis Ogbu</h6>
           <p className="">Head, Business Development</p>
           <p className="text-grayPrimary2 mt-5">
             Dennis Ogbu holds a Bsc. Degree in Accounting from Abia State
@@ -64,33 +64,33 @@ function Management() {
             negotiation, implementation and Financing.
           </p>
         </div>
-        <div className="relative shadow-lg flex justify-center">
+        <div className="relative flex justify-center bg-white p-10 lg:w-[30%] w-full scale-90">
           <img
             src="/images/leader-6.png"
             alt=""
-            className="h-[350px] w-[280px] mix-blend-luminosity "
+            className="mix-blend-luminosity "
           />
-          <div className="bg-bluePrimary absolute bottom-3 py-3 text-white rounded-lg flex flex-col items-center justify-center w-[340px]">
-            <h6 className="text-lg font-semibold  ">Dennis Ogbu</h6>
+          <div className="bg-bluePrimary absolute bottom-0 py-5 text-white rounded-lg flex flex-col items-center justify-center w-full">
+            <h6 className="text-2xl font-semibold  ">Dennis Ogbu</h6>
             <p className="font-normal">Head, Business Development</p>
           </div>
         </div>
       </section>
 
       <section className="flex lg:flex-row flex-col justify-between md:gap-0 gap-10 py-14 items-center bg-[#F9F9F9]">
-        <div className="relative shadow-lg flex justify-center ">
+        <div className="relative shadow-lg flex justify-center bg-white p-10 lg:w-[30%] w-full scale-90  ">
           <img
             src="/images/leader-7.png"
             alt=""
-            className="h-[350px] w-[280px] mix-blend-luminosity "
+            className="mix-blend-luminosity "
           />
-          <div className="bg-bluePrimary absolute bottom-3 py-3 text-white rounded-lg flex flex-col items-center justify-center w-[340px]">
-            <h6 className="text-lg font-semibold  ">Amadi Clifford</h6>
+          <div className="bg-bluePrimary absolute bottom-0 py-5 text-white rounded-lg flex flex-col items-center justify-center w-full">
+            <h6 className="text-2xl font-semibold  ">Amadi Clifford</h6>
             <p className="font-normal">System Administrator</p>
           </div>
         </div>
         <div className="lg:w-[63%] lg:mt-0 mt-5 w-full">
-          <h6 className="text-lg font-semibold  ">Amadi Clifford</h6>
+          <h6 className="text-2xl font-semibold  ">Amadi Clifford</h6>
           <p className="">System Administrator</p>
           <p className="text-grayPrimary2 mt-5">
             Amadi Clifford holds B.Sc. in Business Administration from Lagos
@@ -122,7 +122,7 @@ function Management() {
       </section>
       <section className="flex lg:flex-row flex-col-reverse justify-between md:gap-0 gap-10 py-14 items-center bg-white">
         <div className="lg:w-[60%] lg:mt-0 mt-5 w-full">
-          <h6 className="text-lg font-semibold  ">Aderonke Omotade</h6>
+          <h6 className="text-2xl font-semibold  ">Aderonke Omotade</h6>
           <p className="">Head, Operations & Compliance</p>
           <p className="text-grayPrimary2 mt-5">
             Aderonke is a seasoned professional with over 14 years’ experience
@@ -146,34 +146,34 @@ function Management() {
             her joining PAC Registrars, she worked with Africa Prudential Plc.
           </p>
         </div>
-        <div className="relative shadow-lg flex justify-center">
+        <div className="relative flex justify-center bg-white p-10 lg:w-[30%] w-full scale-90 ">
           <img
             src="/images/leader-8.png"
             alt=""
-            className="h-[350px] w-[280px] mix-blend-luminosity "
+            className="mix-blend-luminosity "
           />
-          <div className="bg-bluePrimary absolute bottom-3 py-3 text-white rounded-lg flex flex-col items-center justify-center w-[340px]">
-            <h6 className="text-lg font-semibold  ">Aderonke Omotade</h6>
+          <div className="bg-bluePrimary absolute bottom-0 py-5 text-white rounded-lg flex flex-col items-center justify-center w-full">
+            <h6 className="text-2xl font-semibold  ">Aderonke Omotade</h6>
             <p className="font-normal">Head, Operations & Compliance</p>
           </div>
         </div>
       </section>
       <section className="flex lg:flex-row flex-col justify-between md:gap-0 gap-10 py-14 items-center bg-[#F9F9F9]">
-        <div className="relative shadow-lg flex justify-center ">
+        <div className=" relative shadow-lg flex justify-center bg-white p-10 lg:w-[30%] w-full scale-90 ">
           <img
             src="/images/leader-9.png"
             alt=""
-            className="h-[350px] w-[280px] mix-blend-hard-light "
+            className=" mix-blend-hard-light "
           />
-          <div className="bg-bluePrimary absolute bottom-3 py-3 text-white rounded-lg flex flex-col items-center justify-center w-[340px]">
-            <h6 className="text-lg font-semibold  ">Moses Ojo</h6>
+          <div className="bg-bluePrimary absolute bottom-0 py-5 text-white rounded-lg flex flex-col items-center justify-center w-full">
+            <h6 className="text-2xl font-semibold  ">Moses Ojo</h6>
             <p className="font-normal text-center">
               Chief Economist/Head, Investment Research
             </p>
           </div>
         </div>
         <div className="lg:w-[63%] lg:mt-0 mt-5 w-full">
-          <h6 className="text-lg font-semibold  ">Moses Ojo</h6>
+          <h6 className="text-2xl font-semibold  ">Moses Ojo</h6>
           <p className="">Chief Economist/Head, Investment Research</p>
           <p className="text-grayPrimary2 mt-5">
             Moses is a professional in the financial services industrywith about

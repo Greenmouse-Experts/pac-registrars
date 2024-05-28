@@ -1,6 +1,5 @@
 import Banner from "../../components/Banner";
-
-import SmallCard from "../../components/SmallCard";
+import SmallCardWithNumber from "../../components/cards/SmallCardWithNumber";
 import ManagementForm from "../../components/forms/ManagementForm";
 
 function DocumentManagement() {
@@ -39,18 +38,18 @@ function DocumentManagement() {
       </section>
       <section className="lg:pt-24 pt-16">
         <div>
-          <p className="text-bluePrimary font-medium ">
+          <p className="text-bluePrimary font-semibold text-lg ">
           Our Service covers:
           </p>
         </div>
         <div className="grid grid-cols-[repeat(auto-fill,_minmax(18rem,_1fr))] gap-8 mt-14">
-          <SmallCard text="Digital Archiving" />
-          <SmallCard text="Physical Archiving" />
-          <SmallCard text="Data Capturing" />
-          <SmallCard text="Scanning" />
+          <SmallCardWithNumber num="01" text="Digital Archiving" />
+          <SmallCardWithNumber num="02" text="Physical Archiving" />
+          <SmallCardWithNumber num="03" text="Data Capturing" />
+          <SmallCardWithNumber num="04" text="Scanning" />
 
-          <SmallCard text="Shredding" />
-          <SmallCard text="Document Management & Tracking: Document Input, Document Indexing, Document Search, Document Processing, Workflow Automation, Document Security, User Dashboard & Customization." />
+          <SmallCardWithNumber num="05" text="Shredding" />
+          <SmallCardWithNumber num="06" text="Document Management & Tracking: Document Input, Document Indexing, Document Search, Document Processing, Workflow Automation, Document Security, User Dashboard & Customization." />
          
         </div>
       </section>

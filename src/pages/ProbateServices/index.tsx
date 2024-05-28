@@ -1,5 +1,5 @@
 import Banner from "../../components/Banner";
-import SmallCard from "../../components/SmallCard";
+import SmallCardWithIcon from "../../components/cards/SmallCardWithIcon";
 import ProbateForm from "../../components/forms/ProbateForm";
 
 function ProbateServices() {
@@ -38,20 +38,20 @@ function ProbateServices() {
           </p>
         </div>
         <div className="grid grid-cols-[repeat(auto-fill,_minmax(18rem,_1fr))] gap-8 mt-14">
-          <SmallCard text="Procuring Grant of Probate/ Letters of Administration" />
-          <SmallCard text="Death certificate processing" />
-          <SmallCard text="Endorsement of Bank Certificate" />
-          <SmallCard text="Amendments of Letters of Administration" />
+          <SmallCardWithIcon img="/icons/prob1.svg" text="Procuring Grant of Probate/ Letters of Administration" />
+          <SmallCardWithIcon img="/icons/prob2.svg" text="Death certificate processing" />
+          <SmallCardWithIcon img="/icons/prob3.svg" text="Endorsement of Bank Certificate" />
+          <SmallCardWithIcon img="/icons/prob4.svg" text="Amendments of Letters of Administration" />
 
-          <SmallCard text="Obtaining certificate of additional assets" />
-          <SmallCard text="Effects new mandate of the administrators" />
-          <SmallCard text="Confirmation of Grant of Probate and Letters of Administration" />
-          <SmallCard text="Will Filing and confirmation." />
+          <SmallCardWithIcon img="/icons/prob5.svg" text="Obtaining certificate of additional assets" />
+          <SmallCardWithIcon img="/icons/prob6.svg" text="Effects new mandate of the administrators" />
+          <SmallCardWithIcon img="/icons/prob7.svg" text="Confirmation of Grant of Probate and Letters of Administration" />
+          <SmallCardWithIcon img="/icons/prob8.svg" text="Will Filing and confirmation." />
 
 
-          <SmallCard text="Receiving" />
-          <SmallCard text="Annuity" />
-          <SmallCard text="Gathering of Assets" />
+          <SmallCardWithIcon img="/icons/prob9.svg" text="Receiving" />
+          <SmallCardWithIcon img="/icons/prob10.svg" text="Annuity" />
+          <SmallCardWithIcon img="/icons/prob11.svg" text="Gathering of Assets" />
         
         </div>
       </section>

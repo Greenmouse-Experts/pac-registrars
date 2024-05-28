@@ -19,7 +19,8 @@ export default {
       fontFamily: {
         syne: ["Montserrat", " sans-serif"],
         montserrat: ["Montserrat", " sans-serif"],
-        sora: ["Sora"," sans-serif"]
+        sora: ["Sora"," sans-serif"],
+        kaushan: ["Kaushan Script", "cursive"]
       },
     },
   },
