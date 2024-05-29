@@ -118,7 +118,7 @@ function Hero() {
         </section>
       )}
       <div className="fixed font-montserrat sm:flex hidden flex-col right-0 divide-y-2 divide-grayPrimary top-[40%] text-center z-40  bg-gray-200 font-semibold">
-        <NavLink to="/" className="lg:text-base px-8 py-2 hover:bg-bluePrimary hover:text-white transition-all font-semibold">
+        <NavLink to="/self-service" className="lg:text-base px-8 py-2 hover:bg-bluePrimary hover:text-white transition-all font-semibold">
           Self Care
         </NavLink>
         <NavLink to="/forms" className="lg:text-base px-8 py-2 hover:bg-bluePrimary hover:text-white transition-all font-semibold">

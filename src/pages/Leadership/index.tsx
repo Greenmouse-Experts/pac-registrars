@@ -19,7 +19,7 @@ function Leadership() {
               <p className="font-normal text-base mt-2">Chairman</p>
             </div>
             <NavLink
-              to="#"
+              to="https://www.pacregistrars.com/board-of-directors/"
               className="flex items-center gap-2 text-base font-semibold text-white"
             >
               Learn More{" "}
@@ -41,7 +41,7 @@ function Leadership() {
               <p className="font-normal text-base mt-2">Executive Director</p>
             </div>
             <NavLink
-              to="#"
+              to="https://www.pacregistrars.com/board-of-directors/"
               className="flex items-center gap-2 text-base font-semibold text-white"
             >
               Learn More{" "}
@@ -64,7 +64,7 @@ function Leadership() {
               <p className="font-normal text-base mt-2">Executive Director</p>
             </div>
             <NavLink
-              to="#"
+              to="https://www.pacregistrars.com/board-of-directors/"
               className="flex items-center gap-2 text-base font-semibold text-white"
             >
               Learn More{" "}
@@ -87,7 +87,7 @@ function Leadership() {
               <p className="font-normal text-base mt-2">Executive Director</p>
             </div>
             <NavLink
-              to="#"
+              to="https://www.pacregistrars.com/board-of-directors/"
               className="flex items-center gap-2 text-base font-semibold text-white"
             >
               Learn More{" "}
@@ -111,7 +111,7 @@ function Leadership() {
               </p>
             </div>
             <NavLink
-              to="#"
+              to="https://www.pacregistrars.com/board-of-directors/"
               className="flex items-center gap-2 text-base font-semibold text-white"
             >
               Learn More{" "}

@@ -21,6 +21,7 @@ import ProptyPlus from "./pages/ProptyPlus";
 import Forms from "./pages/Form";
 import ENotification from "./pages/ENotification";
 import AnnualReport from "./pages/AnnualReport";
+import SelfService from "./pages/SelfService";
 
 const router = createBrowserRouter([
   {
@@ -105,7 +106,12 @@ const router = createBrowserRouter([
       {
         path: "/annual-report",
         element: <AnnualReport />,
+      },
+      {
+        path: "/self-service",
+        element: <SelfService />,
       }
+
     ],
   },
 ]);

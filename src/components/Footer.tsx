@@ -41,13 +41,13 @@ function Footer() {
                 <NavLink to="/about">About Us</NavLink>
               </li>
               <li className="text-[12px] text-grayPrimary font-medium">
-                <NavLink to="/">Product</NavLink>
+                <NavLink to="/proptyplus">Product</NavLink>
               </li>
               <li className="text-[12px] text-grayPrimary font-medium">
                 <NavLink to="/media">Media</NavLink>
               </li>
               <li className="text-[12px] text-grayPrimary font-medium">
-                <NavLink to="/media">Contact Us</NavLink>
+                <NavLink to="/contact">Contact Us</NavLink>
               </li>
               <li className="text-[12px] text-grayPrimary font-medium">
                 <NavLink to="/faqs">FAQs</NavLink>
