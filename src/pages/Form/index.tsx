@@ -56,16 +56,105 @@ function Forms() {
                 <p className={`font-sora  px-4`}>Grant of Probate</p>
                 <div className="absolute bottom-0 bg-bluePrimary h-1 w-full" />
               </div>
+              <div
+                className={` relative py-6 rounded-md w-full border border-bluePrimary cursor-pointer ${
+                  active === 3
+                    ? "text-white bg-bluePrimary"
+                    : "text-grayPrimary2 bg-white"
+                } overflow-hidden`}
+                onClick={() => setActive(3)}
+              >
+                <p className={`font-sora  px-4`}>Registrar Service</p>
+                <div className="absolute bottom-0 bg-bluePrimary h-1 w-full" />
+              </div>
+              <div
+                className={` relative py-6 rounded-md w-full border border-bluePrimary cursor-pointer ${
+                  active === 4
+                    ? "text-white bg-bluePrimary"
+                    : "text-grayPrimary2 bg-white"
+                } overflow-hidden`}
+                onClick={() => setActive(4)}
+              >
+                <p className={`font-sora  px-4`}>Update My Name</p>
+                <div className="absolute bottom-0 bg-bluePrimary h-1 w-full" />
+              </div>
+              <div
+                className={` relative py-6 rounded-md w-full border border-bluePrimary cursor-pointer ${
+                  active === 5
+                    ? "text-white bg-bluePrimary"
+                    : "text-grayPrimary2 bg-white"
+                } overflow-hidden`}
+                onClick={() => setActive(5)}
+              >
+                <p className={`font-sora  px-4`}>Update My Signature </p>
+                <div className="absolute bottom-0 bg-bluePrimary h-1 w-full" />
+              </div>
+              <div
+                className={` relative py-6 rounded-md w-full border border-bluePrimary cursor-pointer ${
+                  active === 6
+                    ? "text-white bg-bluePrimary"
+                    : "text-grayPrimary2 bg-white"
+                } overflow-hidden`}
+                onClick={() => setActive(6)}
+              >
+                <p className={`font-sora  px-4`}>Update My Address </p>
+                <div className="absolute bottom-0 bg-bluePrimary h-1 w-full" />
+              </div>
+              <div
+                className={` relative py-6 rounded-md w-full border border-bluePrimary cursor-pointer ${
+                  active === 7
+                    ? "text-white bg-bluePrimary"
+                    : "text-grayPrimary2 bg-white"
+                } overflow-hidden`}
+                onClick={() => setActive(7)}
+              >
+                <p className={`font-sora  px-4`}>Update My Information</p>
+                <div className="absolute bottom-0 bg-bluePrimary h-1 w-full" />
+              </div>
+              <div
+                className={` relative py-6 rounded-md w-full border border-bluePrimary cursor-pointer ${
+                  active === 8
+                    ? "text-white bg-bluePrimary"
+                    : "text-grayPrimary2 bg-white"
+                } overflow-hidden`}
+                onClick={() => setActive(8)}
+              >
+                <p className={`font-sora  px-4`}>Account Consolidation</p>
+                <div className="absolute bottom-0 bg-bluePrimary h-1 w-full" />
+              </div>
+              <div
+                className={` relative py-6 rounded-md w-full border border-bluePrimary cursor-pointer ${
+                  active === 9
+                    ? "text-white bg-bluePrimary"
+                    : "text-grayPrimary2 bg-white"
+                } overflow-hidden`}
+                onClick={() => setActive(9)}
+              >
+                <p className={`font-sora  px-4`}>
+                  E-Dividend/ Mandate Processing
+                </p>
+                <div className="absolute bottom-0 bg-bluePrimary h-1 w-full" />
+              </div>
 
-              <NavLink to="/faqs" className="bg-bluePrimary text-white w-fit py-3 px-5">
-Click to view FAQs
+              <NavLink
+                to="/faqs"
+                className="bg-bluePrimary text-white w-fit py-3 px-5"
+              >
+                Click to view FAQs
               </NavLink>
             </div>
 
             <div className="xl:w-[50%] lg:w-[60%] w-full">
-            {active === 0 &&  <SecretarialForm />}
-            {active === 1 && <ManagementForm />}
-            {active === 2 && <ProbateForm />}
+              {active === 0 && <SecretarialForm />}
+              {active === 1 && <ManagementForm />}
+              {active === 2 && <ProbateForm />}
+              {active === 3 && <ProbateForm />}
+              {active === 4 && <ProbateForm />}
+              {active === 5 && <ProbateForm />}
+              {active === 6 && <ProbateForm />}
+              {active === 7 && <ProbateForm />}
+              {active === 8 && <ProbateForm />}
+              {active === 9 && <ProbateForm />}
             </div>
           </div>
         </div>
