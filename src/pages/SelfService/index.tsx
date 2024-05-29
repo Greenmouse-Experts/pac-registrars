@@ -14,7 +14,7 @@ function SelfService() {
             </div>
             <p>Digital-Change-of Address-Form</p>
             <NavLink
-              to="/forms"
+              to="https://www.pacregistrars.com/wp-content/uploads/2023/03/Digital-Change-of-Address-Form.docx"
               className="bg-bluePrimary text-white px-4 py-3 text-base mt-4"
             >
               Download Form{" "}
@@ -26,7 +26,7 @@ function SelfService() {
             </div>
             <p>Digital-Dividend-Activation-Form</p>
             <NavLink
-              to="/forms"
+              to="https://www.pacregistrars.com/wp-content/uploads/2023/03/Digital-e-Dividend-Activation-Form-new.docx"
               className="bg-bluePrimary text-white px-4 py-3 text-base mt-4"
             >
               Download Form{" "}
@@ -38,7 +38,7 @@ function SelfService() {
             </div>
             <p>Digital Update Form</p>
             <NavLink
-              to="/forms"
+              to="https://www.pacregistrars.com/wp-content/uploads/2023/03/Digital-Update-Form.docx"
               className="bg-bluePrimary text-white px-4 py-3 text-base mt-4"
             >
               Download Form{" "}
