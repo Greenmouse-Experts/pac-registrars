@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaArrowRight } from "react-icons/fa6";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
 import Slider from "react-slick";
@@ -107,36 +108,36 @@ function Services() {
         </div>
 
         <Slider ref={setSliderRef} {...settings}>
-          <div className="lg:max-w-[400px] w-full 2xl:h-[34rem] lg:h-[30rem] h-[37rem] shadow-md px-10 py-10 !flex flex-col items-start bg-white text-black">
+          <div className="lg:max-w-[400px] w-full 2xl:h-[32rem] lg:h-[30rem] h-[37rem] shadow-md px-10 py-10 !flex flex-col items-start bg-white text-black">
             <img
               src="/icons/register.gif"
               alt="file"
               className="2xl:w-[60px] w-[70px] mx-auto"
             />
-            <h5 className="2xl:text-[20px] text-[16px] font-semibold font-syne mt-6">
+            <h5 className="2xl:text-xl text-base font-semibold font-syne mt-5">
               Register Maintenance Service
             </h5>
 
-            <p className="font-sora text-grayPrimary2 mt-6">
+            <p className="font-sora text-grayPrimary2 mt-5">
               By meticulously managing registers and maintaining accurate data
               records, organizations can streamline operations, enhance
               decision-making processes, and ensure regulatory compliance.
             </p>
 
-            <NavLink to="/about" className="text-bluePrimary font-sora mt-auto">
-              Read more
+            <NavLink to="/about" className="text-bluePrimary font-sora  mt-auto flex items-center gap-2">
+              Read more  <span><FaArrowRight  /></span>
             </NavLink>
           </div>
-          <div className="lg:max-w-[400px] w-full 2xl:h-[34rem] lg:h-[30rem] h-[37rem] shadow-md px-10 py-10 !flex flex-col items-start bg-white text-black">
+          <div className="lg:max-w-[400px] w-full 2xl:h-[32rem] lg:h-[30rem] h-[37rem] shadow-md px-10 py-10 !flex flex-col items-start bg-white text-black">
             <img
               src="/icons/probate.gif"
               alt="file"
               className="2xl:w-[60px] w-[70px] mx-auto"
             />
-            <h5 className="2xl:text-[20px] text-[16px] font-semibold font-syne mt-6">
+            <h5 className="2xl:text-xl text-base font-semibold font-syne mt-5">
               Probate/ Transmission Service
             </h5>
-            <p className="font-sora text-grayPrimary2 mt-6">
+            <p className="font-sora text-grayPrimary2 mt-5">
               Our dedicated team specializes in probate administration, estate
               planning, and asset distribution, ensuring a smooth and efficient
               process tailored to your specific needs.
@@ -144,53 +145,53 @@ function Services() {
             <div className="mt-auto">
               <NavLink
                 to="/about"
-                className="text-bluePrimary font-sora  mt-auto"
+                className="text-bluePrimary font-sora  mt-auto flex items-center gap-2"
               >
-                Read more
+                Read more <span><FaArrowRight  /></span> 
               </NavLink>
             </div>
           </div>
-          <div className="lg:max-w-[400px] w-full 2xl:h-[34rem] lg:h-[30rem] h-[37rem] shadow-md px-10 py-10 !flex flex-col items-start bg-white text-black">
+          <div className="lg:max-w-[400px] w-full 2xl:h-[32rem] lg:h-[30rem] h-[37rem] shadow-md px-10 py-10 !flex flex-col items-start bg-white text-black">
             <img
               src="/icons/bank.gif"
               alt="file"
               className="2xl:w-[60px] w-[70px] mx-auto"
             />
-            <h5 className="2xl:text-[20px] text-[16px] font-semibold font-syne mt-6">
+            <h5 className="2xl:text-xl text-base font-semibold font-syne mt-5">
               Company Secretarial Service
             </h5>
-            <p className="font-sora text-grayPrimary2 mt-6">
+            <p className="font-sora text-grayPrimary2 mt-5">
               With a deep understanding of market dynamics and regulatory
               requirements, we ensure seamless and successful bond offerings
               that meet our clients' financing needs.
             </p>
             <NavLink
               to="/about"
-              className="text-bluePrimary font-sora  mt-auto"
+              className="text-bluePrimary font-sora  mt-auto flex items-center gap-2"
             >
-              Read more
+              Read more <span><FaArrowRight  /></span> 
             </NavLink>
           </div>
-          <div className="lg:max-w-[400px] w-full 2xl:h-[34rem] lg:h-[30rem] h-[37rem] shadow-md px-10 py-10 !flex flex-col items-start bg-white text-black">
+          <div className="lg:max-w-[400px] w-full 2xl:h-[32rem] lg:h-[30rem] h-[37rem] shadow-md px-10 py-10 !flex flex-col items-start bg-white text-black">
             <img
               src="/icons/message.gif"
               alt="file"
               className="2xl:w-[60px] w-[70px] mx-auto"
             />
-            <h5 className="2xl:text-[20px] text-[16px] font-semibold font-syne mt-6">
+            <h5 className="2xl:text-xl text-base font-semibold font-syne mt-5">
               e- Notification Service
             </h5>
             <p className="opacity-0">none</p>
-            <p className="font-sora text-grayPrimary2 mt-6">
+            <p className="font-sora text-grayPrimary2 mt-5">
               We ensures that you receive timely, accurate notifications,
               providing you with the information you need to stay ahead and
               achieve your financial goals.
             </p>
             <NavLink
               to="/about"
-              className="text-bluePrimary font-sora  mt-auto"
+              className="text-bluePrimary font-sora  mt-auto flex items-center gap-2"
             >
-              Read more
+              Read more <span><FaArrowRight  /></span> 
             </NavLink>
           </div>
         </Slider>
@@ -200,7 +201,7 @@ function Services() {
         <p className="font-sora font-normal  leading-8">
           We focus on helping clients shape the future of their business, and
           execute strategies on the changing face of the customer.{" "}
-          <span className="underline">
+          <span className="underline hover:no-underline">
             <NavLink to="/contact">Contact Us!</NavLink>
           </span>
         </p>
