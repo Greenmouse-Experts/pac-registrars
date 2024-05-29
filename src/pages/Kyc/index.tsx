@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import Banner from "../../components/Banner";
 import SmallCardWithIcon from "../../components/cards/SmallCardWithIcon";
 
 function Kyc() {
+
+  const navigate = useNavigate()
   return (
     <>
       <Banner page="KYC Service" link="" img="/images/kyc-banner.png" />
@@ -43,7 +46,7 @@ function Kyc() {
       </section>
       <section className="lg:py-16 lg:my-20 py-10 my-14 bg-[#F9F9F9]">
       <h4 className=" font-bold font-syne capitalize text-black text-center">
-      Do you need our service, kindly call 08086790272 or click HERE
+      Do you need our service, kindly call 08086790272 or <span onClick={() => navigate("/contact")} className="cursor-pointer">click HERE</span>
           </h4>
       </section>
     </>

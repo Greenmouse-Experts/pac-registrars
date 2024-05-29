@@ -530,7 +530,7 @@ function Header() {
                   setOpen4((prev) => !prev);
                   setMenu(false);
                 }}
-                to="/"
+                to="https://shareholder.pacregistrarslimited.com/login.aspx"
               >
                 <FaNetworkWired size={25} />
                 Shareholders
@@ -552,7 +552,7 @@ function Header() {
                   setOpen4((prev) => !prev);
                   setMenu(false);
                 }}
-                to="/"
+                to="http://clients.pacregistrarslimited.com/login.aspx"
               >
                 <HiUsers size={25} />
                 Clients
