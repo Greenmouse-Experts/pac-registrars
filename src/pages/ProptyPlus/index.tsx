@@ -1,19 +1,15 @@
 import { NavLink } from "react-router-dom";
 import Banner from "../../components/Banner";
 import List from "../../components/List";
+import Input from "../../components/Input";
+import Button from "../../components/Button";
+import ReactPlayer from "react-player";
 
 function ProptyPlus() {
   return (
     <>
       <Banner page="Proptyplus" link="" img="/images/prop-banner.png" />
       <section className="lg:pt-24 pt-16 bg-white flex lg:flex-row flex-col items-center lg:gap-20 gap-10 ">
-        <div className="lg:w-[44%] w-full">
-          <img
-            src="/images/protoplus-1.png"
-            alt=""
-            className="w-full object-cover rounded-[20px]"
-          />
-        </div>
         <div className="lg:w-[56%] w-full font-syne">
           <h4 className=" font-bold font-syne capitalize text-black">
             ProptyPlus
@@ -32,7 +28,46 @@ function ProptyPlus() {
             tenants and properties without leaving their offices.
           </p>
         </div>
+        <div className="lg:w-[44%] w-full">
+          <img
+            src="/images/prop-3.png"
+            alt=""
+            className="w-full object-cover rounded-[20px]"
+          />
+        </div>
       </section>
+
+      <section className="lg:pt-24 pt-16 bg-white flex lg:flex-row flex-col items-center lg:gap-20 gap-10 ">
+        <div className="lg:w-[44%] w-full">
+        <ReactPlayer url="https://youtu.be"
+          controls={true} 
+          width="100%"
+          height="370px"
+          className="lg:h-44 h-20"
+        />
+        </div>
+        <div className="lg:w-[56%] w-full font-syne">
+          <form className="flex flex-col 2xl:gap-8 gap-5 w-full bg-white p-10 form-shadow text-[#787878]">
+            <h5 className="font-montserrat text-[1.4rem] font-semibold   text-black">
+              Want More
+            </h5>
+            <p className=" font-medium ">
+              Complete control over products allows us to ensure our customers
+              receive the best quality prices and service. We take great pride
+              in everything that we do in our factory.
+            </p>
+            <div className=" flex lg:flex-row flex-col justify-between gap-8 ">
+              <Input type="text" placeholder="Name" />
+              <Input type="text" placeholder="Email" />
+            </div>
+            <div className=" justify-between gap-8 w-full ">
+              <Input type="tel" placeholder="Phone Number" />
+            </div>
+            <Button type="submit">Submit</Button>
+          </form>
+        </div>
+      </section>
+
       <section className="lg:pt-24 pt-16">
         <div className="mb-5">
           <h4 className=" font-bold font-syne capitalize text-black">
@@ -63,21 +98,13 @@ function ProptyPlus() {
               </NavLink>
             </div>
           </div>
-          <img
-            src="/images/proptoplus-2.png"
-            alt=""
-            className="lg:w-[35%] w-full"
-          />
+          <img src="/images/prop-2.png" alt="" className="lg:w-[35%] w-full" />
         </div>
       </section>
 
       <section className="lg:pt-24 pt-16">
         <div className="flex lg:flex-row flex-col-reverse items-center lg:gap-20 gap-10 justify-between">
-          <img
-            src="/images/proptoplus-3.png"
-            alt=""
-            className="lg:w-[35%] w-full"
-          />
+          <img src="/images/prop-1.png" alt="" className="lg:w-[35%] w-full" />
           <div className="lg:w-[45%] w-full flex justify-end flex-col ml-auto">
             <h4 className=" font-bold font-syne capitalize text-black mb-5">
               Service Offerings (B2B):
@@ -107,9 +134,9 @@ function ProptyPlus() {
       <section className="lg:py-20 py-16  text-[#111111] bg-[#F9F9F9] mb-32 mt-20 lg:mx-10">
         <p className="lg:text-2xl lg:leading-10 font-semibold">
           Do you want your properties and agents to be onboarded on the B2B
-          platform, send an email
-          to hello@proptyplus.com or info@pacregistrars.com Our staff will
-          contact you for the necessary assistance.
+          platform, send an email to hello@proptyplus.com or
+          info@pacregistrars.com Our staff will contact you for the necessary
+          assistance.
         </p>
       </section>
     </>

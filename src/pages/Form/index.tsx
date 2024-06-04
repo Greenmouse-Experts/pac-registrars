@@ -4,6 +4,12 @@ import SecretarialForm from "../../components/forms/SecretarialForm";
 import ManagementForm from "../../components/forms/ManagementForm";
 import ProbateForm from "../../components/forms/ProbateForm";
 import { NavLink } from "react-router-dom";
+import UpdateMyName from "../../components/forms/UpdateMyName";
+import UpdateMySignature from "../../components/forms/UpdateMySignature";
+import UpdateMyAddress from "../../components/forms/UpdateMyAddress";
+import UpdateMyInformation from "../../components/forms/UpdateMyInformation";
+import Dividend from "../../components/forms/Dividend";
+import AccountConsolidation from "../../components/forms/AccountConsolidation";
 
 function Forms() {
   const [active, setActive] = useState(0);
@@ -13,7 +19,7 @@ function Forms() {
       <Banner page="Forms" link="" img="/images/form-banner.png" />
 
       <section className="lg:py-24 pt-16 bg-white flex lg:flex-row flex-col items-center lg:gap-20 gap-10 ">
-        <div>
+        <div className="w-full">
           <h4 className=" font-bold font-syne capitalize text-black mb-5">
             Pac Registry and Investor Services Forms
           </h4>
@@ -149,12 +155,12 @@ function Forms() {
               {active === 1 && <ManagementForm />}
               {active === 2 && <ProbateForm />}
               {active === 3 && <ProbateForm />}
-              {active === 4 && <ProbateForm />}
-              {active === 5 && <ProbateForm />}
-              {active === 6 && <ProbateForm />}
-              {active === 7 && <ProbateForm />}
-              {active === 8 && <ProbateForm />}
-              {active === 9 && <ProbateForm />}
+              {active === 4 && <UpdateMyName />}
+              {active === 5 && <UpdateMySignature />}
+              {active === 6 && <UpdateMyAddress />}
+              {active === 7 && <UpdateMyInformation />}
+              {active === 8 && <AccountConsolidation />}
+              {active === 9 && <Dividend />}
             </div>
           </div>
         </div>
