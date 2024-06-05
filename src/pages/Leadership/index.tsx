@@ -1,8 +1,14 @@
-import { NavLink } from "react-router-dom";
+
 import Banner from "../../components/Banner";
 import { IoMdArrowForward } from "react-icons/io";
+import { LeadershipModal } from "../../components/modals/LeadershipModal";
+import { useState } from "react";
 
 function Leadership() {
+  const [open, setOpen] = useState(false);
+  // const [data, setData] = useState("")
+ 
+  const handleOpen = () => setOpen(!open); 
   return (
     <>
       <Banner page="Leadership" link="/" img="/images/leader-banner.png" />
@@ -18,15 +24,15 @@ function Leadership() {
               <h6 className="text-lg font-semibold ">Chris Oshiafi</h6>
               <p className="font-normal text-base mt-2">Chairman</p>
             </div>
-            <NavLink
-              to="https://www.pacregistrars.com/board-of-directors/"
-              className="flex items-center gap-2 text-base font-semibold text-white"
+            <p
+              onClick={handleOpen}
+              className="flex cursor-pointer items-center gap-2 text-base font-semibold text-white"
             >
               Learn More{" "}
               <span>
                 <IoMdArrowForward />
               </span>
-            </NavLink>
+            </p>
           </div>
         </div>
         <div className="relative about-shadow flex justify-center">
@@ -40,15 +46,15 @@ function Leadership() {
               <h6 className="text-lg font-semibold ">Tessa Egbe Ikimi</h6>
               <p className="font-normal text-base mt-2">Executive Director</p>
             </div>
-            <NavLink
-              to="https://www.pacregistrars.com/board-of-directors/"
-              className="flex items-center gap-2 text-base font-semibold text-white"
+            <p
+              onClick={handleOpen}
+              className="flex cursor-pointer items-center gap-2 text-base font-semibold text-white"
             >
               Learn More{" "}
               <span>
                 <IoMdArrowForward />
               </span>
-            </NavLink>
+            </p>
           </div>
         </div>
 
@@ -63,15 +69,15 @@ function Leadership() {
               <h6 className="text-lg font-semibold ">Sina Alimi</h6>
               <p className="font-normal text-base mt-2">Executive Director</p>
             </div>
-            <NavLink
-              to="https://www.pacregistrars.com/board-of-directors/"
-              className="flex items-center gap-2 text-base font-semibold text-white"
+            <p
+              onClick={handleOpen}
+              className="flex cursor-pointer items-center gap-2 text-base font-semibold text-white"
             >
               Learn More{" "}
               <span>
                 <IoMdArrowForward />
               </span>
-            </NavLink>
+            </p>
           </div>
         </div>
 
@@ -86,15 +92,15 @@ function Leadership() {
               <h6 className="text-lg font-semibold ">Eric Okoruwa</h6>
               <p className="font-normal text-base mt-2">Executive Director</p>
             </div>
-            <NavLink
-              to="https://www.pacregistrars.com/board-of-directors/"
-              className="flex items-center gap-2 text-base font-semibold text-white"
+            <p
+              onClick={handleOpen}
+              className="flex cursor-pointer items-center gap-2 text-base font-semibold text-white"
             >
               Learn More{" "}
               <span>
                 <IoMdArrowForward />
               </span>
-            </NavLink>
+            </p>
           </div>
         </div>
         <div className="relative about-shadow flex justify-center">
@@ -110,18 +116,19 @@ function Leadership() {
                 Managing Director/CEO
               </p>
             </div>
-            <NavLink
-              to="https://www.pacregistrars.com/board-of-directors/"
-              className="flex items-center gap-2 text-base font-semibold text-white"
+            <p
+              onClick={handleOpen}
+              className="flex cursor-pointer items-center gap-2 text-base font-semibold text-white"
             >
               Learn More{" "}
               <span>
                 <IoMdArrowForward />
               </span>
-            </NavLink>
+            </p>
           </div>
         </div>
       </section>
+      <LeadershipModal handleOpen={handleOpen} open={open}/>
     </>
   );
 }
