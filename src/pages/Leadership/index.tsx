@@ -22,6 +22,16 @@ const LeaderBio:IBio[] = [
     image: "/images/leader-2.png"
   },
   {
+    name: "Nentok Gomwalk",
+    title: "Director",
+    bio: [
+      "Nentok Gomwalk is the Group Head Finance, Investment and Strategy of Pan African Capital Holdings. He is a graduate of Business Administration from Ahmadu Bello University Zaria, he is also a member of the Association of Certified Chartered Accountants (ACCA) UK a globally recognised body of chartered accountants. ",
+      " He has well over 20 years of work experience in different sectors of the Nigerian economy. He started his career as a finance manager in a distribution company, then proceeded to Lister Oil Limited where he served as a member of the finance unit and technical assistant to the Terminal manger on finance. ",
+      "He moved to financial services in 2012 as Head of Finance with Eurocomm Securities, then moved to GTI group as Head of Finance and Treasury where he set up the accounting unit for the asset management arm of the group. He resumed at Comercio Partners as the first group CFO, where he set up the accounting unit for the group and all relevant SOPs."
+    ],
+    image: "/images/leader-1.png"
+  },
+  {
     name: "Sina Alimi",
     title: "Executive Director",
     bio: [
@@ -100,6 +110,7 @@ function Leadership() {
       <LeadershipModal
         handleOpen={handleOpen}
         open={open}
+        img={selectedLeader?.image || ""}
         leaderBio={selectedLeader?.bio || []}
       />
     </>

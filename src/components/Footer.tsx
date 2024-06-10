@@ -74,10 +74,10 @@ function Footer() {
                 <NavLink to="/probate-services">Probate/ Transmission</NavLink>
               </li>
               <li className="text-[12px] text-grayPrimary font-medium">
-                <NavLink to="/document-management">KYC Services</NavLink>
+                <NavLink to="/kyc">KYC Services</NavLink>
               </li>
               <li className="text-[12px] text-grayPrimary font-medium">
-                <NavLink to="/company-secretarial">Web Registry</NavLink>
+                <NavLink to="/web-registry">Web Registry</NavLink>
               </li>
               <li className="text-[12px] text-grayPrimary font-medium">
                 <NavLink to="/e-notification">e-Notification</NavLink>

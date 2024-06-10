@@ -64,6 +64,7 @@ button {
   font-size: 1.06rem;
   line-height: 2rem;
   hyphens: none !important;
+  font-weight: 400;
 }
 input,
 button,
@@ -210,6 +211,7 @@ a{
   box-shadow: 0px 4px 72.6px 0px #00000014;
 
 }
+
 
 
 

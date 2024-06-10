@@ -109,7 +109,7 @@ function CompanySecretarial() {
             <p className="font-semibold mb-3">Shareholder Services</p>
             <p>
               Managing communication with shareholders, organizing shareholder
-              meetings, and handling share transactions such as transfers <br/> and
+              meetings, and handling share transactions such as transfers  and
               issuances.
             </p>
           </SmallCardWithIcon2>
@@ -119,7 +119,7 @@ function CompanySecretarial() {
             <p>
               Assisting with the formation of a new company, including drafting
               the necessary documents, filing incorporation papers with the
-              relevant authorities, and obtaining necessary licenses <br/> and
+              relevant authorities, and obtaining necessary licenses  and
               permits.
             </p>
           </SmallCardWithIcon2>
