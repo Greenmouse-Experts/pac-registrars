@@ -11,7 +11,7 @@ import {
 } from "react-icons/ri";
 import { PiClipboardText, PiHandshake } from "react-icons/pi";
 import { VscLaw } from "react-icons/vsc";
-import { IoIosCloud, IoIosNotifications, IoMdBusiness } from "react-icons/io";
+import { IoIosCloud, IoIosNotifications, IoMdBusiness, IoMdCloudOutline } from "react-icons/io";
 import { HiDocumentChartBar, HiUsers } from "react-icons/hi2";
 import { GiNotebook } from "react-icons/gi";
 import { FaQuestionCircle } from "react-icons/fa";
@@ -25,7 +25,7 @@ function Header() {
   const [menu, setMenu] = useState(false);
 
   return (
-    <header className="bg-bluePrimary pt-3  xl:relative z-50 w-full fixed">
+    <header className="bg-bluePrimary pt-3   z-50 w-full fixed">
       <div className="bg-white h-[6rem] flex items-center justify-between md:px-10 px-5 2xl:px-[7%] py-2 xl:relative z-50 w-full fixed">
         <NavLink onClick={() => setMenu(false)} to="/">
           <img
@@ -510,7 +510,7 @@ function Header() {
             </ul>
           </nav>
           <div
-            className="flex md:flex-row sm:flex-col gap-3 relative "
+            className="flex items-start justify-start flex-col gap-3 relative "
             onMouseLeave={() => setOpen4(false)}
           >
             <Button onMouseEnter={() => setOpen4(true)} type="">
@@ -520,7 +520,7 @@ function Header() {
               </span>
             </Button>
             <div
-              className={` py-3 absolute w-[15rem] -left-14 xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all   ${
+              className={` py-3 absolute w-[17rem] -left-14 xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all   ${
                 open4 ? "top-10" : "-top-[30rem]"
               }`}
             >
@@ -557,6 +557,65 @@ function Header() {
                 <HiUsers size={25} />
                 Clients
               </NavLink>
+              <NavLink
+                className=" py-3 px-2 w-full flex items-center gap-4 text-center text-bluePrimary text-lg text-nowrap hover:bg-bluePrimary hover:text-white hover:scale-[.98] transition-all duration-300"
+                onClick={() => {
+                  setOpen4((prev) => !prev);
+                  setMenu(false);
+                }}
+                to=""
+              >
+                <span><IoMdCloudOutline size={25} /></span>
+                Fund Manager API
+              </NavLink>
+            </div>
+            <div
+              className={` py-1  -left-14 xl:hidden flex-col justify-center items-center z-5  rounded-2xl p-5 transition-all ${
+                open4 ? "flex" : "hidden"
+              }`}
+            >
+              <NavLink
+                className=" py-3 px-1 w-full flex items-center gap-4 text-center text-bluePrimary text-lg font-medium text-nowrap"
+                onClick={() => {
+                  setOpen3((prev) => !prev);
+                  setMenu(false);
+                }}
+                to="https://shareholder.pacregistrarslimited.com/login.aspx"
+              >
+                Shareholders
+              </NavLink>
+
+              <NavLink
+                className=" py-3 px-1 w-full flex items-center gap-4 text-center text-bluePrimary text-lg font-medium text-nowrap"
+                onClick={() => {
+                  setOpen3((prev) => !prev);
+                  setMenu(false);
+                }}
+                to="/"
+              >
+                Brokers
+              </NavLink>
+              <NavLink
+                className=" py-3 px-1 w-full flex items-center gap-4 text-center text-bluePrimary text-lg font-medium text-nowrap"
+                onClick={() => {
+                  setOpen3((prev) => !prev);
+                  setMenu(false);
+                }}
+                to="http://clients.pacregistrarslimited.com/login.aspx"
+              >
+                Clients
+              </NavLink>
+              <NavLink
+                className=" py-3 px-1 w-full flex items-center gap-4 text-center text-bluePrimary text-lg font-medium text-nowrap"
+                onClick={() => {
+                  setOpen3((prev) => !prev);
+                  setMenu(false);
+                }}
+                to=""
+              >
+                 Fund Manager API
+              </NavLink>
+            
             </div>
           </div>
         </div>

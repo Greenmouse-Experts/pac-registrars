@@ -30,7 +30,7 @@ function Hero() {
   //const backgroundImageUrl = `url(/images/hero-${currentSlide}.png)`;
 
   return (
-    <div className="relative">
+    <div className="relative xl:pt-20">
       {currentSlide === 1 && (
         <section
           className={`hero-1 transition-opacity duration-500 bg-center bg-cover lg:h-[37rem] sm:h-[350px] h-[400px] 2xl:py-32 lg:py-20 lg:pt-24 sm:pt-16 pt-10 text-white relative `}
