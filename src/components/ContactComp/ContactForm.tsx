@@ -28,7 +28,7 @@ function ContactForm() {
           Get In Touch
           </h6>
           <p className="font-[300] text-lg">
-          Do reach out to us, should you need any intel about waste solutions and mangement, and we’ll be happy to help you out.
+          Do reach out to us, should you need any intel about waste solutions and management, and we’ll be happy to help you out.
           </p>
         
         </div>

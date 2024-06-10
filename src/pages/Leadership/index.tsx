@@ -81,9 +81,9 @@ function Leadership() {
   return (
     <>
       <Banner page="Leadership" link="/" img="/images/leader-banner.png" />
-      <section className="bg-[#F1F1F1] grid grid-cols-[repeat(auto-fill,_minmax(25rem,_1fr))] gap-11 md:py-32 py-10">
+      <section className="bg-[#F1F1F1] grid grid-cols-[repeat(auto-fill,_minmax(22.5rem,_1fr))] gap-11 md:py-32 py-10">
         {LeaderBio.map((leader, index) => (
-          <div key={index} className="relative about-shadow flex justify-center">
+          <div key={index} className="relative about-shadow flex justify-center bg-white">
             <img
               src={leader.image}
               alt={leader.name}
@@ -96,7 +96,7 @@ function Leadership() {
               </div>
               <p
                 onClick={() => handleOpen(leader)}
-                className="flex cursor-pointer items-center gap-2 text-base font-semibold text-white"
+                className="flex cursor-pointer items-center gap-2 text-base font-semibold text-nowrap text-white"
               >
                 Learn More{" "}
                 <span>
