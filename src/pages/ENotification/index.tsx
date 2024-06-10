@@ -6,7 +6,7 @@ import NotificationFaq from "../../components/NotificationFaq";
 
 function CardWithIcon({ children }: { children: ReactNode }) {
   return (
-    <div className=" flex flex-col items-center justify-center card-shadow px-10 rounded-[10px] pb-14 pt-5 bg-white relative">
+    <div className=" flex flex-col items-center justify-start card-shadow px-10 rounded-[10px] pb-14 pt-5 bg-white relative">
       {children}
       <img
         src="/icons/insert.svg"
@@ -273,7 +273,7 @@ function ENotification() {
             </p>
           </CardWithIcon>
           <CardWithIcon>
-            <img src="/icons/notify-13.svg" alt="" className=" scale-90" />
+            <img src="/icons/notify-14.svg" alt="" className=" scale-90" />
             <p className="font-semibold mb-3">Reminder Notifications</p>
             <p className="hyphens-none">
               You can schedule messages for a certain time or day. These can be
@@ -281,7 +281,7 @@ function ENotification() {
             </p>
           </CardWithIcon>
           <CardWithIcon>
-            <img src="/icons/notify-13.svg" alt="" className=" scale-90" />
+            <img src="/icons/notify-15.svg" alt="" className=" scale-90" />
             <p className="font-semibold mb-3">Recurring Notifications</p>
             <p className="hyphens-none">
               Businesses may use this powerful new Messaging System feature to
@@ -295,7 +295,7 @@ function ENotification() {
             </p>
           </CardWithIcon>
           <CardWithIcon>
-            <img src="/icons/notify-13.svg" alt="" className=" scale-90" />
+            <img src="/icons/notify-16.svg" alt="" className=" scale-90" />
             <p className="font-semibold mb-3">
               Geolocation-Based Interest Notifications
             </p>
@@ -309,7 +309,7 @@ function ENotification() {
             </p>
           </CardWithIcon>
           <CardWithIcon>
-            <img src="/icons/notify-13.svg" alt="" className=" scale-90" />
+            <img src="/icons/notify-17.svg" alt="" className=" scale-90" />
             <p className="font-semibold mb-3">Targeted Notifications</p>
             <p className="hyphens-none">
               Tags allow you to send targeted e-Notification to users based on
@@ -322,7 +322,7 @@ function ENotification() {
             </p>
           </CardWithIcon>
           <CardWithIcon>
-            <img src="/icons/notify-13.svg" alt="" className=" scale-90" />
+            <img src="/icons/notify-18.svg" alt="" className=" scale-90" />
             <p className="font-semibold mb-3">
               For Your Information (FYI) Messages
             </p>
