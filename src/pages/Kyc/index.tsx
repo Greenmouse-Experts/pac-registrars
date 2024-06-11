@@ -1,10 +1,10 @@
-import { useNavigate } from "react-router-dom";
+
 import Banner from "../../components/Banner";
 import SmallCardWithIcon from "../../components/cards/SmallCardWithIcon";
+import CallService from "../../components/CallService";
 
 function Kyc() {
 
-  const navigate = useNavigate()
   return (
     <>
       <Banner page="KYC Service" link="" img="/images/kyc-banner.png" />
@@ -40,15 +40,14 @@ function Kyc() {
         <div className="grid grid-cols-[repeat(auto-fill,_minmax(18rem,_1fr))] gap-8 mt-14">
           <SmallCardWithIcon img="/icons/kyc1.svg" text="Banks" />
           <SmallCardWithIcon img="/icons/kyc2.svg" text="Micro-finance Bank" />
-          <SmallCardWithIcon img="/icons/kyc3.svg" text="Non-financial service" />
+          <SmallCardWithIcon
+            img="/icons/kyc3.svg"
+            text="Non-financial service"
+          />
           <SmallCardWithIcon img="/icons/kyc4.svg" text="E-commerce" />
         </div>
       </section>
-      <section className="lg:py-16 lg:my-20 py-10 my-14 bg-[#F9F9F9]">
-      <h4 className=" font-bold font-syne capitalize text-black text-center">
-      Do you need our service, kindly call 08086790272 or <span onClick={() => navigate("/contact")} className="cursor-pointer">click HERE</span>
-          </h4>
-      </section>
+     <CallService/>
     </>
   );
 }

@@ -1,5 +1,6 @@
 
 import Banner from "../../components/Banner";
+import CallService from "../../components/CallService";
 import SmallCardWithNumber from "../../components/cards/SmallCardWithNumber";
 
 function DataRegisterMaintenence() {
@@ -8,7 +9,7 @@ function DataRegisterMaintenence() {
       <Banner page="Register Maintenance" link="" img="/images/maintenance-banner.png" />
 
    
-      <section className="lg:pt-24 lg:pb-32 py-16">
+      <section className="lg:pt-24  ">
         <div>
           <p className="text-bluePrimary font-medium ">
           Some of our services includes:
@@ -32,6 +33,7 @@ function DataRegisterMaintenence() {
           <SmallCardWithNumber num="12" text="Electronic data capturing system." />
         </div>
       </section>
+      <CallService/>
      
     </>
   );
