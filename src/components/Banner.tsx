@@ -10,7 +10,7 @@ interface BannerProps {
 function Banner({ page, img }: BannerProps) {
   return (
     <section
-      className={` lg:h-[22rem] h-[14rem]  bg-cover bg-center flex justify-center items-start flex-col relative px-0`}
+      className={` lg:h-[23rem] h-[14rem] xl:pt-[6rem] pt-0  bg-cover bg-center flex justify-center items-start flex-col relative px-0`}
     >
       <img
         src={img ? img : "/images/about-banner.png"}
