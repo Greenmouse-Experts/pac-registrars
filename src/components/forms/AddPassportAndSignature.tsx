@@ -118,7 +118,7 @@ function AddPassportAndSignature(WrappedComponent) {
             Accept Our Data Privacy Policy
           </label>
         </div>
-        <Button type="">Submit Form</Button>
+        <Button type="">Submit</Button>
       </form>
     );
   };
