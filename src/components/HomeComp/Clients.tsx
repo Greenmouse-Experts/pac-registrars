@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
+import BaseButton from "../BaseButton";
 
 function Clients() {
   const [sliderRef, setSliderRef] = useState<Slider | null>(null);
@@ -44,7 +45,7 @@ function Clients() {
     ],
   };
   return (
-    <section className="border-t border-grayPrimary  bg-white text-black pb-10 pt-16 ">
+    <section className="border-t border-grayPrimary  bg-white text-black pb-5 pt-16 ">
       <div className="flex justify-between items-center mb-10">
         <h4 className="font-syne font-bold w-[40%] ">Our Clients & Partners</h4>
         <div className="flex gap-5 items-center justify-end">
@@ -130,7 +131,9 @@ function Clients() {
           </div>
         </Slider>
       </div>
-      <div className="flex items-center mt-20 flex-wrap justify-between"></div>
+      <div className="flex justify-center mt-5">
+      <BaseButton color="blue" link="/clients" text="View all Clients"/>
+      </div>
     </section>
   );
 }
