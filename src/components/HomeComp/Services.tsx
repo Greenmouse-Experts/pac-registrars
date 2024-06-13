@@ -124,7 +124,7 @@ function Services() {
               decision-making processes, and ensure regulatory compliance.
             </p>
 
-            <NavLink to="/about" className="text-bluePrimary font-sora  mt-auto flex items-center gap-2">
+            <NavLink to="/register-maintenance" className="text-bluePrimary font-sora  mt-auto flex items-center gap-2">
               Read more  <span><FaArrowRight  /></span>
             </NavLink>
           </div>
@@ -144,7 +144,7 @@ function Services() {
             </p>
             <div className="mt-auto">
               <NavLink
-                to="/about"
+                to="/probate-services"
                 className="text-bluePrimary font-sora  mt-auto flex items-center gap-2"
               >
                 Read more <span><FaArrowRight  /></span> 
@@ -166,7 +166,7 @@ function Services() {
               that meet our clients' financing needs.
             </p>
             <NavLink
-              to="/about"
+              to="/company-secretarial"
               className="text-bluePrimary font-sora  mt-auto flex items-center gap-2"
             >
               Read more <span><FaArrowRight  /></span> 
@@ -188,7 +188,7 @@ function Services() {
               achieve your financial goals.
             </p>
             <NavLink
-              to="/about"
+              to="/e-notification"
               className="text-bluePrimary font-sora  mt-auto flex items-center gap-2"
             >
               Read more <span><FaArrowRight  /></span> 

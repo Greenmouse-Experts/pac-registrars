@@ -1,4 +1,4 @@
-
+import BaseButton from "../BaseButton";
 
 function WebRegistry() {
   return (
@@ -34,8 +34,8 @@ function WebRegistry() {
           <img src="/images/web-1.png" alt="registry" className="w-full" />
 
           <p className="font-sora text-lg font-semibold text-center mt-10 lg:px-4 px-2  text-balance truncate w-full ">
-            Easily accessible from anywhere, with any device at any time
-            via the internet.
+            Easily accessible from anywhere, with any device at any time via the
+            internet.
           </p>
 
           <div className="flex gap-1 items-center mt-auto  w-full mb-3 px-2">
@@ -47,8 +47,7 @@ function WebRegistry() {
           <img src="/images/web-2.png" alt="registry" className="w-full" />
 
           <p className="font-sora text-lg font-semibold text-center mt-10 lg:px-4 px-2  text-balance truncate w-full ">
-            Fully secured and easy to
-            use.
+            Fully secured and easy to use.
           </p>
 
           <div className="flex gap-1 items-center mt-auto  w-full mb-3 px-2">
@@ -60,7 +59,7 @@ function WebRegistry() {
           <img src="/images/web-3.png" alt="registry" className="w-full" />
 
           <p className="font-sora text-lg font-semibold text-center mt-10 lg:px-4 px-2  text-balance truncate w-full ">
-            Time saving to the Registrar, Client, Stockbroker and  shareholders
+            Time saving to the Registrar, Client, Stockbroker and shareholders
           </p>
 
           <div className="flex gap-1 items-center mt-auto  w-full mb-3 px-2">
@@ -72,9 +71,7 @@ function WebRegistry() {
           <img src="/images/web-4.png" alt="registry" className="w-full" />
 
           <p className="font-sora text-lg font-semibold text-center mt-10 lg:px-4 px-2  text-balance truncate w-full ">
-          Self-service platform for the 
-shareholders, brokers and 
-clients
+            Self-service platform for the shareholders, brokers and clients
           </p>
 
           <div className="flex gap-1 items-center mt-auto  w-full mb-3 px-2">
@@ -82,6 +79,10 @@ clients
             <div className="h-[1px] bg-bluePrimary w-[90%]" />
           </div>
         </div>
+      </div>
+
+      <div className="flex justify-center">
+      <BaseButton color="blue" link="/web-registry" text="View all Web Registry"/>
       </div>
     </section>
   );

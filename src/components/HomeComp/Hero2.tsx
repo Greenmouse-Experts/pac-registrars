@@ -5,10 +5,10 @@ import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 function Hero2() {
   return (
     <section className="  bg-white text-black py-24 lg:pb-32">
-      <div className="flex lg:flex-row flex-col md:gap-20 gap-5 justify-between items-start">
+      <div className="flex lg:flex-row flex-col lg:gap-20 gap-10 justify-between items-start">
         <div className="lg:max-w-[45%] w-full relative">
           <img src="/images/global-img.png" alt="" className="w-full" />
-          <div className="absolute lg:-right-20 right-5 -bottom-20 font-sora bg-bluePrimary rounded-lg text-white px-6 py-8 xl:scale-100 lg:scale-75 scale-50">
+          <div className="absolute lg:-right-20 right-5 -bottom-20  font-sora bg-bluePrimary rounded-lg text-white px-6 py-8 xl:scale-100 lg:scale-75 scale-[0.7]">
             <div>
               <h6 className=" text-2xl font-bold pb-2 text-center">Our Services</h6>
               <div className="bg-white h-1 w-full rounded-lg"></div>

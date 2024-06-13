@@ -1,3 +1,5 @@
+import { FiMail, FiPhone } from "react-icons/fi";
+import { SlLocationPin } from "react-icons/sl";
 import { NavLink } from "react-router-dom";
 
 function Footer() {
@@ -110,28 +112,29 @@ function Footer() {
             </p>
             <ul className="flex flex-col 2xl:gap-6 gap-4 lg:mt-14 mt-5">
               <li className="text-[12px] text-grayPrimary font-medium">
-                <NavLink to="/">122, Bode Thomas St, Surulere, Lagos.</NavLink>
+                <NavLink to="/" className="flex items-center gap-2"><span><SlLocationPin size={22} /></span> 122, Bode Thomas St, Surulere, Lagos.</NavLink>
               </li>
               <li className="text-[12px] text-grayPrimary font-medium">
-                <NavLink to="mailto:info@pacregistrars.com">
+                <NavLink to="mailto:info@pacregistrars.com" className="flex items-center gap-2">
+                <span><FiMail size={20} /></span>
                   info@pacregistrars.com
                 </NavLink>
               </li>
               <li className="text-[12px] text-grayPrimary font-medium">
-                <NavLink to="tel:+234 908 679 0272">+234 908 679 0272</NavLink>
+                <NavLink className="flex items-center gap-2" to="tel:+234 908 679 0272"><span><FiPhone size={20} /></span> +234 908 679 0272</NavLink>
               </li>
               <li className="flex gap-3 items-center">
                 <span>
-                  <img src="/icons/social-1.svg" alt="" className="w-4" />
+                  <img src="/icons/social-1.svg" alt="" className="w-6" />
                 </span>
                 <span>
-                  <img src="/icons/social-2.svg" alt="" className="w-4" />
+                  <img src="/icons/social-2.svg" alt="" className="w-6" />
                 </span>
                 <span>
-                  <img src="/icons/social-3.svg" alt="" className="w-4" />
+                  <img src="/icons/social-3.svg" alt="" className="w-6" />
                 </span>
                 <span>
-                  <img src="/icons/social-4.svg" alt="" className="w-4" />
+                  <img src="/icons/social-4.svg" alt="" className="w-6" />
                 </span>
               </li>
             </ul>

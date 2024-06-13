@@ -1,6 +1,7 @@
 import { useState } from "react";
 import FaqAccordion from "../Faqs/FaqAccordion";
 import ContactForm from "./ContactForm";
+import BaseButton from "../BaseButton";
 
 function Faqs() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -55,6 +56,7 @@ function Faqs() {
           open={openIndex === 3}
           toggleAccordion={toggleAccordion}
         />
+        <BaseButton color="blue" link="/faqs" text="View all FAQs"/>
       </div>
       <ContactForm />
     </section>
