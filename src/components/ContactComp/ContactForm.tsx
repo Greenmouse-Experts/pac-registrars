@@ -27,15 +27,21 @@ function ContactForm() {
           </p>
           <p className="font-[300] text-lg flex items-center gap-2">    <span><FiMail size={20} /></span>info@pacregistrars.com</p>
         </div>
-        {/* <div className="flex flex-col gap-6 mt-14">
-          <h6 className="text-[28px] font-montserrat font-semibold">
-          Get In Touch
-          </h6>
-          <p className="font-[300] text-lg">
-          Do reach out to us, should you need any intel about waste solutions and management, and we’ll be happy to help you out.
-          </p>
+        <div className="flex  gap-6 mt-10">
+        <span>
+                  <img src="/icons/social-1.svg" alt="" className="w-6" />
+                </span>
+                <span>
+                  <img src="/icons/social-2.svg" alt="" className="w-6" />
+                </span>
+                <span>
+                  <img src="/icons/social-3.svg" alt="" className="w-6" />
+                </span>
+                <span>
+                  <img src="/icons/social-4.svg" alt="" className="w-6" />
+                </span>
         
-        </div> */}
+        </div>
       </div>
 
       <form className="flex md:w-[50%] w-full bg-white flex-col 2xl:gap-8 gap-5 py-16 md:px-16 px-5">
