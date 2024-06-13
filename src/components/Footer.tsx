@@ -82,7 +82,7 @@ function Footer() {
                 <NavLink to="/web-registry">Web Registry</NavLink>
               </li>
               <li className="text-[12px] text-grayPrimary font-medium">
-                <NavLink to="/e-notification">e-Notification</NavLink>
+                <NavLink to="/e-notification">E-Notification</NavLink>
               </li>
             </ul>
           </div>
@@ -112,7 +112,7 @@ function Footer() {
             </p>
             <ul className="flex flex-col 2xl:gap-6 gap-4 lg:mt-14 mt-5">
               <li className="text-[12px] text-grayPrimary font-medium">
-                <NavLink to="/" className="flex items-center gap-2"><span><SlLocationPin size={22} /></span> 122, Bode Thomas St, Surulere, Lagos.</NavLink>
+                <NavLink to="/" className="flex items-center gap-2"><span><SlLocationPin size={22} /></span> 122, Bode Thomas Street, Surulere, Lagos State</NavLink>
               </li>
               <li className="text-[12px] text-grayPrimary font-medium">
                 <NavLink to="mailto:info@pacregistrars.com" className="flex items-center gap-2">

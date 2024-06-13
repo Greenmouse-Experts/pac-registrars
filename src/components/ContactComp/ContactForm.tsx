@@ -19,7 +19,7 @@ function ContactForm() {
           </h6>
           <p className="font-[300] text-lg flex items-center gap-2">
           <span><SlLocationPin size={22} /></span>
-            122, Bode Thomas St, Surulere, Lagos.
+          122, Bode Thomas Street, Surulere, Lagos State
           </p>
           <p className="font-[300] text-lg flex items-center gap-2">
           <span><FiPhone size={20} /></span>

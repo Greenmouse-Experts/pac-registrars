@@ -37,7 +37,7 @@ function ContactForm() {
             className="bg-[#F4F4F4] text-black h-[7.5rem] pl-5 w-full pt-4"
           />
         </div>
-        <Button type="">Submit Form</Button>
+        <Button type="">Submit</Button>
       </form>
     </div>
   );

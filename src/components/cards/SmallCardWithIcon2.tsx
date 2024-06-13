@@ -9,7 +9,7 @@ function SmallCardWithIcon2({ children, img }: SmallProps) {
   return (
     <div className="p-6 px-8 pb-12 pt-16 card-shadow shadow-lg rounded-[10px] rounded-br-none flex flex-col justify-start items-center relative overflow-hidden bg-white">
       {children}
-      <div className="absolute -top-3 -left-4 bg-bluePrimary p-4 rounded-full">
+      <div className="absolute -top-2 -left-2 bg-bluePrimary p-3 rounded-full">
         <img src={img} alt="" className=" scale-90" />
       </div>
     </div>

@@ -41,7 +41,7 @@ function ENotification() {
   const [showFaq, setShowFaq] = useState(false);
   return (
     <>
-      <Banner page="e- Notification" link="" img="/images/notify-banner.png" />
+      <Banner page="e-Notification" link="" img="/images/notify-banner.png" />
       <section className="lg:pt-24 pt-16 bg-white flex lg:flex-row flex-col items-center lg:gap-20 gap-10 ">
         <div className="lg:w-[44%] w-full">
           <img
@@ -55,7 +55,7 @@ function ENotification() {
             E-Notifications
           </h4>
           <p className=" 2xl:mt-3 mt-3 font-sora ">
-            e-notifications short messages or alerts sent from mobile apps,
+            E-notifications short messages or alerts sent from mobile apps,
             websites, or servers to a shareholder/unitholder/bondholder’s
             device, typically in the form of transaction message, clients
             corporate action notification by text, images, or interactive
@@ -65,7 +65,7 @@ function ENotification() {
           <p className=" 2xl:mt-5 mt-3 font-sora ">
             It can be delivered in real-time before corporation action of client
             and appear on the holder’s device screen, even when the app or
-            website is not actively in use. e-notifications are a common
+            website is not actively in use. E-notifications are a common
             communication tool used to keep users informed about updates,
             events, promotions, or other relevant information, enhancing user
             engagement and retention. Users can often customize their
@@ -112,12 +112,12 @@ function ENotification() {
           </h4>
 
           <p className="font-semibold mt-3">
-            e-Notifications offer several benefits for businesses as well as
+            E-Notifications offer several benefits for businesses as well as
             users. Here are some of the key advantages
           </p>
         </div>
         <div className="grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 mt-14">
-          <SmallCardWithIcon2 img="/icons/comp1.svg">
+          <SmallCardWithIcon2 img="/icons/notf-1.svg">
             <p className="font-semibold mb-3">Instant Communication</p>
             <p>
               E-Notification provide a direct and immediate way to reach users.
@@ -125,7 +125,7 @@ function ENotification() {
               information or updates are promptly conveyed.
             </p>
           </SmallCardWithIcon2>
-          <SmallCardWithIcon2 img="/icons/comp2.svg">
+          <SmallCardWithIcon2 img="/icons/notf-2.svg">
             <p className="font-semibold mb-3">Increased User Engagement</p>
             <p>
               E-Notification can boost user engagement by reminding users of
@@ -133,7 +133,7 @@ function ENotification() {
               help reduce user churn and increase overall user retention
             </p>
           </SmallCardWithIcon2>
-          <SmallCardWithIcon2 img="/icons/comp3.svg">
+          <SmallCardWithIcon2 img="/icons/notf-3.svg">
             <p className="font-semibold mb-3">Personalization</p>
             <p>
               Apps can use user data and preferences to send personalized
@@ -142,7 +142,7 @@ function ENotification() {
               and behaviors.
             </p>
           </SmallCardWithIcon2>
-          <SmallCardWithIcon2 img="/icons/comp4.svg">
+          <SmallCardWithIcon2 img="/icons/notf-4.svg">
             <p className="font-semibold mb-3">Enhanced User Experience</p>
             <p>
               E-Notification can provide valuable information, such as news
@@ -151,7 +151,7 @@ function ENotification() {
               users informed and entertained.
             </p>
           </SmallCardWithIcon2>
-          <SmallCardWithIcon2 img="/icons/comp5.svg">
+          <SmallCardWithIcon2 img="/icons/notf-5.svg">
             <p className="font-semibold mb-3">Promotion and Marketing</p>
             <p>
               E-Notification are an effective tool for marketing and promotion.
@@ -159,7 +159,7 @@ function ENotification() {
               and events, driving traffic and sales for businesses.
             </p>
           </SmallCardWithIcon2>
-          <SmallCardWithIcon2 img="/icons/comp6.svg">
+          <SmallCardWithIcon2 img="/icons/notf-6.svg">
             <p className="font-semibold mb-3 text-center">App Updates</p>
             <p>
               Developers can use e-Notification to inform users about app
@@ -167,7 +167,7 @@ function ENotification() {
               access to the latest improvements and enhancements.
             </p>
           </SmallCardWithIcon2>
-          <SmallCardWithIcon2 img="/icons/comp7.svg">
+          <SmallCardWithIcon2 img="/icons/notf-7.svg">
             <p className="font-semibold mb-3">Segmentation</p>
             <p>
               E-notification platforms often allow businesses to segment their
@@ -176,16 +176,16 @@ function ENotification() {
               messaging.
             </p>
           </SmallCardWithIcon2>
-          <SmallCardWithIcon2 img="/icons/comp8.svg">
+          <SmallCardWithIcon2 img="/icons/notf-8.svg">
             <p className="font-semibold mb-3">Cost-Effective</p>
             <p>
-              Compared to other marketing channels, e-Notification are often
+              notf-ared to other marketing channels, e-Notification are often
               more cost-effective. They don’t require postage, printing, or
               advertising fees, making them a budget-friendly option.
             </p>
           </SmallCardWithIcon2>
 
-          <SmallCardWithIcon2 img="/icons/comp9.svg">
+          <SmallCardWithIcon2 img="/icons/notf-9.svg">
             <p className="font-semibold mb-3">Analytics and Insights</p>
             <p>
               Businesses can track the performance of e-Notification through
@@ -194,7 +194,7 @@ function ENotification() {
               refine their messaging strategy.
             </p>
           </SmallCardWithIcon2>
-          <SmallCardWithIcon2 img="/icons/comp10.svg">
+          <SmallCardWithIcon2 img="/icons/notf-10.svg">
             <p className="font-semibold mb-3">Cross-Platform</p>
             <p className="hyphens-none">
               E-Notification are supported on various platforms, including iOS,
@@ -203,7 +203,7 @@ function ENotification() {
             </p>
           </SmallCardWithIcon2>
 
-          <SmallCardWithIcon2 img="/icons/comp10.svg">
+          <SmallCardWithIcon2 img="/icons/notf-11.svg">
             <p className="font-semibold mb-3">Offering Opt-in Option</p>
             <p className="hyphens-none">
               E-Notification are supported on various platforms, including iOS,
@@ -211,7 +211,7 @@ function ENotification() {
               tool that can reach a wide audience.
             </p>
           </SmallCardWithIcon2>
-          <SmallCardWithIcon2 img="/icons/comp10.svg">
+          <SmallCardWithIcon2 img="/icons/notf-12.svg">
             <p className="font-semibold mb-3">
               Getting more high-quality leads
             </p>
@@ -223,7 +223,7 @@ function ENotification() {
               real subscriber.
             </p>
           </SmallCardWithIcon2>
-          <SmallCardWithIcon2 img="/icons/comp10.svg">
+          <SmallCardWithIcon2 img="/icons/notf-13.svg">
             <p className="font-semibold mb-3">Saves time</p>
             <p className="hyphens-none">
               You can capitalize on existing opportunities using e-Notification
