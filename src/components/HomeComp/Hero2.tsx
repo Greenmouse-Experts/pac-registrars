@@ -21,7 +21,7 @@ function Hero2() {
                 </span>
                 Probate
               </NavLink>
-              <NavLink to="/data-register-maintenance" className="flex items-center gap-4 md:text-lg text-base font-normal font-sora ">
+              <NavLink to="/register-maintenance" className="flex items-center gap-4 md:text-lg text-base font-normal font-sora ">
                 <span>
                   <IoMdCheckmarkCircleOutline size={24} />
                 </span>
