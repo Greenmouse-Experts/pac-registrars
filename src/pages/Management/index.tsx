@@ -40,7 +40,7 @@ function Management() {
           </p>
         </div>
       </section>
-      <section className="flex lg:flex-row flex-col-reverse justify-between md:gap-0 gap-10 py-14 items-center bg-white">
+      <section className="flex lg:flex-row flex-col-reverse justify-between md:gap-0 gap-10 py-14 items-center bg-[#F9F9F9]">
         <div className="lg:w-[60%] lg:mt-0 mt-5 w-full">
           <h6 className="text-2xl font-semibold  ">Dennis Ogbu</h6>
           <p className="">Head, Business Development</p>
@@ -120,7 +120,7 @@ function Management() {
           </p>
         </div>
       </section>
-      <section className="flex lg:flex-row flex-col-reverse justify-between md:gap-0 gap-10 py-14 items-center bg-white">
+      <section className="flex lg:flex-row flex-col-reverse justify-between md:gap-0 gap-10 py-14 items-center bg-[#F9F9F9]">
         <div className="lg:w-[60%] lg:mt-0 mt-5 w-full">
           <h6 className="text-2xl font-semibold  ">Aderonke Omotade</h6>
           <p className="">Head, Operations & Compliance</p>
