@@ -163,7 +163,7 @@ function Management() {
           <img
             src="/images/leader-9.png"
             alt=""
-            className=" mix-blend-hard-light "
+            className="  "
           />
           <div className="bg-bluePrimary absolute bottom-0 py-5 text-white rounded-lg flex flex-col items-center justify-center w-full">
             <h6 className="text-2xl font-semibold  ">Moses Ojo</h6>
