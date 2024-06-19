@@ -64,7 +64,7 @@ function Management() {
             negotiation, implementation and Financing.
           </p>
         </div>
-        <div className="relative flex justify-center bg-white p-10 lg:w-[30%] w-full scale-90">
+        <div className="relative shadow-lg flex justify-center bg-white p-10 lg:w-[30%] w-full scale-90">
           <img
             src="/images/leader-6.png"
             alt=""
@@ -146,7 +146,7 @@ function Management() {
             her joining PAC Registrars, she worked with Africa Prudential Plc.
           </p>
         </div>
-        <div className="relative flex justify-center bg-white p-10 lg:w-[30%] w-full scale-90 ">
+        <div className="relative shadow-lg flex justify-center bg-white p-10 lg:w-[30%] w-full scale-90 ">
           <img
             src="/images/leader-8.png"
             alt=""
