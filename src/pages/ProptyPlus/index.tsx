@@ -4,8 +4,17 @@ import List from "../../components/List";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
 import ReactPlayer from "react-player";
+import { DemoModal } from "../../components/modals/DemoModal";
+import { useState } from "react";
 
 function ProptyPlus() {
+  const [open, setOpen] = useState(false);
+ 
+
+  const handleOpen = () => {
+   
+    setOpen(!open);
+  };
   return (
     <>
       <Banner page="Proptyplus" link="" img="/images/prop-banner.png" />
@@ -45,6 +54,9 @@ function ProptyPlus() {
           height="370px"
           className="lg:h-44 h-20"
         />
+        <div className="mt-5">
+        <Button type="submit" onClick={handleOpen}>Request a Demo</Button>
+        </div>
         </div>
         <div className="lg:w-[56%] w-full font-syne">
           <form className="flex flex-col 2xl:gap-8 gap-5 w-full bg-white p-10 form-shadow text-[#787878]">
@@ -58,7 +70,7 @@ function ProptyPlus() {
             </p>
             <div className=" flex lg:flex-row flex-col justify-between gap-8 ">
               <Input type="text" placeholder="Name" />
-              <Input type="text" placeholder="Email" />
+              <Input type="email" placeholder="Email" />
             </div>
             <div className=" justify-between gap-8 w-full ">
               <Input type="tel" placeholder="Phone Number" />
@@ -139,6 +151,8 @@ function ProptyPlus() {
           assistance.
         </p>
       </section>
+      <DemoModal  handleOpen={handleOpen}
+        open={open}/>
     </>
   );
 }
