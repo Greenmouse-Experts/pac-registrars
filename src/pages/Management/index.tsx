@@ -160,11 +160,7 @@ function Management() {
       </section>
       <section className="flex lg:flex-row flex-col justify-between md:gap-0 gap-10 py-14 items-center bg-[#F9F9F9]">
         <div className=" relative shadow-lg flex justify-center bg-white p-10 lg:w-[30%] w-full scale-90 ">
-          <img
-            src="/images/leader-9.png"
-            alt=""
-            className="  "
-          />
+          <img src="/images/leader-9.png" alt="" className="  " />
           <div className="bg-bluePrimary absolute bottom-0 py-5 text-white rounded-lg flex flex-col items-center justify-center w-full">
             <h6 className="text-2xl font-semibold  ">Moses Ojo</h6>
             <p className="font-normal text-center">
@@ -197,6 +193,44 @@ function Management() {
             abroad. Moses is the Chief Economist/Head, Investment Research of
             PanAfrican Capital Holdings Ltd.
           </p>
+        </div>
+      </section>
+
+      <section className="flex lg:flex-row flex-col-reverse justify-between md:gap-0 gap-10 py-14 items-center bg-[#F9F9F9]">
+        <div className="lg:w-[60%] lg:mt-0 mt-5 w-full">
+          <h6 className="text-2xl font-semibold  ">Babatunde Oyeniyi</h6>
+          <p className="">Divisional Head</p>
+          <p className="text-grayPrimary2 mt-5">
+            Babatunde Oyeniyi is an investment banker with 2decades of
+            experience within the capital market. His experience cuts across
+            finance, capital raising, relationship management, business
+            development, product management and business solutions. He holds an
+            HND from the Yaba College of Technology and an MBA from Ladoke
+            Akintola University of Technology.
+          </p>
+          <p className="text-grayPrimary2 mt-5">
+            He is also a member of the Nigerian Institute of Management (NIM),
+            Institute of Chartered Secretaries and Administrators of Nigeria
+            (ICSAN), The Institute of Chartered Accountant of Nigeria (ICAN) and
+            an Associate member of the Institute of Capital Market Registrars
+            (ICMR).
+          </p>
+          <p className="text-grayPrimary2 mt-5">
+          He has a lot of professional qualifications and certifications within these area of expertise.
+Babatunde is currently the Divisional Head, Business Solution at PAC Registrars and Investor Services Limited.
+          </p>
+        </div>
+        <div className="relative shadow-lg flex justify-center bg-white p-10 lg:w-[30%] w-full scale-90 ">
+          <img
+            src="/images/leader-8.pn"
+            
+            alt="image"
+            className="mix-blend-luminosity "
+          />
+          <div className="bg-bluePrimary absolute bottom-0 py-5 text-white rounded-lg flex flex-col items-center justify-center w-full">
+            <h6 className="text-2xl font-semibold  ">Babatunde Oyeniyi </h6>
+            <p className="font-normal">Divisional Head</p>
+          </div>
         </div>
       </section>
     </>
