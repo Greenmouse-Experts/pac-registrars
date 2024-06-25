@@ -9,10 +9,8 @@ import { useState } from "react";
 
 function ProptyPlus() {
   const [open, setOpen] = useState(false);
- 
 
   const handleOpen = () => {
-   
     setOpen(!open);
   };
   return (
@@ -48,15 +46,20 @@ function ProptyPlus() {
 
       <section className="lg:pt-24 pt-16 bg-white flex lg:flex-row flex-col items-center lg:gap-20 gap-10 ">
         <div className="lg:w-[44%] w-full">
-        <ReactPlayer url="https://youtu.be"
-          controls={true} 
-          width="100%"
-          height="370px"
-          className="lg:h-44 h-20"
-        />
-        <div className="mt-5">
-        <Button type="submit" onClick={handleOpen}>Request a Demo</Button>
-        </div>
+          <a href="https://panafricancapitalholdings-my.sharepoint.com/personal/ayomide_oluwole_ziltchone_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fayomide%5Foluwole%5Fziltchone%5Fcom%2FDocuments%2FAttachments%2FWeb%20Navigation%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E009856c5%2D845e%2D423e%2Dbfc7%2Dee3f7dfe0036&ga=1">
+            <ReactPlayer
+              url="https://youtu.be"
+              controls={true}
+              width="100%"
+              height="370px"
+              className="lg:h-44 h-20"
+            />
+          </a>
+          <div className="mt-5">
+            <Button type="submit" onClick={handleOpen}>
+              Request a Demo
+            </Button>
+          </div>
         </div>
         <div className="lg:w-[56%] w-full font-syne">
           <form className="flex flex-col 2xl:gap-8 gap-5 w-full bg-white p-10 form-shadow text-[#787878]">
@@ -151,8 +154,7 @@ function ProptyPlus() {
           assistance.
         </p>
       </section>
-      <DemoModal  handleOpen={handleOpen}
-        open={open}/>
+      <DemoModal handleOpen={handleOpen} open={open} />
     </>
   );
 }
