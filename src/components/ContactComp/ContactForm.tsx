@@ -1,5 +1,6 @@
 import { FiMail, FiPhone } from "react-icons/fi";
 import { SlLocationPin } from "react-icons/sl";
+import { NavLink } from "react-router-dom";
 
 function ContactForm() {
   return (
@@ -17,10 +18,13 @@ function ContactForm() {
           <h6 className="text-[28px] font-montserrat font-semibold">
             Contact Details
           </h6>
+         <NavLink to="https://maps.app.goo.gl/hi85qvKtrADHsqZ69">
           <p className="font-[300] text-lg flex items-center gap-2">
           <span><SlLocationPin size={22} /></span>
           122, Bode Thomas Street, Surulere, Lagos State
           </p>
+          </NavLink> 
+         
           <p className="font-[300] text-lg flex items-center gap-2">
           <span><FiPhone size={20} /></span>
             <span className="font-normal"> Telephone:</span> +234 908 679 0272

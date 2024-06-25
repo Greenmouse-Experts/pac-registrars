@@ -15,6 +15,8 @@ function AnnualReport() {
 
       <div className=" flex flex-col items-center justify-center gap-5 card-shadow py-3 md:w-[50%] w-full rounded-[10px]">
           <p className="text-2xl">2022 Report</p>
+
+          <p>Secure Electronic Technology Plc</p>
           <img src="/icons/pdf.svg" alt="" />
           <a href="/documents/2022-report.pdf" download >
             <button className="bg-bluePrimary px-4 py-2 text-white text-base font-semibold">
@@ -24,6 +26,7 @@ function AnnualReport() {
         </div>
         <div className=" flex flex-col items-center justify-center gap-5 card-shadow py-3 md:w-[50%] w-full rounded-[10px]">
           <p className="text-2xl">2016 Report</p>
+          <p>Secure Electronic Technology Plc</p>
           <img src="/icons/pdf.svg" alt="" />
           <a href="/documents/2016-report.pdf" download >
             <button className="bg-bluePrimary px-4 py-2 text-white text-base font-semibold">

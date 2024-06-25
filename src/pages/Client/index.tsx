@@ -106,7 +106,9 @@ function Client() {
             <div className="bg-white px-10 h-[117px] flex items-center justify-center rounded-xl ">
               <img src="/images/client-28.svg" alt="" className="max-h-16" />
             </div>
-           
+            <div className="bg-white px-10 h-[117px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-29.jpg" alt="" className="max-h-16" />
+            </div>
           </div>
 
         </div>

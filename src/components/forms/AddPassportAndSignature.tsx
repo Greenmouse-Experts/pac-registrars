@@ -1,16 +1,16 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 //@ts-nocheck
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { IoCloudUploadOutline } from "react-icons/io5";
-// import Popup from "reactjs-popup";
-// import SignatureCanvas from "react-signature-canvas";
+import Popup from "reactjs-popup";
+import SignatureCanvas from "react-signature-canvas";
 import "reactjs-popup/dist/index.css";
 import Button from "../Button";
 
 function AddPassportAndSignature(WrappedComponent) {
   return function WrappedWithSignature(props) {
-    // const [isPopupOpen, setIsPopupOpen] = useState(false);
-    // const sigCanvasRef = useRef(null);
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
+    const sigCanvasRef = useRef(null);
 
     const [image, setImage] = useState<File | null>(null);
     const [preview, setPreview] = useState<string | null>(null);
@@ -81,8 +81,8 @@ function AddPassportAndSignature(WrappedComponent) {
           </div>
         </div>
 
-        <div className="text-sm w-[30%] pt-3">
-          {/* <Popup
+        <div className="text-sm gap-4 pt-3 flex  flex-col items-start">
+          <Popup
             trigger={
               <button
                 onClick={() => setIsPopupOpen(true)}
@@ -125,8 +125,9 @@ function AddPassportAndSignature(WrappedComponent) {
                 Close
               </button>
             </div>
-          </Popup> */}
-            <div className="bg-[#F4F4F4]  flex  flex-col justify-center items-center h-[7.5rem] relative ">
+          </Popup>
+          <p>or</p>
+            <div className="bg-[#F4F4F4]  flex  flex-col justify-center items-center h-[7.5rem] relative">
               {preview2 ? (
                 <img
                   src={preview2}
@@ -145,7 +146,7 @@ function AddPassportAndSignature(WrappedComponent) {
                   />
                 </>
               )}
-                <p className="text-sm mt-2"> Click to attach Signature</p>
+                <p className="text-sm mt-2 p-1"> Click to upload Signature</p>
             </div>
         </div>
         <div className="flex items-center gap-4">
