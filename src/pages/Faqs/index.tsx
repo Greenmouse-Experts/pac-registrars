@@ -142,7 +142,7 @@ function Faqs() {
           open={openIndex === 7}
           toggleAccordion={toggleAccordion}
           title="What are dividends?"
-          answer="Shareholders have the right to receive dividends (if payable), to receive key company information (such as Annual Reports /Accounts), to attend Annual General Meetings or Extra-ordinary General Meetings and to Vote and be voted for on certain affairs of the company.
+          answer="Dividends are payments out of operating profits by a company to shareholders and are paid net of withholding tax (Currently 10%). It may be paid once a year (final dividend) or twice a year (interim & final dividend). We have however, seen cases when dividend is paid three times. (1st Interim, 2nd Interim & Final).
 "
         />
         <FaqAccordion
@@ -150,7 +150,7 @@ function Faqs() {
           open={openIndex === 8}
           toggleAccordion={toggleAccordion}
           title="What are the key rights of a shareholder?"
-          answer="If you lose your dividend warrant you should contact PAC Registrars as soon as possible, confirming where payment has been lost. We will arrange for the warrant to be stopped and issue you with a duplicate free of charge. However, upon recovery you are expected to return the original one to the Registrar.
+          answer="Shareholders have the right to receive dividends (if payable), to receive key company information (such as Annual Reports /Accounts), to attend Annual General Meetings or Extra-ordinary General Meetings and to Vote and be voted for on certain affairs of the company.
 "
         />
         <FaqAccordion
@@ -158,7 +158,7 @@ function Faqs() {
           open={openIndex === 9}
           toggleAccordion={toggleAccordion}
           title="What happens if I lose my dividend warrant?"
-          answer="Prior to announcing year-end results of companies, dates are set out for the Closure of Register of members for the purpose of payment of dividend and issue of scrip popularly known as ‘Bonus’. These dates will determine the qualification for dividends and scrips. Hence, “cum div” or “cum scrip” means purchases before the Closure of Register will be entitled to all the benefits payable on the investment while “ex div” or “ex scrip”means purchases made after the entitlements were declared. Conversely, if you sell your shares before the Closure of Register, you sold so to say “cum div” and “cum scrip” and hence you will not enjoy the dividend or scrip to be issued at the coming AGM. The reverse is the case when you sell your share “Ex div” and Ex Scrip”."
+          answer="If you lose your dividend warrant you should contact PAC Registrars as soon as possible, confirming where payment has been lost. We will arrange for the warrant to be stopped and issue you with a duplicate free of charge. However, upon recovery you are expected to return the original one to the Registrar."
         />
       </section>
     </>

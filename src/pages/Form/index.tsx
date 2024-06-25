@@ -59,7 +59,7 @@ function Forms() {
                 } overflow-hidden`}
                 onClick={() => setActive(2)}
               >
-                <p className={`font-sora  px-4`}>Grant of Probate</p>
+                <p className={`font-sora  px-4`}>Probate Services</p>
                 <div className="absolute bottom-0 bg-bluePrimary h-1 w-full" />
               </div>
               <div

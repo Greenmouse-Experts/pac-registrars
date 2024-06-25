@@ -1,19 +1,21 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 //@ts-nocheck
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { IoCloudUploadOutline } from "react-icons/io5";
-import Popup from "reactjs-popup";
-import SignatureCanvas from "react-signature-canvas";
+// import Popup from "reactjs-popup";
+// import SignatureCanvas from "react-signature-canvas";
 import "reactjs-popup/dist/index.css";
 import Button from "../Button";
 
 function AddPassportAndSignature(WrappedComponent) {
   return function WrappedWithSignature(props) {
-    const [isPopupOpen, setIsPopupOpen] = useState(false);
-    const sigCanvasRef = useRef(null);
+    // const [isPopupOpen, setIsPopupOpen] = useState(false);
+    // const sigCanvasRef = useRef(null);
 
     const [image, setImage] = useState<File | null>(null);
     const [preview, setPreview] = useState<string | null>(null);
+    const [image2, setImage2] = useState<File | null>(null);
+    const [preview2, setPreview2] = useState<string | null>(null);
 
     useEffect(() => {
       if (image) {
@@ -29,7 +31,20 @@ function AddPassportAndSignature(WrappedComponent) {
       } else {
         setPreview(null);
       }
-    }, [image]);
+      if (image2) {
+        const reader = new FileReader();
+        reader.onloadend = () => {
+          setPreview2(reader.result as string);
+        };
+        if (image2 instanceof Blob) {
+          reader.readAsDataURL(image2);
+        } else {
+          console.error("Image2 is not a Blob");
+        }
+      } else {
+        setPreview2(null);
+      }
+    }, [image, image2]);
 
     return (
       <form className="flex flex-col 2xl:gap-8 gap-5 w-full bg-white p-10 form-shadow text-[#787878]">
@@ -67,7 +82,7 @@ function AddPassportAndSignature(WrappedComponent) {
         </div>
 
         <div className="text-sm w-[30%] pt-3">
-          <Popup
+          {/* <Popup
             trigger={
               <button
                 onClick={() => setIsPopupOpen(true)}
@@ -110,7 +125,28 @@ function AddPassportAndSignature(WrappedComponent) {
                 Close
               </button>
             </div>
-          </Popup>
+          </Popup> */}
+            <div className="bg-[#F4F4F4]  flex  flex-col justify-center items-center h-[7.5rem] relative ">
+              {preview2 ? (
+                <img
+                  src={preview2}
+                  className="h-full w-full object-cover object-center"
+                />
+              ) : (
+                <>
+                  <IoCloudUploadOutline size={30} />
+                  <input
+                    type="file"
+                    onChange={(e) => {
+                      const file = e?.target?.files ? e.target.files[0] : null;
+                      setImage2(file);
+                    }}
+                    className="absolute w-full opacity-0"
+                  />
+                </>
+              )}
+                <p className="text-sm mt-2"> Click to attach Signature</p>
+            </div>
         </div>
         <div className="flex items-center gap-4">
           <label className="text-lg flex gap-2 text-grayPrimary2">
