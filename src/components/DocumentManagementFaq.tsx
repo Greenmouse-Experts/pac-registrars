@@ -22,7 +22,7 @@ function DocumentManagementFaq() {
         open={openIndex === 1}
         toggleAccordion={toggleAccordion}
         title="What are our service offerings?"
-        answer="They are: Digital archiving,shredding,Data capturing, Document management & Tracking,Physical archiving and Scanning."
+        answer="They are: Digital archiving, shredding, Data capturing, Document management & Tracking,Physical archiving and Scanning."
       />
 
       <FaqAccordion
