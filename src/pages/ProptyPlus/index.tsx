@@ -6,6 +6,7 @@ import Button from "../../components/Button";
 import ReactPlayer from "react-player";
 import { DemoModal } from "../../components/modals/DemoModal";
 import { useState } from "react";
+import ProptyplusFaq from "../../components/ProptyplusFaq";
 
 function ProptyPlus() {
   const [open, setOpen] = useState(false);
@@ -13,6 +14,7 @@ function ProptyPlus() {
   const handleOpen = () => {
     setOpen(!open);
   };
+  const [showFaq, setShowFaq] = useState(false);
   return (
     <>
       <Banner page="Proptyplus" link="" img="/images/prop-banner.png" />
@@ -146,7 +148,18 @@ function ProptyPlus() {
         </div>
       </section>
 
-      <section className="lg:py-20 py-16  text-[#111111] bg-[#F9F9F9] mb-32 mt-20 lg:mx-10">
+      <section className="lg:py-24 py-16">
+        <p
+          className="bg-bluePrimary text-white w-fit py-3 px-5 cursor-pointer"
+          onClick={() => setShowFaq((prev) => !prev)}
+        >
+          Click to view FAQs
+        </p>
+
+        <div className="mt-20">{showFaq && <ProptyplusFaq />}</div>
+      </section>
+
+      <section className="lg:py-20 py-16  text-[#111111] bg-[#F9F9F9] mb-32 mt-0 lg:mx-10">
         <p className="lg:text-2xl lg:leading-10 font-semibold">
           Do you want your properties and agents to be onboarded on the B2B
           platform, send an email to hello@proptyplus.com or

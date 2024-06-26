@@ -1,9 +1,12 @@
+import { useState } from "react";
 import Banner from "../../components/Banner";
+import SecreterialFaq from "../../components/SecreterialFaq";
 import SmallCardWithIcon2 from "../../components/cards/SmallCardWithIcon2";
 
 import SecretarialForm from "../../components/forms/SecretarialForm";
 
 function CompanySecretarial() {
+  const [showFaq, setShowFaq] = useState(false);
   return (
     <>
       <Banner
@@ -133,8 +136,18 @@ function CompanySecretarial() {
           </SmallCardWithIcon2>
         </div>
       </section>
+      <section className="lg:py-24 py-16">
+        <p
+          className="bg-bluePrimary text-white w-fit py-3 px-5 cursor-pointer"
+          onClick={() => setShowFaq((prev) => !prev)}
+        >
+          Click to view FAQs
+        </p>
 
-      <section className="lg:py-24 py-16 sm:px-[7%] px-0 bg-[#F9F9F9] mt-32 mb-20 sm:mx-10 flex justify-center items-center">
+        <div className="mt-20">{showFaq && <SecreterialFaq />}</div>
+      </section>
+
+      <section className="lg:py-24 py-16 sm:px-[7%] px-0 bg-[#F9F9F9] mt-0 mb-20 sm:mx-10 flex justify-center items-center">
         <div className="lg:w-[45rem] w-full">
 
        <SecretarialForm/>

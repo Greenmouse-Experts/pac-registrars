@@ -1,4 +1,3 @@
-import { BsDot } from "react-icons/bs";
 import Banner from "../../components/Banner";
 import FaqAccordion from "../../components/Faqs/FaqAccordion";
 import { useState } from "react";
@@ -15,14 +14,21 @@ function Faqs() {
       <Banner page="FAQs" link="" img="/images/faq-banner.png" />
       <section className="md:py-32 py-10">
         <FaqAccordion
-          title="How can I find out how many shares I hold?"
-          answer="You can determine the number of shares you hold by adding up all your share certificates and holdings in CSCS, referring to your recent dividend warrant, or by contacting PAC Registrars.
+          title="How can I know my total shareholdings?"
+          answer="You can signup to our Web registry for real time information on your shares or send mail to info@pacregistrars.com.
 "
           index={0}
           open={openIndex === 0}
           toggleAccordion={toggleAccordion}
         />
         <FaqAccordion
+          index={1}
+          open={openIndex === 1}
+          toggleAccordion={toggleAccordion}
+          title="How can l change my name?"
+          answer="Send an email to info@pacregistrars.com or click on Forms to see the requirements for change of name"
+        />
+        {/* <FaqAccordion
           index={1}
           open={openIndex === 1}
           toggleAccordion={toggleAccordion}
@@ -63,103 +69,56 @@ function Faqs() {
               </ul>
             </div>
           }
-        />
+        /> */}
         <FaqAccordion
           index={2}
           open={openIndex === 2}
           toggleAccordion={toggleAccordion}
-          title="How can l claim my late father’s shares?"
-          answer={
-            <div>
-              <p>
-                Kindly come to our office with the following documents for the
-                transmission of shares.
-              </p>
-              <ul>
-                <li className="flex items-center gap-1">
-                  <BsDot color="black" size={30} /> Letters of administration
-                </li>
-                <li className="flex items-center gap-1">
-                  <BsDot color="black" size={30} /> Death certificate
-                </li>
-                <li className="flex items-center gap-1">
-                  <BsDot color="black" size={30} /> Newspaper publication.
-                </li>
-                <li className="flex items-center gap-1">
-                  <BsDot color="black" size={30} /> Newspaper
-                  publication/Gazette
-                </li>
-                <li className="flex items-center gap-1">
-                  <BsDot color="black" size={30} /> Valid means of
-                  identification
-                </li>
-                <li className="flex items-center gap-1">
-                  <BsDot color="black" size={30} /> Physical sighting of the
-                  administrators.
-                </li>
-                <li className="flex items-center gap-1">
-                  <BsDot color="black" size={30} /> Banker's confirmation of
-                  signature.
-                </li>
-              </ul>
-            </div>
-          }
+          title="How can I claim my late father or mother's shares?"
+          answer="If the shareholder died intestate, a Letter of Administration will be required or if the shareholder died Testate ( with a Will), a Grant of Probate will be required. Send an email to info@pacregistrars.com or click on Forms to see the requirements for transmission"
         />
         <FaqAccordion
           index={3}
           open={openIndex === 3}
           toggleAccordion={toggleAccordion}
-          title="How can l claim my outstanding share certificate?"
-          answer="Kindly contact your stockbroker for full dematerialization of your shareholdings into your CSCS account.
+          title="How long does transmission of shares take?"
+          answer="Once all documents are  received, the process of reconfirmation of LA or Probate is concluded. The transmission is done immediately.
 "
         />
         <FaqAccordion
           index={4}
           open={openIndex === 4}
           toggleAccordion={toggleAccordion}
-          title="When will the transmission be ready?"
-          answer="As soon as the court and bank confirm the documents appropriately.
+          title="I have found an old uncashed dividend warrant. What can I do?"
+          answer="Kindly complete the e-dividend mandate form on our website or visit NIBSS Self Service.
 "
         />
         <FaqAccordion
           index={5}
           open={openIndex === 5}
           toggleAccordion={toggleAccordion}
-          title="I have found an old uncashed dividend warrant. What can I do?"
-          answer="Dividend warrants are currently valid for six months from the date of payment. After this time, you should return any uncashed warrant to PAC Registrars for revalidation free of charge.
+          title="I have not received my dividend. What should I do?"
+          answer="Kindly complete the e-dividend mandate form on our website or visit NIBSS Self Service.
 "
         />
         <FaqAccordion
           index={6}
           open={openIndex === 6}
           toggleAccordion={toggleAccordion}
-          title="I have not received my dividend. What should I do?"
-          answer="Please contact the Registrar immediately either in writing or in person.
+          title="What are the rights of shareholders?"
+          answer="To attend and vote at AGM, to receive dividend or bonus declared by the Company’s shares its holds, to receive annual reports e.t.c 
 "
         />
         <FaqAccordion
           index={7}
           open={openIndex === 7}
           toggleAccordion={toggleAccordion}
-          title="What are dividends?"
-          answer="Dividends are payments out of operating profits by a company to shareholders and are paid net of withholding tax (Currently 10%). It may be paid once a year (final dividend) or twice a year (interim & final dividend). We have however, seen cases when dividend is paid three times. (1st Interim, 2nd Interim & Final).
-"
-        />
-        <FaqAccordion
-          index={8}
-          open={openIndex === 8}
-          toggleAccordion={toggleAccordion}
-          title="What are the key rights of a shareholder?"
-          answer="Shareholders have the right to receive dividends (if payable), to receive key company information (such as Annual Reports /Accounts), to attend Annual General Meetings or Extra-ordinary General Meetings and to Vote and be voted for on certain affairs of the company.
-"
-        />
-        <FaqAccordion
-          index={9}
-          open={openIndex === 9}
-          toggleAccordion={toggleAccordion}
           title="What happens if I lose my dividend warrant?"
-          answer="If you lose your dividend warrant you should contact PAC Registrars as soon as possible, confirming where payment has been lost. We will arrange for the warrant to be stopped and issue you with a duplicate free of charge. However, upon recovery you are expected to return the original one to the Registrar."
+          answer="Kindly complete the e-dividend mandate form on our website or visit NIBSS Self Service.
+"
         />
+
+    
       </section>
     </>
   );

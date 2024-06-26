@@ -1,8 +1,11 @@
+import { useState } from "react";
 import Banner from "../../components/Banner";
+import DocumentManagementFaq from "../../components/DocumentManagementFaq";
 import SmallCardWithNumber from "../../components/cards/SmallCardWithNumber";
 import ManagementForm from "../../components/forms/ManagementForm";
 
 function DocumentManagement() {
+  const [showFaq, setShowFaq] = useState(false);
   return (
     <>
       <Banner
@@ -39,7 +42,7 @@ function DocumentManagement() {
       <section className="lg:pt-24 pt-16">
         <div>
           <p className="text-bluePrimary font-semibold text-lg ">
-          Our Service covers:
+            Our Service covers:
           </p>
         </div>
         <div className="grid grid-cols-[repeat(auto-fill,_minmax(18rem,_1fr))] gap-8 mt-14">
@@ -49,16 +52,27 @@ function DocumentManagement() {
           <SmallCardWithNumber num="04" text="Scanning" />
 
           <SmallCardWithNumber num="05" text="Shredding" />
-          <SmallCardWithNumber num="06" text="Document Management & Tracking: Document Input, Document Indexing, Document Search, Document Processing, Workflow Automation, Document Security, User Dashboard & Customization." />
-         
+          <SmallCardWithNumber
+            num="06"
+            text="Document Management & Tracking: Document Input, Document Indexing, Document Search, Document Processing, Workflow Automation, Document Security, User Dashboard & Customization."
+          />
         </div>
       </section>
+      <section className="lg:py-24 py-16">
+        <p
+          className="bg-bluePrimary text-white w-fit py-3 px-5 cursor-pointer"
+          onClick={() => setShowFaq((prev) => !prev)}
+        >
+          Click to view FAQs
+        </p>
 
-      <section className="lg:py-24 py-16 sm:px-[7%] px-0 bg-[#F9F9F9] mt-32 mb-20 sm:mx-10 flex justify-center items-center form-shadow">
-      <div className="lg:w-[45rem] w-full">
-<ManagementForm/>
-      </div>
-       
+        <div className="mt-20">{showFaq && <DocumentManagementFaq />}</div>
+      </section>
+
+      <section className="lg:py-24 py-16 sm:px-[7%] px-0 bg-[#F9F9F9] mt-0 mb-20 sm:mx-10 flex justify-center items-center form-shadow">
+        <div className="lg:w-[45rem] w-full">
+          <ManagementForm />
+        </div>
       </section>
     </>
   );
