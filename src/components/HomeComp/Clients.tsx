@@ -45,7 +45,7 @@ function Clients() {
     ],
   };
   return (
-    <section className="border-t border-grayPrimary  bg-white text-black pb-5 pt-16 ">
+    <section className=" bg-white text-black my-20 py-20 pb-5 ">
       <div className="flex justify-between items-center mb-10">
         <h4 className="font-syne font-bold w-[40%] ">Our Clients & Partners</h4>
         <div className="flex gap-5 items-center justify-end">
