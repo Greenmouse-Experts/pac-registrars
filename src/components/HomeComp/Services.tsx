@@ -124,8 +124,14 @@ function Services() {
               decision-making processes, and ensure regulatory compliance.
             </p>
 
-            <NavLink to="/register-maintenance" className="text-bluePrimary font-sora  mt-auto flex items-center gap-2">
-              Read more  <span><FaArrowRight  /></span>
+            <NavLink
+              to="/register-maintenance"
+              className="text-bluePrimary font-sora  mt-auto flex items-center gap-2"
+            >
+              Read more{" "}
+              <span>
+                <FaArrowRight />
+              </span>
             </NavLink>
           </div>
           <div className="lg:max-w-[400px] w-full 2xl:h-[32rem] lg:h-[30rem] h-[37rem] shadow-md px-10 py-10 !flex flex-col items-start bg-white text-black">
@@ -147,7 +153,10 @@ function Services() {
                 to="/probate-services"
                 className="text-bluePrimary font-sora  mt-auto flex items-center gap-2"
               >
-                Read more <span><FaArrowRight  /></span> 
+                Read more{" "}
+                <span>
+                  <FaArrowRight />
+                </span>
               </NavLink>
             </div>
           </div>
@@ -160,6 +169,7 @@ function Services() {
             <h5 className="2xl:text-xl text-base font-semibold font-syne mt-5">
               Company Secretarial Service
             </h5>
+            <p className="opacity-0">none</p>
             <p className="font-sora text-grayPrimary2 mt-5">
               With a deep understanding of market dynamics and regulatory
               requirements, we ensure seamless and successful bond offerings
@@ -169,7 +179,10 @@ function Services() {
               to="/company-secretarial"
               className="text-bluePrimary font-sora  mt-auto flex items-center gap-2"
             >
-              Read more <span><FaArrowRight  /></span> 
+              Read more{" "}
+              <span>
+                <FaArrowRight />
+              </span>
             </NavLink>
           </div>
           <div className="lg:max-w-[400px] w-full 2xl:h-[32rem] lg:h-[30rem] h-[37rem] shadow-md px-10 py-10 !flex flex-col items-start bg-white text-black">
@@ -191,7 +204,86 @@ function Services() {
               to="/e-notification"
               className="text-bluePrimary font-sora  mt-auto flex items-center gap-2"
             >
-              Read more <span><FaArrowRight  /></span> 
+              Read more{" "}
+              <span>
+                <FaArrowRight />
+              </span>
+            </NavLink>
+          </div>
+
+          <div className="lg:max-w-[400px] w-full 2xl:h-[32rem] lg:h-[30rem] h-[37rem] shadow-md px-10 py-10 !flex flex-col items-start bg-white text-black">
+            <img
+              src="/icons/web.gif"
+              alt="file"
+              className="2xl:w-[60px] w-[70px] mx-auto"
+            />
+            <h5 className="2xl:text-xl text-base font-semibold font-syne mt-5">
+              Web- registry Service
+            </h5>
+            <p className="opacity-0">none</p>
+            <p className="font-sora text-grayPrimary2 mt-5">
+              Our dedicated team is here to guide you every step of the way,
+              ensuring easy access, robust security, and comprehensive support
+              for all your web-registry needs.
+            </p>
+            <NavLink
+              to="/web-registry"
+              className="text-bluePrimary font-sora  mt-auto flex items-center gap-2"
+            >
+              Read more{" "}
+              <span>
+                <FaArrowRight />
+              </span>
+            </NavLink>
+          </div>
+          <div className="lg:max-w-[400px] w-full 2xl:h-[32rem] lg:h-[30rem] h-[37rem] shadow-md px-10 py-10 !flex flex-col items-start bg-white text-black">
+            <img
+              src="/icons/file.gif"
+              alt="file"
+              className="2xl:w-[60px] w-[70px] mx-auto"
+            />
+            <h5 className="2xl:text-xl text-base font-semibold font-syne mt-5">
+              Document Maintenance Service
+            </h5>
+           
+            <p className="font-sora text-grayPrimary2 mt-5">
+              Our core beliefs drive our commitment to helping our clients
+              achieve investing success. Our dedicated team is here to guide you
+              every step of the way on your journey towards financial security.
+            </p>
+            <NavLink
+              to="/register-maintenance"
+              className="text-bluePrimary font-sora  mt-auto flex items-center gap-2"
+            >
+              Read more{" "}
+              <span>
+                <FaArrowRight />
+              </span>
+            </NavLink>
+          </div>
+          <div className="lg:max-w-[400px] w-full 2xl:h-[32rem] lg:h-[30rem] h-[37rem] shadow-md px-10 py-10 !flex flex-col items-start bg-white text-black">
+            <img
+              src="/icons/kyc.gif"
+              alt="file"
+              className="2xl:w-[60px] w-[70px] mx-auto"
+            />
+            <h5 className="2xl:text-xl text-base font-semibold font-syne mt-5">
+              KYC Service
+            </h5>
+            <p className="opacity-0">none</p>
+            <p className="font-sora text-grayPrimary2 mt-5">
+              Our dedicated team is here to guide you every step of the way,
+              helping you navigate the complexities of Know Your Customer
+              regulations and achieve peace of mind.
+            </p>
+            <NavLink
+              to="/kyc"
+              className="text-bluePrimary font-sora  mt-auto flex items-center gap-2"
+            >
+              Read more{" "}
+              <span>
+                <FaArrowRight />
+              </span>
             </NavLink>
           </div>
         </Slider>

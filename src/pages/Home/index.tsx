@@ -4,7 +4,7 @@ import Hero2 from "../../components/HomeComp/Hero2";
 import Services from "../../components/HomeComp/Services";
 import Clients from "../../components/HomeComp/Clients";
 import Faqs from "../../components/HomeComp/Faqs";
-import WebRegistry from "../../components/HomeComp/WebRegistry";
+// import WebRegistry from "../../components/HomeComp/WebRegistry";
 
 function Home() {
   return (
@@ -12,7 +12,7 @@ function Home() {
       <Hero />
       <Hero2 />
       <Services />
-      <WebRegistry/>
+      {/* <WebRegistry/> */}
       <FinancialPlaning />
       <Clients />
       <Faqs />

@@ -14,7 +14,7 @@ function SecreterialFaq() {
         open={openIndex === 0}
         toggleAccordion={toggleAccordion}
         title="What is Company Secretarial Service(CSS) all about?"
-        answer="The Company Secretarial service is a consulting service rendered to range of orgnanisations both small, medium and large to meets their legal, regulatory needs to foster good corporate governance for their businesses.
+        answer="The Company Secretarial Service is a consulting service rendered to range of orgnanisations both small, medium and large to meets their legal, regulatory needs to foster good corporate governance for their businesses.
 "
       />
       <FaqAccordion
@@ -29,7 +29,7 @@ function SecreterialFaq() {
         open={openIndex === 2}
         toggleAccordion={toggleAccordion}
         title="Who are our target market?"
-        answer="Our target market are Companies in financial services, real estate, energy sector, mining,oli and gas, healthcare and much more"
+        answer="Our target market are Companies in financial services, real estate, energy sector, mining, oli and gas, healthcare and much more"
       />
       <FaqAccordion
         index={3}

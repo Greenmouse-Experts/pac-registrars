@@ -22,7 +22,7 @@ function ProbateFaq() {
         open={openIndex === 1}
         toggleAccordion={toggleAccordion}
         title="What is  Testate and Intestate?"
-        answer="Testate is a situation where a person dies and leaves a valid will. It describes how the assets should be distributed.While Intestate is a situation where a person dies without a will"
+        answer="Testate is a situation where a person dies and leaves a valid will. It describes how the assets should be distributed. While Intestate is a situation where a person dies without a will"
       />
       <FaqAccordion
         index={2}
@@ -43,14 +43,14 @@ function ProbateFaq() {
         open={openIndex === 4}
         toggleAccordion={toggleAccordion}
         title="Is Probate process complex?"
-        answer="Yes, because it requires a lot of steps to be taken. However, if you engage experienced and professional laywer or firms like ours,it makes a lot of difference"
+        answer="Yes, because it requires a lot of steps to be taken. However, if you engage experienced and professional laywer or firms like ours, it makes a lot of difference"
       />
           <FaqAccordion
         index={5}
         open={openIndex === 5}
         toggleAccordion={toggleAccordion}
         title="Does every estate need to go through Probate?"
-        answer="Yes. However, there are assets that do not require probate such as jointly owned assets with spouse,assets with revocable trust,assets with  specific beneficiary or assets that include transfer on death' beneficiary."
+        answer="Yes. However, there are assets that do not require probate such as jointly owned assets with spouse, assets with revocable trust, assets with  specific beneficiary or assets that include transfer on death beneficiary."
       />
     </div>
   );

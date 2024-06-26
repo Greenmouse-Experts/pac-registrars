@@ -101,7 +101,7 @@ function Hero() {
             <h4 className="2xl:text-[3.5rem] lg:text-[3rem] text-3xl  font-bold font-montserrat 2xl:leading-[70.2px] lg:leading-[60px] leading-[40px] capitalize text-white mt-5 sm:mt-0 ">
               Achieve Financial Growth with Our Innovative Solutions
             </h4>
-            <NavLink to="/products" className="bg-white text-bluePrimary mt-10 px-10 py-3 font-semibold hover:bg-bluePrimary hover:text-white transition-all w-fit">
+            <NavLink to="/proptyplus" className="bg-white text-bluePrimary mt-10 px-10 py-3 font-semibold hover:bg-bluePrimary hover:text-white transition-all w-fit">
               Get started
             </NavLink>
           </div>
