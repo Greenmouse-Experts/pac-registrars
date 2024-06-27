@@ -112,7 +112,7 @@ section,footer {
 }
 
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width:  1320px) {
   .unset {
     position: unset;
   }

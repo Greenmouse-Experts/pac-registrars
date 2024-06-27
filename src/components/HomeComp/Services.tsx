@@ -14,7 +14,7 @@ function Services() {
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
-    autoplay: false, // Enable autoplay
+    autoplay: true, // Enable autoplay
     autoplaySpeed: 2000,
     responsive: [
       {
@@ -56,12 +56,12 @@ function Services() {
           </h4>
         </div>
         <div className=" lg:w-[54%] w-full">
-          <p className="font-sora lg:text-xl lg:leading-10 font-[300]">
+          {/* <p className="font-sora lg:text-xl lg:leading-10 font-[300]">
             To help our clients go from dreaming to doing, we have our core
             beliefs that are central to their investing success. We’re here to
             help with any questions you have on your path to find financial
             security.
-          </p>
+          </p> */}
           <p className=" mt-5">
             Our core beliefs serve as the cornerstone of their investing
             success, guiding them along their journey towards financial
