@@ -22,7 +22,7 @@ function WebRegistry() {
           <p className=" 2xl:mt-5 mt-3 font-sora text-grayPrimary2">
             Web Registry (e-Registrar) is a robust online application that seeks
             to support our client’s Companies to effectively reduce traffic at
-            there front office by empowering shareholders, Brokers as well as
+            their front office by empowering shareholders, Brokers as well as
             the Client(s) in order to generate urgent statement reports, print
             report, monitor share holding (Units), change contact details like
             address, phone number, email, bank account details etc.
@@ -60,7 +60,7 @@ function WebRegistry() {
       <section className="lg:pt-24 pt-16">
         <div className="mb-5">
           <h4 className=" font-bold font-syne capitalize text-black">
-            Web Registry Advantage to a Client
+          Advantages Of Web Registry to a Client
           </h4>
           <p className="text-bluePrimary font-medium ">
             Quick access to Generating Reports as at any date which includes:
@@ -78,7 +78,7 @@ function WebRegistry() {
                 "Bonus History",
                 "Right History",
                 "Quarterly reports",
-                "Monitory the entire shares to prevent forceful takeover of the company from the floor of the Nigeria Stock Exchange",
+                "Monitoring the entire shares to prevent forceful takeover of the company from the floor of the Nigeria Stock Exchange",
               ]}
             />
           </div>
@@ -95,11 +95,11 @@ function WebRegistry() {
           <img
             src="/images/registry-3.png"
             alt=""
-            className="lg:w-[30%] w-full"
+            className="lg:w-[28%] w-full"
           />
-          <div className="lg:w-[70%] w-full">
+          <div className="lg:w-[72%] w-full">
             <h4 className=" font-bold font-syne capitalize text-black mb-5">
-              Web Registry Advantage to a Client
+            Advantages Of Web Registry to a Shareholder
             </h4>
             <List
               items={[
@@ -148,34 +148,22 @@ function WebRegistry() {
 
         <ol className="flex flex-col gap-3 mt-5">
           <li className="md:text-lg text-base font-normal ">
-            1. Pickup the form in our office or download it online from our
-            website www.pacregistrars.com then fill the form and mark the
-            company(s) you own account managed by us.
+           1. Pickup  the  form  in  our  office  or  download  it  from  our  website www.pacregistrars.com. Complete the  form, specifying the  company(ies)  you own or account(s) managed by us.
           </li>
           <li className="md:text-lg text-base font-normal ">
-            2. Pay a token of =N=1,000 for the Network service subscription for
-            a period of 1 year per an account for the Web Registry in our bank
-            account provided. (Heritage Bank to Account Numbers 5100010389)
-            Note: NO EXTRA HIDIND CHARGES
+          2.  Pay N1,000 for 1-year Network service subscription per account into our Heritage Bank account (Account Numbers 5100010389) Note:  NO EXTRA HIDIND CHARGES
           </li>
           <li className="md:text-lg text-base font-normal ">
-            3. Come to our office at No. 122 Bode Thomos Street, Surulere, Lagos
-            with the payment slip or scan and forward the evidence of your
-            payment to us at info@pacregistrars.com
+          3.  Visit our office at No. 122 Bode Thomas Street, Surulere, Lagos with the payment slip or scan and email the proof of payment to info@pacregistrars.com.
           </li>
           <li className="md:text-lg text-base font-normal ">
-            4. We will create the user name and password and send to your email
-            address after the confirmation of your payment and prove of
-            ownership of your securities.
+          4.  Upon confirming your payment and proof of ownership, we will create your username and password and send them to your email address. 
           </li>
           <li className="md:text-lg text-base font-normal ">
-            5. You are required to change your password once you login to your
-            account the first time and keep your new password secured to
-            yourself.
+          5.  Change your password when you first log in and keep your new password secure.
           </li>
           <li className="md:text-lg text-base font-normal ">
-            6. Do not forget to make payment after your current subscription
-            expired.
+          6.  Remember to renew your subscription when it expires.
           </li>
         </ol>
       </section>

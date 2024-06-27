@@ -12,7 +12,7 @@ function NotificationFaq() {
         {
           title: "Should I Turn On E-Notification? ",
           answer:
-            "E-Notification are useful for retargeting strategies and promotion.            ",
+            "E-Notification is useful for retargeting strategies and promotion.            ",
         },
         {
           title: "Why Is This Known As A E-notification?",
@@ -23,7 +23,7 @@ function NotificationFaq() {
           title:
             "How Safe and Reliable Are E-Notification?            ",
           answer:
-            "Mobile e-Notification are far more secure and reliable than other instant messaging platforms, including promotional SMS ",
+            "Mobile e-Notification is far more secure and reliable than other instant messaging platforms, including promotional SMS ",
         },
         {
           title:

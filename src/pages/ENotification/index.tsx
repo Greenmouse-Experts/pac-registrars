@@ -17,9 +17,9 @@ function CardWithIcon({ children }: { children: ReactNode }) {
   );
 }
 
-interface INum{
-  number:string;
-  title:string;
+interface INum {
+  number: string;
+  title: string;
   text: string;
 }
 
@@ -63,7 +63,7 @@ function ENotification() {
             prompt a holder to take a specific action.
           </p>
           <p className=" 2xl:mt-5 mt-3 font-sora ">
-            It can be delivered in real-time before corporation action of client
+            It can be delivered in real-time before corporate action of client
             and appear on the holder’s device screen, even when the app or
             website is not actively in use. E-notifications are a common
             communication tool used to keep users informed about updates,
@@ -130,7 +130,7 @@ function ENotification() {
             <p>
               E-Notification can boost user engagement by reminding users of
               your app’s existence and encouraging them to open it. This can
-              help reduce user churn and increase overall user retention
+              help reduce user churn and increase overall user retention.
             </p>
           </SmallCardWithIcon2>
           <SmallCardWithIcon2 img="/icons/notf-3.svg">
@@ -154,7 +154,7 @@ function ENotification() {
           <SmallCardWithIcon2 img="/icons/notf-5.svg">
             <p className="font-semibold mb-3">Promotion and Marketing</p>
             <p>
-              E-Notification are an effective tool for marketing and promotion.
+              E-Notification is an effective tool for marketing and promotion.
               They can be used to announce new products, special offers, sales,
               and events, driving traffic and sales for businesses.
             </p>
@@ -179,7 +179,7 @@ function ENotification() {
           <SmallCardWithIcon2 img="/icons/notf-8.svg">
             <p className="font-semibold mb-3">Cost-Effective</p>
             <p>
-              notf-ared to other marketing channels, e-Notification are often
+              Compared to other marketing channels, e-Notification are often
               more cost-effective. They don’t require postage, printing, or
               advertising fees, making them a budget-friendly option.
             </p>
@@ -197,7 +197,7 @@ function ENotification() {
           <SmallCardWithIcon2 img="/icons/notf-10.svg">
             <p className="font-semibold mb-3">Cross-Platform</p>
             <p className="hyphens-none">
-              E-Notification are supported on various platforms, including iOS,
+              E-Notification is supported on various platforms, including iOS,
               Android, and web browsers, making them a versatile communication
               tool that can reach a wide audience.
             </p>
@@ -206,7 +206,7 @@ function ENotification() {
           <SmallCardWithIcon2 img="/icons/notf-11.svg">
             <p className="font-semibold mb-3">Offering Opt-in Option</p>
             <p className="hyphens-none">
-              E-Notification are supported on various platforms, including iOS,
+              E-Notification is supported on various platforms, including iOS,
               Android, and web browsers, making them a versatile communication
               tool that can reach a wide audience.
             </p>
@@ -216,9 +216,9 @@ function ENotification() {
               Getting more high-quality leads
             </p>
             <p className="hyphens-none">
-              Website e-Notification let you add subscribers with one click and
+              Website e-Notification lets you add subscribers with one click and
               engage users without requesting personal details. Also,
-              e-Notification need permission to be turned on. This means that
+              e-Notification needs permission to be turned on. This means that
               when a message is sent, it will always go to the open browser of a
               real subscriber.
             </p>
@@ -342,10 +342,10 @@ function ENotification() {
           </h4>
 
           <p className=" mt-3">
-            E-Notification work through a combination of technologies and
+            E-Notification works through a combination of technologies and
             processes involving a sender (usually a server or an app), a
             e-notification service, and the recipient’s device. Here’s a
-            step-by-step explanation of how e-Notification work:
+            step-by-step explanation of how e-Notification works:
           </p>
         </div>
 
@@ -410,9 +410,9 @@ function ENotification() {
           </h4>
 
           <p className=" mt-3">
-            E-Notification are appealing and easy-to-respond-to communications.
+            E-Notification is appealing and easy-to-respond-to communications.
             This makes them a good way for companies to engage their audience
-            off-site. Browser e-Notification have multiple elements.
+            off-site. Browser e-Notification has multiple elements.
           </p>
         </div>
 
@@ -459,7 +459,7 @@ function ENotification() {
           </CardWithIcon>
 
           <CardWithIcon>
-            <p className="font-semibold mb-3">Segment And Customisef</p>
+            <p className="font-semibold mb-3">Segment And Customize</p>
             <p className="hyphens-none">
               You always go the extra mile when you add something unique to your
               marketing plan. Identify customer segmentation factors and send
@@ -475,7 +475,7 @@ function ENotification() {
             Popular Industries Using E-Notification
           </h4>
           <p className=" 2xl:mt-3 mt-3 font-sora ">
-            Web e-Notification are used for advertising, re-engagement, and
+            Web e-Notification is used for advertising, re-engagement, and
             keeping customers. As a result, they are the preferred red marketing
             automation route for content publishers, blog writers, and eCommerce
             businesses. They have been shown to work well in a wide range of

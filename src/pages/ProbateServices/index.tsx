@@ -28,8 +28,8 @@ function ProbateServices() {
           <p className=" 2xl:mt-3 mt-3 font-sora text-grayPrimary2">
             PAC Registrars and Investor Services Probate Services helps take
             away the burden being faced by the beneficiaries of a deceased
-            person. We are passionate about what we do which is why at the heart
-            of our business is to make bereaved families happy again.
+            person. We are passionate about what we do which is why the heart of
+            our business is to make bereaved families happy again.
           </p>
         </div>
       </section>
