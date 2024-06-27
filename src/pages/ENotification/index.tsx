@@ -206,9 +206,11 @@ function ENotification() {
           <SmallCardWithIcon2 img="/icons/notf-11.svg">
             <p className="font-semibold mb-3">Offering Opt-in Option</p>
             <p className="hyphens-none">
-              E-Notification is supported on various platforms, including iOS,
-              Android, and web browsers, making them a versatile communication
-              tool that can reach a wide audience.
+              E-notification messages make it easy for users to opt in and learn
+              more about your business with just one click of the ‘allow’
+              button. Give people the option to let your website send them
+              notifications or not and ensure the message they see when they
+              opt-in tells them what kind of messages to expect.
             </p>
           </SmallCardWithIcon2>
           <SmallCardWithIcon2 img="/icons/notf-12.svg">
