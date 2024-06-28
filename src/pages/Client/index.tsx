@@ -8,7 +8,7 @@ function Client() {
         <div className="font-syne w-full">
           <p className="text-bluePrimary font-medium ">Clients</p>
           <h4 className=" font-bold font-syne capitalize">
-            Our Robust Clientbase
+            Our Clients
           </h4>
           <div className="grid md:grid-cols-4 grid-col-1 gap-4 w-full my-10">
             <div className="bg-white px-10 h-[117px] flex items-center justify-center rounded-xl ">
