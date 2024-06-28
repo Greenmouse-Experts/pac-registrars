@@ -2,27 +2,26 @@ function WhoWeAre() {
   return (
     <section className="md:py-24 py-10 bg-white flex md:flex-row flex-col items-center justify-between ">
       <div className="md:w-[55%] w-full font-syne">
-        <p className="text-bluePrimary font-medium ">
-          About Pac Registrars
-        </p>
+        <p className="text-bluePrimary font-medium ">About Pac Registrars</p>
         <h4 className=" font-bold font-syne capitalize">Who We Are!</h4>
         <p className="text-[#606060] 2xl:mt-5 mt-3 2xl:leading-[33px] leading-[25px] font-sora ">
-          PAC Registrars, a subsidiary of PanAfrican Capital Holdings Limited
-          was established in April 2006 as Spring Registrars Limited. It was
-          registered with the Securities and Exchange Commission (SEC) in June
-          2006 as a Capital Market Operator to provide Share Registration
-          Services and commenced business in February 2007.
+          We are a share registration and business solutions provider, licensed
+          by the Securities and Exchange Commission. Our focus is on providing
+          professional and personalized service to clients, shareholders,
+          stockbrokers and advisors. With our domain expertise and in depth
+          understanding of our industry, we are able to attend to our customers
+          needs in a competent manner through our resourceful and streamlined
+          work processes.
         </p>
         <p className="text-[#606060] 2xl:mt-5 mt-3 2xl:leading-[33px] leading-[25px]  font-sora ">
-          The Company’s processes are largely driven by technology which
-          includes elodgment services, e-dividend services, e-notification
-          services, client’s portal, stockbroker’s portal, computerized storage
-          and recovery of unclaimed warrants and shares certificates
+          The Company’s processes are largely driven by technology which includes
+          AGM/EGM service, elodgment, e-dividend, e-notification, client’s
+          portal, stockbroker’s portal, data management and recovery of
+          unclaimed dividends.
         </p>
         <p className="text-[#606060] 2xl:mt-5 mt-3 2xl:leading-[33px] leading-[25px]  font-sora">
-          PAC Registrars as an innovative vehicle is strategically expanding its
-          focus areas with penetration into Data Management services across
-          identified sectors.
+          As an innovative vehicle, we are strategically expanding our focus
+          areas with providing business solutions across identified sectors.
         </p>
       </div>
       <div className="md:w-[40%] w-full relative">
