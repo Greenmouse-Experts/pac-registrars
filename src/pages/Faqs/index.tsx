@@ -26,7 +26,7 @@ function Faqs() {
           open={openIndex === 1}
           toggleAccordion={toggleAccordion}
           title="How can l change my name?"
-          answer="Send an email to info@pacregistrars.com or click on Forms to see the requirements for change of name"
+          answer="Send an email to info@pacregistrars.com or click on Forms to see the requirements for change of name."
         />
         {/* <FaqAccordion
           index={1}
@@ -75,7 +75,7 @@ function Faqs() {
           open={openIndex === 2}
           toggleAccordion={toggleAccordion}
           title="How can I claim my late father or mother's shares?"
-          answer="If the shareholder died intestate, a Letter of Administration will be required or if the shareholder died Testate ( with a Will), a Grant of Probate will be required. Send an email to info@pacregistrars.com or click on Forms to see the requirements for transmission"
+          answer="If the shareholder died intestate, a Letter of Administration will be required or if the shareholder died Testate ( with a Will), a Grant of Probate will be required. Send an email to info@pacregistrars.com or click on Forms to see the requirements for transmission."
         />
         <FaqAccordion
           index={3}
