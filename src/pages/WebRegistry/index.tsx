@@ -42,7 +42,7 @@ function WebRegistry() {
       <section className="lg:pt-24 pt-16">
         <div>
           <h4 className=" font-bold font-syne capitalize text-black">
-            Over view of Web Registry
+            Overview of Web Registry
           </h4>
           <p className="text-bluePrimary font-medium ">
             Diverse Solutions Tailored to Your Needs: Explore Our Comprehensive

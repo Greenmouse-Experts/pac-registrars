@@ -112,29 +112,55 @@ function Footer() {
             </p>
             <ul className="flex flex-col 2xl:gap-6 gap-4 lg:mt-14 mt-5">
               <li className="text-[12px] text-grayPrimary font-medium">
-                <NavLink to="/" className="flex items-center gap-2"><span><SlLocationPin size={22} /></span> 122, Bode Thomas Street,Surulere, <br/>  Lagos State</NavLink>
+                <NavLink to="/" className="flex items-center gap-2">
+                  <span>
+                    <SlLocationPin size={22} />
+                  </span>{" "}
+                  122, Bode Thomas Street,Surulere, <br /> Lagos State
+                </NavLink>
               </li>
               <li className="text-[12px] text-grayPrimary font-medium">
-                <NavLink to="mailto:info@pacregistrars.com" className="flex items-center gap-2">
-                <span><FiMail size={20} /></span>
+                <NavLink
+                  to="mailto:info@pacregistrars.com"
+                  className="flex items-center gap-2"
+                >
+                  <span>
+                    <FiMail size={20} />
+                  </span>
                   info@pacregistrars.com
                 </NavLink>
               </li>
               <li className="text-[12px] text-grayPrimary font-medium">
-                <NavLink className="flex items-center gap-2" to="tel:+234 908 679 0272"><span><FiPhone size={20} /></span> +234 908 679 0272</NavLink>
+                <NavLink
+                  className="flex items-center gap-2"
+                  to="tel:+234 908 679 0272"
+                >
+                  <span>
+                    <FiPhone size={20} />
+                  </span>{" "}
+                  +234 908 679 0272
+                </NavLink>
               </li>
               <li className="flex gap-3 items-center">
                 <span>
-                  <img src="/icons/social-1.svg" alt="" className="w-6" />
+                  <NavLink to="https://www.linkedin.com/">
+                    <img src="/icons/social-1.svg" alt="" className="w-6" />
+                  </NavLink>
                 </span>
                 <span>
-                  <img src="/icons/social-2.svg" alt="" className="w-6" />
+                  <NavLink to="https://web.facebook.com/PACHoldingsLtd/">
+                    <img src="/icons/social-2.svg" alt="" className="w-6" />
+                  </NavLink>
                 </span>
                 <span>
-                  <img src="/icons/social-3.svg" alt="" className="w-6" />
+                  <NavLink to="https://www.instagram.com/">
+                    <img src="/icons/social-3.svg" alt="" className="w-6" />
+                  </NavLink>
                 </span>
                 <span>
-                  <img src="/icons/social-4.svg" alt="" className="w-6" />
+                  <NavLink to="https://x.com/PACHoldingsLtd">
+                    <img src="/icons/social-4.svg" alt="" className="w-6" />
+                  </NavLink>
                 </span>
               </li>
             </ul>

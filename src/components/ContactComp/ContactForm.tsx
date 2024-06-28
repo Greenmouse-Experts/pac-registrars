@@ -18,33 +18,50 @@ function ContactForm() {
           <h6 className="text-[28px] font-montserrat font-semibold">
             Contact Details
           </h6>
-         <NavLink to="https://maps.app.goo.gl/hi85qvKtrADHsqZ69">
+          <NavLink to="https://maps.app.goo.gl/hi85qvKtrADHsqZ69">
+            <p className="font-[300] text-lg flex items-center gap-2">
+              <span>
+                <SlLocationPin size={22} />
+              </span>
+              122, Bode Thomas Street, Surulere, Lagos State
+            </p>
+          </NavLink>
+
           <p className="font-[300] text-lg flex items-center gap-2">
-          <span><SlLocationPin size={22} /></span>
-          122, Bode Thomas Street, Surulere, Lagos State
-          </p>
-          </NavLink> 
-         
-          <p className="font-[300] text-lg flex items-center gap-2">
-          <span><FiPhone size={20} /></span>
+            <span>
+              <FiPhone size={20} />
+            </span>
             <span className="font-normal"> Telephone:</span> +234 908 679 0272
           </p>
-          <p className="font-[300] text-lg flex items-center gap-2">    <span><FiMail size={20} /></span>info@pacregistrars.com</p>
+          <p className="font-[300] text-lg flex items-center gap-2">
+            {" "}
+            <span>
+              <FiMail size={20} />
+            </span>
+            info@pacregistrars.com
+          </p>
         </div>
         <div className="flex  gap-6 mt-10">
-        <span>
-                  <img src="/icons/social-1.svg" alt="" className="w-6" />
-                </span>
-                <span>
-                  <img src="/icons/social-2.svg" alt="" className="w-6" />
-                </span>
-                <span>
-                  <img src="/icons/social-3.svg" alt="" className="w-6" />
-                </span>
-                <span>
-                  <img src="/icons/social-4.svg" alt="" className="w-6" />
-                </span>
-        
+          <span>
+            <NavLink to="https://www.linkedin.com/">
+              <img src="/icons/social-1.svg" alt="" className="w-6" />
+            </NavLink>
+          </span>
+          <span>
+          <NavLink to="https://web.facebook.com/PACHoldingsLtd/">
+            <img src="/icons/social-2.svg" alt="" className="w-6" />
+          </NavLink>
+          </span>
+          <span>
+          <NavLink to="https://www.instagram.com/">
+            <img src="/icons/social-3.svg" alt="" className="w-6" />
+          </NavLink>
+          </span>
+          <span>
+          <NavLink to="https://x.com/PACHoldingsLtd">
+            <img src="/icons/social-4.svg" alt="" className="w-6" />
+          </NavLink>
+          </span>
         </div>
       </div>
 
@@ -88,7 +105,9 @@ function ContactForm() {
             className="bg-[#F4F4F4] h-[200px] pl-5 w-full pt-4"
           />
         </div>
-        < button className="w-fit bg-bluePrimary  flex gap-1 items-center 2xl:py-3 2xl:px-6 py-[5px] whitespace-nowrap px-4 text-base font-semibold text-white ml-auto ">Submit</ button>
+        <button className="w-fit bg-bluePrimary  flex gap-1 items-center 2xl:py-3 2xl:px-6 py-[5px] whitespace-nowrap px-4 text-base font-semibold text-white ml-auto ">
+          Submit
+        </button>
       </form>
     </div>
   );
