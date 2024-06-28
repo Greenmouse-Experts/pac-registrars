@@ -47,7 +47,8 @@ function Hero2() {
             Putting the right solutions and methods in place.
           </p>
           <h4 className=" font-bold font-syne capitalize ">
-          PAC Registrars & Investor Services Limited formerly known as PAC Registrars is a subsidiary of PanAfrican Capital (PAC) Holdings.
+          PAC Registrars & Investor Services Limited, formerly known as PAC Registrars, is a subsidiary of PanAfrican Capital Holdings ("PAC Holdings").
+
           </h4>
           <p className="lg:text-xl lg:leading-10 mt-5">
           We are a share registration and business solutions provider, licensed by the Securities and Exchange Commission. Our focus is on providing professional and personalized service to clients, shareholders, stockbrokers and advisors.
