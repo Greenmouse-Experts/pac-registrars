@@ -57,11 +57,11 @@ function ContactForm() {
             <img src="/icons/social-3.svg" alt="" className="w-6" />
           </NavLink>
           </span>
-          <span>
+          {/* <span>
           <NavLink to="https://x.com/PACHoldingsLtd">
             <img src="/icons/social-4.svg" alt="" className="w-6" />
           </NavLink>
-          </span>
+          </span> */}
         </div>
       </div>
 
