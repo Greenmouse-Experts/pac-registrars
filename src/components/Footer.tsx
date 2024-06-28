@@ -21,8 +21,9 @@ function Footer() {
             </button>
           </div>
           <p className="text-white lg:text-base text-sm !leading-8 ">
-            PAC Registrars, a subsidiary of PanAfrican Capital Holdings Limited
-            was established in 2006 as Spring Registrars Limited.{" "}
+            PAC Registrars & Investor Services Limited, formerly known as PAC
+            Registrars, is a subsidiary of PanAfrican Capital Holdings ("PAC
+            Holdings")
           </p>
           <img
             src="/images/footer-logo.png"
@@ -117,7 +118,7 @@ function Footer() {
                     <span>
                       <SlLocationPin size={22} />
                     </span>
-                    122, Bode Thomas Street, Surulere, <br/> Lagos State
+                    122, Bode Thomas Street, Surulere, <br /> Lagos State
                   </p>
                 </NavLink>
               </li>
