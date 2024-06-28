@@ -16,6 +16,9 @@ function AddPassportAndSignature(WrappedComponent) {
     const [preview, setPreview] = useState<string | null>(null);
     const [image2, setImage2] = useState<File | null>(null);
     const [preview2, setPreview2] = useState<string | null>(null);
+    const [signaturePreview, setSignaturePreview] = useState<string | null>(
+      null
+    );
 
     useEffect(() => {
       if (image) {
@@ -46,16 +49,27 @@ function AddPassportAndSignature(WrappedComponent) {
       }
     }, [image, image2]);
 
+    const handleSaveSignature = () => {
+      console.log("outside")
+      if (sigCanvasRef.current) {
+       
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        //@ts-ignore
+        const dataUrl = sigCanvasRef.current.toDataURL();
+        setSignaturePreview(dataUrl);
+        setIsPopupOpen(false);
+        console.log("inside")
+      }
+    };
+
     return (
       <form className="flex flex-col 2xl:gap-8 gap-5 w-full bg-white p-10 form-shadow text-[#787878]">
-       
         <WrappedComponent {...props} />
         <div className=" flex items-start gap-10">
           <textarea
             placeholder="Brief details of the service you want from us"
             className="bg-[#F4F4F4] placeholder:text-[text-grayPrimary2] h-[7.5rem] pl-5 pt-4 w-full"
           />
-
           <div className="w-[30%]">
             <div className="bg-[#F4F4F4]  flex  flex-col justify-center items-center h-[7.5rem] relative ">
               {preview ? (
@@ -80,8 +94,15 @@ function AddPassportAndSignature(WrappedComponent) {
             <p className="text-sm mt-2">Attach a Passport</p>
           </div>
         </div>
-
-        <div className="text-sm gap-4 pt-3 flex  flex-col items-start">
+        <div className="text-sm gap-4 pt-3 flex flex-col items-start w-[30%]">
+          {signaturePreview && (
+            <div className="w-full flex justify-center">
+              <img
+                src={signaturePreview}
+                className="h-full w-full object-cover object-center"
+              />
+            </div>
+          )}
           <Popup
             trigger={
               <button
@@ -120,34 +141,34 @@ function AddPassportAndSignature(WrappedComponent) {
               <button
                 type="button"
                 className="bg-bluePrimary text-white rounded-md py-1 px-2"
-                onClick={() => setIsPopupOpen(!isPopupOpen)}
+                onClick={handleSaveSignature}
               >
-                save
+                Save
               </button>
             </div>
           </Popup>
           <p>or</p>
-            <div className="bg-[#F4F4F4]  flex  flex-col justify-center items-center h-[7.5rem] relative">
-              {preview2 ? (
-                <img
-                  src={preview2}
-                  className="h-full w-full object-cover object-center"
+          <div className="bg-[#F4F4F4] flex flex-col justify-center items-center h-[7.5rem] relative">
+            {preview2 ? (
+              <img
+                src={preview2}
+                className="h-full w-full object-cover object-center"
+              />
+            ) : (
+              <>
+                <IoCloudUploadOutline size={30} />
+                <input
+                  type="file"
+                  onChange={(e) => {
+                    const file = e?.target?.files ? e.target.files[0] : null;
+                    setImage2(file);
+                  }}
+                  className="absolute w-full opacity-0"
                 />
-              ) : (
-                <>
-                  <IoCloudUploadOutline size={30} />
-                  <input
-                    type="file"
-                    onChange={(e) => {
-                      const file = e?.target?.files ? e.target.files[0] : null;
-                      setImage2(file);
-                    }}
-                    className="absolute w-full opacity-0"
-                  />
-                </>
-              )}
-                <p className="text-sm mt-2 p-1"> Click to upload Signature</p>
-            </div>
+              </>
+            )}
+            <p className="text-sm mt-2 p-1"> Click to upload Signature</p>
+          </div>
         </div>
         <div className="flex items-center gap-4">
           <label className="text-lg flex gap-2 text-grayPrimary2">
@@ -162,3 +183,4 @@ function AddPassportAndSignature(WrappedComponent) {
 }
 
 export default AddPassportAndSignature;
+
