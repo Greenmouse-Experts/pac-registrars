@@ -118,7 +118,7 @@ function Footer() {
                     <span>
                       <SlLocationPin size={22} />
                     </span>
-                    122, Bode Thomas Street, Surulere, <br /> Lagos State
+                    122, Bode Thomas Street, <br /> Surulere, Lagos State
                   </p>
                 </NavLink>
               </li>
