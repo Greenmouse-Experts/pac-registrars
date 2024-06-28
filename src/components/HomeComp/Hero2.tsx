@@ -47,14 +47,10 @@ function Hero2() {
             Putting the right solutions and methods in place.
           </p>
           <h4 className=" font-bold font-syne capitalize ">
-            A global consulting firm experienced in identifying, assessing, and
-            solving all business challenges!
+          PAC Registrars & Investor Services Limited formerly known as PAC Registrars is a subsidiary of PanAfrican Capital (PAC) Holdings.
           </h4>
           <p className="lg:text-xl lg:leading-10 mt-5">
-            PAC Registrars Limited, formerly known as Spring Registrars Limited
-            is registered with the Securities & Exchange Commission (SEC) as a
-            Capital Market Operator to provide Share Registration Services. It
-            commenced business in February 2007
+          We are a share registration and business solutions provider, licensed by the Securities and Exchange Commission. Our focus is on providing professional and personalized service to clients, shareholders, stockbrokers and advisors.
           </p>
 
           <NavLink
