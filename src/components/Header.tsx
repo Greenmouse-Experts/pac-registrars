@@ -260,7 +260,7 @@ function Header() {
                     Web Registry
                   </NavLink>
                   <NavLink
-                    className=" py-3 px-2 w-full flex items-center gap-4 text-center text-bluePrimary text-lg text-nowrap hover:bg-bluePrimary hover:text-white hover:scale-[.98] transition-all duration-300"
+                    className=" py-3 px-2 w-full flex items-center gap-4 text-start text-bluePrimary text-lg text-nowrap hover:bg-bluePrimary hover:text-white hover:scale-[.98] transition-all duration-300"
                     onClick={() => {
                       setOpen1((prev) => !prev);
                       setMenu(false);
@@ -270,7 +270,7 @@ function Header() {
                     <span>
                       <IoIosNotifications size={25} />
                     </span>
-                    Electronic Repository System (ERS)
+                    Electronic Repository <br/> System (ERS)
                   </NavLink>
                 </div>
                 <div

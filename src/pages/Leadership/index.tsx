@@ -56,10 +56,8 @@ const LeaderBio: IBio[] = [
     name: "Ifeanyi John",
     title: "Managing Director/CEO",
     bio: [
-      "Ifeanyi is an astute share registration professional with over 13 years’ work experience in capital market transactions, business development, innovation & strategy, client relationship management and business transformation.",
-      "He is a member of the Institute of Capital Market Registrars (ICMR) and Chartered Institute of Loans and Risk Management (FMCILRM).",
-      "Ifeanyi is currently the Managing Director/CEO of PAC Registrars Limited, he held strategic positions in Africa Prudential Plc.",
-      "He holds an HND Quantity Surveying and a master’s degree in Marketing.",
+      "Ifeanyi is an astute share registration professional with over 15 years’ work experience in capital market transactions, business development, innovation & strategy, client relationship management and business transformation. Prior to joining PAC Registrars, he worked with Africa Prudential Plc, where he served in various capacities including Head, Business Development. While in Africa Prudential Plc, he was part of the team that championed disruptive innovation in the registrar’s business in Nigeria pioneering many e-products.",
+      "He is an Associate of the Institute of Capital Market Registrars (ICMR) and Chartered Institute of Loans and Risk Management (CILRM). He holds degree in Quantity Surveying and an MBA.",
     ],
     image: "/images/leader-5.png",
   },

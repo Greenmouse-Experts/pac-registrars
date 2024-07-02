@@ -15,10 +15,8 @@ const ManagementBio: IBio[] = [
     name: "Ifeanyi John",
     title: "Managing Director/CEO",
     bio: [
-      "Ifeanyi is an astute share registration professional with over 13 years’ work experience in capital market transactions, business development, innovation & strategy, client relationship management and business transformation.",
-      "He is a member of the Institute of Capital Market Registrars (ICMR) and Chartered Institute of Loans and Risk Management (FMCILRM). Ifeanyi is currently the Acting Managing Director/CEO of PAC Registrars Limited, he held strategic positions in Africa Prudential Plc.",
-      "",
-      "He holds an HND Quantity Surveying and a master’s degree in Marketing.",
+      "Ifeanyi is an astute share registration professional with over 15 years’ work experience in capital market transactions, business development, innovation & strategy, client relationship management and business transformation. Prior to joining PAC Registrars, he worked with Africa Prudential Plc, where he served in various capacities including Head, Business Development. While in Africa Prudential Plc, he was part of the team that championed disruptive innovation in the registrar’s business in Nigeria pioneering many e-products.",
+      "He is an Associate of the Institute of Capital Market Registrars (ICMR) and Chartered Institute of Loans and Risk Management (CILRM). He holds degree in Quantity Surveying and an MBA.",
     ],
     image: "/images/leader-5.png",
   },
@@ -52,20 +50,20 @@ const ManagementBio: IBio[] = [
     ],
     image: "/images/leader-8.png",
   },
-  {
-    name: "Moses Ojo",
-    title: "Chief Economist/Head, Investment Research",
-    bio: [
-      "Moses is a professional in the financial services industry with about sixteen years post qualification experience that spans through investment research (macroeconomic, equity, fixed income and sectoral research), portfolio and fund management, securities dealings and financial advisory services.",
-      "He has worked for First Trustees Nigeria Ltd, now a part of FBNQuest Ltd (a member of FBN Holdings Ltd), FutureView Financial Services Ltd and Dunn Loren Merrifield. Moses has a degree in accounting from Lagos State University, he is a fellow of both the Institute of Chartered Accountants of Nigeria (ICAN) and the Chartered Institute of Stockbrokers (CIS), an associate of both the Chartered Institute of Taxation of Nigeria (CITN) and the Association of Certified Chartered Accountants (ACCA), London.",
+  // {
+  //   name: "Moses Ojo",
+  //   title: "Chief Economist/Head, Investment Research",
+  //   bio: [
+  //     "Moses is a professional in the financial services industry with about sixteen years post qualification experience that spans through investment research (macroeconomic, equity, fixed income and sectoral research), portfolio and fund management, securities dealings and financial advisory services.",
+  //     "He has worked for First Trustees Nigeria Ltd, now a part of FBNQuest Ltd (a member of FBN Holdings Ltd), FutureView Financial Services Ltd and Dunn Loren Merrifield. Moses has a degree in accounting from Lagos State University, he is a fellow of both the Institute of Chartered Accountants of Nigeria (ICAN) and the Chartered Institute of Stockbrokers (CIS), an associate of both the Chartered Institute of Taxation of Nigeria (CITN) and the Association of Certified Chartered Accountants (ACCA), London.",
       
-      "He has attended courses on investment banking both at home and abroad. Moses is the Chief Economist/Head, Investment Research of PanAfrican Capital Holdings Ltd.",
-    ],
-    image: "/images/leader-9.png",
-  },
+  //     "He has attended courses on investment banking both at home and abroad. Moses is the Chief Economist/Head, Investment Research of PanAfrican Capital Holdings Ltd.",
+  //   ],
+  //   image: "/images/leader-9.png",
+  // },
   {
     name: "Babatunde Oyeniyi",
-    title: "Divisional Head",
+    title: "Divisional Head Business Solutions",
     bio: [
       "Babatunde Oyeniyi is an investment banker with 2 decades of experience within the capital market. His experience cuts across finance, capital raising, relationship management, business development, product management and business solutions.",
       "He holds an HND from the Yaba College of Technology and an MBA from Ladoke Akintola University of Technology.",
