@@ -40,6 +40,9 @@ a {
 ul {
   list-style: none;
 }
+p{
+  text-align: justify;
+}
 
 p,
 h1,
@@ -112,7 +115,7 @@ section,footer {
 }
 
 
-@media screen and (min-width:  1320px) {
+@media screen and (min-width:  1140px) {
   .unset {
     position: unset;
   }
@@ -217,9 +220,14 @@ a{
 
 @media screen and (max-width: 1600px) {
   html {
-    font-size: 90%;
+    font-size: 85%;
   }
 }
+/* @media screen and (max-width: 1400px) {
+  html {
+    font-size: 80%;
+  }
+} */
 @media screen and (max-width: 1024px) {
   html {
     font-size: 90%;
