@@ -26,7 +26,7 @@ function Header() {
 
   return (
     <header className="bg-bluePrimary pt-3   z-50 w-full fixed">
-      <div className="bg-white h-[6rem] flex items-center justify-between md:px-10 px-5 2xl:px-[7%] py-2 xl:relative z-50 w-full fixed">
+      <div className="bg-white h-[6rem] flex items-center justify-between md:px-10 px-5 xl:px-[7%] py-2 xl:relative z-50 w-full fixed">
         <NavLink onClick={() => setMenu(false)} to="/">
           <img
             src="/logo.jpg"
@@ -36,12 +36,12 @@ function Header() {
         </NavLink>
 
         <div
-          className={`flex md:flex 2xl:flex-row md:px-0 md:py-0 flex-col  2xl:gap-[53px]  fixed 2xl:ml-auto z-40 w-[24rem] h-screen  2xl:w-fit 2xl:h-auto md:items-center py-5 bg-white gap-[25px] px-5 ${
+          className={`flex md:flex xl:flex-row md:px-0 md:py-0 flex-col  2xl:gap-[53px]  fixed 2xl:ml-auto z-40 w-[24rem] h-screen  xl:w-fit xl:h-auto md:items-center py-5 bg-white gap-[25px] px-5 ${
             menu ? "left-0 top-[6rem]" : "left-[-1000px] top-[6rem]"
           } left-0 unset transition-all`}
         >
           <nav className="w-full scroll lg:text-[1.05rem] !text-lg  font-medium">
-            <ul className="md:flex 2xl:flex-row flex-col 2xl:gap-[30px] 2xl:items-center items-start 2xl:pt-0 2xl:pl-0  sm:pl-20 pl-10 pt-3  gap-[20px]">
+            <ul className="md:flex xl:flex-row flex-col 2xl:gap-[30px] xl:items-center items-start xl:pt-0 xl:pl-0  sm:pl-20 pl-10 pt-3  gap-[20px]">
               <li className="">
                 <NavLink
                   onClick={() => setMenu(false)}
@@ -56,7 +56,7 @@ function Header() {
                 onMouseLeave={() => setOpen(false)}
               >
                 <p
-                  className="2xl:text-[1.05rem] text-lg  py-2  cursor-pointer flex items-center gap-2 text-nowrap"
+                  className="xl:text-[1.05rem] text-lg font-semibold  py-2  cursor-pointer flex items-center gap-2 text-nowrap"
                   onMouseEnter={() => setOpen(true)}
                 >
                   About Us{" "}
@@ -65,7 +65,7 @@ function Header() {
                   </span>
                 </p>
                 <div
-                  className={` py-3 absolute w-[18rem] -left-14 2xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all   ${
+                  className={` py-3 absolute w-[18rem] -left-14 xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all   ${
                     open ? "top-10" : "-top-72"
                   }`}
                 >
@@ -123,7 +123,7 @@ function Header() {
                   </NavLink>
                 </div>
                 <div
-                  className={` py-1  -left-14 2xl:hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all ${
+                  className={` py-1  -left-14 xl:hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all ${
                     open ? "flex" : "hidden"
                   }`}
                 >
@@ -168,7 +168,7 @@ function Header() {
 
               <li className="relative" onMouseLeave={() => setOpen1(false)}>
                 <p
-                  className="lg:text-[1.05rem] text-lg  py-2  cursor-pointer flex items-center gap-2"
+                  className="lg:text-[1.05rem] text-lg font-semibold  py-2  cursor-pointer flex items-center gap-2"
                   onMouseEnter={() => setOpen1(true)}
                 >
                   Services{" "}
@@ -177,7 +177,7 @@ function Header() {
                   </span>
                 </p>
                 <div
-                  className={` py-3 absolute w-[21rem] -left-14 2xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all  ${
+                  className={` py-3 absolute w-[21rem] -left-14 xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all  ${
                     open1 ? "top-10" : "-top-[30rem]"
                   }`}
                 >
@@ -270,11 +270,11 @@ function Header() {
                     <span>
                       <IoIosNotifications size={25} />
                     </span>
-                    e-Notification
+                    Electronic Repository System (ERS)
                   </NavLink>
                 </div>
                 <div
-                  className={` py-1  -left-14 2xl:hidden flex-col justify-center items-center z-5  rounded-2xl p-5 transition-all ${
+                  className={` py-1  -left-14 xl:hidden flex-col justify-center items-center z-5  rounded-2xl p-5 transition-all ${
                     open1 ? "flex" : "hidden"
                   }`}
                 >
@@ -347,13 +347,13 @@ function Header() {
                     }}
                     to="/e-notification"
                   >
-                    e-Notification
+                    Electronic Repository System
                   </NavLink>
                 </div>
               </li>
               <li className="relative" onMouseLeave={() => setOpen2(false)}>
                 <p
-                  className="lg:text-[1.05rem] text-lg  py-2  cursor-pointer flex items-center gap-2"
+                  className="lg:text-[1.05rem] text-lg font-semibold   py-2  cursor-pointer flex items-center gap-2"
                   onMouseEnter={() => setOpen2(true)}
                 >
                   Product{" "}
@@ -362,7 +362,7 @@ function Header() {
                   </span>
                 </p>
                 <div
-                  className={` py-3 absolute w-[16rem] -left-14 2xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5  transition-all ${
+                  className={` py-3 absolute w-[16rem] -left-14 xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5  transition-all ${
                     open2 ? "top-10" : "-top-[14rem]"
                   }`}
                 >
@@ -376,7 +376,7 @@ function Header() {
                   </NavLink>
                 </div>
                 <div
-                  className={` py-1  -left-14 2xl:hidden flex-col justify-center items-center z-5  rounded-2xl p-5 transition-all ${
+                  className={` py-1  -left-14 xl:hidden flex-col justify-center items-center z-5  rounded-2xl p-5 transition-all ${
                     open2 ? "flex" : "hidden"
                   }`}
                 >
@@ -391,7 +391,7 @@ function Header() {
               </li>
               <li className="relative" onMouseLeave={() => setOpen3(false)}>
                 <p
-                  className="lg:text-[1.05rem] text-lg  py-2  cursor-pointer flex items-center gap-2"
+                  className="lg:text-[1.05rem] text-lg  py-2 font-semibold   cursor-pointer flex items-center gap-2"
                   onMouseEnter={() => setOpen3(true)}
                 >
                   Resources{" "}
@@ -400,7 +400,7 @@ function Header() {
                   </span>
                 </p>
                 <div
-                  className={` py-3 absolute w-[21rem] -left-14 2xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all  ${
+                  className={` py-3 absolute w-[21rem] -left-14 xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all  ${
                     open3 ? "top-10" : "-top-[30rem]"
                   }`}
                 >
@@ -450,7 +450,7 @@ function Header() {
                   </NavLink>
                 </div>
                 <div
-                  className={` py-1  -left-14 2xl:hidden flex-col justify-center items-center z-5  rounded-2xl p-5 transition-all ${
+                  className={` py-1  -left-14 xl:hidden flex-col justify-center items-center z-5  rounded-2xl p-5 transition-all ${
                     open3 ? "flex" : "hidden"
                   }`}
                 >
@@ -520,7 +520,7 @@ function Header() {
               </span>
             </Button>
             <div
-              className={` py-3 absolute w-[17rem] -left-14 2xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all   ${
+              className={` py-3 absolute w-[17rem] -left-14 xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all   ${
                 open4 ? "top-10" : "-top-[30rem]"
               }`}
             >
@@ -570,7 +570,7 @@ function Header() {
               </NavLink>
             </div>
             <div
-              className={` py-1  -left-14 2xl:hidden flex-col justify-center items-center z-5  rounded-2xl p-5 transition-all ${
+              className={` py-1  -left-14 xl:hidden flex-col justify-center items-center z-5  rounded-2xl p-5 transition-all ${
                 open4 ? "flex" : "hidden"
               }`}
             >
@@ -620,7 +620,7 @@ function Header() {
           </div>
         </div>
         <div
-          className=" block 2xl:hidden cursor-pointer"
+          className=" block xl:hidden cursor-pointer"
           onClick={() => setMenu((open) => !open)}
         >
           <img src="/icons/hamburger.svg" alt="" />

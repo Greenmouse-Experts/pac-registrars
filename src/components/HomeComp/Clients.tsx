@@ -91,42 +91,42 @@ function Clients() {
             <img
               src="/images/client-1.png"
               alt="client"
-              className=" grayscale mx-1 max-w-[130px] max-h-[50px] hover:grayscale-0 cursor-pointer "
+              className="  mx-1 max-w-[130px] max-h-[50px]  "
             />
           </div>
           <div className="flex justify-center items-center">
             <img
               src="/images/client-2.png"
               alt="client"
-              className="mix-blend-luminosity grayscale mx-1 max-w-[130px] max-h-[50px] hover:grayscale-0 cursor-pointer "
+              className="mix-blend-luminosity  mx-1 max-w-[130px] max-h-[50px]  "
             />
           </div>
           <div className="flex justify-center items-center">
             <img
               src="/images/client-3.png"
               alt="client"
-              className="mix-blend-luminosity grayscale mx-1 max-w-[130px] max-h-[50px] hover:grayscale-0 cursor-pointer "
+              className="mix-blend-luminosity  mx-1 max-w-[130px] max-h-[50px]  "
             />
           </div>
           <div className="flex justify-center items-center">
             <img
               src="/images/client-4.png"
               alt="client"
-              className="mix-blend-luminosity grayscale mx-1 max-w-[130px] max-h-[50px] hover:grayscale-0 cursor-pointer "
+              className="mix-blend-luminosity  mx-1 max-w-[130px] max-h-[50px]  "
             />
           </div>
           <div className="flex justify-center items-center">
             <img
               src="/images/client-5.png"
               alt="client"
-              className="mix-blend-luminosity grayscale mx-1 max-w-[130px] max-h-[50px] hover:grayscale-0 cursor-pointer "
+              className="mix-blend-luminosity  mx-1 max-w-[130px] max-h-[50px]  "
             />
           </div>
           <div className="flex justify-center items-center">
             <img
               src="/images/client-6.png"
               alt="client"
-              className="mix-blend-luminosity grayscale mx-1 max-w-[130px] max-h-[50px] hover:grayscale-0 cursor-pointer "
+              className="mix-blend-luminosity  mx-1 max-w-[130px] max-h-[50px]  "
             />
           </div>
         </Slider>
@@ -143,31 +143,31 @@ export default Clients;
   /* <img
             src="/images/client-1.png"
             alt="client"
-            className="mix-blend-luminosity grayscale mx-1 max-w-[130px] max-h-[50px] hover:grayscale-0 cursor-pointer "
+            className="mix-blend-luminosity  mx-1 max-w-[130px] max-h-[50px]  "
           />
           <img
             src="/images/client-2.png"
             alt="client"
-            className="mix-blend-luminosity grayscale mx-1 max-w-[130px] max-h-[50px] "
+            className="mix-blend-luminosity  mx-1 max-w-[130px] max-h-[50px] "
           />
           <img
             src="/images/client-3.png"
             alt="client"
-            className="mix-blend-luminosity grayscale mx-1 max-w-[130px] max-h-[50px] "
+            className="mix-blend-luminosity  mx-1 max-w-[130px] max-h-[50px] "
           />
           <img
             src="/images/client-4.png"
             alt="client"
-            className="mix-blend-luminosity grayscale mx-1 max-w-[130px] max-h-[50px] "
+            className="mix-blend-luminosity  mx-1 max-w-[130px] max-h-[50px] "
           />
           <img
             src="/images/client-5.png"
             alt="client"
-            className="mix-blend-luminosity grayscale mx-1 max-w-[130px] max-h-[50px] "
+            className="mix-blend-luminosity  mx-1 max-w-[130px] max-h-[50px] "
           />
           <img
             src="/images/client-6.png"
             alt="client"
-            className="mix-blend-luminosity grayscale mx-1 max-w-[130px] max-h-[50px] "
+            className="mix-blend-luminosity  mx-1 max-w-[130px] max-h-[50px] "
           /> */
 }

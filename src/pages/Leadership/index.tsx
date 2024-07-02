@@ -23,7 +23,7 @@ const LeaderBio: IBio[] = [
   },
   {
     name: "Sina Alimi",
-    title: "Executive Director",
+    title: "Non-Executive Director",
     bio: [
       "Sina is the Deputy Chief Executive Officer of PanAfrican Capital Holdings, a Proprietary Investment Company with presence in Lagos, Accra, Nairobi and Mauritius. He also serves as a member of the Board of Directors for several companies within the Group. Acquiring a Chartered Accountant status in 1991, his career spans over twenty-five (25) cutting across Deal Structuring, Project Finance, Mergers & Acquisitions, Privatization and Asset Management.",
       "Having worked with Diamond Bank Limited where he started his banking career in Audit and Banking Operations, Sina later joined the Investment Banking Division of Fountain Trust Bank Plc in 1997 and subsequently served as Group Head, Corporate Finance and Head, Investment Banking Group. While in Corporate Finance, Sina was actively involved in high profile projects and advisory mandates in the private sector as well as the privatization Programme of the Federal Government of Nigeria.",
@@ -33,7 +33,7 @@ const LeaderBio: IBio[] = [
   },
   {
     name: "Eric Okoruwa",
-    title: "Executive Director",
+    title: "Non-Executive Director",
     bio: [
       "Eric Okoruwa is the Group Executive Director of PanAfrican Capital Holdings with over 20 years’ experience in investment banking and financial advisory. Eric has been involved in various high-profile transactions, raising over $5 billion and N300 billion from both foreign and local financial institution and capital markets across diverse sectors. While at Fountain Trust bank Plc, he worked on a number of high-profile private sector advisory transactions as well as the Federal Government privatization program of the Federal Government of Nigeria. He holds a Bachelor of Science Degree in Business Administration from the University of Lagos and a Master’s degree in Marketing from the University of Lagos. He has attended severalExecutive courses, Advanced Manager’sProgramme (AMP) from the Lagos Business School, “Leading Organizational Change” – Whatrton University of Pennsylvania and the Lagos Business School Global Chief Executive Officer (GCEO) programme for Africa in conjunction with Strathmore University Business School and IESE Business School Navarra, New York.",
       "",
@@ -43,7 +43,7 @@ const LeaderBio: IBio[] = [
   },
   {
     name: "Nentok Gomwalk",
-    title: "Director",
+    title: "Non-Executive Director",
     bio: [
       "Nentok Gomwalk is the Group Head Finance, Investment and Strategy of Pan African Capital Holdings. He is a graduate of Business Administration from Ahmadu Bello University Zaria, he is also a member of the Association of Certified Chartered Accountants (ACCA) UK a globally recognised body of chartered accountants. ",
       " He has well over 20 years of work experience in different sectors of the Nigerian economy. He started his career as a finance manager in a distribution company, then proceeded to Lister Oil Limited where he served as a member of the finance unit and technical assistant to the Terminal manger on finance. ",

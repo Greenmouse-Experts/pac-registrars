@@ -40,11 +40,11 @@ function Values() {
             Our Company Ethos and Values
           </p>
           <h4 className=" font-bold font-syne capitalize text-black ">
-            Our Core Values
+            Our Spirit
           </h4>
         </div>
 
-        <div className="mt-8 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 ">
+        <div className="mt-8 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10  ">
          
             <div className=" bg-white shadow-sm  p-8 flex flex-col gap-6 about-shadow">
               <img src="/icons/about-1.svg" alt="" className="h-[69px] w-[69px]" />

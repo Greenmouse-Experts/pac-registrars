@@ -94,7 +94,7 @@ function AddPassportAndSignature(WrappedComponent) {
             <p className="text-sm mt-2">Attach a Passport</p>
           </div>
         </div>
-        <div className="text-sm gap-4 pt-3 flex flex-col items-start w-[30%]">
+        {/* <div className="text-sm gap-4 pt-3 flex flex-col items-start w-[30%]">
           {signaturePreview && (
             <div className="w-full flex justify-center">
               <img
@@ -169,7 +169,7 @@ function AddPassportAndSignature(WrappedComponent) {
             )}
             <p className="text-sm mt-2 p-1"> Click to upload Signature</p>
           </div>
-        </div>
+        </div> */}
         <div className="flex items-center gap-4">
           <label className="text-lg flex gap-2 text-grayPrimary2">
             <input type="checkbox" name="" id="" className="w-4" />

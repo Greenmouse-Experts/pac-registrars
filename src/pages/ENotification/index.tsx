@@ -41,7 +41,7 @@ function ENotification() {
   const [showFaq, setShowFaq] = useState(false);
   return (
     <>
-      <Banner page="e-Notification" link="" img="/images/notify-banner.png" />
+      <Banner page="Electronic Repository System (ERS)" link="" img="/images/notify-banner.png" />
       <section className="lg:pt-24 pt-16 bg-white flex lg:flex-row flex-col items-center lg:gap-20 gap-10 ">
         <div className="lg:w-[44%] w-full">
           <img
@@ -52,10 +52,10 @@ function ENotification() {
         </div>
         <div className="lg:w-[56%] w-full font-syne">
           <h4 className=" font-bold font-syne capitalize text-black">
-            E-Notifications
+            Electronic Repository System (ERS)
           </h4>
           <p className=" 2xl:mt-3 mt-3 font-sora ">
-            E-notifications short messages or alerts sent from mobile apps,
+            Electronic Repository System (ERS) short messages or alerts sent from mobile apps,
             websites, or servers to a shareholder/unitholder/bondholder’s
             device, typically in the form of transaction message, clients
             corporate action notification by text, images, or interactive
@@ -65,7 +65,7 @@ function ENotification() {
           <p className=" 2xl:mt-5 mt-3 font-sora ">
             It can be delivered in real-time before corporate action of client
             and appear on the holder’s device screen, even when the app or
-            website is not actively in use. E-notifications are a common
+            website is not actively in use. Electronic Repository System (ERS) are a common
             communication tool used to keep users informed about updates,
             events, promotions, or other relevant information, enhancing user
             engagement and retention. Users can often customize their
@@ -108,11 +108,11 @@ function ENotification() {
       <section className="lg:pt-24 pt-16">
         <div className="xl:w-[50%] w-full">
           <h4 className=" font-bold font-syne capitalize text-black">
-            E-Notifications
+            Electronic Repository System (ERS)
           </h4>
 
           <p className="font-semibold mt-3">
-            E-Notifications offer several benefits for businesses as well as
+            Electronic Repository System (ERS) offer several benefits for businesses as well as
             users. Here are some of the key advantages
           </p>
         </div>

@@ -28,14 +28,13 @@ function DocumentManagement() {
           <p className=" 2xl:mt-3 mt-3 font-sora text-grayPrimary2">
             Our Document Management System (DMS) specializes in providing cost
             effective, secure and user-friendly solutions for simplifying the
-            document needs of our clients.
+            document management needs of our clients.
           </p>
           <p className=" 2xl:mt-5 mt-3 font-sora text-grayPrimary2">
             PAC Registrars & Investor Services Document Management System helps
             to store and organize digital documents in a secure and easily
             accessible way. With our DMS, we help you take away the risk of
             theft or fire by helping you manage your important documents
-            electronically rather than physically.
           </p>
         </div>
       </section>
@@ -46,7 +45,7 @@ function DocumentManagement() {
           </p>
         </div>
         <div className="grid grid-cols-[repeat(auto-fill,_minmax(18rem,_1fr))] gap-8 mt-14">
-          <SmallCardWithNumber num="01" text="Digital Archiving" />
+          <SmallCardWithNumber num="01" text="Electronic Document Management System (EDMS)" />
           <SmallCardWithNumber num="02" text="Physical Archiving" />
           <SmallCardWithNumber num="03" text="Data Capturing" />
           <SmallCardWithNumber num="04" text="Scanning" />
