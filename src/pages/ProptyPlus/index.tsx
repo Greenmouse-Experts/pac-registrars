@@ -17,7 +17,7 @@ function ProptyPlus() {
   const [showFaq, setShowFaq] = useState(false);
   return (
     <>
-      <Banner page="Proptyplus" link="" img="/images/prop-banner.png" />
+      <Banner page="ProptyPlus" link="" img="/images/prop-banner.png" />
       <section className="lg:pt-24 pt-16 bg-white flex lg:flex-row flex-col items-center lg:gap-20 gap-10 ">
         <div className="lg:w-[56%] w-full font-syne">
           <h4 className=" font-bold font-syne capitalize text-black">

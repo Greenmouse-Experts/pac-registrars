@@ -372,7 +372,7 @@ function Header() {
                     onClick={() => setMenu(false)}
                   >
                     <PiHandshake size={25} />
-                    Proptyplus
+                    ProptyPlus
                   </NavLink>
                 </div>
                 <div
@@ -385,7 +385,7 @@ function Header() {
                     to="/proptyplus"
                     onClick={() => setMenu(false)}
                   >
-                    Proptyplus
+                    ProptyPlus
                   </NavLink>
                 </div>
               </li>
