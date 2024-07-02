@@ -16,7 +16,7 @@ function Input({ placeholder, type, label}:InputProps) {
         type={type ? type : "text"}
         placeholder={placeholder}
         className="bg-[#F4F4F4] 2xl:h-[60px] placeholder:text-[text-grayPrimary2] h-[50px] pl-5 w-full"
-        required
+        
       />
     </div>
   );
