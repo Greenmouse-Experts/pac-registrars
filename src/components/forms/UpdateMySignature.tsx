@@ -76,14 +76,6 @@ function UpdateMySignature() {
           </div>
         </div>
 
-        <div>
-          <label>Upload Banker's Information</label>
-          <div className=" flex lg:flex-row flex-col justify-between gap-8 ">
-            <Input type="text" placeholder="First Name" />
-            <Input type="text" placeholder="Middle Name (optional)" />
-            <Input type="text" placeholder="Last Name" />
-          </div>
-        </div>
 
         <div className=" flex lg:flex-row flex-col justify-between gap-8 ">
           <Input type="text" placeholder="Email" />
@@ -93,7 +85,12 @@ function UpdateMySignature() {
           <Input type="text" placeholder="BVN" />
           <Input type="text" placeholder="Clearing House (if any)" />
         </div>
+        <div className=" flex  flex-col justify-between gap-2 ">
+        <label htmlFor="">Upload  Banker's Information</label>
+        <input type="file" placeholder="upload document" />
+      </div>
       </>
+      
       <div className=" flex items-start gap-10">
         <textarea
           placeholder="Brief details of the service you want from us"
@@ -123,6 +120,7 @@ function UpdateMySignature() {
           <p className="text-sm mt-2">Attach a Passport</p>
         </div>
       </div>
+
 
       <div className="text-sm gap-4 pt-3 flex  items-center ">
         <div className=" w-[40%]">
@@ -258,7 +256,7 @@ function UpdateMySignature() {
             </div>
           </Popup>
         </div>
-        <p>or</p>
+        
         <div className="bg-[#F4F4F4] flex flex-col justify-center items-center h-[7.5rem] relative w-[40%]">
           {preview2 ? (
             <img
@@ -278,9 +276,10 @@ function UpdateMySignature() {
               />
             </>
           )}
-          <p className="text-sm mt-2 p-1"> Click to upload Signature</p>
+          <p className="text-sm mt-2 p-1 text-center"> upload bankers confirmation of signature</p>
         </div>
       </div>
+    
 
       <div className="flex items-center gap-4">
         <label className="text-lg flex gap-2 text-grayPrimary2">

@@ -40,7 +40,7 @@ function UpdateMyInformation() {
         <Input type="text" placeholder="Gender" />
       </div>
       <div>
-        <label>Mext of Kin Name</label>
+        <label>Next of Kin Name</label>
         <div className=" flex lg:flex-row flex-col justify-between gap-8 ">
           <Input type="text" placeholder="First Name" />
         
