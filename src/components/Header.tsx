@@ -26,7 +26,7 @@ function Header() {
 
   return (
     <header className="bg-bluePrimary pt-3   z-50 w-full fixed">
-      <div className="bg-white h-[6rem] flex items-center justify-between md:px-10 px-5 xl:px-[7%] py-2 xl:relative z-50 w-full fixed">
+      <div className="bg-white h-[6rem] flex items-center justify-between md:px-10 px-5 xl:px-[3%] py-2 xl:relative z-50 w-full fixed">
         <NavLink onClick={() => setMenu(false)} to="/">
           <img
             src="/logo.jpg"
@@ -507,6 +507,15 @@ function Header() {
                   Contact Us
                 </NavLink>
               </li>
+              <li className="bg-red-700 text-white px-1">
+                <NavLink
+                  onClick={() => setMenu(false)}
+                  className="lg:text-[1.05rem] text-lg w-full font-semibold md:hover:bg-white md:hover:text-bluePrimary transition-all text-nowrap"
+                  to="https://docuhub3.nibss-plc.com.ng/edmms/self-service"
+                >
+                  EDMMS 
+                </NavLink>
+              </li>
             </ul>
           </nav>
           <div
@@ -514,7 +523,7 @@ function Header() {
             onMouseLeave={() => setOpen4(false)}
           >
             <Button onMouseEnter={() => setOpen4(true)} type="">
-              Portal Login{" "}
+            PACR Portal Login{" "}
               <span>
                 <MdKeyboardArrowDown />
               </span>

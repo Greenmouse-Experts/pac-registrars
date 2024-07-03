@@ -21,7 +21,7 @@ function Forms() {
       <section className="lg:py-24 pt-16 bg-white flex lg:flex-row flex-col items-center lg:gap-20 gap-10 ">
         <div className="w-full">
           <h4 className=" font-bold font-syne capitalize text-black mb-5">
-            Pac Registry and Investor Services Forms
+            Pac Registrars and Investor Services Forms
           </h4>
           <div className="flex lg:flex-row flex-col items-start justify-between gap-10">
             <div className="lg:w-[30%] w-full font-syne flex flex-col gap-8">
@@ -117,7 +117,7 @@ function Forms() {
                 <p className={`font-sora  px-4`}>Shareholder Update</p>
                 <div className="absolute bottom-0 bg-bluePrimary h-1 w-full" />
               </div>
-              <div
+              {/* <div
                 className={` relative py-6 rounded-md w-full border border-bluePrimary cursor-pointer ${
                   active === 8
                     ? "text-white bg-bluePrimary"
@@ -127,8 +127,8 @@ function Forms() {
               >
                 <p className={`font-sora  px-4`}>Account Consolidation</p>
                 <div className="absolute bottom-0 bg-bluePrimary h-1 w-full" />
-              </div>
-              <div
+              </div> */}
+              {/* <div
                 className={` relative py-6 rounded-md w-full border border-bluePrimary cursor-pointer ${
                   active === 9
                     ? "text-white bg-bluePrimary"
@@ -137,10 +137,10 @@ function Forms() {
                 onClick={() => setActive(9)}
               >
                 <p className={`font-sora  px-4`}>
-                E-Dividend Mandate Form
+                E-Dividend Mandate Form
                 </p>
                 <div className="absolute bottom-0 bg-bluePrimary h-1 w-full" />
-              </div>
+              </div> */}
 
               <NavLink
                 to="/faqs"

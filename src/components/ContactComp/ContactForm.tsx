@@ -48,20 +48,30 @@ function ContactForm() {
             </NavLink>
           </span>
           <span>
-          <NavLink to="https://web.facebook.com/PACHoldingsLtd/">
-            <img src="/icons/social-2.svg" alt="" className="w-6" />
-          </NavLink>
+            <NavLink to="https://web.facebook.com/PACHoldingsLtd/">
+              <img src="/icons/social-2.svg" alt="" className="w-6" />
+            </NavLink>
           </span>
           <span>
-          <NavLink to="https://www.instagram.com/">
-            <img src="/icons/social-3.svg" alt="" className="w-6" />
-          </NavLink>
+            <NavLink to="https://www.instagram.com/">
+              <img src="/icons/social-3.svg" alt="" className="w-6" />
+            </NavLink>
           </span>
           {/* <span>
           <NavLink to="https://x.com/PACHoldingsLtd">
             <img src="/icons/social-4.svg" alt="" className="w-6" />
           </NavLink>
           </span> */}
+        </div>
+
+        <div className=" w-full mt-5">
+          
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.2581796808954!2d3.3587868!3d6.488955799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c0ccc118ef5%3A0xe6850737f4fa5a6c!2s122%20Bode%20Thomas%20St%2C%20Alaka%2C%20Lagos%20101241%2C%20Lagos!5e0!3m2!1sen!2sng!4v1720003863874!5m2!1sen!2sng"
+            width="100%"
+            height="300"
+            style={{ border: 0 }}
+          ></iframe>
         </div>
       </div>
 
