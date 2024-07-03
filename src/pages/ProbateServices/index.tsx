@@ -3,9 +3,20 @@ import Banner from "../../components/Banner";
 import ProbateFaq from "../../components/ProbateFaq";
 import SmallCardWithIcon from "../../components/cards/SmallCardWithIcon";
 import ProbateForm from "../../components/forms/ProbateForm";
+import ServiceModal from '../../components/modals/ServicesModal'; // Import the modal
 
 function ProbateServices() {
   const [showFaq, setShowFaq] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <>
       <Banner
@@ -57,7 +68,6 @@ function ProbateServices() {
             img="/icons/prob4.svg"
             text="Amendments of Letters of Administration"
           />
-
           <SmallCardWithIcon
             img="/icons/prob5.svg"
             text="Obtaining certificate of additional assets"
@@ -74,7 +84,6 @@ function ProbateServices() {
             img="/icons/prob8.svg"
             text="Will Filing and confirmation."
           />
-
           <SmallCardWithIcon img="/icons/prob9.svg" text="Receiving" />
           <SmallCardWithIcon img="/icons/prob10.svg" text="Annuity" />
           <SmallCardWithIcon
@@ -83,21 +92,28 @@ function ProbateServices() {
           />
         </div>
       </section>
-      <section className="lg:py-24 py-16">
-        <p
-          className="bg-bluePrimary text-white w-fit py-3 px-5 cursor-pointer"
-          onClick={() => setShowFaq((prev) => !prev)}
-        >
-          Click to view FAQs
-        </p>
+      <section className=" py-16  ">
+        <div className="flex gap-20">
 
-        <div className="mt-20">{showFaq && <ProbateFaq />}</div>
-      </section>
-      <section className="lg:py-24 py-16 sm:px-[7%] px-0 bg-[#F9F9F9] mt-0 mb-20 sm:mx-10 flex justify-center items-center">
-        <div className="lg:w-[45rem] w-full">
-          <ProbateForm />
+          <p
+            className="bg-bluePrimary text-white w-fit py-2 h-12 px-5 cursor-pointer"
+            onClick={() => setShowFaq((prev) => !prev)}
+          >
+            Click to view FAQs
+          </p>
+          <button
+            onClick={handleOpenModal}
+            className="bg-bluePrimary text-white w-fit h-12 py-3 px-5 cursor-pointer text-xl"
+          >
+            Request this service
+          </button>
         </div>
+        <div className="mt-10">{showFaq && <ProbateFaq />}</div>
       </section>
+
+      <ServiceModal isOpen={isModalOpen} handleClose={handleCloseModal} title="">
+        <ProbateForm />
+      </ServiceModal>
     </>
   );
 }

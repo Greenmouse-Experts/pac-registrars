@@ -21,7 +21,7 @@ function Forms() {
       <section className="lg:py-24 pt-16 bg-white flex lg:flex-row flex-col items-center lg:gap-20 gap-10 ">
         <div className="w-full">
           <h4 className=" font-bold font-syne capitalize text-black mb-5">
-            Pac Registrars and Investor Services Forms
+            PAC Registrars and Investor Services Forms
           </h4>
           <div className="flex lg:flex-row flex-col items-start justify-between gap-10">
             <div className="lg:w-[30%] w-full font-syne flex flex-col gap-8">

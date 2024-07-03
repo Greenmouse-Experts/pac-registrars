@@ -2,11 +2,21 @@ import { useState } from "react";
 import Banner from "../../components/Banner";
 import SecreterialFaq from "../../components/SecreterialFaq";
 import SmallCardWithIcon2 from "../../components/cards/SmallCardWithIcon2";
-
 import SecretarialForm from "../../components/forms/SecretarialForm";
+import ServiceModal from '../../components/modals/ServicesModal'; // Import the modal
 
 function CompanySecretarial() {
   const [showFaq, setShowFaq] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <>
       <Banner
@@ -14,7 +24,7 @@ function CompanySecretarial() {
         link=""
         img="/images/secretarial-banner.png"
       />
-      <section className="lg:pt-24 pt-16 bg-white flex lg:flex-row flex-col items-center lg:gap-20 gap-10 ">
+      <section className="lg:pt-24 pt-16 bg-white flex lg:flex-row flex-col items-center lg:gap-20 gap-10">
         <div className="lg:w-[44%] w-full">
           <img
             src="/images/secretarial-img.png"
@@ -53,7 +63,7 @@ function CompanySecretarial() {
         <div className="grid grid-cols-[repeat(auto-fill,_minmax(18rem,_1fr))] gap-8 mt-14">
           <SmallCardWithIcon2 img="/icons/comp1.svg">
             <p className="font-semibold mb-3">Board Support</p>
-            <p>
+            <p className="">
               Organizing and facilitating board and committee meetings,
               preparing agendas and minutes, and ensuring compliance with
               statutory requirements for meetings.
@@ -61,7 +71,7 @@ function CompanySecretarial() {
           </SmallCardWithIcon2>
           <SmallCardWithIcon2 img="/icons/comp2.svg">
             <p className="font-semibold mb-3">Corporate Governance</p>
-            <p>
+            <p className="">
               Advising on and ensuring compliance with corporate governance
               principles, including board structure, director responsibilities,
               and shareholder rights.
@@ -69,7 +79,7 @@ function CompanySecretarial() {
           </SmallCardWithIcon2>
           <SmallCardWithIcon2 img="/icons/comp3.svg">
             <p className="font-semibold mb-3">Statutory Compliance</p>
-            <p>
+            <p className="">
               Ensuring compliance with relevant company laws and regulations,
               such as filing annual returns, maintaining statutory registers,
               and updating company records.
@@ -77,14 +87,14 @@ function CompanySecretarial() {
           </SmallCardWithIcon2>
           <SmallCardWithIcon2 img="/icons/comp4.svg">
             <p className="font-semibold mb-3">Regulatory Compliance</p>
-            <p>
+            <p className="">
               Monitoring changes in legislation and regulations affecting the
               company and ensuring timely compliance with new requirements.
             </p>
           </SmallCardWithIcon2>
           <SmallCardWithIcon2 img="/icons/comp5.svg">
             <p className="font-semibold mb-3">Document Management</p>
-            <p>
+            <p className="">
               Maintaining corporate records, including minutes, resolutions, and
               legal documents, and ensuring they are stored securely and
               accessible when needed.
@@ -94,7 +104,7 @@ function CompanySecretarial() {
             <p className="font-semibold mb-3 text-center">
               Corporate Secretariat Software Solutions
             </p>
-            <p>
+            <p className="">
               Providing software solutions for streamlining and automating
               company secretarial tasks, such as managing corporate records and
               compliance calendars.
@@ -102,7 +112,7 @@ function CompanySecretarial() {
           </SmallCardWithIcon2>
           <SmallCardWithIcon2 img="/icons/comp7.svg">
             <p className="font-semibold mb-3">Advisory Services</p>
-            <p>
+            <p className="">
               Providing advice and guidance to the board and senior management
               on corporate governance best practices, regulatory changes, and
               compliance issues.
@@ -110,19 +120,18 @@ function CompanySecretarial() {
           </SmallCardWithIcon2>
           <SmallCardWithIcon2 img="/icons/comp8.svg">
             <p className="font-semibold mb-3">Shareholder Services</p>
-            <p>
+            <p className="">
               Managing communication with shareholders, organizing shareholder
-              meetings, and handling share transactions such as transfers  and
+              meetings, and handling share transactions such as transfers and
               issuances.
             </p>
           </SmallCardWithIcon2>
-
           <SmallCardWithIcon2 img="/icons/comp9.svg">
             <p className="font-semibold mb-3">Incorporation Services</p>
-            <p>
+            <p className="">
               Assisting with the formation of a new company, including drafting
               the necessary documents, filing incorporation papers with the
-              relevant authorities, and obtaining necessary licenses  and
+              relevant authorities, and obtaining necessary licenses and
               permits.
             </p>
           </SmallCardWithIcon2>
@@ -136,23 +145,28 @@ function CompanySecretarial() {
           </SmallCardWithIcon2>
         </div>
       </section>
-      <section className="lg:py-24 py-16">
-        <p
-          className="bg-bluePrimary text-white w-fit py-3 px-5 cursor-pointer"
-          onClick={() => setShowFaq((prev) => !prev)}
-        >
-          Click to view FAQs
-        </p>
+      <section className=" py-16  ">
+        <div className="flex gap-20">
 
-        <div className="mt-20">{showFaq && <SecreterialFaq />}</div>
-      </section>
-
-      <section className="lg:py-24 py-16 sm:px-[7%] px-0 bg-[#F9F9F9] mt-0 mb-20 sm:mx-10 flex justify-center items-center">
-        <div className="lg:w-[45rem] w-full">
-
-       <SecretarialForm/>
+          <p
+            className="bg-bluePrimary text-white w-fit py-2 h-12 px-5 cursor-pointer"
+            onClick={() => setShowFaq((prev) => !prev)}
+          >
+            Click to view FAQs
+          </p>
+          <button
+            onClick={handleOpenModal}
+            className="bg-bluePrimary text-white w-fit h-12 py-3 px-5 cursor-pointer text-xl"
+          >
+            Request this service
+          </button>
         </div>
+        <div className="mt-10">{showFaq && <SecreterialFaq />}</div>
       </section>
+
+      <ServiceModal isOpen={isModalOpen} handleClose={handleCloseModal} title="">
+        <SecretarialForm />
+      </ServiceModal>
     </>
   );
 }

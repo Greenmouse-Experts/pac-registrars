@@ -42,6 +42,8 @@ ul {
 }
 p{
   text-align: justify;
+  hyphens: auto;
+  word-break: break-word;
 }
 
 p,
@@ -66,7 +68,6 @@ button {
   font-family: "Sora", sans-serif;
   font-size: 1.06rem;
   line-height: 2rem;
-  hyphens: none !important;
   font-weight: 400;
 }
 input,

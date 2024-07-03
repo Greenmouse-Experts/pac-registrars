@@ -3,9 +3,20 @@ import Banner from "../../components/Banner";
 import DocumentManagementFaq from "../../components/DocumentManagementFaq";
 import SmallCardWithNumber from "../../components/cards/SmallCardWithNumber";
 import ManagementForm from "../../components/forms/ManagementForm";
+import ServiceModal from '../../components/modals/ServicesModal'; // Import the modal
 
 function DocumentManagement() {
   const [showFaq, setShowFaq] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <>
       <Banner
@@ -13,7 +24,7 @@ function DocumentManagement() {
         link=""
         img="/images/document-banner.png"
       />
-      <section className="lg:pt-24 pt-16 bg-white flex lg:flex-row flex-col items-center lg:gap-20 gap-10 ">
+      <section className="lg:pt-24 pt-16 bg-white flex lg:flex-row flex-col items-center lg:gap-20 gap-10">
         <div className="lg:w-[44%] w-full">
           <img
             src="/images/document.png"
@@ -40,7 +51,7 @@ function DocumentManagement() {
       </section>
       <section className="lg:pt-24 pt-16">
         <div>
-          <p className="text-bluePrimary font-semibold text-lg ">
+          <p className="text-bluePrimary font-semibold text-lg">
             Our Service covers:
           </p>
         </div>
@@ -49,7 +60,6 @@ function DocumentManagement() {
           <SmallCardWithNumber num="02" text="Physical Archiving" />
           <SmallCardWithNumber num="03" text="Data Capturing" />
           <SmallCardWithNumber num="04" text="Scanning" />
-
           <SmallCardWithNumber num="05" text="Shredding" />
           <SmallCardWithNumber
             num="06"
@@ -57,22 +67,30 @@ function DocumentManagement() {
           />
         </div>
       </section>
-      <section className="lg:py-24 py-16">
+      <section className=" py-16  ">
+        <div className="flex gap-20">
+
         <p
-          className="bg-bluePrimary text-white w-fit py-3 px-5 cursor-pointer"
+          className="bg-bluePrimary text-white w-fit py-2 h-12  px-5 cursor-pointer "
           onClick={() => setShowFaq((prev) => !prev)}
         >
           Click to view FAQs
         </p>
-
-        <div className="mt-20">{showFaq && <DocumentManagementFaq />}</div>
-      </section>
-
-      <section className="lg:py-24 py-16 sm:px-[7%] px-0 bg-[#F9F9F9] mt-0 mb-20 sm:mx-10 flex justify-center items-center form-shadow">
-        <div className="lg:w-[45rem] w-full">
-          <ManagementForm />
+        <button
+            onClick={handleOpenModal}
+            className="bg-bluePrimary text-white w-fit h-12 py-3 px-5 cursor-pointer text-xl "
+          >
+            Request this service
+          </button>
         </div>
+        <div className="mt-10">{showFaq && <DocumentManagementFaq />}</div>
       </section>
+
+   
+
+      <ServiceModal isOpen={isModalOpen} handleClose={handleCloseModal} title="">
+        <ManagementForm />
+      </ServiceModal>
     </>
   );
 }
