@@ -34,7 +34,7 @@ function DataRegisterMaintenence() {
           />
           <SmallCardWithNumber
             num="03"
-            text=".Corporate Actions (New Issues, Rights Issues, Share reconstruction, Private Placements, Mergers & Acquisitions etc)"
+            text="Corporate Actions (New Issues, Rights Issues, Share reconstruction, Private Placements, Mergers & Acquisitions etc)"
           />
           <SmallCardWithNumber
             num="04"
