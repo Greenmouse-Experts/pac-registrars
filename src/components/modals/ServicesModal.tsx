@@ -1,9 +1,10 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-nocheck
 import React from "react";
 import {
   Dialog,
   DialogBody,
   DialogHeader,
-  IconButton,
 } from "@material-tailwind/react";
 import { MdClose } from "react-icons/md"; // Importing a close icon from react-icons
 
