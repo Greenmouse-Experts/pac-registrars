@@ -43,7 +43,7 @@ function DataRegisterMaintenence() {
 
           <SmallCardWithNumber num="05" text="Investor Relations" />
           <SmallCardWithNumber num="06" text="Transmission of shares" />
-          <SmallCardWithNumber num="07" text=".Certificate Dematerialization" />
+          <SmallCardWithNumber num="07" text="Certificate Dematerialization" />
           <SmallCardWithNumber
             num="08"
             text="Information Sensitivity Analysis to Clients"
