@@ -137,7 +137,7 @@ function Forms() {
                 onClick={() => setActive(9)}
               >
                 <p className={`font-sora  px-4`}>
-                  E-Dividend/ Mandate Processing
+                E-Dividend Mandate Form
                 </p>
                 <div className="absolute bottom-0 bg-bluePrimary h-1 w-full" />
               </div>
