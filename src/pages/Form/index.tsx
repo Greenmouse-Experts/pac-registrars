@@ -92,7 +92,7 @@ function Forms() {
                 } overflow-hidden`}
                 onClick={() => setActive(5)}
               >
-                <p className={`font-sora  px-4`}>Update My Signature </p>
+                <p className={`font-sora  px-4`}>Update Signature </p>
                 <div className="absolute bottom-0 bg-bluePrimary h-1 w-full" />
               </div>
               <div
