@@ -150,7 +150,7 @@ function Forms() {
               </NavLink>
             </div>
 
-            <div className="xl:w-[50%] lg:w-[60%] w-full">
+            <div className="2xl:w-[50%] xl:w-[60%] lg:w-[60%] w-full">
               {active === 0 && <SecretarialForm />}
               {active === 1 && <ManagementForm />}
               {active === 2 && <ProbateForm />}

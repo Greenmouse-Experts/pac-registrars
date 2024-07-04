@@ -40,7 +40,7 @@ function UpdateMyName() {
         <label>Shareholder’s Old Name</label>
         <div className=" flex lg:flex-row flex-col justify-between gap-8 ">
           <Input type="text" placeholder="First Name" />
-          <Input type="text" placeholder="Middle Name Middle Name(optional)" />
+          <Input type="text" placeholder="Middle Name(optional)" />
           <Input type="text" placeholder="Last Name" />
         </div>
       </div>
