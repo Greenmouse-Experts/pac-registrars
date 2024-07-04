@@ -178,7 +178,7 @@ function Header() {
                 </p>
                 <div
                   className={` py-3 absolute w-[21rem] -left-14 xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all  ${
-                    open1 ? "top-10" : "-top-[30rem]"
+                    open1 ? "top-10" : "-top-[36rem]"
                   }`}
                 >
                   <NavLink
