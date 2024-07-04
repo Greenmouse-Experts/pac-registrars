@@ -513,7 +513,7 @@ function Header() {
                   className="lg:text-[1.05rem] text-lg w-full font-semibold md:hover:bg-white md:hover:text-bluePrimary transition-all text-nowrap"
                   to="https://docuhub3.nibss-plc.com.ng/edmms/self-service"
                 >
-                  EDMMS 
+                  EDMMS <span className="xl:hidden block">Self Service Portal</span>
                 </NavLink>
               </li>
             </ul>

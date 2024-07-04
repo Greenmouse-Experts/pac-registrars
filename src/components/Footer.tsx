@@ -31,7 +31,7 @@ function Footer() {
             className="w-[7rem] -mt-3"
           />
         </div>
-        <div className="flex flex-wrap  gap-20">
+        <div className="flex lg:flex-row flex-col flex-wrap  2xl:gap-20 gap-10  justify-between">
           <div>
             <p className="font-medium 2xl:text-base text-[12px] text-white">
               Company
