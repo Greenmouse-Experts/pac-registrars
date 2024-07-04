@@ -64,7 +64,7 @@ function Footer() {
             <ul className="flex flex-col 2xl:gap-6 gap-4 lg:mt-14 mt-5">
               <li className="text-[12px] text-grayPrimary font-medium">
                 <NavLink to="/register-maintenance">
-                  Register Maintenance
+                Securities Register <br/> Management
                 </NavLink>
               </li>
               <li className="text-[12px] text-grayPrimary font-medium">

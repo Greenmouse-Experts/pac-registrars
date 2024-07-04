@@ -182,7 +182,7 @@ function Header() {
                   }`}
                 >
                   <NavLink
-                    className=" py-3 px-2 w-full flex items-center gap-4 text-center text-bluePrimary text-lg text-nowrap hover:bg-bluePrimary hover:text-white hover:scale-[.98] transition-all duration-300"
+                    className=" py-3 px-2 w-full flex items-center gap-4 text-start text-bluePrimary text-lg text-nowrap hover:bg-bluePrimary hover:text-white hover:scale-[.98] transition-all duration-300"
                     onClick={() => {
                       setOpen1((prev) => !prev);
                       setMenu(false);
@@ -192,7 +192,7 @@ function Header() {
                     <span>
                       <PiClipboardText size={25} />
                     </span>
-                    Register Maintenance
+                    Securities Register <br/> Management
                   </NavLink>
                   <NavLink
                     className=" py-3 px-2 w-full flex items-center gap-4 text-center text-bluePrimary text-lg text-nowrap hover:bg-bluePrimary hover:text-white hover:scale-[.98] transition-all duration-300"
@@ -279,14 +279,14 @@ function Header() {
                   }`}
                 >
                   <NavLink
-                    className=" py-3 px-1 w-full flex items-center gap-4 text-center text-bluePrimary text-lg font-medium text-nowrap"
+                    className=" py-3 px-1 w-full flex items-center gap-4 text-start text-bluePrimary text-lg font-medium text-nowrap"
                     onClick={() => {
                       setOpen1((prev) => !prev);
                       setMenu(false);
                     }}
                     to="/register-maintenance"
                   >
-                    Register Maintenance
+                     Securities Register <br/> Management
                   </NavLink>
 
                   <NavLink
