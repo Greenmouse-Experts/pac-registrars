@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import Banner from "../../components/Banner";
 import CallService from "../../components/CallService";
 import SmallCardWithNumber from "../../components/cards/SmallCardWithNumber";
@@ -55,10 +56,12 @@ function DataRegisterMaintenence() {
           />
           <SmallCardWithNumber num="10" text="CSCS Liaison" />
           <SmallCardWithNumber num="11" text="Electronic Annual Report" />
-          <SmallCardWithNumber
+        <NavLink to="https://shareholder.pacregistrarslimited.com/Register.aspx ">
+        <SmallCardWithNumber
             num="12"
             text="WebRegistry – Real Time portal designed for the convenience of shareholders and clients"
           />
+        </NavLink>
         </div>
       </section>
       <CallService />
