@@ -46,7 +46,7 @@ function Hero2() {
           <p className="text-bluePrimary text-lg  ">
             Putting the right solutions and methods in place.
           </p>
-          <h4 className=" font-bold font-syne  ">
+          <h4 className=" font-bold font-syne  text-4xl">
           PAC Registrars & Investor Services Limited, formerly known as PAC Registrars, is a subsidiary of PanAfrican Capital Holdings ("PAC Holdings").
 
           </h4>
