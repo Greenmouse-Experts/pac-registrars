@@ -3,10 +3,12 @@ import Input from "../Input";
 
 import Button from "../Button";
 
+interface ITitle{
+  title:string;
+}
 
 
-
-function ProbateForm({title}:{title:string}) {
+function ProbateForm({title}:ITitle) {
  
 
   return (
