@@ -45,7 +45,7 @@ function Header() {
               <li className="">
                 <NavLink
                   onClick={() => setMenu(false)}
-                  className="lg:text-[1.05rem] text-lg w-full !font-semibold"
+                  className="lg:text-[1.05rem] text-lg w-full  "
                   to=""
                 >
                   Home
@@ -56,7 +56,7 @@ function Header() {
                 onMouseLeave={() => setOpen(false)}
               >
                 <p
-                  className="xl:text-[1.05rem] text-lg font-semibold  py-2  cursor-pointer flex items-center gap-2 text-nowrap"
+                  className="xl:text-[1.05rem] text-lg   py-2  cursor-pointer flex items-center gap-2 text-nowrap"
                   onMouseEnter={() => setOpen(true)}
                 >
                   About Us{" "}
@@ -168,7 +168,7 @@ function Header() {
 
               <li className="relative" onMouseLeave={() => setOpen1(false)}>
                 <p
-                  className="lg:text-[1.05rem] text-lg font-semibold  py-2  cursor-pointer flex items-center gap-2"
+                  className="lg:text-[1.05rem] text-lg   py-2  cursor-pointer flex items-center gap-2"
                   onMouseEnter={() => setOpen1(true)}
                 >
                   Services{" "}
@@ -353,7 +353,7 @@ function Header() {
               </li>
               <li className="relative" onMouseLeave={() => setOpen2(false)}>
                 <p
-                  className="lg:text-[1.05rem] text-lg font-semibold   py-2  cursor-pointer flex items-center gap-2"
+                  className="lg:text-[1.05rem] text-lg    py-2  cursor-pointer flex items-center gap-2"
                   onMouseEnter={() => setOpen2(true)}
                 >
                   Product{" "}
@@ -391,7 +391,7 @@ function Header() {
               </li>
               <li className="relative" onMouseLeave={() => setOpen3(false)}>
                 <p
-                  className="lg:text-[1.05rem] text-lg  py-2 font-semibold   cursor-pointer flex items-center gap-2"
+                  className="lg:text-[1.05rem] text-lg  py-2    cursor-pointer flex items-center gap-2"
                   onMouseEnter={() => setOpen3(true)}
                 >
                   Resources{" "}
@@ -501,7 +501,7 @@ function Header() {
               <li>
                 <NavLink
                   onClick={() => setMenu(false)}
-                  className="lg:text-[1.05rem] text-lg w-full font-semibold md:hover:bg-white md:hover:text-bluePrimary transition-all text-nowrap"
+                  className="lg:text-[1.05rem] text-lg w-full  md:hover:bg-white md:hover:text-bluePrimary transition-all text-nowrap"
                   to="/contact"
                 >
                   Contact Us
@@ -510,7 +510,7 @@ function Header() {
               <li className="bg-red-700 text-white px-1">
                 <NavLink
                   onClick={() => setMenu(false)}
-                  className="lg:text-[1.05rem] text-lg w-full font-semibold md:hover:bg-white md:hover:text-bluePrimary transition-all text-nowrap"
+                  className="lg:text-[1.05rem] text-lg w-full  md:hover:bg-white md:hover:text-bluePrimary transition-all text-nowrap"
                   to="https://docuhub3.nibss-plc.com.ng/edmms/self-service"
                 >
                   EDMMS <span className="xl:hidden block">Self Service Portal</span>

@@ -40,7 +40,7 @@ function Values() {
             Our Company Ethos and Values
           </p>
           <h4 className=" font-bold font-syne capitalize text-black ">
-            Our Spirit
+            Our S.P.I.R.I.T
           </h4>
         </div>
 
