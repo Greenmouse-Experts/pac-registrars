@@ -43,7 +43,7 @@ function Hero2() {
           </div>
         </div>
         <div className="lg:max-w-[45%] w-full font-syne">
-          <p className="text-bluePrimary text-lg font-semibold ">
+          <p className="text-bluePrimary text-lg  ">
             Putting the right solutions and methods in place.
           </p>
           <h4 className=" font-bold font-syne  ">

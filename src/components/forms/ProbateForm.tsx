@@ -6,14 +6,14 @@ import Button from "../Button";
 
 
 
-function ProbateForm() {
+function ProbateForm({title}:{title:string}) {
  
 
   return (
     <form className="flex flex-col 2xl:gap-8 gap-5 w-full bg-white p-10 form-shadow text-[#787878]">
        <>
       <h5 className="font-montserrat text-[1.4rem] font-semibold  text-black  ">
-        Contact Us
+        {title}
       </h5>
 
       <div className=" flex lg:flex-row flex-col justify-between gap-8 ">
