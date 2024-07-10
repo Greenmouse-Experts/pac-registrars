@@ -42,11 +42,11 @@ function Hero2() {
             </div>
           </div>
         </div>
-        <div className="lg:max-w-[45%] w-full font-syne">
+        <div className="lg:max-w-[45%] w-full font-syne sm:mt-0 mt-10">
           <p className="text-bluePrimary text-lg  ">
             Putting the right solutions and methods in place.
           </p>
-          <h4 className=" font-bold font-syne lg:leading-[3rem]  text-4xl">
+          <h4 className=" font-bold font-syne lg:leading-[3rem]  sm:text-4xl text-2xl">
           PAC Registrars & Investor Services Limited, formerly known as PAC Registrars, is a subsidiary of PanAfrican Capital Holdings ("PAC Holdings").
 
           </h4>

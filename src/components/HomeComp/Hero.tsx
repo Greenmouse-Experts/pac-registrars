@@ -32,7 +32,7 @@ function Hero() {
 
   return (
     <div className="relative xl:pt-20">
-      <div className="w-full flex justify-between items-center absolute top-[60%]">
+      <div className="w-full flex justify-between items-center absolute sm:top-[60%] top-1/2">
           <div className=" w-12 h-12 rounded-full flex justify-center items-center cursor-pointer z-10 ml-[0%]" onClick={handlePrevSlide}>
             <IoIosArrowBack  color="white" size={40}/>
           </div>
