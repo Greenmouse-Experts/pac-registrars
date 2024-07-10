@@ -117,7 +117,7 @@ function Services() {
             <h5 className="2xl:text-xl text-base font-semibold font-syne mt-5">
               Register Maintenance Service
             </h5>
-
+            <p className="opacity-0">none</p>
             <p className="font-sora text-grayPrimary2 mt-5">
               By meticulously managing registers and maintaining accurate data
               records, organizations can streamline operations, enhance
@@ -143,11 +143,13 @@ function Services() {
             <h5 className="2xl:text-xl text-base font-semibold font-syne mt-5">
               Probate/ Transmission Service
             </h5>
+            <p className="opacity-0">none</p>
             <p className="font-sora text-grayPrimary2 mt-5">
               Our dedicated team specializes in probate administration, estate
               planning, and asset distribution, ensuring a smooth and efficient
               process tailored to your specific needs.
             </p>
+            
             <div className="mt-auto">
               <NavLink
                 to="/probate-services"
