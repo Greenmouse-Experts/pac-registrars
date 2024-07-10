@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 function Hero() {
   const [currentSlide, setCurrentSlide] = useState(1);
@@ -17,20 +18,29 @@ function Hero() {
     return () => clearInterval(slideInterval);
   }, []);
 
-  // const handleNextSlide = () => {
-  //   setCurrentSlide((prevSlide) => (prevSlide % slideLength) + 1);
-  // };
+  const handleNextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide % slideLength) + 1);
+  };
 
-  // const handlePrevSlide = () => {
-  //   setCurrentSlide((prevSlide) =>
-  //     prevSlide === 1 ? slideLength : prevSlide - 1
-  //   );
-  // };
+  const handlePrevSlide = () => {
+    setCurrentSlide((prevSlide) =>
+      prevSlide === 1 ? slideLength : prevSlide - 1
+    );
+  };
 
   //const backgroundImageUrl = `url(/images/hero-${currentSlide}.png)`;
 
   return (
     <div className="relative xl:pt-20">
+      <div className="w-full flex justify-between items-center absolute top-[60%]">
+          <div className=" w-12 h-12 rounded-full flex justify-center items-center cursor-pointer z-10 ml-[0%]" onClick={handlePrevSlide}>
+            <IoIosArrowBack  color="white" size={40}/>
+          </div>
+
+          <div className=" w-12 h-12 rounded-full flex justify-center items-center cursor-pointer z-10  mr-[0%]" onClick={handleNextSlide}>
+            <IoIosArrowForward  color="white" size={40}/>
+          </div>
+        </div>
       {currentSlide === 1 && (
         <section
           className={`hero-1 transition-opacity duration-500 bg-center bg-cover lg:h-[37rem] sm:h-[350px] h-[400px] 2xl:py-32 lg:py-20 lg:pt-24 sm:pt-16 pt-10 text-white relative `}
