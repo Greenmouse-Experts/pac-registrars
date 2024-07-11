@@ -15,7 +15,7 @@ const ManagementBio: IBio[] = [
     name: "Ifeanyi John",
     title: "Managing Director/CEO",
     bio: [
-      "Ifeanyi is an astute share registration professional with over 15 years’ work experience in capital market transactions, business development, innovation & strategy, client relationship management and business transformation. Prior to joining PAC Registrars, he worked with Africa Prudential Plc, where he served in various capacities including Head, Business Development. While in Africa Prudential Plc, he was part of the team that championed disruptive innovation in the registrar’s business in Nigeria pioneering many e-products.",
+      "Ifeanyi is an astute share registration professional with over 15 years’ work experience in capital market transactions, business development, innovation & strategy, client relationship management and business transformation. Prior to joining PAC Registrars and Investor Services, he worked with Africa Prudential Plc, where he served in various capacities including Head, Business Development. While in Africa Prudential Plc, he was part of the team that championed disruptive innovation in the registrar’s business in Nigeria pioneering many e-products.",
       "He is an Associate of the Institute of Capital Market Registrars (ICMR) and Chartered Institute of Loans and Risk Management (CILRM). He holds degree in Quantity Surveying and an MBA.",
     ],
     image: "/images/leader-5.png",
@@ -36,7 +36,7 @@ const ManagementBio: IBio[] = [
       "Amadi Clifford holds B.Sc. in Business Administration from Lagos State University, Higher National Diploma in Computer Science from the Polytechnic Ibadan and MBA in Business Management from International Management Institute, Berlin – Germany.",
       "He is a certified Information Technology Infrastructure Library (ITIL) and Data Capture, Data-Based Administrator (DCDM). He is a Member of the Institute of Capital Market Registrars as an Associate Member. He has over 15 years’ experience in System Administration, which cuts across Network/System Support, Software Development, IT Leadership, and Digital Automation Transformation Implementation, hardware Management, Server Programming & Maintenance, Data Base Management and Networking and Website Building.",
 
-      "He has brought his wealth of knowledge and expertise to drive PAC Registrars Limited Continuous requisite for innovation and is responsible for overseeing the technology architecture framework to achieve the objective of accelerating a digital environment to improve productivity and amplified customer experience.",
+      "He has brought his wealth of knowledge and expertise to drive PAC Registrars and Investor Services Limited Continuous requisite for innovation and is responsible for overseeing the technology architecture framework to achieve the objective of accelerating a digital environment to improve productivity and amplified customer experience.",
     ],
     image: "/images/leader-7.png",
   },
@@ -45,8 +45,7 @@ const ManagementBio: IBio[] = [
     title: "Head, Operations & Compliance",
     bio: [
       "Aderonke is a seasoned professional with over 14 years’ experience in Customer Operations, Finance, Compliance, Internal control and Risk Management, Internal Audit & Assurance.",
-      "Aderonke holds her first degree in Business Administration from University of Lagos. She is an Associate of Institute of Chartered Accountants of Nigeria, a Certified Lead Auditor in Information Security Management System. She is currently the Head, Operations and Compliance and prior to her joining PAC Registrars, she worked with Africa Prudential Plc.",
-      
+      "Aderonke holds her first degree in Business Administration from University of Lagos. She is an Associate of Institute of Chartered Accountants of Nigeria, a Certified Lead Auditor in Information Security Management System. She is currently the Head, Operations and Compliance and prior to her joining PAC Registrars and Investor Services, she worked with Africa Prudential Plc.",
     ],
     image: "/images/leader-8.png",
   },
@@ -56,7 +55,7 @@ const ManagementBio: IBio[] = [
   //   bio: [
   //     "Moses is a professional in the financial services industry with about sixteen years post qualification experience that spans through investment research (macroeconomic, equity, fixed income and sectoral research), portfolio and fund management, securities dealings and financial advisory services.",
   //     "He has worked for First Trustees Nigeria Ltd, now a part of FBNQuest Ltd (a member of FBN Holdings Ltd), FutureView Financial Services Ltd and Dunn Loren Merrifield. Moses has a degree in accounting from Lagos State University, he is a fellow of both the Institute of Chartered Accountants of Nigeria (ICAN) and the Chartered Institute of Stockbrokers (CIS), an associate of both the Chartered Institute of Taxation of Nigeria (CITN) and the Association of Certified Chartered Accountants (ACCA), London.",
-      
+
   //     "He has attended courses on investment banking both at home and abroad. Moses is the Chief Economist/Head, Investment Research of PanAfrican Capital Holdings Ltd.",
   //   ],
   //   image: "/images/leader-9.png",
@@ -100,7 +99,7 @@ function Management() {
             <img
               src={leader.image}
               alt={leader.name}
-              className="h-[380px] w-[310px] 2xl:h-[510px] 2xl:w-[450px] scale-90 mix-blend-luminosity"
+              className="h-[380px] w-full 2xl:h-[510px]   mix-blend-luminosity"
             />
             <div className="bg-bluePrimary absolute bottom-0 px-12 py-7 text-white rounded-t-[10px] flex items-end justify-between w-full">
               <div>

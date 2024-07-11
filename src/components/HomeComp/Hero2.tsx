@@ -10,30 +10,44 @@ function Hero2() {
           <img src="/images/global-img.png" alt="" className="w-full" />
           <div className="absolute lg:-right-20 right-5 -bottom-20  font-sora bg-bluePrimary rounded-lg text-white px-6 py-8 xl:scale-100 lg:scale-75 scale-[0.7]">
             <div>
-              <h6 className=" text-2xl font-bold pb-2 text-center">Our Services</h6>
+              <h6 className=" text-2xl font-bold pb-2 text-center">
+                Our Services
+              </h6>
               <div className="bg-white h-1 w-full rounded-lg"></div>
             </div>
 
             <div className=" flex flex-col gap-4 mt-5">
-              <NavLink to="/probate-services" className="flex items-center gap-4 md:text-lg text-base font-normal font-sora ">
+              <NavLink
+                to="/probate-services"
+                className="flex items-center gap-4 md:text-lg text-base font-normal font-sora "
+              >
                 <span>
                   <IoMdCheckmarkCircleOutline size={24} />
                 </span>
                 Probate
               </NavLink>
-              <NavLink to="/register-maintenance" className="flex items-center gap-4 md:text-lg text-base font-normal font-sora ">
+              <NavLink
+                to="/register-maintenance"
+                className="flex items-center gap-4 md:text-lg text-base font-normal font-sora "
+              >
                 <span>
                   <IoMdCheckmarkCircleOutline size={24} />
                 </span>
                 Register Business
               </NavLink>
-              <NavLink to="/company-secretarial" className="flex items-center gap-4 md:text-lg text-base font-normal font-sora ">
+              <NavLink
+                to="/company-secretarial"
+                className="flex items-center gap-4 md:text-lg text-base font-normal font-sora "
+              >
                 <span>
                   <IoMdCheckmarkCircleOutline size={24} />
                 </span>
                 Company Secretarial
               </NavLink>
-              <NavLink to="/document-management" className="flex items-center gap-4 md:text-lg text-base font-normal font-sora ">
+              <NavLink
+                to="/document-management"
+                className="flex items-center gap-4 md:text-lg text-base font-normal font-sora "
+              >
                 <span>
                   <IoMdCheckmarkCircleOutline size={24} />
                 </span>
@@ -47,11 +61,15 @@ function Hero2() {
             Putting the right solutions and methods in place.
           </p>
           <h4 className=" font-bold font-syne lg:leading-[3rem]  sm:text-4xl text-2xl">
-          PAC Registrars & Investor Services Limited, formerly known as PAC Registrars, is a subsidiary of PanAfrican Capital Holdings ("PAC Holdings").
-
+            PAC Registrars and Investor Services & Investor Services Limited,
+            formerly known as PAC Registrars and Investor Services, is a
+            subsidiary of PanAfrican Capital Holdings ("PAC Holdings").
           </h4>
           <p className="lg:text-xl lg:leading-10 mt-5">
-          We are a share registration and business solutions provider, licensed by the Securities and Exchange Commission. Our focus is on providing professional and personalized service to clients, shareholders, stockbrokers and advisors.
+            We are a share registration and business solutions provider,
+            licensed by the Securities and Exchange Commission. Our focus is on
+            providing professional and personalized service to clients,
+            shareholders, stockbrokers and advisors.
           </p>
 
           <NavLink

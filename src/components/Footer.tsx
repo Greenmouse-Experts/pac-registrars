@@ -64,7 +64,7 @@ function Footer() {
             <ul className="flex flex-col 2xl:gap-6 gap-4 lg:mt-14 mt-5">
               <li className="text-[12px] text-grayPrimary font-medium">
                 <NavLink to="/register-maintenance">
-                Securities Register <br/> Management
+                  Securities Register <br /> Management
                 </NavLink>
               </li>
               <li className="text-[12px] text-grayPrimary font-medium">
@@ -172,7 +172,8 @@ function Footer() {
       </div>
       <div className="text-grayPrimary flex justify-center items-center lg:mx-10 mx-0 py-10 border-t-[0.7px] border-grayPrimary mt-16">
         <p className="text-base">
-          Copyright © 2024 . PAC Registrars | All Rights Reserved
+          Copyright © 2024 . PAC Registrars and Investor Services | All Rights
+          Reserved
         </p>
       </div>
     </footer>

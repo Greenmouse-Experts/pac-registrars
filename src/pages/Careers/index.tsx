@@ -24,37 +24,36 @@ function Careers() {
             </div>
             <div className="md:w-[55%] w-full font-syne">
               <p className="text-[#606060] 2xl:mt-5 mt-3 2xl:leading-[33px] leading-[25px] font-sora ">
-                At PAC Registrars, we have imbibed proactive workstyles that
-                foster a collaborative and productive work environment. Our work
-                environment supports professionalism and integrity, encouraging
-                high performance across our teams.
+                At PAC Registrars and Investor Services, we have imbibed
+                proactive workstyles that foster a collaborative and productive
+                work environment. Our work environment supports professionalism
+                and integrity, encouraging high performance across our teams.
               </p>
             </div>
           </div>
         </div>
       </section>
       <section className="my-10 md:mx-10 mx-0 md:py-32 py-10 bg-bluePrimary text-white">
-      <h4 className=" font-bold font-syne capitalize">Our Hiring Process</h4>
-      <div className="h-[5px] bg-white my-5 w-full"/>
-          <div className="flex md:flex-row flex-col md:items-start items-center justify-between">
-            <div className="md:w-[48%] w-full relative">
+        <h4 className=" font-bold font-syne capitalize">Our Hiring Process</h4>
+        <div className="h-[5px] bg-white my-5 w-full" />
+        <div className="flex md:flex-row flex-col md:items-start items-center justify-between">
+          <div className="md:w-[48%] w-full relative">
             <p className="text-white 2xl:mt-5 mt-3 2xl:leading-[33px] leading-[25px] font-sora ">
-                At PAC Registrars, we have imbibed proactive workstyles that
-                foster a collaborative and productive work environment. Our work
-                environment supports professionalism and integrity, encouraging
-                high performance across our teams.
-              </p>
-            </div>
-            <div className="md:w-[48%] w-full font-syne">
-              <p className="text-white 2xl:mt-5 mt-3 2xl:leading-[33px] leading-[25px] font-sora ">
-                At PAC Registrars, we have imbibed proactive workstyles that
-                foster a collaborative and productive work environment. Our work
-                environment supports professionalism and integrity, encouraging
-                high performance across our teams.
-              </p>
-            </div>
+              At PAC Registrars and Investor Services, we have imbibed proactive
+              workstyles that foster a collaborative and productive work
+              environment. Our work environment supports professionalism and
+              integrity, encouraging high performance across our teams.
+            </p>
           </div>
-    
+          <div className="md:w-[48%] w-full font-syne">
+            <p className="text-white 2xl:mt-5 mt-3 2xl:leading-[33px] leading-[25px] font-sora ">
+              At PAC Registrars and Investor Services, we have imbibed proactive
+              workstyles that foster a collaborative and productive work
+              environment. Our work environment supports professionalism and
+              integrity, encouraging high performance across our teams.
+            </p>
+          </div>
+        </div>
       </section>
     </>
   );

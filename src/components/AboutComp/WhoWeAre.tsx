@@ -2,7 +2,9 @@ function WhoWeAre() {
   return (
     <section className="md:py-24 py-10 bg-white flex md:flex-row flex-col items-center justify-between ">
       <div className="md:w-[55%] w-full font-syne">
-        <p className="text-bluePrimary font-medium ">About Pac Registrars</p>
+        <p className="text-bluePrimary font-medium ">
+          About PAC Registrars and Investor Services
+        </p>
         <h4 className=" font-bold font-syne capitalize">Who We Are!</h4>
         <p className="text-[#606060] 2xl:mt-5 mt-3 2xl:leading-[33px] leading-[25px] font-sora ">
           We are a share registration and business solutions provider, licensed
@@ -14,9 +16,9 @@ function WhoWeAre() {
           work processes.
         </p>
         <p className="text-[#606060] 2xl:mt-5 mt-3 2xl:leading-[33px] leading-[25px]  font-sora ">
-          The Company’s processes are largely driven by technology which includes
-          AGM/EGM service, elodgment, e-dividend, e-notification, client’s
-          portal, stockbroker’s portal, data management and recovery of
+          The Company’s processes are largely driven by technology which
+          includes AGM/EGM service, elodgment, e-dividend, e-notification,
+          client’s portal, stockbroker’s portal, data management and recovery of
           unclaimed dividends.
         </p>
         <p className="text-[#606060] 2xl:mt-5 mt-3 2xl:leading-[33px] leading-[25px]  font-sora">

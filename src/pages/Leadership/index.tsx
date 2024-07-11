@@ -37,7 +37,7 @@ const LeaderBio: IBio[] = [
     bio: [
       "Eric Okoruwa is the Group Executive Director of PanAfrican Capital Holdings with over 20 years’ experience in investment banking and financial advisory. Eric has been involved in various high-profile transactions, raising over $5 billion and N300 billion from both foreign and local financial institution and capital markets across diverse sectors. While at Fountain Trust bank Plc, he worked on a number of high-profile private sector advisory transactions as well as the Federal Government privatization program of the Federal Government of Nigeria. He holds a Bachelor of Science Degree in Business Administration from the University of Lagos and a Master’s degree in Marketing from the University of Lagos. He has attended severalExecutive courses, Advanced Manager’sProgramme (AMP) from the Lagos Business School, “Leading Organizational Change” – Whatrton University of Pennsylvania and the Lagos Business School Global Chief Executive Officer (GCEO) programme for Africa in conjunction with Strathmore University Business School and IESE Business School Navarra, New York.",
       "",
-      " He also attended various international and local courses on company Valuation and Issues Pricing, Factoring, Mergers & Acquisitions, Bonds & Derivatives, Asset Backed Securities, Structured Finance and International Trade Finance."
+      " He also attended various international and local courses on company Valuation and Issues Pricing, Factoring, Mergers & Acquisitions, Bonds & Derivatives, Asset Backed Securities, Structured Finance and International Trade Finance.",
     ],
     image: "/images/leader-4.png",
   },
@@ -56,7 +56,7 @@ const LeaderBio: IBio[] = [
     name: "Ifeanyi John",
     title: "Managing Director/CEO",
     bio: [
-      "Ifeanyi is an astute share registration professional with over 15 years’ work experience in capital market transactions, business development, innovation & strategy, client relationship management and business transformation. Prior to joining PAC Registrars, he worked with Africa Prudential Plc, where he served in various capacities including Head, Business Development. While in Africa Prudential Plc, he was part of the team that championed disruptive innovation in the registrar’s business in Nigeria pioneering many e-products.",
+      "Ifeanyi is an astute share registration professional with over 15 years’ work experience in capital market transactions, business development, innovation & strategy, client relationship management and business transformation. Prior to joining PAC Registrars and Investor Services, he worked with Africa Prudential Plc, where he served in various capacities including Head, Business Development. While in Africa Prudential Plc, he was part of the team that championed disruptive innovation in the registrar’s business in Nigeria pioneering many e-products.",
       "He is an Associate of the Institute of Capital Market Registrars (ICMR) and Chartered Institute of Loans and Risk Management (CILRM). He holds degree in Quantity Surveying and an MBA.",
     ],
     image: "/images/leader-5.png",
