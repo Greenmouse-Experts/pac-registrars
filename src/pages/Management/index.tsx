@@ -69,7 +69,7 @@ const ManagementBio: IBio[] = [
       "He is also a member of the Nigerian Institute of Management (NIM), Institute of Chartered Secretaries and Administrators of Nigeria (ICSAN), The Institute of Chartered Accountant of Nigeria (ICAN) and an Associate member of the Institute of Capital Market Registrars (ICMR).",
       "He has a lot of professional qualifications and certifications within these areas of expertise. Babatunde is currently the Divisional Head, Business Solution at PAC Registrars and Investor Services Limited.",
     ],
-    image: "",
+    image: "/images/leader-10.png",
   },
 ];
 
@@ -94,14 +94,14 @@ function Management() {
         {ManagementBio.map((leader, index) => (
           <div
             key={index}
-            className="relative about-shadow flex justify-center bg-white"
+            className="relative about-shadow flex h-[400px] w-full 2xl:h-[510px]   justify-center bg-white"
           >
             <img
               src={leader.image}
               alt={leader.name}
-              className="h-[380px] w-full 2xl:h-[510px]   mix-blend-luminosity"
+              className=" mix-blend-luminosity object-cover"
             />
-            <div className="bg-bluePrimary absolute bottom-0 px-12 py-7 text-white rounded-t-[10px] flex items-end justify-between w-full">
+            <div className="bg-bluePrimary absolute bottom-0 2xl:px-12 px-7 2xl:py-7 py-5 text-white rounded-t-[10px] flex items-end justify-between w-full">
               <div>
                 <h6 className="text-lg font-semibold ">{leader.name}</h6>
                 <p className="font-normal text-base mt-2 text-start">
