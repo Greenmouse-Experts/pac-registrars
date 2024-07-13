@@ -67,7 +67,7 @@ function Kyc() {
       </section>
 
       <ServiceModal isOpen={isModalOpen} handleClose={handleCloseModal} title="">
-        <KycForm />
+        <KycForm handleCloseModal={handleCloseModal} />
       </ServiceModal>
     </>
   );

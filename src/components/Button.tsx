@@ -6,13 +6,15 @@ interface ButtonProps {
   type: string;
   onMouseEnter?: () => void;
   onClick?: () => void;
+  disabled?: boolean;
 }
 
-function Button({ children, type, onMouseEnter,onClick }: ButtonProps) {
+function Button({ children, type, onMouseEnter,onClick, disabled }: ButtonProps) {
   return (
     <button
       onMouseEnter={() => onMouseEnter?.()}
       onClick={() => onClick?.()}
+      disabled={disabled}
       className={` flex gap-1 items-center 2xl:py-3 2xl:px-6 py-[5px] whitespace-nowrap hover:-translate-y-1 hover:shadow-md font-montserrat transition-all font-semibold px-4 text-sm ${
         type === "fit"
           ? "w-fit bg-white text-bluePrimary"

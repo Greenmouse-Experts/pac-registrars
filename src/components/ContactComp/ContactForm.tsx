@@ -1,9 +1,70 @@
 import { FiMail, FiPhone } from "react-icons/fi";
 import { SlLocationPin } from "react-icons/sl";
 import { NavLink } from "react-router-dom";
+import  { useState } from "react";
+import { useForm, Controller } from "react-hook-form";
+// import SuccessDialog from "../modals/SuccessDialogue";
+import useSubmitForm from "../../hooks/useSubmitForm";
+// import toast from "react-hot-toast";
+
+interface IFormValues {
+  fullName: string;
+  email: string;
+  phoneNumber: string;
+  description: string;
+}
 
 function ContactForm() {
+  const {
+    control,
+    handleSubmit,
+    formState: { errors },
+    reset,
+    
+  } = useForm<IFormValues>({
+    defaultValues: {
+      fullName: "",
+      email: "",
+      phoneNumber: "",
+      description: "",
+    },
+  });
+
+  const [open, setOpen] = useState(false);
+  console.log(open)
+  // const [isSubmitted, setIsSubmitted] = useState(false);
+
+  // const handleDialogClose = () => setOpen(false);
+
+  const { submitForm, loading } = useSubmitForm({
+    reset,
+    setOpen,
+    initialValues: {
+      fullName: "",
+      email: "",
+      phoneNumber: "",
+      description: "",
+    },
+    url: "contactus/form",
+  });
+
+  const handleFormSubmit = async (data: IFormValues) => {
+    try {
+      await submitForm({
+        fullName: data.fullName,
+        email: data.email,
+        subject: "Test",
+        phoneNumber: data.phoneNumber,
+        description: data.description,
+      });
+      // setIsSubmitted(true);
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+  };
+
   return (
+  <>
     <div className="flex md:flex-row flex-col-reverse justify-center 2xl:w-[90%]  mx-auto ">
       <div className="bg-[url('/images/contact-bg.png')] bg-cover bg-center md:w-[50%] w-full py-16 md:px-16 px-5 text-white">
         <h4 className="text-white font-montserrat font-semibold">
@@ -74,52 +135,113 @@ function ContactForm() {
           ></iframe>
         </div>
       </div>
-
-      <form className="flex md:w-[50%] w-full bg-white flex-col 2xl:gap-8 gap-5 py-16 md:px-16 px-5">
+      <form
+        onSubmit={handleSubmit(handleFormSubmit)}
+        className="flex md:w-[50%] w-full bg-white flex-col 2xl:gap-8 gap-5 py-16 md:px-16 px-5"
+      >
         <div className="font-monstrat flex flex-col gap-2 ">
           <label className="text-lg font-montserrat font-semibold">
             Full Name
           </label>
-          <input
-            type="text"
-            placeholder="Your full name"
-            className="bg-[#F4F4F4] 2xl:h-[60px] placeholder:text-[text-grayPrimary2] h-[50px] pl-5 w-full"
+          <Controller
+            name="fullName"
+            control={control}
+            rules={{ required: "Full name is required" }}
+            render={({ field }) => (
+              <input
+                type="text"
+                placeholder="Your full name"
+                className="bg-[#F4F4F4] 2xl:h-[60px] placeholder:text-[text-grayPrimary2] h-[50px] pl-5 w-full"
+                {...field}
+              />
+            )}
           />
+          {errors.fullName && (
+            <p className="text-red-600">{errors.fullName.message}</p>
+          )}
         </div>
         <div className="font-monstrat flex flex-col gap-2 ">
           <label className="text-lg font-montserrat font-semibold">
             Email Address
           </label>
-          <input
-            type="text"
-            placeholder="Your email address"
-            className="bg-[#F4F4F4] 2xl:h-[60px] placeholder:text-[text-grayPrimary2] h-[50px] pl-5 w-full"
+          <Controller
+            name="email"
+            control={control}
+            rules={{
+              required: "Email is required",
+              pattern: {
+                value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
+                message: "Invalid email address",
+              },
+            }}
+            render={({ field }) => (
+              <input
+                type="text"
+                placeholder="Your email address"
+                className="bg-[#F4F4F4] 2xl:h-[60px] placeholder:text-[text-grayPrimary2] h-[50px] pl-5 w-full"
+                {...field}
+              />
+            )}
           />
+          {errors.email && (
+            <p className="text-red-600">{errors.email.message}</p>
+          )}
         </div>
         <div className="font-monstrat flex flex-col gap-2 ">
           <label className="text-lg font-montserrat font-semibold">
             Phone Number
           </label>
-          <input
-            type="tel"
-            placeholder="Your phone number"
-            className="bg-[#F4F4F4] 2xl:h-[60px] placeholder:text-[text-grayPrimary2] h-[50px] pl-5 w-full"
+          <Controller
+            name="phoneNumber"
+            control={control}
+            rules={{ required: "Phone number is required" }}
+            render={({ field }) => (
+              <input
+                type="tel"
+                placeholder="Your phone number"
+                className="bg-[#F4F4F4] 2xl:h-[60px] placeholder:text-[text-grayPrimary2] h-[50px] pl-5 w-full"
+                {...field}
+              />
+            )}
           />
+          {errors.phoneNumber && (
+            <p className="text-red-600">{errors.phoneNumber.message}</p>
+          )}
         </div>
-        <div className=" font-monstrat flex flex-col gap-2 ">
+        <div className="font-monstrat flex flex-col gap-2 ">
           <label className="text-lg font-montserrat font-semibold">
             Message
           </label>
-          <textarea
-            placeholder="Write your message here"
-            className="bg-[#F4F4F4] h-[200px] pl-5 w-full pt-4"
+          <Controller
+            name="description"
+            control={control}
+            rules={{ required: "Message is required" }}
+            render={({ field }) => (
+              <textarea
+                placeholder="Write your message here"
+                className="bg-[#F4F4F4] h-[200px] pl-5 w-full pt-4"
+                {...field}
+              />
+            )}
           />
+          {errors.description && (
+            <p className="text-red-600">{errors.description.message}</p>
+          )}
         </div>
-        <button className="w-fit bg-bluePrimary  flex gap-1 items-center 2xl:py-3 2xl:px-6 py-[5px] whitespace-nowrap px-4 text-base font-semibold text-white ml-auto ">
-          Submit
+        <button
+          type="submit"
+          className="w-fit bg-bluePrimary flex gap-1 items-center 2xl:py-3 2xl:px-6 py-[5px] whitespace-nowrap px-4 text-base font-semibold text-white ml-auto"
+          disabled={loading}
+        >
+          {loading ? "Submitting..." : "Submit"}
         </button>
       </form>
+
     </div>
+    {/* {isSubmitted && (
+        <SuccessDialog open={open} handleClose={handleDialogClose} />
+      )} */}
+  </>
   );
 }
 

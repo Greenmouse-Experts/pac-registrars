@@ -1,13 +1,78 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-nocheck
 import { useEffect, useState } from "react";
-import Input from "../Input";
+import { useForm, Controller } from "react-hook-form";
 import { IoCloudUploadOutline } from "react-icons/io5";
+import Input from "../Input";
 import Button from "../Button";
+import SuccessDialog from "../modals/SuccessDialogue";
+import useSubmitForm from "../../hooks/useSubmitForm";
+import toast from "react-hot-toast";
 
 function UpdateMySignature() {
+  const {
+    control,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm({
+    defaultValues: {
+      firstName: "",
+      middleName: "",
+      lastName: "",
+      email: "",
+      phoneNumber: "",
+      bvn: "",
+      clearingHouse: "",
+      serviceBriefDetails: "",
+      acceptDataPrivacyPolicy: false,
+      bankerInfo: null,
+      passport: null,
+      uploadNewSignature: null,
+      uploadOldSignature: null,
+    },
+  });
+
   const [image, setImage] = useState<File | null>(null);
   const [preview, setPreview] = useState<string | null>(null);
-  const [image2, setImage2] = useState<File | null>(null);
-  const [preview2, setPreview2] = useState<string | null>(null);
+  const [uploadNewSignature, setuploadNewSignature] = useState<File | null>(
+    null
+  );
+  const [uploadNewSignaturePreview, setuploadNewSignaturePreview] = useState<
+    string | null
+  >(null);
+  const [uploadOldSignature, setuploadOldSignature] = useState<File | null>(
+    null
+  );
+  const [uploadOldSignaturePreview, setuploadOldSignaturePreview] = useState<
+    string | null
+  >(null);
+  const [document, setDocument] = useState<File | null>(null);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  const handleDialogClose = () => setOpen(false);
+
+  const { submitForm, loading } = useSubmitForm({
+    reset,
+    setOpen,
+    initialValues: {
+      firstName: "",
+      middleName: "",
+      lastName: "",
+      email: "",
+      phoneNumber: "",
+      bvn: "",
+      clearingHouse: "",
+      serviceBriefDetails: "",
+      acceptDataPrivacyPolicy: false,
+      bankerInfo: null,
+      passport: null,
+      uploadNewSignature: null,
+      uploadOldSignature: null,
+    },
+    url: "update/signature",
+  });
 
   useEffect(() => {
     if (image) {
@@ -20,428 +85,340 @@ function UpdateMySignature() {
       setPreview(null);
     }
 
-    if (image2) {
+    if (uploadNewSignature) {
       const reader = new FileReader();
       reader.onloadend = () => {
-        setPreview2(reader.result as string);
+        setuploadNewSignaturePreview(reader.result as string);
       };
-      reader.readAsDataURL(image2);
+      reader.readAsDataURL(uploadNewSignature);
     } else {
-      setPreview2(null);
+      setuploadNewSignaturePreview(null);
     }
-  }, [image, image2]);
+
+    if (uploadOldSignature) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setuploadOldSignaturePreview(reader.result as string);
+      };
+      reader.readAsDataURL(uploadOldSignature);
+    } else {
+      setuploadOldSignaturePreview(null);
+    }
+  }, [image, uploadNewSignature, uploadOldSignature]);
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const handleFormSubmit = async (data: any) => {
+    if (!image) {
+      console.error("Passport is required.");
+      toast.error("Passport is required");
+      return;
+    }
+
+    if (!document) {
+      console.error("Document is required.");
+      toast.error("Document is required");
+      return;
+    }
+
+    try {
+      const base64Image = await fileToBase64(image);
+      const base64Document = await fileToBase64(document);
+      const base64uploadNewSignature = uploadNewSignature
+        ? await fileToBase64(uploadNewSignature)
+        : null;
+      const base64uploadOldSignature = uploadOldSignature
+        ? await fileToBase64(uploadOldSignature)
+        : null;
+
+      await submitForm({
+        ...data,
+        passport: base64Image,
+        bankerInfo: base64Document,
+        uploadNewSignature: base64uploadNewSignature,
+        uploadOldSignature: base64uploadOldSignature,
+        acceptDataPrivacyPolicy: data.acceptDataPrivacyPolicy && "Yes",
+      });
+      setIsSubmitted(true);
+      setImage(null);
+      setPreview(null);
+      setuploadNewSignature(null);
+      setuploadNewSignaturePreview(null);
+      setuploadOldSignature(null);
+      setuploadOldSignaturePreview(null);
+      setDocument(null);
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+  };
+
+  const fileToBase64 = (file: File): Promise<string> => {
+    return new Promise<string>((resolve, reject) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => resolve(reader.result as string);
+      reader.onerror = (error) => reject(error);
+    });
+  };
 
   return (
-    <form className="flex flex-col 2xl:gap-8 gap-5 w-full bg-white p-10 form-shadow text-[#787878]">
-      <h5 className="font-montserrat text-[1.4rem] font-semibold text-black">
-        Signature Update
-      </h5>
-      <div>
-        <label>Shareholder’s Name</label>
-        <div className="flex lg:flex-row flex-col justify-between gap-8">
-          <Input type="text" placeholder="First Name" />
-          <Input type="text" placeholder="Middle Name (optional)" />
-          <Input type="text" placeholder="Last Name" />
-        </div>
-      </div>
-      <div className="flex lg:flex-row flex-col justify-between gap-8">
-        <Input type="text" placeholder="Email" />
-        <Input type="text" placeholder="Phone" />
-      </div>
-      <div className="flex lg:flex-row flex-col justify-between gap-8">
-        <Input type="text" placeholder="BVN" />
-        <Input type="text" placeholder="Clearing House (if any)" />
-      </div>
-      <div className="flex flex-col justify-between gap-2">
-        <label htmlFor="">Upload Banker's Information</label>
-        <input type="file" placeholder="upload document" />
-      </div>
+    <>
+      <form
+        onSubmit={handleSubmit(handleFormSubmit)}
+        className="flex flex-col gap-5 w-full bg-white p-10 form-shadow text-[#787878]"
+      >
+        <h5 className="font-montserrat text-[1.4rem] font-semibold text-black">
+          Signature Update
+        </h5>
 
-      <div className="flex items-start gap-10">
-        <textarea
-          placeholder="Brief details of the service you want from us"
-          className="bg-[#F4F4F4] placeholder:text-grayPrimary2 h-[7.5rem] pl-5 pt-4 w-full"
-        />
-        <div className="w-[30%]">
-          <div className="bg-[#F4F4F4] flex flex-col justify-center items-center h-[7.5rem] relative">
-            {preview ? (
-              <img
-                src={preview}
-                className="h-full w-full object-cover object-center"
-              />
-            ) : (
-              <>
-                <IoCloudUploadOutline size={30} />
-                <input
-                  type="file"
-                  onChange={(e) => {
-                    const file = e?.target?.files ? e.target.files[0] : null;
-                    setImage(file);
-                  }}
-                  className="absolute w-full opacity-0"
+        <div>
+          <label>Shareholder’s Name</label>
+          <div className="flex lg:flex-row flex-col justify-between gap-8">
+            <Controller
+              name="firstName"
+              control={control}
+              rules={{ required: "First name is required" }}
+              render={({ field, fieldState }) => (
+                <Input
+                  type="text"
+                  placeholder="First Name"
+                  errors={fieldState.error?.message}
+                  {...field}
                 />
+              )}
+            />
+            <Controller
+              name="middleName"
+              control={control}
+              render={({ field }) => (
+                <Input
+                  type="text"
+                  placeholder="Middle Name (optional)"
+                  {...field}
+                />
+              )}
+            />
+            <Controller
+              name="lastName"
+              control={control}
+              rules={{ required: "Last name is required" }}
+              render={({ field, fieldState }) => (
+                <Input
+                  type="text"
+                  placeholder="Last Name"
+                  errors={fieldState.error?.message}
+                  {...field}
+                />
+              )}
+            />
+          </div>
+        </div>
+
+        <div className="flex lg:flex-row flex-col justify-between gap-8">
+          <Controller
+            name="email"
+            control={control}
+            rules={{
+              required: "Email is required",
+              pattern: {
+                value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
+                message: "Invalid email address",
+              },
+            }}
+            render={({ field, fieldState }) => (
+              <Input
+                type="text"
+                placeholder="Email"
+                errors={fieldState.error?.message}
+                {...field}
+              />
+            )}
+          />
+          <Controller
+            name="phoneNumber"
+            control={control}
+            rules={{ required: "Phone number is required" }}
+            render={({ field, fieldState }) => (
+              <Input
+                type="tel"
+                placeholder="Phone"
+                errors={fieldState.error?.message}
+                {...field}
+              />
+            )}
+          />
+        </div>
+
+        <div className="flex lg:flex-row flex-col justify-between gap-8">
+          <Controller
+            name="bvn"
+            control={control}
+            rules={{ required: "BVN is required" }}
+            render={({ field, fieldState }) => (
+              <Input
+                type="text"
+                placeholder="BVN"
+                errors={fieldState.error?.message}
+                {...field}
+              />
+            )}
+          />
+          <Controller
+            name="clearingHouse"
+            control={control}
+            render={({ field }) => (
+              <Input
+                type="text"
+                placeholder="Clearing House (if any)"
+                {...field}
+              />
+            )}
+          />
+        </div>
+
+        <div className="flex flex-col justify-between gap-2">
+          <label>Upload Banker's Information</label>
+          <input
+            type="file"
+            onChange={(e) => {
+              const file = e.target.files ? e.target.files[0] : null;
+              setDocument(file);
+            }}
+          />
+        </div>
+
+        <div className="flex items-start gap-10">
+          <Controller
+            name="serviceBriefDetails"
+            control={control}
+            rules={{ required: "Service details are required" }}
+            render={({ field }) => (
+              <div className="flex flex-col w-full">
+                <textarea
+                  {...field}
+                  placeholder="Brief details of the service you want from us"
+                  className="bg-[#F4F4F4] placeholder:text-[text-grayPrimary2] h-[7.5rem] pl-5 pt-4 w-full"
+                />
+                {errors.serviceBriefDetails && (
+                  <p className="text-red-600">
+                    {errors.serviceBriefDetails.message}
+                  </p>
+                )}
+              </div>
+            )}
+          />
+
+          <div className="w-[30%]">
+            <div className="bg-[#F4F4F4] flex flex-col justify-center items-center h-[7.5rem] relative ">
+              {preview ? (
+                <img
+                  src={preview}
+                  className="h-full w-full object-cover object-center"
+                  alt="Preview"
+                />
+              ) : (
+                <>
+                  <IoCloudUploadOutline size={30} />
+                  <input
+                    type="file"
+                    className="absolute inset-0 opacity-0 cursor-pointer"
+                    onChange={(e) => {
+                      const file = e.target.files ? e.target.files[0] : null;
+                      setImage(file);
+                    }}
+                  />
+                  <p className="text-[0.85rem]">Upload Passport</p>
+                </>
+              )}
+            </div>
+          </div>
+        </div>
+
+        <div className="flex items-start gap-10">
+          <div className="flex flex-col w-[30%]">
+            <div className="bg-[#F4F4F4] flex flex-col justify-center items-center h-[7.5rem] relative">
+              {uploadNewSignaturePreview ? (
+                <img
+                  src={uploadNewSignaturePreview}
+                  className="h-full w-full object-cover object-center"
+                  alt="Preview"
+                />
+              ) : (
+                <>
+                  <IoCloudUploadOutline size={30} />
+                  <input
+                    type="file"
+                    className="absolute inset-0 opacity-0 cursor-pointer"
+                    onChange={(e) => {
+                      const file = e.target.files ? e.target.files[0] : null;
+                      setuploadNewSignature(file);
+                    }}
+                  />
+                  <p className="text-[0.85rem]">Attach Your New Signature</p>
+                </>
+              )}
+            </div>
+          </div>
+          <div className="flex flex-col w-[30%]">
+            <div className="bg-[#F4F4F4] flex flex-col justify-center items-center h-[7.5rem] relative">
+              {uploadOldSignaturePreview ? (
+                <img
+                  src={uploadOldSignaturePreview}
+                  className="h-full w-full object-cover object-center"
+                  alt="Preview"
+                />
+              ) : (
+                <>
+                  <IoCloudUploadOutline size={30} />
+                  <input
+                    type="file"
+                    className="absolute inset-0 opacity-0 cursor-pointer"
+                    onChange={(e) => {
+                      const file = e.target.files ? e.target.files[0] : null;
+                      setuploadOldSignature(file);
+                    }}
+                  />
+                  <p className="text-[0.85rem]">Attach Your Old Signature</p>
+                </>
+              )}
+            </div>
+          </div>
+        </div>
+
+        <div className="pt-3 flex gap-2">
+          <Controller
+            name="acceptDataPrivacyPolicy"
+            control={control}
+            rules={{
+              required: "You must accept the data privacy policy",
+            }}
+            render={({ field }) => (
+              <>
+                <input type="checkbox" {...field} />
+                <label className="text-sm">
+                  I have read and accepted the data privacy policy
+                </label>
+                {errors.acceptDataPrivacyPolicy && (
+                  <p className="text-red-600">
+                    {errors.acceptDataPrivacyPolicy.message}
+                  </p>
+                )}
               </>
             )}
-          </div>
-          <p className="text-sm mt-2">Attach a Passport</p>
+          />
         </div>
-      </div>
 
-      {/* New Signature Section */}
-      <div className="text-sm gap-4 pt-3 flex items-center">
-        <div className="w-[40%]">
-          {preview2 && (
-            <div className="w-full flex justify-start">
-              <img
-                src={preview2}
-                className="h-full w-full object-cover object-center"
-              />
-            </div>
-          )}
-          <div className="bg-[#F4F4F4] flex flex-col justify-center items-center h-[7.5rem] relative">
-            <IoCloudUploadOutline size={30} />
-            <input
-              type="file"
-              onChange={(e) => {
-                const file = e?.target?.files ? e.target.files[0] : null;
-                setImage2(file);
-              }}
-              className="absolute w-full opacity-0"
-            />
-          </div>
-          <p className="text-sm mt-2 p-1"> Click to upload new Signature</p>
+        <div className="mt-3">
+          <Button type="submit" disabled={loading}>
+            {loading ? "Submitting..." : "Submit"}
+          </Button>
         </div>
-      </div>
+      </form>
 
-      {/* Old Signature Section */}
-      <div className="text-sm gap-4 pt-3 flex items-center">
-        <div className="w-[40%]">
-          {preview2 && (
-            <div className="w-full flex justify-center">
-              <img
-                src={preview2}
-                className="h-full w-full object-cover object-center -ml-[50%]"
-              />
-            </div>
-          )}
-          <div className="bg-[#F4F4F4] flex flex-col justify-center items-center h-[7.5rem] relative">
-            <IoCloudUploadOutline size={30} />
-            <input
-              type="file"
-              onChange={(e) => {
-                const file = e?.target?.files ? e.target.files[0] : null;
-                setImage2(file);
-              }}
-              className="absolute w-full opacity-0"
-            />
-          </div>
-          <p className="text-sm mt-2 p-1"> Click to upload old Signature</p>
-        </div>
-      </div>
-
-      <div className="flex items-center gap-4">
-        <label className="text-lg flex gap-2 text-grayPrimary2">
-          <input type="checkbox" name="" id="" className="w-4" />
-          Accept Our Data Privacy Policy
-        </label>
-      </div>
-      <Button type="">Submit</Button>
-    </form>
+      {isSubmitted && (
+        <SuccessDialog open={open} handleClose={handleDialogClose} />
+      )}
+    </>
   );
 }
 
 export default UpdateMySignature;
-
-
-
-
-// import { useEffect, useRef, useState } from "react";
-// import Input from "../Input";
-// import { IoCloudUploadOutline } from "react-icons/io5";
-// import Button from "../Button";
-// import Popup from "reactjs-popup";
-// import SignatureCanvas from "react-signature-canvas";
-// import "reactjs-popup/dist/index.css";
-
-// function UpdateMySignature() {
-//   const [isPopupOpenNew, setIsPopupOpenNew] = useState(false);
-//   const [isPopupOpenOld, setIsPopupOpenOld] = useState(false);
-//   const sigCanvasRefNew = useRef<SignatureCanvas>(null);
-//   const sigCanvasRefOld = useRef<SignatureCanvas>(null);
-
-//   const [image, setImage] = useState<File | null>(null);
-//   const [preview, setPreview] = useState<string | null>(null);
-//   const [image2, setImage2] = useState<File | null>(null);
-//   const [preview2, setPreview2] = useState<string | null>(null);
-//   const [signaturePreviewNew, setSignaturePreviewNew] = useState<string | null>(null);
-//   const [signaturePreviewOld, setSignaturePreviewOld] = useState<string | null>(null);
-
-//   useEffect(() => {
-//     if (image) {
-//       const reader = new FileReader();
-//       reader.onloadend = () => {
-//         setPreview(reader.result as string);
-//       };
-//       reader.readAsDataURL(image);
-//     } else {
-//       setPreview(null);
-//     }
-
-//     if (image2) {
-//       const reader = new FileReader();
-//       reader.onloadend = () => {
-//         setPreview2(reader.result as string);
-//       };
-//       reader.readAsDataURL(image2);
-//     } else {
-//       setPreview2(null);
-//     }
-//   }, [image, image2]);
-
-//   const handleSaveSignatureNew = () => {
-//     if (sigCanvasRefNew.current) {
-//       const dataUrl = sigCanvasRefNew.current.getCanvas().toDataURL();
-//       setSignaturePreviewNew(dataUrl);
-//       setIsPopupOpenNew(false);
-//     }
-//   };
-
-//   const handleSaveSignatureOld = () => {
-//     if (sigCanvasRefOld.current) {
-//       const dataUrl = sigCanvasRefOld.current.getCanvas().toDataURL();
-//       setSignaturePreviewOld(dataUrl);
-//       setIsPopupOpenOld(false);
-//     }
-//   };
-
-//   return (
-//     <form className="flex flex-col 2xl:gap-8 gap-5 w-full bg-white p-10 form-shadow text-[#787878]">
-//       <h5 className="font-montserrat text-[1.4rem] font-semibold text-black">
-//         Signature Update
-//       </h5>
-//       <div>
-//         <label>Shareholder’s Name</label>
-//         <div className="flex lg:flex-row flex-col justify-between gap-8">
-//           <Input type="text" placeholder="First Name" />
-//           <Input type="text" placeholder="Middle Name (optional)" />
-//           <Input type="text" placeholder="Last Name" />
-//         </div>
-//       </div>
-//       <div className="flex lg:flex-row flex-col justify-between gap-8">
-//         <Input type="text" placeholder="Email" />
-//         <Input type="text" placeholder="Phone" />
-//       </div>
-//       <div className="flex lg:flex-row flex-col justify-between gap-8">
-//         <Input type="text" placeholder="BVN" />
-//         <Input type="text" placeholder="Clearing House (if any)" />
-//       </div>
-//       <div className="flex flex-col justify-between gap-2">
-//         <label htmlFor="">Upload Banker's Information</label>
-//         <input type="file" placeholder="upload document" />
-//       </div>
-
-//       <div className="flex items-start gap-10">
-//         <textarea
-//           placeholder="Brief details of the service you want from us"
-//           className="bg-[#F4F4F4] placeholder:text-grayPrimary2 h-[7.5rem] pl-5 pt-4 w-full"
-//         />
-//         <div className="w-[30%]">
-//           <div className="bg-[#F4F4F4] flex flex-col justify-center items-center h-[7.5rem] relative">
-//             {preview ? (
-//               <img
-//                 src={preview}
-//                 className="h-full w-full object-cover object-center"
-//               />
-//             ) : (
-//               <>
-//                 <IoCloudUploadOutline size={30} />
-//                 <input
-//                   type="file"
-//                   onChange={(e) => {
-//                     const file = e?.target?.files ? e.target.files[0] : null;
-//                     setImage(file);
-//                   }}
-//                   className="absolute w-full opacity-0"
-//                 />
-//               </>
-//             )}
-//           </div>
-//           <p className="text-sm mt-2">Attach a Passport</p>
-//         </div>
-//       </div>
-
-//       {/* New Signature Section */}
-//       <div className="text-sm gap-4 pt-3 flex items-center">
-//         <div className="w-[40%]">
-//           {signaturePreviewNew && (
-//             <div className="w-full flex justify-start">
-//               <img
-//                 src={signaturePreviewNew}
-//                 className="h-full w-full object-cover object-center -ml-[30%]"
-//               />
-//             </div>
-//           )}
-//           <Popup
-//             trigger={
-//               <button
-//                 onClick={() => setIsPopupOpenNew(true)}
-//                 type="button"
-//                 className="border-t border-dashed border-bluePrimary pt-3"
-//               >
-//                 Click to attach a New Signature
-//               </button>
-//             }
-//             modal
-//             open={isPopupOpenNew}
-//             onClose={() => setIsPopupOpenNew(false)}
-//           >
-//             <div>
-//               <SignatureCanvas
-//                 ref={sigCanvasRefNew}
-//                 canvasProps={{
-//                   width: 500,
-//                   height: 200,
-//                   className: "bg-white",
-//                 }}
-//               />
-//               <div className="flex justify-between mt-4">
-//                 <button
-//                   className="bg-bluePrimary text-white rounded-md py-1 px-2"
-//                   onClick={() => {
-//                     if (sigCanvasRefNew.current) {
-//                       sigCanvasRefNew.current.clear();
-//                     }
-//                   }}
-//                 >
-//                   Clear
-//                 </button>
-//                 <button
-//                   type="button"
-//                   className="bg-bluePrimary text-white rounded-md py-1 px-2"
-//                   onClick={handleSaveSignatureNew}
-//                 >
-//                   Save
-//                 </button>
-//               </div>
-//             </div>
-//           </Popup>
-//         </div>
-//         <p>or</p>
-//         <div className="bg-[#F4F4F4] flex flex-col justify-center items-center h-[7.5rem] relative w-[40%]">
-//           {preview2 ? (
-//             <img
-//               src={preview2}
-//               className="h-full w-full object-cover object-center"
-//             />
-//           ) : (
-//             <>
-//               <IoCloudUploadOutline size={30} />
-//               <input
-//                 type="file"
-//                 onChange={(e) => {
-//                   const file = e?.target?.files ? e.target.files[0] : null;
-//                   setImage2(file);
-//                 }}
-//                 className="absolute w-full opacity-0"
-//               />
-//             </>
-//           )}
-//           <p className="text-sm mt-2 p-1"> Click to upload old Signature</p>
-//         </div>
-//       </div>
-
-//       {/* Old Signature Section */}
-//       <div className="text-sm gap-4 pt-3 flex items-center">
-//         <div className="w-[40%]">
-//           {signaturePreviewOld && (
-//             <div className="w-full flex justify-center">
-//               <img
-//                 src={signaturePreviewOld}
-//                 className="h-full w-full object-cover object-center -ml-[50%]"
-//               />
-//             </div>
-//           )}
-//           <Popup
-//             trigger={
-//               <button
-//                 onClick={() => setIsPopupOpenOld(true)}
-//                 type="button"
-//                 className="border-t border-dashed border-bluePrimary pt-3"
-//               >
-//                 Click to attach an Old Signature
-//               </button>
-//             }
-//             modal
-//             open={isPopupOpenOld}
-//             onClose={() => setIsPopupOpenOld(false)}
-//           >
-//             <div>
-//               <SignatureCanvas
-//                 ref={sigCanvasRefOld}
-//                 canvasProps={{
-//                   width: 500,
-//                   height: 200,
-//                   className: "bg-white",
-//                 }}
-//               />
-//               <div className="flex justify-between mt-4">
-//                 <button
-//                   className="bg-bluePrimary text-white rounded-md py-1 px-2"
-//                   onClick={() => {
-//                     if (sigCanvasRefOld.current) {
-//                       sigCanvasRefOld.current.clear();
-//                     }
-//                   }}
-//                 >
-//                   Clear
-//                 </button>
-//                 <button
-//                   type="button"
-//                   className="bg-bluePrimary text-white rounded-md py-1 px-2"
-//                   onClick={handleSaveSignatureOld}
-//                 >
-//                   Save
-//                 </button>
-//               </div>
-//             </div>
-//           </Popup>
-//         </div>
-
-//         <div className="bg-[#F4F4F4] flex flex-col justify-center items-center h-[7.5rem] relative w-[40%]">
-//           {preview2 ? (
-//             <img
-//               src={preview2}
-//               className="h-full w-full object-cover object-center"
-//             />
-//           ) : (
-//             <>
-//               <IoCloudUploadOutline size={30} />
-//               <input
-//                 type="file"
-//                 onChange={(e) => {
-//                   const file = e?.target?.files ? e.target.files[0] : null;
-//                   setImage2(file);
-//                 }}
-//                 className="absolute w-full opacity-0"
-//               />
-//             </>
-//           )}
-//           <p className="text-sm mt-2 p-1"> Click to upload old Signature</p>
-//         </div>
-//       </div>
-
-//       <div className="flex items-center gap-4">
-//         <label className="text-lg flex gap-2 text-grayPrimary2">
-//           <input type="checkbox" name="" id="" className="w-4" />
-//           Accept Our Data Privacy Policy
-//         </label>
-//       </div>
-//       <Button type="">Submit</Button>
-//     </form>
-//   );
-// }
-
-// export default UpdateMySignature;
-
-
-
