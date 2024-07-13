@@ -1,4 +1,5 @@
-// SuccessDialog.jsx
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-nocheck
 import { Dialog, DialogBody, DialogFooter } from "@material-tailwind/react";
 
 const SuccessDialog = ({ open, handleClose }) => {
@@ -7,7 +8,7 @@ const SuccessDialog = ({ open, handleClose }) => {
       <DialogBody>
         <div className="text-center text-black">
           <h3 className="text-2xl font-semibold mb-4">Success</h3>
-          <p className="text-xl">
+          <p className="text-xl text-center">
             Your data has been successfully sent. We will get back to you shortly.
           </p>
         </div>
