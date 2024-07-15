@@ -26,7 +26,7 @@ function Header() {
 
   return (
     <header className="bg-bluePrimary pt-3   z-50 w-full fixed">
-      <div className="bg-white h-[6rem] flex items-center justify-between md:px-10 px-5 xl:px-[3%] py-2 xl:relative z-50 w-full fixed">
+      <div className="bg-white h-[6rem] flex items-center justify-between md:px-10 px-5  xl:px-[5%] py-2 xl:relative z-50 w-full fixed">
         <NavLink onClick={() => setMenu(false)} to="/">
           <img
             src="/logo.jpg"
@@ -42,15 +42,7 @@ function Header() {
         >
           <nav className="w-full scroll lg:text-[1.05rem] !text-lg  font-medium">
             <ul className="md:flex xl:flex-row flex-col 2xl:gap-[30px] xl:items-center items-start xl:pt-0 xl:pl-0  sm:pl-20 pl-10 pt-3  gap-[20px]">
-              <li className="">
-                <NavLink
-                  onClick={() => setMenu(false)}
-                  className="lg:text-[1.05rem] text-lg w-full  "
-                  to=""
-                >
-                  Home
-                </NavLink>
-              </li>
+           
               <li
                 className="relative flex flex-col justify-center items-start"
                 onMouseLeave={() => setOpen(false)}
@@ -530,7 +522,7 @@ function Header() {
             </Button>
             <div
               className={` py-3 absolute w-[17rem] -left-14 xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all   ${
-                open4 ? "top-10" : "-top-[30rem]"
+                open4 ? "top-8" : "-top-[30rem]"
               }`}
             >
               <NavLink
@@ -550,7 +542,7 @@ function Header() {
                   setOpen4((prev) => !prev);
                   setMenu(false);
                 }}
-                to="/"
+                to="http://brokers.pacregistrarslimited.com/login.aspx"
               >
                 <IoMdBusiness size={25} />
                 Brokers
@@ -600,7 +592,7 @@ function Header() {
                   setOpen3((prev) => !prev);
                   setMenu(false);
                 }}
-                to="/"
+                to="http://brokers.pacregistrarslimited.com/login.aspx"
               >
                 Brokers
               </NavLink>

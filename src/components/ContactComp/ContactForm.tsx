@@ -104,17 +104,17 @@ function ContactForm() {
         </div>
         <div className="flex  gap-6 mt-10">
           <span>
-            <NavLink to="https://www.linkedin.com/">
+            <NavLink to="https://www.linkedin.com/company/panafrican-capital-holdings-limited">
               <img src="/icons/social-1.svg" alt="" className="w-6" />
             </NavLink>
           </span>
           <span>
-            <NavLink to="https://web.facebook.com/PACHoldingsLtd/">
+            <NavLink to="https://www.facebook.com/PACHoldingsLtd">
               <img src="/icons/social-2.svg" alt="" className="w-6" />
             </NavLink>
           </span>
           <span>
-            <NavLink to="https://www.instagram.com/">
+            <NavLink to="https://www.instagram.com/pacholdings">
               <img src="/icons/social-3.svg" alt="" className="w-6" />
             </NavLink>
           </span>
