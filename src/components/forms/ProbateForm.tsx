@@ -7,9 +7,10 @@ import useSubmitForm from "../../hooks/useSubmitForm";
 
 interface ITitle {
   title?: string;
+  url:string;
 }
 
-function ProbateForm({ title }: ITitle) {
+function ProbateForm({ title, url }: ITitle) {
   const {
     control,
     handleSubmit,
@@ -49,7 +50,7 @@ function ProbateForm({ title }: ITitle) {
       serviceBriefDetails: "",
       acceptDataPrivacyPolicy: false,
     },
-    url: "probate/service",
+    url:url
   });
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any

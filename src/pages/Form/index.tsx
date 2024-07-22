@@ -153,8 +153,8 @@ function Forms() {
             <div className="2xl:w-[50%] xl:w-[60%] lg:w-[60%] w-full">
               {active === 0 && <SecretarialForm />}
               {active === 1 && <ManagementForm />}
-              {active === 2 && <ProbateForm title="Probate Services"/>}
-              {active === 3 && <ProbateForm  title="Registrar Service"/>}
+              {active === 2 && <ProbateForm title="Probate Services" url="probate/service"/> }
+              {active === 3 && <ProbateForm  title="Registrar Service" url="registrar/service"/>}
               {active === 4 && <UpdateMyName />}
               {active === 5 && <UpdateMySignature />}
               {active === 6 && <UpdateMyAddress />}
