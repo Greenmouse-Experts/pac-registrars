@@ -112,7 +112,7 @@ function ProbateServices() {
       </section>
 
       <ServiceModal isOpen={isModalOpen} handleClose={handleCloseModal} title="">
-        <ProbateForm />
+        <ProbateForm url="probate/service" />
       </ServiceModal>
     </>
   );
