@@ -20,7 +20,7 @@ export function LeadershipModal({ handleOpen, open, leaderBio, img }) {
         </span>
         <DialogBody className="flex flex-col xl:gap-5 gap-3 text-black">
           <div className="flex xl:items-start items-center justify-center xl:flex-row flex-col gap-20">
-            <img src={img} alt={img} className="xl:w-[20%] w-[50%] mix-blend-luminosity" />
+            <img src={img} alt={img} className="xl:w-[20%] w-[50%] " />
             <div>
             <p className="mt-3">{leaderBio[0] ?? ""}</p>
             <p className="mt-3">{leaderBio[1] ?? ""}</p>

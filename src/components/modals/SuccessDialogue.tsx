@@ -15,7 +15,7 @@ const SuccessDialog = ({ open, handleClose }) => {
       </DialogBody>
       <DialogFooter>
         <button
-          className="bg-colorPrimary btn btn-green rounded-md text-white font-semibold py-2 px-3"
+          className="bg-bluePrimary btn btn-green rounded-md text-white font-semibold py-2 px-3"
           onClick={handleClose}
         >
           Close

@@ -99,7 +99,7 @@ function Management() {
             <img
               src={leader.image}
               alt={leader.name}
-              className=" mix-blend-luminosity object-cover"
+              className="  object-cover"
             />
             <div className="bg-bluePrimary absolute bottom-0 2xl:px-12 px-7 2xl:py-7 py-5 text-white rounded-t-[10px] flex items-end justify-between w-full">
               <div>
