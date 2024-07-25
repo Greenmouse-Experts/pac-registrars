@@ -84,7 +84,7 @@ function Leadership() {
         {LeaderBio.map((leader, index) => (
           <div
             key={index}
-            className="relative about-shadow flex justify-center bg-white"
+            className="relative about-shadow flex justify-center bg-white pt-10"
           >
             <img
               src={leader.image}
