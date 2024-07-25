@@ -61,9 +61,9 @@ function Hero2() {
             Putting the right solutions and methods in place.
           </p>
           <h4 className=" font-bold font-syne lg:leading-[3rem]  sm:text-4xl text-2xl">
-            PAC Registrars and Investor Services & Investor Services Limited,
-            formerly known as PAC Registrars and Investor Services, is a
-            subsidiary of PanAfrican Capital Holdings ("PAC Holdings").
+            PAC Registrars and Investor Services Limited, formerly known as PAC
+            Registrars Limited, is a subsidiary of PanAfrican Capital Holdings
+            ("PAC Holdings")
           </h4>
           <p className="lg:text-xl lg:leading-10 mt-5">
             We are a share registration and business solutions provider,
