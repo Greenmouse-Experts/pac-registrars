@@ -89,7 +89,7 @@ function Leadership() {
             <img
               src={leader.image}
               alt={leader.name}
-              className="h-[380px] w-[310px] 2xl:h-[510px] 2xl:w-[450px]"
+              className="sm:h-[380px] h-[360px] w-[310px] 2xl:h-[510px] 2xl:w-[450px]"
             />
             <div className="bg-bluePrimary absolute bottom-0 px-12 py-7 text-white rounded-t-[10px] flex items-end justify-between w-full">
               <div>
