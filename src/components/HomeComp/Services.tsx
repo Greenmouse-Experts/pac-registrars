@@ -63,9 +63,7 @@ function Services() {
             security.
           </p> */}
           <p className=" mt-5">
-            {/* Our core beliefs serve as the cornerstone of their investing
-            success, guiding them along their journey towards financial
-            security. */}
+           
             Your trusted guide to a brighter business future
             and revolutionizing the way you work and thrive.
           </p>
