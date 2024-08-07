@@ -19,7 +19,7 @@ export function LeadershipModal({ handleOpen, open, leaderBio, img }) {
           <IoCloseCircleOutline size={40} color="black" />
         </span>
         <DialogBody className="flex flex-col xl:gap-5 gap-3 text-black">
-          <div className="flex items-end justify-center xl:flex-row flex-col xl:gap-10 gap-5">
+          <div className="flex xl:items-end items-center justify-center xl:flex-row flex-col xl:gap-10 gap-5">
             <img src={img} alt={img} className="xl:w-[20%] w-[50%] h-full" />
             <div>
             <p className="mt-3">{leaderBio[0] ?? ""}</p>
