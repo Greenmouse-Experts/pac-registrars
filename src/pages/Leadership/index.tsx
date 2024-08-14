@@ -84,12 +84,12 @@ function Leadership() {
         {LeaderBio.map((leader, index) => (
           <div
             key={index}
-            className="relative about-shadow flex justify-center bg-white pt-10"
+            className="relative about-shadow flex justify-center bg-white pt-5"
           >
             <img
               src={leader.image}
               alt={leader.name}
-              className="sm:h-[380px] h-[360px] w-[310px] 2xl:h-[510px] 2xl:w-[450px]"
+              className="object-cover object-center"
             />
             <div className="bg-bluePrimary absolute bottom-0 px-12 py-7 text-white rounded-t-[10px] flex items-end justify-between w-full">
               <div>
