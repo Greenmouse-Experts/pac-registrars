@@ -15,6 +15,7 @@
     "@material-tailwind/react": "^2.1.9",
     "@mui/icons-material": "^5.15.14",
     "@mui/material": "^5.15.14",
+    "@tawk.to/tawk-messenger-react": "^2.0.2",
     "@types/react-signature-canvas": "^1.0.5",
     "@types/react-slick": "^0.23.13",
     "animate.css": "^4.1.1",

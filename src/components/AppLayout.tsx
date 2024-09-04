@@ -2,14 +2,13 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { Outlet, useLocation } from "react-router-dom";
 import { useEffect } from "react";
-
-// import { FaWhatsappSquare } from "react-icons/fa";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore
+import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
 import ChatBot from "./chatbot";
 
 function AppLayout() {
-
   const { pathname } = useLocation();
-
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -20,11 +19,11 @@ function AppLayout() {
       <main className=" relative">
         <Outlet />
 
-        <div className=" bottom-10 left-0 hover:left-2 transition-all  z-[9999999999] fixed  items-center flex flex-row-reverse gap-4 cursor-pointer ">
-        {/* <FaWhatsappSquare color="#25D366" size={60} />
-          <p className="bg-white py-3 px-7 rounded-xl h-fit dark:bg-gray-900">Send us Message</p> */}
-          <ChatBot/>
-        </div>
+        <ChatBot />
+        <TawkMessengerReact
+          propertyId="60253eef9c4f165d47c25665"
+          widgetId="1eu8nrov9"
+        />
       </main>
 
       <Footer />
