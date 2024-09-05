@@ -15,6 +15,51 @@ function Client() {
           <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
               <img src="/images/client-14.svg" alt="" className="max-h-24" />
             </div>
+            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-3.svg" alt="" className="max-h-24" />
+            </div>
+            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-1.svg" alt="" className="max-h-24" />
+            </div>
+            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-5.svg" alt="" className="max-h-24" />
+            </div>
+            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-16.svg" alt="" className="max-h-28" />
+            </div>
+            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-6.svg" alt="" className="max-h-24" />
+            </div>
+            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-7.svg" alt="" className="max-h-24" />
+            </div>
+            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-15.svg" alt="" className="max-h-24" />
+            </div>
+            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-22.svg" alt="" className="max-h-24" />
+            </div>
+            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-2.svg" alt="" className="max-h-24" />
+            </div>
+            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-25.svg" alt="" className="max-h-24" />
+            </div>
+            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-9.svg" alt="" className="max-h-24" />
+            </div>
+            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-4.svg" alt="" className="max-h-24" />
+            </div>
+            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-11.svg" alt="" className="max-h-24" />
+            </div>
+            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-10.svg" alt="" className="max-h-24" />
+            </div>
+          
+
+
 
             <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
               <img src="/images/client-30.jpg" alt="" className="max-h-24" />
@@ -29,45 +74,23 @@ function Client() {
               <img src="/images/client-33.png" alt="" className="max-h-24" />
             </div>
             <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
-              <img src="/images/client-1.svg" alt="" className="max-h-24" />
+              <img src="/images/client-34.png" alt="" className="max-h-24" />
             </div>
             <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
-              <img src="/images/client-2.svg" alt="" className="max-h-24" />
+              <img src="/images/client-35.png" alt="" className="max-h-24" />
             </div>
+            
+           
+            
           
-            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
-              <img src="/images/client-15.svg" alt="" className="max-h-24" />
-            </div>
-            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
-              <img src="/images/client-16.svg" alt="" className="max-h-28" />
-            </div>
-            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
-              <img src="/images/client-3.svg" alt="" className="max-h-24" />
-            </div>
-            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
-              <img src="/images/client-4.svg" alt="" className="max-h-24" />
-            </div>
-            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
-              <img src="/images/client-5.svg" alt="" className="max-h-24" />
-            </div>
-            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
-              <img src="/images/client-6.svg" alt="" className="max-h-24" />
-            </div>
-            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
-              <img src="/images/client-7.svg" alt="" className="max-h-24" />
-            </div>
+           
+            
+       
             <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
               <img src="/images/client-8.svg" alt="" className="max-h-24" />
             </div>
-            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
-              <img src="/images/client-9.svg" alt="" className="max-h-24" />
-            </div>
-            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
-              <img src="/images/client-10.svg" alt="" className="max-h-24" />
-            </div>
-            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
-              <img src="/images/client-11.svg" alt="" className="max-h-24" />
-            </div>
+        
+           
             <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
               <img src="/images/client-12.svg" alt="" className="max-h-24" />
             </div>
@@ -92,14 +115,10 @@ function Client() {
             <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
               <img src="/images/client-21.svg" alt="" className="max-h-24" />
             </div>
-            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
-              <img src="/images/client-22.svg" alt="" className="max-h-24" />
-            </div>
+          
            
            
-            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
-              <img src="/images/client-25.svg" alt="" className="max-h-24" />
-            </div>
+            
             <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
               <img src="/images/client-26.svg" alt="" className="max-h-24" />
             </div>

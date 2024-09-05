@@ -124,6 +124,19 @@ function Clients() {
           </div>
           <div className="flex justify-center items-center">
             <img
+              src="/images/client-34.png"
+              alt="client"
+              className="  mx-auto max-h-[60px]  "
+            />
+          </div> <div className="flex justify-center items-center">
+            <img
+              src="/images/client-35.png"
+              alt="client"
+              className="  mx-auto max-h-[65px]  "
+            />
+          </div>
+          <div className="flex justify-center items-center">
+            <img
               src="/images/client-2.png"
               alt="client"
               className="mix-blend-luminosity  mx-auto max-h-[60px]  "
