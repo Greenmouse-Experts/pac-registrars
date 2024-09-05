@@ -62,7 +62,7 @@ const ManagementBio: IBio[] = [
   // },
   {
     name: "Babatunde Oyeniyi",
-    title: "Divisional Head Business Solutions",
+    title: "Head Business Solutions",
     bio: [
       "Babatunde Oyeniyi is an investment banker with 2 decades of experience within the capital market. His experience cuts across finance, capital raising, relationship management, business development, product management and business solutions.",
       "He holds an HND from the Yaba College of Technology and an MBA from Ladoke Akintola University of Technology.",
