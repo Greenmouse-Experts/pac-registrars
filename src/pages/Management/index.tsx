@@ -71,15 +71,7 @@ const ManagementBio: IBio[] = [
     ],
     image: "/images/leader-10.png",
   },
-  // {
-  //   name: "Boluwatife Efeoghene",
-  //   title: "Team Lead, Operations",
-  //   bio: [
-  //     "Boluwatife Efeoghene is an investment banker with 1 decade of experience within the capital market. Her experience cuts across Customer service operations, finance, relationship management, and business development.",
-  //     "She holds B.Sc. from the National Open University of Nigeria and an MBA from Ladoke Akintola University of Technology. She is an Associate member of the Institute of Capital Market Registrars (ICMR). She is currently the Team Lead, Operations prior to her joining PAC Registrars and Investor Services, she worked with Africa Prudential Plc."
-  //   ],
-  //   image: "/images/leader-11.png",
-  // },
+ 
 ];
 
 function Management() {
@@ -141,3 +133,4 @@ function Management() {
 }
 
 export default Management;
+
