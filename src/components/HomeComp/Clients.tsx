@@ -103,10 +103,18 @@ function Clients() {
           </div>
           <div className="flex justify-center items-center">
             <img
+              src="/images/client-41.jpg"
+              alt="client"
+              className="  mx-auto max-h-[60px] rounded-xl  "
+            />
+          </div>
+          <div className="flex justify-center items-center flex-col">
+            <img
               src="/images/client-30.jpg"
               alt="client"
               className="  mx-auto max-h-[60px]  "
             />
+            <p className="text-center text-sm font-semibold opacity-75 text-bluePrimary">GEO Fluids Plc</p>
           </div>
           <div className="flex justify-center items-center">
             <img
