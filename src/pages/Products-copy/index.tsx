@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import { BsDot } from "react-icons/bs";
 import Banner from "../../components/Banner";
 
@@ -12,6 +12,7 @@ function Products() {
     ],
     image: "/images/leader-11.png",
   }
+  console.log(hide)
   return (
     <>
       <Banner page="Products" link="" />
