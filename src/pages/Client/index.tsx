@@ -34,7 +34,7 @@ function Client() {
               <img src="/images/client-7.svg" alt="" className="max-h-28" />
             </div>
             <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
-              <img src="/images/client-15.svg" alt="" className="max-h-28" />
+              <img src="/images/client-9.svg" alt="" className="max-h-28" />
             </div>
             <div className="bg-white px-10 h-[150px] flex  flex-col items-center gap-1 justify-center rounded-xl ">
               <img src="/images/client-6.svg" alt="" className="max-h-28" />
@@ -70,9 +70,7 @@ function Client() {
             </div>
            
           
-            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
-              <img src="/images/client-9.svg" alt="" className="max-h-28" />
-            </div>
+          
             <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
               <img src="/images/client-4.svg" alt="" className="max-h-28" />
             </div>
@@ -140,6 +138,9 @@ function Client() {
             </div>
             <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
               <img src="/images/client-41.jpg" alt="" className="max-h-32" />
+            </div>
+            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-15.svg" alt="" className="max-h-28" />
             </div>
           </div>
         </div>
