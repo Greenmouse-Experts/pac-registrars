@@ -86,8 +86,9 @@ function Client() {
               <img src="/images/client-10.svg" alt="" className="max-h-28" />
             </div>
 
-            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
+            <div className="bg-white px-10 h-[150px] flex  flex-col items-center gap-1 justify-center rounded-xl ">
               <img src="/images/client-30.jpg" alt="" className="max-h-28" />
+              <p className="text-center text-sm font-semibold opacity-75 text-bluePrimary">GEO Fluids Plc</p>
             </div>
             <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
               <img src="/images/client-31.png" alt="" className="max-h-28" />
