@@ -30,7 +30,7 @@ const ServiceModal: React.FC<ModalComponentProps> = ({
       <DialogHeader className="flex justify-between items-center relative ">
         {title}
 
-        <span className=" absolute right-5 top-3"  onClick={handleClose}>
+        <span className=" absolute right-5 top-3 cursor-pointer"  onClick={handleClose}>
           <MdClose className="h-5 w-5  " />
         </span>
       </DialogHeader>
