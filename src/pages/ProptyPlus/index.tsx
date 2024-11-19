@@ -69,9 +69,7 @@ function ProptyPlus() {
               Want More
             </h5>
             <p className=" font-medium ">
-              Complete control over products allows us to ensure our customers
-              receive the best quality prices and service. We take great pride
-              in everything that we do in our factory.
+            To get more information on the ProptyPlus application, please drop your details below.
             </p>
             <div className=" flex lg:flex-row flex-col justify-between gap-8 ">
               <Input type="text" placeholder="Name" />
