@@ -50,7 +50,7 @@ function ProptyPlus() {
         <div className="lg:w-[44%] w-full">
           <a href="https://panafricancapitalholdings-my.sharepoint.com/personal/ayomide_oluwole_ziltchone_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fayomide%5Foluwole%5Fziltchone%5Fcom%2FDocuments%2FAttachments%2FWeb%20Navigation%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E009856c5%2D845e%2D423e%2Dbfc7%2Dee3f7dfe0036&ga=1">
             <ReactPlayer
-              url="https://youtu.be"
+              url="https://youtube.com"
               controls={true}
               width="100%"
               height="370px"
@@ -65,9 +65,9 @@ function ProptyPlus() {
         </div>
         <div className="lg:w-[56%] w-full font-syne">
           <form className="flex flex-col 2xl:gap-8 gap-5 w-full bg-white p-10 form-shadow text-[#787878]">
-            <h5 className="font-montserrat text-[1.4rem] font-semibold   text-black">
+            {/* <h5 className="font-montserrat text-[1.4rem] font-semibold   text-black">
               Want More
-            </h5>
+            </h5> */}
             <p className=" font-medium ">
             To get more information on the ProptyPlus application, please drop your details below.
             </p>
