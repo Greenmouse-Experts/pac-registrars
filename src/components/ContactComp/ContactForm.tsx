@@ -91,7 +91,12 @@ function ContactForm() {
               <span>
                 <FiPhone size={20} />
               </span>
-              <span className="font-normal"> Telephone:</span> +2349168629450
+              <span className="flex gap-2">
+                <span className="font-normal"> Telephone:</span>{" "}
+                <span>
+                  +234 908 679 0272 <br /> +234 916 862 9450
+                </span>
+              </span>
             </p>
             <p className="font-[300] text-lg flex items-center gap-2">
               {" "}
