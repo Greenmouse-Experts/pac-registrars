@@ -20,15 +20,15 @@ const ManagementBio: IBio[] = [
     ],
     image: "/images/leader-5.png",
   },
-  {
-    name: "Dennis Ogbu",
-    title: "Head, Business Development",
-    bio: [
-      "Dennis Ogbu holds a Bsc. Degree in Accounting from Abia State University and an MBA in Financial Management from the University of Calabar. He is an Associate of the Chartered institute of Economists (ACE).",
-      "He is a multi-talented Accountant with over two decade significant experience in Business development and Administration, Corporate Finance, sale/Client Relationship Management, Accounting and Risk Management. He worked at Strategy Energy Limited for 7 years before he joined PanAfrican Capital Holdings in 2007 and has worked in different Business Units with the Group. His records over the years show strong competence in deal origination, Business development, negotiation, implementation and Financing.",
-    ],
-    image: "/images/leader-6.png",
-  },
+  // {
+  //   name: "Dennis Ogbu",
+  //   title: "Head, Business Development",
+  //   bio: [
+  //     "Dennis Ogbu holds a Bsc. Degree in Accounting from Abia State University and an MBA in Financial Management from the University of Calabar. He is an Associate of the Chartered institute of Economists (ACE).",
+  //     "He is a multi-talented Accountant with over two decade significant experience in Business development and Administration, Corporate Finance, sale/Client Relationship Management, Accounting and Risk Management. He worked at Strategy Energy Limited for 7 years before he joined PanAfrican Capital Holdings in 2007 and has worked in different Business Units with the Group. His records over the years show strong competence in deal origination, Business development, negotiation, implementation and Financing.",
+  //   ],
+  //   image: "/images/leader-6.png",
+  // },
   {
     name: "Amadi Clifford",
     title: "System Administrator",
@@ -71,7 +71,6 @@ const ManagementBio: IBio[] = [
     ],
     image: "/images/leader-10.png",
   },
- 
 ];
 
 function Management() {
@@ -133,4 +132,3 @@ function Management() {
 }
 
 export default Management;
-

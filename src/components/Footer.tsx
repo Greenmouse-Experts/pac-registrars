@@ -141,7 +141,7 @@ function Footer() {
                   <span>
                     <FiPhone size={20} />
                   </span>{" "}
-                  +234 908 679 0272
+                  +234 916 862 9450
                 </NavLink>
               </li>
               <li className="flex gap-3 items-center">
