@@ -52,7 +52,7 @@ function Home() {
               ×
             </button>
             <img
-              src="./popup.jpeg"
+              src="./popup_2.jpeg"
               alt="Popup Advertisement"
               onClick={handlePopupClick}
               className="cursor-pointer rounded-lg max-w-[90vw] max-h-[90vh] object-contain"
