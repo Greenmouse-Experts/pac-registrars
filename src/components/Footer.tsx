@@ -5,6 +5,17 @@ import { NavLink } from "react-router-dom";
 function Footer() {
   return (
     <footer className="bg-footerImg bg-center bg-no-repeat bg-cover pt-[100px]  pb-2 ">
+      <div className="bg-white p-4 w-full flex  items-center gap-2 mb-5 rounded-full">
+        <img
+          src="/logo.jpg"
+          alt="logo"
+          className="md:w-[300px] w-[200px] h-[50px]  "
+        />
+        <p className="ml-3 text-xl ">
+          is registered and regulated by the Securities and Exchange Commission,
+          Nigeria.
+        </p>
+      </div>
       <div className="flex gap-20 lg:flex-row flex-col items-start lg:gap-32 lg:justify-start justify-center">
         <div className="  lg:w-[35%] w-full flex flex-col gap-10">
           <p className="font-medium lg:text-base text-sm text-white">
