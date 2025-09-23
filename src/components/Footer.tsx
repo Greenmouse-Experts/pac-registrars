@@ -5,13 +5,13 @@ import { NavLink } from "react-router-dom";
 function Footer() {
   return (
     <footer className="bg-footerImg bg-center bg-no-repeat bg-cover pt-[100px]  pb-2 ">
-      <div className="bg-white p-4 w-full flex  items-center gap-2 mb-5 rounded-full">
+      <div className="bg-white flex-wrap p-4 w-full flex flex-col items-center gap-2 mb-5 rounded-full">
         <img
           src="/logo.jpg"
           alt="logo"
-          className="md:w-[300px] w-[200px] h-[50px]  "
+          className="md:w-[300px] w-[200px] h-[50px]"
         />
-        <p className="ml-3 text-xl ">
+        <p className="text-center text-sm md:text-base lg:text-xl">
           is registered and regulated by the Securities and Exchange Commission,
           Nigeria.
         </p>
