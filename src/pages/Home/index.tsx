@@ -15,14 +15,14 @@ function Home() {
     setShowPopup(true);
   }, []);
 
-  const handlePopupClick = () => {
-    window.open("https://marketplace.invearn.com", "_blank");
-    setShowPopup(false);
-  };
+  // const handlePopupClick = () => {
+  //   window.open("https://marketplace.invearn.com", "_blank");
+  //   setShowPopup(false);
+  // };
 
-  const handleClosePopup = () => {
-    setShowPopup(false);
-  };
+  // const handleClosePopup = () => {
+  //   setShowPopup(false);
+  // };
 
   return (
     <>
