@@ -35,8 +35,6 @@ function WebRegistry() {
             The application is security tight as it internally validates any
             user before granting access base on the user profile.
           </p>
-        
-         
         </div>
       </section>
       <section className="lg:pt-24 pt-16">
@@ -60,7 +58,7 @@ function WebRegistry() {
       <section className="lg:pt-24 pt-16">
         <div className="mb-5">
           <h4 className=" font-bold font-syne capitalize text-black">
-          Advantages Of Web Registry to a Client
+            Advantages Of Web Registry to a Client
           </h4>
           <p className="text-bluePrimary font-medium ">
             Quick access to Generating Reports as at any date which includes:
@@ -99,7 +97,7 @@ function WebRegistry() {
           />
           <div className="lg:w-[72%] w-full">
             <h4 className=" font-bold font-syne capitalize text-black mb-5">
-            Advantages Of Web Registry to a Shareholder
+              Advantages Of Web Registry to a Shareholder
             </h4>
             <List
               items={[
@@ -148,35 +146,45 @@ function WebRegistry() {
 
         <ol className="flex flex-col gap-3 mt-5">
           <li className="md:text-lg text-base font-normal ">
-           1. Pickup  the  form  in  our  office  or  download  it  from  our  website www.pacregistrars.com. Complete the  form, specifying the  company(ies)  you own or account(s) managed by us.
+            1. Pickup the form in our office or download it from our website
+            www.pacregistrars.com. Complete the form, specifying the
+            company(ies) you own or account(s) managed by us.
           </li>
           <li className="md:text-lg text-base font-normal ">
-          2.  Pay N1,000 for 1-year Network service subscription per account into our Heritage Bank account (Account Numbers 5100010389) Note:  NO EXTRA HIDIND CHARGES
+            2. Pay N1,000 for 1-year Network service subscription per account
+            into our Heritage Bank account (Account Numbers 5100010389) Note: NO
+            EXTRA HIDDEN CHARGES
           </li>
           <li className="md:text-lg text-base font-normal ">
-          3.  Visit our office at No. 122 Bode Thomas Street, Surulere, Lagos with the payment slip or scan and email the proof of payment to info@pacregistrars.com.
+            3. Visit our office at No. 122 Bode Thomas Street, Surulere, Lagos
+            with the payment slip or scan and email the proof of payment to
+            info@pacregistrars.com.
           </li>
           <li className="md:text-lg text-base font-normal ">
-          4.  Upon confirming your payment and proof of ownership, we will create your username and password and send them to your email address. 
+            4. Upon confirming your payment and proof of ownership, we will
+            create your username and password and send them to your email
+            address.
           </li>
           <li className="md:text-lg text-base font-normal ">
-          5.  Change your password when you first log in and keep your new password secure.
+            5. Change your password when you first log in and keep your new
+            password secure.
           </li>
           <li className="md:text-lg text-base font-normal ">
-          6.  Remember to renew your subscription when it expires.
+            6. Remember to renew your subscription when it expires.
           </li>
         </ol>
       </section>
 
       <section className="lg:py-24 py-16  text-[#111111]">
         <h4 className=" font-bold font-syne capitalize">
-          Procedure for Registration of Web Registry as a Stockbrokers/Custodians
+          Procedure for Registration of Web Registry as a
+          Stockbrokers/Custodians
         </h4>
 
         <ol className="flex flex-col gap-3 mt-5">
           <li className="md:text-lg text-base font-normal ">
-             1. Visit  our  office, or  write  us  a  letter  requesting  for
-             the  products  hand  copy  or  online (info@pacregistrars.com)
+            1. Visit our office, or write us a letter requesting for the
+            products hand copy or online (info@pacregistrars.com)
           </li>
           <li className="md:text-lg text-base font-normal ">
             2. All the necessary detail will be forward to your company via

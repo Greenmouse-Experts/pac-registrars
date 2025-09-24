@@ -112,7 +112,7 @@ function Management() {
                 onClick={() => handleOpen(leader)}
                 className="flex cursor-pointer items-center gap-2 text-base font-semibold text-nowrap text-white"
               >
-                Learn More{" "}
+                Read More{" "}
                 <span>
                   <IoMdArrowForward />
                 </span>

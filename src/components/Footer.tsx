@@ -157,7 +157,7 @@ function Footer() {
               </li>
               <li className="flex gap-3 items-center">
                 <span>
-                  <NavLink to="https://www.linkedin.com/company/panafrican-capital-holdings-limited">
+                  <NavLink to="https://www.linkedin.com/company/pac-registrars-investor-services">
                     <img src="/icons/social-1.svg" alt="" className="w-6" />
                   </NavLink>
                 </span>
@@ -167,7 +167,7 @@ function Footer() {
                   </NavLink>
                 </span>
                 <span>
-                  <NavLink to="https://www.instagram.com/pacholdings">
+                  <NavLink to="https://www.instagram.com/pacregistrars?igsh=MWw5OWxseG9qazltdQ==">
                     <img src="/icons/social-3.svg" alt="" className="w-6" />
                   </NavLink>
                 </span>
@@ -183,7 +183,7 @@ function Footer() {
       </div>
       <div className="text-grayPrimary flex justify-center items-center lg:mx-10 mx-0 py-10 border-t-[0.7px] border-grayPrimary mt-16">
         <p className="text-base">
-          Copyright © 2024 . PAC Registrars and Investor Services | All Rights
+          Copyright © 2025 . PAC Registrars and Investor Services | All Rights
           Reserved
         </p>
       </div>

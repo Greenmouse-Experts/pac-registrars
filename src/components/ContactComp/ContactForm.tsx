@@ -106,7 +106,7 @@ function ContactForm() {
           </div>
           <div className="flex  gap-6 mt-10">
             <span>
-              <NavLink to="https://www.linkedin.com/company/panafrican-capital-holdings-limited">
+              <NavLink to="https://www.linkedin.com/company/pac-registrars-investor-services">
                 <img src="/icons/social-1.svg" alt="" className="w-6" />
               </NavLink>
             </span>
@@ -116,7 +116,7 @@ function ContactForm() {
               </NavLink>
             </span>
             <span>
-              <NavLink to="https://www.instagram.com/pacholdings">
+              <NavLink to="https://www.instagram.com/pacregistrars?igsh=MWw5OWxseG9qazltdQ==">
                 <img src="/icons/social-3.svg" alt="" className="w-6" />
               </NavLink>
             </span>
