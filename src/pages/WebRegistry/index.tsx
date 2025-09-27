@@ -152,8 +152,7 @@ function WebRegistry() {
           </li>
           <li className="md:text-lg text-base font-normal ">
             2. Pay N1,000 for 1-year Network service subscription per account
-            into our Heritage Bank account (Account Numbers 5100010389) Note: NO
-            EXTRA HIDDEN CHARGES
+            into our Heritage Bank account (Account Numbers 5100010389)
           </li>
           <li className="md:text-lg text-base font-normal ">
             3. Visit our office at No. 122 Bode Thomas Street, Surulere, Lagos
