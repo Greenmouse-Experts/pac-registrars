@@ -113,10 +113,10 @@ const router = createBrowserRouter([
         path: "/self-service",
         element: <SelfService />,
       },
-      {
-        path: "/agent-onboard",
-        element: <AgentOnboard />,
-      },
+      // {
+      //   path: "/agent-onboard",
+      //   element: <AgentOnboard />,
+      // },
     ],
   },
 ]);
