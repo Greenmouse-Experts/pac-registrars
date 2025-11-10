@@ -10,6 +10,7 @@ import UpdateMyAddress from "../../components/forms/UpdateMyAddress";
 import UpdateMyInformation from "../../components/forms/UpdateMyInformation";
 import Dividend from "../../components/forms/Dividend";
 import AccountConsolidation from "../../components/forms/AccountConsolidation";
+import AgentOnboardForm from "../../components/forms/AgentOnboardForm";
 
 function Forms() {
   const [active, setActive] = useState(0);
@@ -117,6 +118,17 @@ function Forms() {
                 <p className={`font-sora  px-4`}>Shareholder Update</p>
                 <div className="absolute bottom-0 bg-bluePrimary h-1 w-full" />
               </div>
+              <div
+                className={` relative py-6 rounded-md w-full border border-bluePrimary cursor-pointer ${
+                  active === 10
+                    ? "text-white bg-bluePrimary"
+                    : "text-grayPrimary2 bg-white"
+                } overflow-hidden`}
+                onClick={() => setActive(10)}
+              >
+                <p className={`font-sora  px-4`}>Agent Onboarding </p>
+                <div className="absolute bottom-0 bg-bluePrimary h-1 w-full" />
+              </div>
               {/* <div
                 className={` relative py-6 rounded-md w-full border border-bluePrimary cursor-pointer ${
                   active === 8
@@ -153,14 +165,22 @@ function Forms() {
             <div className="2xl:w-[50%] xl:w-[60%] lg:w-[60%] w-full">
               {active === 0 && <SecretarialForm />}
               {active === 1 && <ManagementForm />}
-              {active === 2 && <ProbateForm title="Probate Services" url="probate/service"/> }
-              {active === 3 && <ProbateForm  title="Registrar Service" url="registrar/service"/>}
+              {active === 2 && (
+                <ProbateForm title="Probate Services" url="probate/service" />
+              )}
+              {active === 3 && (
+                <ProbateForm
+                  title="Registrar Service"
+                  url="registrar/service"
+                />
+              )}
               {active === 4 && <UpdateMyName />}
               {active === 5 && <UpdateMySignature />}
               {active === 6 && <UpdateMyAddress />}
               {active === 7 && <UpdateMyInformation />}
               {active === 8 && <AccountConsolidation />}
               {active === 9 && <Dividend />}
+              {active === 10 && <AgentOnboardForm />}
             </div>
           </div>
         </div>
