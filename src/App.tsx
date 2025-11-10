@@ -23,7 +23,6 @@ import ENotification from "./pages/ENotification";
 import AnnualReport from "./pages/AnnualReport";
 import SelfService from "./pages/SelfService";
 import { Toaster } from "react-hot-toast";
-import AgentOnboard from "./pages/agent-onboard";
 
 const router = createBrowserRouter([
   {
