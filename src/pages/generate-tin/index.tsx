@@ -63,7 +63,7 @@ export default function GenerateTin() {
             👉 Generate Your TIN
           </span>
           <a
-            href="https://www.firs.gov.ng/TINRegistration" // Replace with actual government TIN registration URL if different
+            href="https://taxid.nrs.gov.ng/" // Replace with actual government TIN registration URL if different
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded transition-colors duration-200 shadow"
