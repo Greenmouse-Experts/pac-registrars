@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Button from "./Button";
 import { useState } from "react";
 import { MdHeadsetMic, MdKeyboardArrowDown, MdPermMedia } from "react-icons/md";
@@ -11,7 +11,12 @@ import {
 } from "react-icons/ri";
 import { PiClipboardText, PiHandshake } from "react-icons/pi";
 import { VscLaw } from "react-icons/vsc";
-import { IoIosCloud, IoIosNotifications, IoMdBusiness, IoMdCloudOutline } from "react-icons/io";
+import {
+  IoIosCloud,
+  IoIosNotifications,
+  IoMdBusiness,
+  IoMdCloudOutline,
+} from "react-icons/io";
 import { HiDocumentChartBar, HiUsers } from "react-icons/hi2";
 import { GiNotebook } from "react-icons/gi";
 import { FaQuestionCircle } from "react-icons/fa";
@@ -42,7 +47,6 @@ function Header() {
         >
           <nav className="w-full scroll lg:text-[1.05rem] !text-lg  font-medium">
             <ul className="md:flex xl:flex-row flex-col 2xl:gap-[30px] xl:items-center items-start xl:pt-0 xl:pl-0  sm:pl-20 pl-10 pt-3  gap-[20px]">
-           
               <li
                 className="relative flex flex-col justify-center items-start"
                 onMouseLeave={() => setOpen(false)}
@@ -184,7 +188,7 @@ function Header() {
                     <span>
                       <PiClipboardText size={25} />
                     </span>
-                    Securities Register <br/> Management
+                    Securities Register <br /> Management
                   </NavLink>
                   <NavLink
                     className=" py-3 px-2 w-full flex items-center gap-4 text-center text-bluePrimary text-lg text-nowrap hover:bg-bluePrimary hover:text-white hover:scale-[.98] transition-all duration-300"
@@ -262,7 +266,7 @@ function Header() {
                     <span>
                       <IoIosNotifications size={25} />
                     </span>
-                    Electronic Repository <br/> System (ERS)
+                    Electronic Repository <br /> System (ERS)
                   </NavLink>
                 </div>
                 <div
@@ -278,7 +282,7 @@ function Header() {
                     }}
                     to="/register-maintenance"
                   >
-                     Securities Register <br/> Management
+                    Securities Register <br /> Management
                   </NavLink>
 
                   <NavLink
@@ -505,7 +509,8 @@ function Header() {
                   className="lg:text-[1.05rem] text-lg w-full  md:hover:bg-white md:hover:text-bluePrimary transition-all text-nowrap"
                   to="https://docuhub3.nibss-plc.com.ng/edmms/self-service"
                 >
-                  EDMMS <span className="xl:hidden block">Self Service Portal</span>
+                  EDMMS{" "}
+                  <span className="xl:hidden block">Self Service Portal</span>
                 </NavLink>
               </li>
             </ul>
@@ -515,7 +520,7 @@ function Header() {
             onMouseLeave={() => setOpen4(false)}
           >
             <Button onMouseEnter={() => setOpen4(true)} type="">
-            PACR Portal Login{" "}
+              PACR Portal Login{" "}
               <span>
                 <MdKeyboardArrowDown />
               </span>
@@ -566,7 +571,9 @@ function Header() {
                 }}
                 to="http://api.pacregistrarslimited.com/"
               >
-                <span><IoMdCloudOutline size={25} /></span>
+                <span>
+                  <IoMdCloudOutline size={25} />
+                </span>
                 Fund Manager API
               </NavLink>
             </div>
@@ -614,9 +621,8 @@ function Header() {
                 }}
                 to="http://api.pacregistrarslimited.com/"
               >
-                 Fund Manager API
+                Fund Manager API
               </NavLink>
-            
             </div>
           </div>
         </div>

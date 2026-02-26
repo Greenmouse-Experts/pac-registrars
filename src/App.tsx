@@ -23,6 +23,7 @@ import ENotification from "./pages/ENotification";
 import AnnualReport from "./pages/AnnualReport";
 import SelfService from "./pages/SelfService";
 import { Toaster } from "react-hot-toast";
+import GenerateTin from "./pages/generate-tin";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "/leadership",
         element: <Leadership />,
+      },
+      {
+        path: "/generate-tin",
+        element: <GenerateTin />,
       },
       {
         path: "/management",
