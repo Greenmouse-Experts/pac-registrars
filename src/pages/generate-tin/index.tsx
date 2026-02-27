@@ -1,4 +1,5 @@
 import Banner from "../../components/Banner";
+import TaxIdForm from "../../components/forms/TaxForm";
 
 export default function GenerateTin() {
   return (
@@ -58,6 +59,9 @@ export default function GenerateTin() {
           </p>
         </div>
 
+        <div className="ring rounded-xl p-2 ring-opacity-70 my-4">
+          <TaxIdForm />
+        </div>
         <div className="flex flex-col items-center">
           <span className="text-lg font-semibold text-gray-800 mb-2">
             👉 Generate Your TIN
