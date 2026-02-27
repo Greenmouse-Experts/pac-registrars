@@ -11,6 +11,7 @@ import UpdateMyInformation from "../../components/forms/UpdateMyInformation";
 import Dividend from "../../components/forms/Dividend";
 import AccountConsolidation from "../../components/forms/AccountConsolidation";
 import AgentOnboardForm from "../../components/forms/AgentOnboardForm";
+import TaxIdForm from "../../components/forms/TaxForm";
 
 function Forms() {
   const [active, setActive] = useState(0);
@@ -129,6 +130,18 @@ function Forms() {
                 <p className={`font-sora  px-4`}>Agent Onboarding </p>
                 <div className="absolute bottom-0 bg-bluePrimary h-1 w-full" />
               </div>
+              <div
+                className={` relative py-6 rounded-md w-full border border-bluePrimary cursor-pointer ${
+                  active === 11
+                    ? "text-white bg-bluePrimary"
+                    : "text-grayPrimary2 bg-white"
+                }
+                overflow-hidden`}
+                onClick={() => setActive(11)}
+              >
+                <p className={`font-sora  px-4`}>Tax Id Generatation</p>
+                <div className="absolute bottom-0 bg-bluePrimary h-1 w-full" />
+              </div>
               {/* <div
                 className={` relative py-6 rounded-md w-full border border-bluePrimary cursor-pointer ${
                   active === 8
@@ -181,6 +194,7 @@ function Forms() {
               {active === 8 && <AccountConsolidation />}
               {active === 9 && <Dividend />}
               {active === 10 && <AgentOnboardForm />}
+              {active === 11 && <TaxIdForm />}
             </div>
           </div>
         </div>
