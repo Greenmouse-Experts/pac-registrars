@@ -59,7 +59,7 @@ export default function GenerateTin() {
           </p>
         </div>
 
-        <div className="ring rounded-xl p-2 ring-opacity-70 my-4">
+        <div className="ring rounded-xl ring-opacity-70 my-4">
           <TaxIdForm />
         </div>
         <div className="flex flex-col items-center">

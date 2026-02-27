@@ -178,7 +178,7 @@ export default function TaxIdForm({ handleCloseModal }: any) {
                 href="https://taxid.nrs.gov.ng/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs text-blue-600 hover:underline mt-1 inline-block"
+                className="text-xs text-red-600 hover:underline mt-1 inline-block"
               >
                 Generate Tax ID
               </a>
