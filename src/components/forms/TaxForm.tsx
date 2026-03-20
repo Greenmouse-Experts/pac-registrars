@@ -52,7 +52,7 @@ export default function TaxIdForm({ handleCloseModal }: any) {
     try {
       await submitForm(data);
       setIsSubmitted(true);
-      handleCloseModal();
+      // handleCloseModal();
     } catch (error) {
       console.error("Error submitting form:", error);
     }
