@@ -619,7 +619,7 @@ function Header() {
                   setOpen3((prev) => !prev);
                   setMenu(false);
                 }}
-                to="http://api.pacregistrarslimited.com/"
+                to="https://api.pacregistrarslimited.com/"
               >
                 Fund Manager API
               </NavLink>
