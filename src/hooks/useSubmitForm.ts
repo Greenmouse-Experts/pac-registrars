@@ -21,7 +21,7 @@ const useSubmitForm = ({
   const [loading, setLoading] = useState(false);
   // const BASE_URL = "https://api.pacregistrarslimited.com/";
   //
-  const BASE_URL = "https://api.pacregistrars.com/api";
+  const BASE_URL = "https://api.pacregistrars.com/api/";
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const submitForm = async (data: any) => {
     setLoading(true);
