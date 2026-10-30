@@ -80,7 +80,7 @@ function ProbateServices() {
           />
         </div>
       </section>
-      <section className="py-32">
+      <section className="">
         <h4 className="font-bold font-syne capitalize text-black">
           Requirements for Transmission
         </h4>
