@@ -46,14 +46,14 @@ function ProbateServices() {
           </p>
         </div>
       </section>
-      <section className="lg:pt-24 pt-16">
+      <section className="lg:py-24 py-16 bg-gray-200 !my-24">
         <div>
           <p className="text-bluePrimary font-medium ">
             Our offering is end-to-end and covers but not limited to the
             following:
           </p>
         </div>
-        <div className="grid grid-cols-[repeat(auto-fill,_minmax(18rem,_1fr))] gap-8 mt-14">
+        <div className="grid grid-cols-[repeat(auto-fill,_minmax(18rem,_1fr))] gap-8 mt-14 ">
           <SmallCardWithIcon
             img="/icons/prob1.svg"
             text="Verification and registration of Letters of Administration / Grant of Probate"
@@ -117,8 +117,9 @@ function ProbateServices() {
       <section className="py-16">
         <h4 className="font-bold font-syne capitalize text-black">Timeline</h4>
         <p className="mt-3 font-sora text-grayPrimary2 max-w-3xl">
-          Transmission will be concluded within 72 hours of receipt of all valid
-          documents and confirmation from the transmissionregistry.
+          Transmission will be concluded within{" "}
+          <span className="font-bold text-black">72</span> hours of receipt of
+          all valid documents and confirmation from the transmissionregistry.
         </p>
         <div className="mt-10 bg-bluePrimary text-white rounded-[20px] p-8 lg:p-10 font-sora">
           <p className="font-bold font-syne text-xl">
