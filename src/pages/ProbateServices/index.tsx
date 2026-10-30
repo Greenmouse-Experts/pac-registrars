@@ -37,10 +37,12 @@ function ProbateServices() {
             Transmission Services
           </h4>
           <p className=" 2xl:mt-3 mt-3 font-sora text-grayPrimary2">
-            PAC Registrars and Investor Services Probate Services helps take
-            away the burden being faced by the beneficiaries of a deceased
-            person. We are passionate about what we do which is why the heart of
-            our business is to make bereaved families happy again.
+            At PAC Registrars and Investor Services we understand that
+            investments represent a lifetime of effort. Our Transmission Service
+            ensures that the shares and entitlements of a deceased shareholder
+            are transferred seamlessly and legally to their rightful heirs or
+            legal representatives, in full compliance with the Securities and
+            Exchange Commission (SEC). .
           </p>
         </div>
       </section>
@@ -54,42 +56,87 @@ function ProbateServices() {
         <div className="grid grid-cols-[repeat(auto-fill,_minmax(18rem,_1fr))] gap-8 mt-14">
           <SmallCardWithIcon
             img="/icons/prob1.svg"
-            text="Procuring Grant of Probate/ Letters of Administration"
+            text="Verification and registration of Letters of Administration / Grant of Probate"
           />
           <SmallCardWithIcon
             img="/icons/prob2.svg"
-            text="Death certificate processing"
+            text="Transmission of shares from deceased's name to Estate Account or beneficiaries"
           />
           <SmallCardWithIcon
             img="/icons/prob3.svg"
-            text="Endorsement of Bank Certificate"
+            text="Consolidation and recovery of accrued unclaimed dividends"
           />
           <SmallCardWithIcon
             img="/icons/prob4.svg"
-            text="Amendments of Letters of Administration"
+            text="Dematerialization of transmitted share certificates into CSCS"
           />
           <SmallCardWithIcon
             img="/icons/prob5.svg"
-            text="Obtaining certificate of additional assets"
+            text="Liaison with Probate Registry for confirmation"
           />
           <SmallCardWithIcon
             img="/icons/prob6.svg"
-            text="Effects new mandate of the administrators"
+            text="Guidance on documentation and indemnity where evidence is incomplete"
           />
-          <SmallCardWithIcon
-            img="/icons/prob7.svg"
-            text="Confirmation of Grant of Probate and Letters of Administration"
-          />
-          <SmallCardWithIcon
-            img="/icons/prob8.svg"
-            text="Will Filing and confirmation."
-          />
-          <SmallCardWithIcon img="/icons/prob9.svg" text="Receiving" />
-          <SmallCardWithIcon img="/icons/prob10.svg" text="Annuity" />
-          <SmallCardWithIcon
-            img="/icons/prob11.svg"
-            text="Gathering of Assets"
-          />
+        </div>
+      </section>
+      <section className="py-16">
+        <h4 className="font-bold font-syne capitalize text-black">
+          Requirements for Transmission
+        </h4>
+        <p className="mt-3 font-sora text-grayPrimary2 max-w-3xl">
+          To facilitate a smooth process, Administrators/Executors are required
+          to provide:
+        </p>
+        <ul className="mt-8 space-y-4 font-sora text-grayPrimary2 list-disc pl-6 marker:text-bluePrimary">
+          <li>
+            Formal Request Letter from Administrators/Executors indicating
+            names, addresses, signatures and BVNs
+          </li>
+          <li>
+            Original Death Certificate from National Population Commission (NPC)
+            - for sighting
+          </li>
+          <li>
+            Original Probate or Letter of Administration - for sighting (or
+            Certified True Copy by a Notary Public)
+          </li>
+          <li>Copy of Newspaper Advert / Gazette placed by the Court</li>
+          <li>
+            Evidence of shareholding - Original Share Certificates, CSCS
+            Statement, Dividend Warrants/Stubs or Bank Statement showing
+            dividend receipt
+          </li>
+          <li>Valid means of identification of Administrator(s)/Executor(s)</li>
+          <li>
+            Banker's Confirmation of Signature of Administrator(s)/Executor(s)
+          </li>
+          <li>Passport photographs of Administrators</li>
+        </ul>
+      </section>
+      <section className="py-16">
+        <h4 className="font-bold font-syne capitalize text-black">Timeline</h4>
+        <p className="mt-3 font-sora text-grayPrimary2 max-w-3xl">
+          Transmission will be concluded within 72 hours of receipt of all valid
+          documents and confirmation from the probate registry.
+        </p>
+        <div className="mt-10 bg-bluePrimary text-white rounded-[20px] p-8 lg:p-10 font-sora">
+          <p className="font-bold font-syne text-xl">
+            Don't let your loved one's investments remain unclaimed.
+          </p>
+          <p className="mt-4 text-lg">Contact our Transmission Desk</p>
+          <p className="mt-2">
+            Telephone:{" "}
+            <a href="tel:09168629450" className="hover:underline">
+              09168629450
+            </a>
+          </p>
+          <p className="mt-1">
+            Email:{" "}
+            <a href="mailto:info@pacregistrars.com" className="hover:underline">
+              info@pacregistrars.com
+            </a>
+          </p>
         </div>
       </section>
       <section className=" py-16  ">
