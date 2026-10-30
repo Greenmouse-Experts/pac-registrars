@@ -146,9 +146,9 @@ function Services() {
               </h5>
             </div>
             <p className="font-sora text-grayPrimary2 mt-5">
-              Our dedicated team specializes in probate administration, estate
-              planning, and asset distribution, ensuring a smooth and efficient
-              process tailored to your specific needs.
+              Our dedicated team specializes in transmissionadministration,
+              estate planning, and asset distribution, ensuring a smooth and
+              efficient process tailored to your specific needs.
             </p>
 
             <div className="mt-auto">

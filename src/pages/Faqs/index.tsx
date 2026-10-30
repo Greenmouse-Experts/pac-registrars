@@ -75,14 +75,14 @@ function Faqs() {
           open={openIndex === 2}
           toggleAccordion={toggleAccordion}
           title="How can I claim my late father or mother's shares?"
-          answer="If the shareholder died intestate, a Letter of Administration will be required or if the shareholder died Testate ( with a Will), a Grant of Probate will be required. Send an email to info@pacregistrars.com or click on Forms to see the requirements for transmission."
+          answer="If the shareholder died intestate, a Letter of Administration will be required or if the shareholder died Testate ( with a Will), a Grant of Transmission will be required. Send an email to info@pacregistrars.com or click on Forms to see the requirements for transmission."
         />
         <FaqAccordion
           index={3}
           open={openIndex === 3}
           toggleAccordion={toggleAccordion}
           title="How long does transmission of shares take?"
-          answer="Once all documents are  received, the process of reconfirmation of LA or Probate is concluded. The transmission is done immediately.
+          answer="Once all documents are  received, the process of reconfirmation of LA or Transmission is concluded. The transmission is done immediately.
 "
         />
         <FaqAccordion
@@ -106,7 +106,7 @@ function Faqs() {
           open={openIndex === 6}
           toggleAccordion={toggleAccordion}
           title="What are the rights of shareholders?"
-          answer="To attend and vote at AGM, to receive dividend or bonus declared by the Company’s shares its holds, to receive annual reports e.t.c 
+          answer="To attend and vote at AGM, to receive dividend or bonus declared by the Company’s shares its holds, to receive annual reports e.t.c
 "
         />
         <FaqAccordion
@@ -117,8 +117,6 @@ function Faqs() {
           answer="Kindly complete the e-dividend mandate form on our website or visit NIBSS Self Service.
 "
         />
-
-    
       </section>
     </>
   );

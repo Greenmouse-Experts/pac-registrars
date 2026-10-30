@@ -61,7 +61,7 @@ function Forms() {
                 } overflow-hidden`}
                 onClick={() => setActive(2)}
               >
-                <p className={`font-sora  px-4`}>Probate Services</p>
+                <p className={`font-sora  px-4`}>Transmission Services</p>
                 <div className="absolute bottom-0 bg-bluePrimary h-1 w-full" />
               </div>
               <div
@@ -179,7 +179,10 @@ function Forms() {
               {active === 0 && <SecretarialForm />}
               {active === 1 && <ManagementForm />}
               {active === 2 && (
-                <ProbateForm title="Probate Services" url="probate/service" />
+                <ProbateForm
+                  title="Transmission Services"
+                  url="probate/service"
+                />
               )}
               {active === 3 && (
                 <ProbateForm

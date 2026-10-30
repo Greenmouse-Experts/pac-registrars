@@ -72,7 +72,7 @@ function ProbateServices() {
           />
           <SmallCardWithIcon
             img="/icons/prob5.svg"
-            text="Liaison with Probate Registry for confirmation"
+            text="Liaison with Transmission Registry for confirmation"
           />
           <SmallCardWithIcon
             img="/icons/prob6.svg"
@@ -98,7 +98,7 @@ function ProbateServices() {
             - for sighting
           </li>
           <li>
-            Original Probate or Letter of Administration - for sighting (or
+            Original Transmission or Letter of Administration - for sighting (or
             Certified True Copy by a Notary Public)
           </li>
           <li>Copy of Newspaper Advert / Gazette placed by the Court</li>
@@ -118,7 +118,7 @@ function ProbateServices() {
         <h4 className="font-bold font-syne capitalize text-black">Timeline</h4>
         <p className="mt-3 font-sora text-grayPrimary2 max-w-3xl">
           Transmission will be concluded within 72 hours of receipt of all valid
-          documents and confirmation from the probate registry.
+          documents and confirmation from the transmissionregistry.
         </p>
         <div className="mt-10 bg-bluePrimary text-white rounded-[20px] p-8 lg:p-10 font-sora">
           <p className="font-bold font-syne text-xl">

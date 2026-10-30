@@ -87,7 +87,7 @@ function Hero() {
         >
           <div className="2xl:max-w-[46%] lg:max-w-[60%] w-full h-full flex flex-col justify-center animate__animated  animate__fadeIn animate__delay-3">
             <h4 className="2xl:text-[3.5rem] lg:text-[3rem] text-3xl  font-bold font-montserrat 2xl:leading-[70.2px] lg:leading-[60px] leading-[40px] capitalize text-white mt-5 sm:mt-0 ">
-              Navigate Probate with Our Expert Guidance
+              Navigate Transmission with Our Expert Guidance
             </h4>
             <NavLink
               to="/probate-services"
