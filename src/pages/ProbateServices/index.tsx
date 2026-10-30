@@ -118,7 +118,7 @@ function ProbateServices() {
         <h4 className="font-bold font-syne capitalize text-black">Timeline</h4>
         <p className="mt-3 font-sora text-grayPrimary2 max-w-3xl">
           Transmission will be concluded within{" "}
-          <span className="font-bold text-black">72</span> hours of receipt of
+          <span className="font-bold text-black">72 hours </span>of receipt of
           all valid documents and confirmation from the transmissionregistry.
         </p>
         <div className="mt-10 bg-bluePrimary text-white rounded-[20px] p-8 lg:p-10 font-sora">
