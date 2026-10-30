@@ -63,9 +63,8 @@ function Services() {
             security.
           </p> */}
           <p className=" mt-5">
-           
-            Your trusted guide to a brighter business future
-            and revolutionizing the way you work and thrive.
+            Your trusted guide to a brighter business future and revolutionizing
+            the way you work and thrive.
           </p>
         </div>
       </div>
@@ -109,16 +108,16 @@ function Services() {
 
         <Slider ref={setSliderRef} {...settings}>
           <div className="lg:max-w-[400px] w-full 2xl:h-[32rem] lg:h-[30rem] h-[37rem] shadow-md px-10 py-10 !flex flex-col items-start bg-white text-black">
-          <div className="xl:h-[9rem] mb-3">
-            <img
-              src="/icons/register.gif"
-              alt="file"
-              className="2xl:w-[60px] w-[70px] mx-auto"
-            />
-            <h5 className="2xl:text-xl text-base font-semibold font-syne mt-5">
-              Register Maintenance Service
-            </h5>
-           </div>
+            <div className="xl:h-[9rem] mb-3">
+              <img
+                src="/icons/register.gif"
+                alt="file"
+                className="2xl:w-[60px] w-[70px] mx-auto"
+              />
+              <h5 className="2xl:text-xl text-base font-semibold font-syne mt-5">
+                Register Maintenance Service
+              </h5>
+            </div>
             <p className="font-sora text-grayPrimary2 mt-5">
               By meticulously managing registers and maintaining accurate data
               records, organizations can streamline operations, enhance
@@ -136,22 +135,22 @@ function Services() {
             </NavLink>
           </div>
           <div className="lg:max-w-[400px] w-full 2xl:h-[32rem] lg:h-[30rem] h-[37rem] shadow-md px-10 py-10 !flex flex-col items-start bg-white text-black">
-          <div className="xl:h-[9rem] mb-3">
-            <img
-              src="/icons/probate.gif"
-              alt="file"
-              className="2xl:w-[60px] w-[70px] mx-auto"
-            />
-            <h5 className="2xl:text-xl text-base font-semibold font-syne mt-5">
-              Probate/ Transmission Service
-            </h5>
-           </div>
+            <div className="xl:h-[9rem] mb-3">
+              <img
+                src="/icons/probate.gif"
+                alt="file"
+                className="2xl:w-[60px] w-[70px] mx-auto"
+              />
+              <h5 className="2xl:text-xl text-base font-semibold font-syne mt-5">
+                Transmission Services Service
+              </h5>
+            </div>
             <p className="font-sora text-grayPrimary2 mt-5">
               Our dedicated team specializes in probate administration, estate
               planning, and asset distribution, ensuring a smooth and efficient
               process tailored to your specific needs.
             </p>
-            
+
             <div className="mt-auto">
               <NavLink
                 to="/probate-services"
@@ -165,16 +164,16 @@ function Services() {
             </div>
           </div>
           <div className="lg:max-w-[400px] w-full 2xl:h-[32rem] lg:h-[30rem] h-[37rem] shadow-md px-10 py-10 !flex flex-col items-start bg-white text-black">
-          <div className="xl:h-[9rem] mb-3">
-            <img
-              src="/icons/bank.gif"
-              alt="file"
-              className="2xl:w-[60px] w-[70px] mx-auto"
-            />
-            <h5 className="2xl:text-xl text-base font-semibold font-syne mt-5">
-              Company Secretarial Service
-            </h5>
-           </div>
+            <div className="xl:h-[9rem] mb-3">
+              <img
+                src="/icons/bank.gif"
+                alt="file"
+                className="2xl:w-[60px] w-[70px] mx-auto"
+              />
+              <h5 className="2xl:text-xl text-base font-semibold font-syne mt-5">
+                Company Secretarial Service
+              </h5>
+            </div>
             <p className="font-sora text-grayPrimary2 mt-5">
               With a deep understanding of market dynamics and regulatory
               requirements, we ensure seamless and successful bond offerings
@@ -191,18 +190,17 @@ function Services() {
             </NavLink>
           </div>
           <div className="lg:max-w-[400px] w-full 2xl:h-[32rem] lg:h-[30rem] h-[37rem] shadow-md px-10 py-10 !flex flex-col items-start bg-white text-black">
-          <div className="xl:h-[9rem] mb-3">
-
-            <img
-              src="/icons/message.gif"
-              alt="file"
-              className="2xl:w-[60px] w-[70px] mx-auto"
-            />
-            <h5 className="2xl:text-xl text-base font-semibold font-syne mt-5">
-              e- Notification Service
-            </h5>
+            <div className="xl:h-[9rem] mb-3">
+              <img
+                src="/icons/message.gif"
+                alt="file"
+                className="2xl:w-[60px] w-[70px] mx-auto"
+              />
+              <h5 className="2xl:text-xl text-base font-semibold font-syne mt-5">
+                e- Notification Service
+              </h5>
             </div>
-            
+
             <p className="font-sora text-grayPrimary2 mt-5">
               We ensures that you receive timely, accurate notifications,
               providing you with the information you need to stay ahead and
@@ -220,15 +218,15 @@ function Services() {
           </div>
 
           <div className="lg:max-w-[400px] w-full 2xl:h-[32rem] lg:h-[30rem] h-[37rem] shadow-md px-10 py-10 !flex flex-col items-start bg-white text-black">
-          <div className="xl:h-[9rem] mb-3">
-            <img
-              src="/icons/web.gif"
-              alt="file"
-              className="2xl:w-[60px] w-[70px] mx-auto"
-            />
-            <h5 className="2xl:text-xl text-base font-semibold font-syne mt-5">
-              Web- registry Service
-            </h5>
+            <div className="xl:h-[9rem] mb-3">
+              <img
+                src="/icons/web.gif"
+                alt="file"
+                className="2xl:w-[60px] w-[70px] mx-auto"
+              />
+              <h5 className="2xl:text-xl text-base font-semibold font-syne mt-5">
+                Web- registry Service
+              </h5>
             </div>
             <p className="font-sora text-grayPrimary2 mt-5">
               Our dedicated team is here to guide you every step of the way,
@@ -246,16 +244,16 @@ function Services() {
             </NavLink>
           </div>
           <div className="lg:max-w-[400px] w-full 2xl:h-[32rem] lg:h-[30rem] h-[37rem] shadow-md px-10 py-10 !flex flex-col items-start bg-white text-black">
-          <div className="xl:h-[9rem] mb-3">
-            <img
-              src="/icons/file.gif"
-              alt="file"
-              className="2xl:w-[60px] w-[70px] mx-auto"
-            />
-            <h5 className="2xl:text-xl text-base font-semibold font-syne mt-5">
-              Document Maintenance Service
-            </h5>
-           </div>
+            <div className="xl:h-[9rem] mb-3">
+              <img
+                src="/icons/file.gif"
+                alt="file"
+                className="2xl:w-[60px] w-[70px] mx-auto"
+              />
+              <h5 className="2xl:text-xl text-base font-semibold font-syne mt-5">
+                Document Maintenance Service
+              </h5>
+            </div>
             <p className="font-sora text-grayPrimary2 mt-5">
               Our core beliefs drive our commitment to helping our clients
               achieve investing success. Our dedicated team is here to guide you
@@ -272,15 +270,15 @@ function Services() {
             </NavLink>
           </div>
           <div className="lg:max-w-[400px] w-full 2xl:h-[32rem] lg:h-[30rem] h-[37rem] shadow-md px-10 py-10 !flex flex-col items-start bg-white text-black">
-          <div className="xl:h-[9rem] mb-3">
-            <img
-              src="/icons/kyc.gif"
-              alt="file"
-              className="2xl:w-[60px] w-[70px] mx-auto"
-            />
-            <h5 className="2xl:text-xl text-base font-semibold font-syne mt-5">
-              KYC Service
-            </h5>
+            <div className="xl:h-[9rem] mb-3">
+              <img
+                src="/icons/kyc.gif"
+                alt="file"
+                className="2xl:w-[60px] w-[70px] mx-auto"
+              />
+              <h5 className="2xl:text-xl text-base font-semibold font-syne mt-5">
+                KYC Service
+              </h5>
             </div>
             <p className="font-sora text-grayPrimary2 mt-5">
               Our dedicated team is here to guide you every step of the way,

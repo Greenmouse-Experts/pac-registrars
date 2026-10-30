@@ -227,7 +227,7 @@ function Header() {
                     <span>
                       <VscLaw size={25} />
                     </span>
-                    Probate/ Transmission
+                    Transmission Services
                   </NavLink>
                   <NavLink
                     className=" py-3 px-2 w-full flex items-center gap-4 text-center text-bluePrimary text-lg text-nowrap hover:bg-bluePrimary hover:text-white hover:scale-[.98] transition-all duration-300"
@@ -313,7 +313,7 @@ function Header() {
                     }}
                     to="/probate-services"
                   >
-                    Probate/ Transmission
+                    Transmission Services
                   </NavLink>
                   <NavLink
                     className=" py-3 px-1 w-full flex items-center gap-4 text-center text-bluePrimary text-lg font-medium text-nowrap"

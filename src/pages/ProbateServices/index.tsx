@@ -3,7 +3,7 @@ import Banner from "../../components/Banner";
 import ProbateFaq from "../../components/ProbateFaq";
 import SmallCardWithIcon from "../../components/cards/SmallCardWithIcon";
 import ProbateForm from "../../components/forms/ProbateForm";
-import ServiceModal from '../../components/modals/ServicesModal'; // Import the modal
+import ServiceModal from "../../components/modals/ServicesModal"; // Import the modal
 
 function ProbateServices() {
   const [showFaq, setShowFaq] = useState(false);
@@ -20,7 +20,7 @@ function ProbateServices() {
   return (
     <>
       <Banner
-        page="Probate/ Transmission"
+        page="Transmission Services"
         link=""
         img="/images/probate-banner.png"
       />
@@ -34,7 +34,7 @@ function ProbateServices() {
         </div>
         <div className="lg:w-[56%] w-full font-syne">
           <h4 className=" font-bold font-syne capitalize text-black">
-            Probate/ Transmission
+            Transmission Services
           </h4>
           <p className=" 2xl:mt-3 mt-3 font-sora text-grayPrimary2">
             PAC Registrars and Investor Services Probate Services helps take
@@ -94,7 +94,6 @@ function ProbateServices() {
       </section>
       <section className=" py-16  ">
         <div className="flex gap-20">
-
           <p
             className="bg-bluePrimary text-white w-fit py-2 h-12 px-5 cursor-pointer"
             onClick={() => setShowFaq((prev) => !prev)}
@@ -111,7 +110,11 @@ function ProbateServices() {
         <div className="mt-10">{showFaq && <ProbateFaq />}</div>
       </section>
 
-      <ServiceModal isOpen={isModalOpen} handleClose={handleCloseModal} title="">
+      <ServiceModal
+        isOpen={isModalOpen}
+        handleClose={handleCloseModal}
+        title=""
+      >
         <ProbateForm url="probate/service" />
       </ServiceModal>
     </>
