@@ -50,7 +50,7 @@ function ProbateFaq() {
         open={openIndex === 5}
         toggleAccordion={toggleAccordion}
         title="Does every estate need to go through Probate?"
-        answer="Yes. However, there are assets that do not require transmissionsuch as jointly owned assets with spouse, assets with revocable trust, assets with  specific beneficiary or assets that include transfer on death beneficiary."
+        answer="Yes. However, there are assets that do not require transmissio such as jointly owned assets with spouse, assets with revocable trust, assets with  specific beneficiary or assets that include transfer on death beneficiary."
       />
     </div>
   );

@@ -142,11 +142,11 @@ function Services() {
                 className="2xl:w-[60px] w-[70px] mx-auto"
               />
               <h5 className="2xl:text-xl text-base font-semibold font-syne mt-5">
-                Transmission Services Service
+                Transmission Services
               </h5>
             </div>
             <p className="font-sora text-grayPrimary2 mt-5">
-              Our dedicated team specializes in transmissionadministration,
+              Our dedicated team specializes in transmission administration,
               estate planning, and asset distribution, ensuring a smooth and
               efficient process tailored to your specific needs.
             </p>
