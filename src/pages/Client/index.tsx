@@ -13,12 +13,36 @@ function Client() {
 
           <div className="grid md:grid-cols-4 grid-col-1 gap-4 w-full my-10">
             <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-42.jpg" alt="" className="max-h-28" />
+            </div>
+            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-43.jpg" alt="" className="max-h-28" />
+            </div>
+            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-44.jpg" alt="" className="max-h-28" />
+            </div>
+            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-45.jpg" alt="" className="max-h-28" />
+            </div>
+            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-46.jpg" alt="" className="max-h-28" />
+            </div>
+            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-47.jpg" alt="" className="max-h-28" />
+            </div>
+            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-48.jpg" alt="" className="max-h-28" />
+            </div>
+            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-49.jpg" alt="" className="max-h-28" />
+            </div>
+            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
               <img src="/images/client-14.svg" alt="" className="max-h-28" />
             </div>
             <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
               <img src="/images/client-31.png" alt="" className="max-h-28" />
             </div>
-           
+
             <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
               <img src="/images/client-1.svg" alt="" className="max-h-28" />
             </div>
@@ -39,28 +63,36 @@ function Client() {
             </div>
             <div className="bg-white px-10 h-[150px] flex  flex-col items-center gap-1 justify-center rounded-xl ">
               <img src="/images/client-6.svg" alt="" className="max-h-28" />
-              <p className="text-center text-sm font-semibold opacity-75 text-bluePrimary">PACAM EQUITY FUND </p>
+              <p className="text-center text-sm font-semibold opacity-75 text-bluePrimary">
+                PACAM EQUITY FUND{" "}
+              </p>
             </div>
             <div className="bg-white px-10 h-[150px] flex  flex-col items-center gap-1 justify-center rounded-xl ">
               <img src="/images/client-6.svg" alt="" className="max-h-28" />
-              <p className="text-center text-sm font-semibold opacity-75 text-bluePrimary">PACAM EUROBOND FUND</p>
+              <p className="text-center text-sm font-semibold opacity-75 text-bluePrimary">
+                PACAM EUROBOND FUND
+              </p>
             </div>
             <div className="bg-white px-10 h-[150px] flex  flex-col items-center gap-1 justify-center rounded-xl ">
               <img src="/images/client-6.svg" alt="" className="max-h-28" />
-              <p className="text-center text-sm font-semibold opacity-75 text-bluePrimary">PACAM FIXED INCOME FUND  </p>
+              <p className="text-center text-sm font-semibold opacity-75 text-bluePrimary">
+                PACAM FIXED INCOME FUND{" "}
+              </p>
             </div>
             <div className="bg-white px-10 h-[150px] flex  flex-col items-center gap-1 justify-center rounded-xl ">
               <img src="/images/client-6.svg" alt="" className="max-h-28" />
-              <p className="text-center text-sm font-semibold opacity-75 text-bluePrimary">PACAM MONEY MARKET FUND </p>
+              <p className="text-center text-sm font-semibold opacity-75 text-bluePrimary">
+                PACAM MONEY MARKET FUND{" "}
+              </p>
             </div>
-           
+
             <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
               <img src="/images/client-22.svg" alt="" className="max-h-28" />
             </div>
             <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
               <img src="/images/client-29.jpg" alt="" className="max-h-32" />
             </div>
-           
+
             {/* <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
               <img src="/images/client-38.png" alt="" className="max-h-28" />
             </div> */}
@@ -70,9 +102,7 @@ function Client() {
             <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
               <img src="/images/client-39.png" alt="" className="max-h-28" />
             </div>
-           
-          
-          
+
             <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
               <img src="/images/client-4.svg" alt="" className="max-h-28" />
             </div>
@@ -88,7 +118,9 @@ function Client() {
 
             <div className="bg-white px-10 h-[150px] flex  flex-col items-center gap-1 justify-center rounded-xl ">
               <img src="/images/client-30.jpg" alt="" className="max-h-28" />
-              <p className="text-center text-sm font-semibold opacity-75 text-bluePrimary">GEO Fluids Plc</p>
+              <p className="text-center text-sm font-semibold opacity-75 text-bluePrimary">
+                GEO Fluids Plc
+              </p>
             </div>
             <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
               <img src="/images/client-3.svg" alt="" className="max-h-28" />
@@ -134,7 +166,11 @@ function Client() {
               <img src="/images/client-2.svg" alt="" className="max-h-28" />
             </div>
             <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
-              <img src="/images/client-41.jpg" alt="" className="max-h-32 rounded-xl" />
+              <img
+                src="/images/client-41.jpg"
+                alt=""
+                className="max-h-32 rounded-xl"
+              />
             </div>
             <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
               <img src="/images/client-15.svg" alt="" className="max-h-28" />
