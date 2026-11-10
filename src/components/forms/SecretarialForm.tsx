@@ -1,11 +1,9 @@
-import  { useEffect, useState } from "react";
+import { useState } from "react";
 import { useForm, Controller } from "react-hook-form";
-import { IoCloudUploadOutline } from "react-icons/io5";
 import Input from "../Input";
 import Button from "../Button";
 import SuccessDialog from "../modals/SuccessDialogue";
 import useSubmitForm from "../../hooks/useSubmitForm";
-import toast from "react-hot-toast";
 
 function SecretarialForm() {
   const {
@@ -25,14 +23,11 @@ function SecretarialForm() {
       addressFirm: "",
       serviceBriefDetails: "",
       acceptDataPrivacyPolicy: false,
-      passport: null, // Initialize passport field as null
     },
   });
 
   console.log(errors)
 
-  const [image, setImage] = useState<File | null>(null);
-  const [preview, setPreview] = useState<string | null>(null);
   const [open, setOpen] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false); // State to track submission success
 
@@ -51,38 +46,17 @@ function SecretarialForm() {
       addressFirm: "",
       serviceBriefDetails: "",
       acceptDataPrivacyPolicy: false,
-      passport: null, // Initialize passport field as null
     },
     url: "company/secretarial/service",
   });
 
-  useEffect(() => {
-    if (image) {
-      const reader = new FileReader();
-      reader.onloadend = () => {
-        setPreview(reader.result as string);
-      };
-      reader.readAsDataURL(image);
-    } else {
-      setPreview(null);
-    }
-  }, [image]);
-
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleFormSubmit = async (data:any) => {
- 
-    if (!image) {
-      console.error("Passport is required.");
-      toast.error("Passport is required")
-      return;
-    }
 
     try {
-      const base64Image = await imageToBase64(image);
       await submitForm({
         name: data.name,
         email: data.email,
-        passport: base64Image,
         phoneNumber: data.phoneNumber,
         whatsappNumber: data.whatsappNumber,
         nameFirm: data.nameFirm,
@@ -92,21 +66,10 @@ function SecretarialForm() {
         serviceBriefDetails: data.serviceBriefDetails,
         acceptDataPrivacyPolicy: data.acceptDataPrivacyPolicy && "Yes",
       });
-      setImage(null)
-      setPreview(null)
       setIsSubmitted(true);
     } catch (error) {
       console.error("Error submitting form:", error);
     }
-  };
-
-  const imageToBase64 = (file: File): Promise<string> => {
-    return new Promise<string>((resolve, reject) => {
-      const reader = new FileReader();
-      reader.readAsDataURL(file);
-      reader.onload = () => resolve(reader.result as string);
-      reader.onerror = (error) => reject(error);
-    });
   };
 
   return (
@@ -269,31 +232,6 @@ function SecretarialForm() {
               </div>
             )}
           />
-
-          <div className="w-[30%]">
-            <div className="bg-[#F4F4F4] flex flex-col justify-center items-center h-[7.5rem] relative ">
-              {preview ? (
-                <img
-                  src={preview}
-                  className="h-full w-full object-cover object-center"
-                  alt="Preview"
-                />
-              ) : (
-                <>
-                  <IoCloudUploadOutline size={30} />
-                  <input
-                    type="file"
-                    onChange={(e) => {
-                      const file = e?.target?.files ? e.target.files[0] : null;
-                      setImage(file);
-                    }}
-                    className="absolute w-full opacity-0"
-                  />
-                </>
-              )}
-            </div>
-            <p className="text-sm mt-2">Attach a Passport</p>
-          </div>
         </div>
 
         <div className="flex items-center gap-4">

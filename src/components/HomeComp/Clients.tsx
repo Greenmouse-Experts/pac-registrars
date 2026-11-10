@@ -89,6 +89,34 @@ function Clients() {
         <Slider ref={setSliderRef} {...settings}>
           <div className="flex justify-center items-center">
             <img
+              src="/images/client-42.jpg"
+              alt="client"
+              className="  mx-auto max-h-[60px]  "
+            />
+          </div>
+          <div className="flex justify-center items-center">
+            <img
+              src="/images/client-43.jpg"
+              alt="client"
+              className="  mx-auto max-h-[60px]  "
+            />
+          </div>
+          <div className="flex justify-center items-center">
+            <img
+              src="/images/client-44.jpg"
+              alt="client"
+              className="  mx-auto max-h-[60px]  "
+            />
+          </div>
+          <div className="flex justify-center items-center">
+            <img
+              src="/images/client-45.jpg"
+              alt="client"
+              className="  mx-auto max-h-[60px]  "
+            />
+          </div>
+          <div className="flex justify-center items-center">
+            <img
               src="/images/client-1.png"
               alt="client"
               className="  mx-auto max-h-[60px]  "
