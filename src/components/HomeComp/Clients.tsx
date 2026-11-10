@@ -170,7 +170,9 @@ function Clients() {
               alt="client"
               className="  mx-auto max-h-[60px]  "
             />
-            <p className="text-center text-sm font-semibold opacity-75 text-bluePrimary">GEO Fluids Plc</p>
+            <p className="text-center text-sm font-semibold opacity-75 text-bluePrimary">
+              GEO Fluids Plc
+            </p>
           </div>
           <div className="flex justify-center items-center">
             <img
@@ -199,7 +201,8 @@ function Clients() {
               alt="client"
               className="  mx-auto max-h-[60px]  "
             />
-          </div> <div className="flex justify-center items-center">
+          </div>{" "}
+          <div className="flex justify-center items-center">
             <img
               src="/images/client-35.png"
               alt="client"
@@ -244,7 +247,7 @@ function Clients() {
         </Slider>
       </div>
       <div className="flex justify-center mt-5">
-      <BaseButton color="blue" link="/clients" text="View all Clients"/>
+        <BaseButton color="blue" link="/clients" text="View all Clients" />
       </div>
     </section>
   );
