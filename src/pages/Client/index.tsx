@@ -13,6 +13,9 @@ function Client() {
 
           <div className="grid md:grid-cols-4 grid-col-1 gap-4 w-full my-10">
             <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
+              <img src="/images/client-50.jpg" alt="" className="max-h-28" />
+            </div>
+            <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
               <img src="/images/client-42.jpg" alt="" className="max-h-28" />
             </div>
             <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
@@ -25,7 +28,7 @@ function Client() {
               <img src="/images/client-45.jpg" alt="" className="max-h-28" />
             </div>
             <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
-              <img src="/images/client-46.jpg" alt="" className="max-h-28" />
+              <img src="/images/client-46.png" alt="" className="max-h-28" />
             </div>
             <div className="bg-white px-10 h-[150px] flex items-center justify-center rounded-xl ">
               <img src="/images/client-47.jpg" alt="" className="max-h-28" />
