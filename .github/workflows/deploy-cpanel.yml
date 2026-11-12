@@ -1,0 +1,66 @@
+name: Deploy to cPanel
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cpanel-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Build site
+        run: bun run build
+
+      - name: Configure SSH
+        env:
+          CPANEL_SSH_KEY: ${{ secrets.CPANEL_SSH_KEY }}
+          CPANEL_KNOWN_HOSTS: ${{ secrets.CPANEL_KNOWN_HOSTS }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$CPANEL_SSH_KEY" > ~/.ssh/cpanel_key
+          chmod 600 ~/.ssh/cpanel_key
+          printf '%s\n' "$CPANEL_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/known_hosts
+
+      - name: Create destination directory
+        env:
+          CPANEL_HOST: ${{ secrets.CPANEL_HOST }}
+          CPANEL_USER: ${{ secrets.CPANEL_USER }}
+          CPANEL_PORT: ${{ secrets.CPANEL_PORT }}
+          CPANEL_PROJ_PATH: ${{ secrets.CPANEL_PROJ_PATH }}
+        run: |
+          set -euo pipefail
+          # Quote the path as a single argument for the remote shell.
+          printf -v quoted_path '%q' "$CPANEL_PROJ_PATH"
+          ssh -i ~/.ssh/cpanel_key -p "$CPANEL_PORT" \
+            "$CPANEL_USER@$CPANEL_HOST" "mkdir -p -- $quoted_path"
+
+      - name: Upload built site
+        env:
+          CPANEL_HOST: ${{ secrets.CPANEL_HOST }}
+          CPANEL_USER: ${{ secrets.CPANEL_USER }}
+          CPANEL_PORT: ${{ secrets.CPANEL_PORT }}
+          CPANEL_PROJ_PATH: ${{ secrets.CPANEL_PROJ_PATH }}
+        run: |
+          set -euo pipefail
+          scp -i ~/.ssh/cpanel_key -P "$CPANEL_PORT" -r dist/. \
+            "$CPANEL_USER@$CPANEL_HOST:$CPANEL_PROJ_PATH/"
