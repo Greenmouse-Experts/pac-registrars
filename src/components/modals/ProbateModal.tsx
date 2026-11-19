@@ -52,7 +52,7 @@ const ProbateModal: React.FC<ModalProps> = ({
             <Input label="Email Address" type="email" />
             <Input label="WhatsApp Number" type="tel" />
             <Input label="Name of deceased person" type="text" />
-            <Input label="Place of death" type="text" />
+            <Input label="Place of Birth" type="text" />
             <Input label="Relationship with the deceased person" type="text" />
             <Input
               label="Do you have a preferred time for us to call you?"
