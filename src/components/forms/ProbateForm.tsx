@@ -169,12 +169,12 @@ function ProbateForm({ title, url }: ITitle) {
         <Controller
           name="placeDeath"
           control={control}
-          rules={{ required: "Place of death is required" }}
+          rules={{ required: "Place of Birth is required" }}
           render={({ field, fieldState }) => (
             <Input
               type="text"
-              placeholder="Place of death"
-              label="Place of death"
+              placeholder="Place of Birth"
+              label="Place of Birth"
               errors={fieldState.error?.message}
               {...field}
             />
